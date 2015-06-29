@@ -9,12 +9,12 @@ description: "Pro Motion is a JavaScript library that makes it easy to craft and
 
 # This URL is the main adresse. Don't include a slash at the end.
 #
-url: "https://pro-graphics.github.io/docs.pro.io"
+url: "https://pro-graphics.github.io/pro.io"
 baseurl: ""
 
 # This is for the editing function in _/includes/improve_content.html
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/pro-graphics/docs.pro.io/edit/gh-pages
+improve_content: https://github.com/pro-graphics/pro.io/edit/gh-pages
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash.
@@ -22,7 +22,7 @@ improve_content: https://github.com/pro-graphics/docs.pro.io/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "https://pro-graphics.github.io/docs.pro.io/images/"
+urlimg: "https://pro-graphics.github.io/pro.io/images/"
 
 
 # Logo size is 600x80 pixels
