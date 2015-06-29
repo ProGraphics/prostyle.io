@@ -1,7 +1,3 @@
-- title: Start
-  url: "/"
-  side: left
-
 - title: Getting Started
   url: "/getting-started/"
   side: left
