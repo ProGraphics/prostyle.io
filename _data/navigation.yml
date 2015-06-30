@@ -23,6 +23,10 @@
     url: "/search/"
   - title: Gallery
     url: "/gallery/"
+  - title: Tutorials
+    url: "/tutorials/"
+  - title: Thoughts
+    url: "/thoughts/"
 
 - title: Support
   url: "/support/"
