@@ -14,10 +14,15 @@
 		
 #navigation {
   background: #eee; 
-	background: linear-gradient(top, #eee 0%, #bbb 100%);  
-	background: -moz-linear-gradient(top, #eee 0%, #bbb 100%); 
-	background: -webkit-linear-gradient(top, #eee 0%,#bbb 100%);
-	box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+	background: linear-gradient(top, #FFF 0%, #DDD 100%);  
+	background: -moz-linear-gradient(top, #FFF 0%, #DDD 100%); 
+	background: -webkit-linear-gradient(top, #FFF 0%,#DDD 100%);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+	
+	//THE FOLLOWING THREE KEEP THE DROP SHADOW WHEN SCROLLED ALL THE WAY UP
+	position: relative;
+  z-index: 99;
+	&.fixed { position: fixed; }
 }
 
 .top-bar {
@@ -42,7 +47,7 @@
 			}
 		
 			&:hover>a {
-				background: #CCC;
+				background: #EEE;
 			}
 		}
 	}
@@ -51,7 +56,7 @@
 		box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 		
 		li {
-			background: rgba(200,200,200,0.95);
+			background: rgba(238,238,238,0.95);
 		}
 		
 		li:not(.has-form):not(.active)>a:not(.button){
