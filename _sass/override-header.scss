@@ -1,0 +1,37 @@
+.hdr {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background: url("/images/splash-bg.jpg");
+  position: relative;
+  overflow: hidden;
+	box-shadow: 0px -2px 4px rgba(0,0,0,0.5) inset;
+}
+
+#hdr-highlight {
+  background: url("/images/splash-bg-highlight.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#hdr-frontpage {
+	height: 350px;
+	#hdr-highlight {
+	  height: 350px;
+		background-size: 62.5rem 350px;
+	}
+}
+
+#hdr-title {
+	height: 100px;
+	#hdr-highlight {
+	  height: 100px;
+		background-size: 62.5rem 100px;
+	}
+}
+
+.hdr-text {
+	display: none;
+}

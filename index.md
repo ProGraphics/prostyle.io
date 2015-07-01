@@ -5,9 +5,8 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "Pro Motion Documentation"
-header:
-   image_fullwidth: "header_unsplash_12.jpg"
+title: "Pro Motion"
+hdr: "FrontPage"
 widget-1:
     title: "Blog & Portfolio"
     url: 'http://phlow.github.io/feeling-responsive/blog/'
