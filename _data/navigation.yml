@@ -1,8 +1,4 @@
-- title: Home
-  url: "/"
-  side: right
-
-- title: Docs
+- title: Documentation
   url: "/docs/"
   side: right
   dropdown:
