@@ -1,0 +1,71 @@
+@mixin top-bar-style() {
+	background: transparent;
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 1em;
+	color: #445;
+}
+
+@mixin hovered-item-style() {
+	background: #678;
+	color: #FFF;
+	text-shadow: 1px 1px #000;
+}
+		
+#navigation {
+  background: #eee; 
+	background: linear-gradient(top, #eee 0%, #bbb 100%);  
+	background: -moz-linear-gradient(top, #eee 0%, #bbb 100%); 
+	background: -webkit-linear-gradient(top, #eee 0%,#bbb 100%);
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+}
+
+.top-bar {
+	background: transparent;
+}
+
+.top-bar-section {
+	ul {
+		li {
+			@include top-bar-style();
+		}
+		
+		li:not(.has-form) {
+			>a:not(.button) {
+				@include top-bar-style();
+				&:hover {
+					@include hovered-item-style();
+				}
+				&:hover::after {
+					border-color: #FFF transparent transparent transparent;
+				}
+			}
+		
+			&:hover>a {
+				background: #CCC;
+			}
+		}
+	}
+	
+	ul.dropdown {
+		box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+		
+		li {
+			background: rgba(200,200,200,0.95);
+		}
+		
+		li:not(.has-form):not(.active)>a:not(.button){
+			@include top-bar-style();
+		}
+		
+		li:not(.has-form):not(.active):hover>a:not(.button) {
+			@include hovered-item-style();
+		}
+	}
+	
+	.right li .dropdown { //MENU DROPDOWNS LEFT-ALIGNED WITH TOP BAR MENU
+		left: 0;
+		right: auto;
+	}
+}
+
