@@ -290,11 +290,19 @@ body.video cite { color: #fff; }
 #subfooter {
 	background: $subfooter-bg;
 	color: $subfooter-color;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 10px;
+}
+#subfooter-right {
+	margin: 0;
+	ul.inline-list { margin: 0; }
 }
 #subfooter-left ul.inline-list {
 	float: left;
+	margin: 0;
+}
+#subfooter ul.inline-list > li {
+	margin-left: rem-calc(4);
 }
 #subfooter li a {
 	color: $subfooter-link-color;
@@ -303,17 +311,26 @@ body.video cite { color: #fff; }
 	color: #fff;
 }
 #subfooter .social-icons li a {
-	font-size: rem-calc(23);
+	font-size: rem-calc(30);
 	display: block;
-	width: 36px;
+	width: rem-calc(40);
+	height: rem-calc(40);
+	padding: rem-calc(4);
 	border-radius: 50%;
 	color: $subfooter-bg;
 	background: $subfooter-color;
 	text-align: center;
+	transition: color 300ms ease-out, background 300ms ease-out;
 }
 #subfooter .social-icons li a:hover {
-	background: $subfooter-bg;
+	background: $secondary-color;
 	color: #fff;
+}
+ul.inline-list li span.heart {
+	font-size:1.5em;
+	display: inline-block;
+	position: relative;
+	top:0.05em;
 }
 
 
