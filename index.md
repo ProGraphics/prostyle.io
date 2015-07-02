@@ -10,17 +10,17 @@ hdr: "FrontPage"
 widget-1:
     title: "Get Started"
     url: 'http://phlow.github.io/feeling-responsive/blog/'
-    text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
+    text: "It's easy. Learn how to configure your web page to display stunning web animations."
     icon: 'fa-power-off'
 widget-2:
     title: "Write Stories"
     url: 'http://phlow.github.io/feeling-responsive/info/'
-    text: '<em>Feeling Responsive</em> is heavily customizable.<br>1. Language-Support :)<br>2. Optimized for speed and it&#39;s responsive.<br>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br>4. Seven different Headers.<br>5. Customizable navigation, footer,...'
+    text: 'Learn how to craft and display your own animations using a simple JSON language.'
     icon: 'fa-pencil'
 widget-3:
     title: "Gallery"
     url: 'https://github.com/Phlow/feeling-responsive'
-    text: '<em>Feeling Responsive</em> is totally free and licensed under the MIT License. Make it your own and do with it what you want. Grab your copy or clone it at GitHub and start your website with it. Then tell me via Twitter <a href="http://twitter.com/phlow">@phlow</a>.'
+    text: 'Looking for inspiration? View a bunch of example animations and see what can be created.'
     icon: 'fa-desktop'
 ---
 

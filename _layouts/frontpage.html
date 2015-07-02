@@ -18,32 +18,32 @@ format: blog-index
 {% endcomment %}
 <div class="row t60">
     {% if page.widget-1.title %}
-    <div class="medium-4 columns">
+    <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}/{{ page.widget-1.url }}{% endif %}"><i class="fa {{ page.widget-1.icon }} front-icon"></i></a>
         <h2 class="font-size-h3 t50 b20">{{ page.widget-1.title }}</h2>
-        <p>{{ page.widget-1.text }}</p>
-        <p><a class="button tiny radius" href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}/{{ page.widget-1.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        <p style="text-align:left">{{ page.widget-1.text }}</p>
+        <p><a class="button radius" href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}/{{ page.widget-1.url }}{% endif %}">{{ site.data.language.more }}</a></p>
     </div><!-- /.medium-4.columns -->
     {% endif %}
 
 
     {% if page.widget-2.title %}
-    <div class="medium-4 columns">
+    <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}/{{ page.widget-2.url }}{% endif %}"><i class="fa {{ page.widget-2.icon }} front-icon"></i></a>
         <h2 class="font-size-h3 t50 b20">{{ page.widget-2.title }}</h2>
-        <p>{{ page.widget-2.text }}</p>
-        <p><a class="button tiny radius" href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}/{{ page.widget-2.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        <p style="text-align:left">{{ page.widget-2.text }}</p>
+        <p><a class="button radius" href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}/{{ page.widget-2.url }}{% endif %}">{{ site.data.language.more }}</a></p>
     </div><!-- /.medium-4.columns -->
     {% endif %}
 
 
     {% if page.widget-3.title %}
-    <div class="medium-4 columns">
+    <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}/{{ page.widget-3.url }}{% endif %}"><i class="fa {{ page.widget-3.icon }} front-icon"></i></a>
         <a href="{{ page.widget-3.url }}">{% if page.widget-3.image %}<img class="lazy" data-src="{{ site.urlimg }}/{{ page.widget-3.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-3.video %}{{ page.widget-3.video }}{% endif %}</a>
         <h2 class="font-size-h3 t50 b20">{{ page.widget-3.title }}</h2>
-        <p>{{ page.widget-3.text }}</p>
-        <p><a class="button tiny radius" href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}/{{ page.widget-3.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        <p style="text-align:left">{{ page.widget-3.text }}</p>
+        <p><a class="button radius" href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}/{{ page.widget-3.url }}{% endif %}">{{ site.data.language.more }}</a></p>
     </div><!-- /.medium-4.columns -->
     {% endif %}
 </div><!-- /.row -->
@@ -56,30 +56,9 @@ format: blog-index
 {% endcomment %}
 
 {% unless site.posts == empty %}
-    <div class="row t30 b20 homepage">
-        <div class="small-12 columns">
-            {% for post in site.posts limit:1 %}
-            {% if post.image.homepage %}
-            <p>
-                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title escape_once }}"><img width="970" src="{{ site.urlimg }}/{{ post.image.homepage }}" alt="{{ page.title escape_once }}"></a>
-            </p>
-
-            {% if post.image.caption_url && post.image.caption %}
-            <p class="text-right caption">
-                <a href="{{ post.image.caption_url }}">{{ post.image.caption }}</a>
-            </p>
-            {% endif %}
-            {% else post.image.homepage == NULL %}
-            <h2>{{ site.data.language.new_blog_entries }}</h2>
-            {% endif %}
-            {% endfor %}
-        </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
-
-
     <div class="row">
         <div class="medium-6 columns">
-            {% for post in site.posts limit:1 %}
+            {% for post in site.posts limit:3 %}
             {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
             <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <p>

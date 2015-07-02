@@ -37,8 +37,16 @@
 }
 
 i.front-icon {
+	transition: color 300ms ease-out;
   width: 100%;
   text-align: center;
   font-size: 7em;
   color: #567;
+	&:hover { color: #456; }
+}
+
+.button {
+	background-color: #CCC;
+	padding: 2% 4%;
+	&:hover { background-color: #456; }
 }
