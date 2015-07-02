@@ -15,15 +15,13 @@
 /* Basics
 ------------------------------------------------------------------- */
 
+$main-color: #567;
+$highlight-color: #456;
+
 $text-color:       	#111;
 $body-font-color: 	$text-color;
 $body-bg: 			#fdfdfd;
 
-
-
-/* Corporate Identity Colorpalette
-   https://color.adobe.com/de/Flat-Design-Colors-v2-color-theme-4341903/
-------------------------------------------------------------------- */
 
 $ci-1: #334D5C;		// dark turquoise
 $ci-2: #45B29D;		// turquoise
@@ -33,12 +31,11 @@ $ci-5: #DF4949;		// red
 $ci-6: #678;     // green
 
 
-
 /* Foundation Color Variables
 ------------------------------------------------------------------- */
 
-$primary-color: $ci-1;
-$secondary-color: $ci-6;
+$primary-color: #567;
+$secondary-color: #456;
 $alert-color: $ci-5;
 $success-color: $ci-6;
 $warning-color: $ci-4;
@@ -104,9 +101,9 @@ $topbar-menu-icon-color-toggled: $ci-6;
 /* Footer
 ------------------------------------------------------------------- */
 
-$footer-bg: $grey-8;
-$footer-color: #fff;
-$footer-link-color: $ci-6;
+$footer-bg: $secondary-color;
+$footer-color: #DDD;
+$footer-link-color: #FFF;
 
 
 $subfooter-bg: $grey-13;

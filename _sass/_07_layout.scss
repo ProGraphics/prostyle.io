@@ -263,26 +263,24 @@ body.video cite { color: #fff; }
 
 #footer-content p,
 #footer-content li {
-    font-size: rem-calc(13);
-    font-weight: 300;
+	font-size: rem-calc(15);
 }
 
 #footer {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background: $footer-bg;
-    color: $footer-color;
-    }
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background: $footer-bg;
+	color: $footer-color;
+}
 
-    #footer a {
-        color: $footer-link-color;
-    }
-    #footer h4,
-    #footer h5 {
-        letter-spacing: 1px;
-        color: #fff;
-        text-transform: uppercase;
-    }
+#footer a {
+	color: $footer-link-color;
+}
+#footer h4,
+#footer h5 {
+	letter-spacing: 1px;
+	color: #9AB;
+}
 
 
 
@@ -290,34 +288,33 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #subfooter {
-    background: $subfooter-bg;
-    color: $subfooter-color;
-    padding-top: 30px;
-    padding-bottom: 10px;
+	background: $subfooter-bg;
+	color: $subfooter-color;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
-    #subfooter-left ul.inline-list {
-        float: left;
-    }
-    #subfooter li a {
-        color: $subfooter-link-color;
-        text-transform: uppercase;
-    }
-    #subfooter li a:hover {
-        color: #fff;
-    }
-    #subfooter .social-icons li a {
-        font-size: rem-calc(23);
-        display: block;
-        width: 36px;
-        border-radius: 50%;
-        color: $subfooter-bg;
-        background: $subfooter-color;
-        text-align: center;
-    }
-    #subfooter .social-icons li a:hover {
-        background: $subfooter-bg;
-        color: #fff;
-    }
+#subfooter-left ul.inline-list {
+	float: left;
+}
+#subfooter li a {
+	color: $subfooter-link-color;
+}
+#subfooter li a:hover {
+	color: #fff;
+}
+#subfooter .social-icons li a {
+	font-size: rem-calc(23);
+	display: block;
+	width: 36px;
+	border-radius: 50%;
+	color: $subfooter-bg;
+	background: $subfooter-color;
+	text-align: center;
+}
+#subfooter .social-icons li a:hover {
+	background: $subfooter-bg;
+	color: #fff;
+}
 
 
 
