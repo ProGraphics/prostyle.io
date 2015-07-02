@@ -1,7 +1,35 @@
 {% if page.hdr == "FrontPage" %}
 
-<div id="hdr-frontpage" class="hdr"><div id="hdr-highlight"><div class="row"><div class="hdr-text"><span>Craft rich web animations with ease.</span></div><div class="hdr-text"><div><span>Really.</span></div></div></div></div></div>
+<div id="hdr-frontpage" class="hdr"><div id="hdr-highlight"><div class="row" data-pro-motion="home"><div class="hdr-text"><span>Craft rich web animations with ease.</span></div><div class="hdr-text"><div><span>Really.</span></div></div></div></div></div>
 
+<script>
+window.Pro = window.Pro || {};
+window.Pro.Motion = window.Pro.Motion || {};
+window.Pro.Motion.Stories = window.Pro.Motion.Stories || {};
+var home = Pro.Motion.Stories.home = Pro.Motion.Stories.home || {};
+
+home.story = {
+	frame: { aspectRatio: 1000/350 },
+	items: [
+		{
+			text: "Craft rich",
+			init: { color:"white", font:["'Open Sans', sans-serif",14], pos:[0,-30], textShadow:true, style:"bold"}
+		},
+		{
+			text: "WEB",
+			init: { color:"white", font:["'Open Sans', sans-serif",30], pos:[0,-8], textShadow:true, style:"bold"}
+		},
+		{
+			text: "animation",
+			init: { color:"white", font:["'Open Sans', sans-serif",12.5], pos:[0,13.5], textShadow:true, style:"bold"}
+		},
+		{
+			text: "with ease",
+			init: { color:"white", font:["'Open Sans', sans-serif",13.5], pos:[0,29], textShadow:true, style:"bold"}
+		}
+	]
+};
+</script>
 {% elsif page.hdr == "Title" %}
 
 <div id="hdr-title" class="hdr"><div id="hdr-highlight"><div class="row"><div class="hdr-text"><span>{{ page.header.title }}</span></div></div></div></div></div></div>
