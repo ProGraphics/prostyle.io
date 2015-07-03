@@ -66,6 +66,21 @@
 		li:not(.has-form):not(.active):hover>a:not(.button) {
 			@include hovered-item-style();
 		}
+		
+		li.back:hover {
+			background: #456;
+			h5 a {
+				color: #FFF;
+				text-shadow: 1px 1px #000;
+			}
+		}
+		
+		li.back h5 a {
+			font-size: 1em;
+			font-weight: bold;
+			font-style: italic;
+			color: #445;
+		}
 	}
 	
 	/** THIS MESSES UP THE MENU ON SMALL SCREENS. IF STILL WANTED NEEDS TO BE IN A MEDIA QUERY
