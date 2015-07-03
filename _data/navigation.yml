@@ -1,15 +1,15 @@
 - title: Documentation
-  url: "/docs/"
+  url: "/documentation/"
   side: right
   dropdown:
   - title: Concepts
-    url: "/docs/concepts/"
+    url: "/concepts/"
   - title: Stories
-    url: "/docs/stories/"
+    url: "/stories/"
   - title: Configuration
-    url: "/docs/configuration/"
+    url: "/configuration/"
   - title: Extensions
-    url: "/docs/extensions/"
+    url: "/extensions/"
 
 - title: Content
   url: "/content/"
@@ -19,10 +19,8 @@
     url: "/search/"
   - title: Gallery
     url: "/gallery/"
-  - title: Tutorials
-    url: "/tutorials/"
-  - title: Thoughts
-    url: "/thoughts/"
+  - title: Blog
+    url: "/blog/"
 
 - title: Support
   url: "/support/"
