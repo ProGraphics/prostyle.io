@@ -50,7 +50,10 @@ home.story = {
 			},
 			{
 				itemType: "layer",
-				init: { size:[100,100] },
+				init: { size:[100,100], pos:[0,115] },
+				actions: [
+					{ delay:4.5, anim:{dur:2, ease:"expo"}, pos:false}
+				],
 				items: [
 					{
 						itemType: "layer",
