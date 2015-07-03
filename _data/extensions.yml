@@ -1,0 +1,5 @@
+- name: "item.simpleBarChart"
+  url: "https://d2buqb93zlai30.cloudfront.net/js/0.17/pro.motion.item.simpleBarChart.min.js"
+
+- name: "flow.pageStack"
+  url: "https://d2buqb93zlai30.cloudfront.net/js/0.17/pro.motion.flow.pageStack.min.js"
