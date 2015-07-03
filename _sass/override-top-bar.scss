@@ -68,9 +68,11 @@
 		}
 	}
 	
+	/** THIS MESSES UP THE MENU ON SMALL SCREENS. IF STILL WANTED NEEDS TO BE IN A MEDIA QUERY
 	.right li .dropdown { //MENU DROPDOWNS LEFT-ALIGNED WITH TOP BAR MENU
 		left: 0;
 		right: auto;
 	}
+	*/
 }
 
