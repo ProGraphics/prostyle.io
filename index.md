@@ -7,6 +7,8 @@
 layout: frontpage
 title: "Pro Motion"
 hdr: "FrontPage"
+extensions:
+ - name: "item.simpleBarChart"
 widget-1:
     title: "Get Started"
     url: 'http://phlow.github.io/feeling-responsive/blog/'
