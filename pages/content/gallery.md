@@ -1,7 +1,8 @@
 ---
 layout: page
 show_meta: false
-title: "Style your content!"
+title: "Gallery"
+hdr: "Title"
 subheadline: "Layouts of Feeling Responsive"
 header:
    image_fullwidth: "header_unsplash_5.jpg"

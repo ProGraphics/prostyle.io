@@ -1,6 +1,7 @@
 ---
 layout: page-fullwidth
-title: "Theme Documentation"
+title: "Configuration"
+hdr: "Title"
 subheadline: "How to use Feeling Responsive"
 teaser: "The documentation is a work in progress..."
 permalink: "/configuration/"

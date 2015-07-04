@@ -1,7 +1,8 @@
 ---
 layout: page
 show_meta: false
-title: "Search"
+title: "Content"
+hdr: "Title"
 permalink: "/content/"
 ---
 
