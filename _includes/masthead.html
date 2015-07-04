@@ -1,79 +1,11 @@
 {% if page.hdr == "FrontPage" %}
 
-<div id="hdr-frontpage" class="hdr"><div id="hdr-highlight"><div class="row" data-pro-motion="home"><div class="hdr-text"><span>Craft rich web animations with ease.</span></div><div class="hdr-text"><div><span>Really.</span></div></div></div></div></div>
-
-<script>
-window.Pro = window.Pro || {};
-window.Pro.Motion = window.Pro.Motion || {};
-window.Pro.Motion.Stories = window.Pro.Motion.Stories || {};
-var home = Pro.Motion.Stories.home = Pro.Motion.Stories.home || {};
-
-home.story = {
-	frame: { aspectRatio: 1000/350 },
-	page: {
-		init: { font: "'Open Sans', sans-serif" },
-		items: [
-			{
-				text: "Craft rich",
-				init: {color:"transparent", font:14, pos:[15,-20], style:"bold"},
-				charInit: {scale:300, textShadow:[[0,0,10,"rgba(255,255,255,0)"],[0.5,0.5,10,"rgba(0,0,0,0)"]]},
-				charActions: [
-					{anim:{dur:2,stagger:0.1}, pos:-50, scale:100, textShadow:[[0,0,0,"rgba(255,255,255,1)"],[0.5,0.5,1,"rgba(0,0,0,1)"]]},
-					{delay:1, anim:{dur:0.5,stagger:0.03}, pos:{y:-9}}
-				]
-			},
-			{
-				text: "WEB",
-				init: { color:"white", font:30, pos:[-35,-8], style:"bold", textShadow:true},
-				charInit: {opacity:0, scale:{y:0}},
-					charActions: [
-						{delay:3.8, anim:{dur:0.5,stagger:0.1}, opacity:100, scale:100}
-					]
-			},
-			{
-				text: "animation",
-				init: { color:"transparent", font:12.5, pos:[15,0], style:"bold"},
-				charInit: {scale:300, textShadow:[[0,0,10,"rgba(255,255,255,0)"],[0.5,0.5,10,"rgba(0,0,0,0)"]]},
-				charActions: [
-					{delay:0.5, anim:{dur:2,stagger:0.1}, pos:-50, scale:100, textShadow:[[0,0,0,"rgba(255,255,255,1)"],[0.5,0.5,1,"rgba(0,0,0,1)"]]},
-					{delay:0.5, anim:{dur:0.5,stagger:0.03}, pos:{y:12.5}}
-				]
-			},
-			{
-				text: "with ease",
-				init: { color:"transparent", font:13.5, pos:[15,20], style:"bold"},
-				charInit: {scale:300, textShadow:[[0,0,10,"rgba(255,255,255,0)"],[0.5,0.5,10,"rgba(0,0,0,0)"]]},
-				charActions: [
-					{delay:1, anim:{dur:2,stagger:0.01}, pos:-50, scale:100, textShadow:[[0,0,0,"rgba(255,255,255,1)"],[0.5,0.5,1,"rgba(0,0,0,1)"]]},
-					{delay:0.8, anim:{dur:0.5,stagger:0.03}, pos:{y:7}}
-				]
-			},
-			{
-				itemType: "layer",
-				init: { size:[100,100], pos:[0,115] },
-				actions: [
-					{ delay:4.5, anim:{dur:2, ease:"expo"}, pos:false}
-				],
-				items: [
-					{
-						itemType: "layer",
-						init: {size:[29,55], rot:-5.5, pos:[6.5,-11], bg:"#345"}
-					},
-					{
-						itemType: "image",
-						src: "/images/splash_iphone.png",
-						width: 65.45,
-						init: { pos:[17,0,1] }
-					}
-				]
-			}
-		]
-	}
-};
-</script>
+<div id="hdr-frontpage" class="hdr"><div id="hdr-highlight"><div class="row" data-pro-motion="splash"><div class="hdr-text"><span>Craft rich web animations with ease.</span></div><div class="hdr-text"><div><span>Really.</span></div></div></div></div></div>
+{% include splash_front.html %}
 {% elsif page.hdr == "Title" %}
 
-<div id="hdr-title" class="hdr"><div id="hdr-highlight"><div class="row"><div class="hdr-text"><span>{{ page.header.title }}</span></div></div></div></div></div></div>
+<div id="hdr-title" class="hdr"><div id="hdr-highlight"><div class="row" data-pro-motion="splash"><div class="hdr-text"><span>{{ page.header.title }}</span></div></div></div></div></div></div>
+{% include splash_title.html %}
 
 {% endif %}
 
