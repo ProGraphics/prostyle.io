@@ -4,12 +4,20 @@
 	font-weight: bold;
 	font-size: 1em;
 	color: #445;
+	-webkit-transition: all 300ms ease-out ;  
+	-moz-transition: all 300ms ease-out;  
+	-o-transition: all 300ms ease-out;  
+	transition: all 300ms ease-out; 
 }
 
 @mixin hovered-item-style() {
 	background: #567;
 	color: #FFF;
 	text-shadow: 1px 1px #000;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
 }
 		
 #navigation {
