@@ -148,6 +148,16 @@ splash.story = {
 									text:"In 3D!",
 									init: {class:"text3d", pos:{z:-2}}
 								}]
+							},
+							{
+								itemType: "image",
+								src: "/images/hollow-pro-181x150.png",
+								height: 80,
+								init: { opacity:0, scale:70 },
+								script: {
+									scriptType: "step5",
+									action: {delay:1, anim:3, opacity:100, scale:100}
+								}
 							}
 						]
 					},
