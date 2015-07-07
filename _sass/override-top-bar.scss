@@ -19,7 +19,25 @@
 	-o-transition: none;
 	transition: none;
 }
-		
+
+a.logo {
+	opacity:0.8;
+	display: inline-block;
+	height: 50px;
+	width: 123px;
+	background-image: url('/images/pro-motion-123x40-456.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-transition: opacity 300ms ease-out ;  
+	-moz-transition: opacity 300ms ease-out;  
+	-o-transition: opacity 300ms ease-out;  
+	transition: opacity 300ms ease-out; 
+}
+
+a.logo:hover {
+	opacity: 1;
+}
+
 #navigation {
   background: #eee; 
 	background: linear-gradient(top, #FFF 0%, #DDD 100%);  
