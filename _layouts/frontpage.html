@@ -10,7 +10,7 @@ format: blog-index
     </div><!-- /.row -->
 </div><!-- /#header-home -->
 
-<div class="row t80"><div class="medium-12 columns"><p>
+<div class="row t80"><div class="medium-12 columns"><p class="teaser">
 Ever wanted to create stunning animation and add it to your web page or web application?
 Seen amazing presentations built on the web but figured you’d need to hire a developer to make something like that? 
 Maybe you are a developer but want to create animations quickly. Pro Motion makes it easy!
@@ -63,11 +63,11 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
 {% endcomment %}
 
 {% unless site.posts == empty %}
-    <div class="row">
+    <div class="row t90">
         <div class="medium-6 columns">
             {% for post in site.posts limit:3 %}
             {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
-            <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
             <p>
                 {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
                 <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
