@@ -8,6 +8,6 @@
   url: "/feed.xml"
   title: "Subscribe to RSS"
 
-- name: "sitemap.xml"
+- name: "Sitemap"
   url: "/sitemap.xml"
   title: "Sitemap"
