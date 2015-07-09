@@ -7,6 +7,7 @@
 layout: frontpage
 title: "Pro Motion"
 hdr: "FrontPage"
+breadcrumbs: false
 extensions:
  - name: "item.simpleBarChart"
 widget-1:
