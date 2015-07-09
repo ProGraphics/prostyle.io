@@ -38,6 +38,9 @@
                   </li>
 								{% endif %}
               {% endfor %}
+                <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
+                  <a href="{{ site.improve_content }}/{{ page.path }}" target="_blank">Edit</a>
+                </li>
               </ul>
           </div><!-- /.large-4.columns -->
 
