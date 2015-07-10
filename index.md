@@ -17,7 +17,7 @@ widget-1:
     icon: 'fa-power-off'
 widget-2:
     title: "Write Stories"
-    url: '/stories/'
+    url: '/docs/stories/'
     text: 'Learn how to craft and display your own animations using a simple JSON language.'
     icon: 'fa-pencil'
 widget-3:
