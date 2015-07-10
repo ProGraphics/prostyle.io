@@ -355,6 +355,8 @@ body.video cite { color: #fff; }
 .b15 { margin-bottom: 15px !important; }
 .b20 { margin-bottom: 20px !important; }
 .b30 { margin-bottom: 30px !important; }
+.b40 { margin-bottom: 40px !important; }
+.b50 { margin-bottom: 50px !important; }
 .b60 { margin-bottom: 60px !important; }
 
 .l15 { margin-left: 15px !important; }
@@ -364,3 +366,13 @@ body.video cite { color: #fff; }
 .pr5  { padding-right: 5px !important; }
 .pr10 { padding-right: 10px !important; }
 .pr20 { padding-right: 20px !important; }
+
+
+/* post list
+------------------------------------------------------------------- */
+
+.side-nav.post-list {
+	li span.category {
+		margin-left: 0.5em;
+	}
+}
