@@ -12,17 +12,17 @@ extensions:
  - name: "item.simpleBarChart"
 widget-1:
     title: "Get Started"
-    url: 'http://phlow.github.io/feeling-responsive/blog/'
+    url: '/getting-started/'
     text: "It's easy. Learn how to configure your web page to display stunning web animations."
     icon: 'fa-power-off'
 widget-2:
     title: "Write Stories"
-    url: 'http://phlow.github.io/feeling-responsive/info/'
+    url: '/stories/'
     text: 'Learn how to craft and display your own animations using a simple JSON language.'
     icon: 'fa-pencil'
 widget-3:
     title: "Gallery"
-    url: 'https://github.com/Phlow/feeling-responsive'
+    url: '/gallery/'
     text: 'Looking for inspiration? View a bunch of example animations and see what can be created.'
     icon: 'fa-desktop'
 ---
