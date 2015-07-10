@@ -1,12 +1,10 @@
 ---
 layout: page-fullwidth
 title: "Show your beautiful work!"
-subheadline: "Portfolio"
+category: template
 teaser: "You don't need a special portfolio template with this theme. Just check out the great possibilities of the <a href='http://foundation.zurb.com/docs/components/grid.html'>foundation grid</a> and experiment with it."
 image:
     thumb: "unsplash_6_bus_thumb.jpg"
-categories:
-    - design
 ---
 
 <div class="row t60">

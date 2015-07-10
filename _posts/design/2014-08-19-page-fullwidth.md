@@ -1,10 +1,8 @@
 ---
 layout: page-fullwidth
 title:  "The Full-Width Page Template"
-subheadline:  "Multi-Device Layouts"
+category: template
 teaser: "The full-width page format gives you all the space you need to show your content using the grid."
-categories:
-    - design
 header:
    image_fullwidth: "unsplash_leaf_header.jpg"
 ---

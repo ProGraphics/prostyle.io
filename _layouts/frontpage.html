@@ -66,7 +66,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
     <div class="row t90">
         <div class="medium-6 columns">
             {% for post in site.posts limit:3 %}
-            {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+            {% if post.category %}<p class="subheadline">{{ post.category }}</p>{% endif %}
             <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
             <p>
                 {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
@@ -78,7 +78,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
 
         <div class="medium-6 columns">
             <p><strong>{{ site.data.language.more_articles }}</strong></p>
-            {% include list-posts.html entries='3' offset='1' %}
+            {% include list-posts.html entries='12' offset='1' %}
         </div><!-- /.medium-7.columns -->
     </div><!-- /.row -->
 {% endunless %}

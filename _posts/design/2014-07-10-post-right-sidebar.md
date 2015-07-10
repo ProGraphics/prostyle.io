@@ -1,14 +1,12 @@
 ---
 layout: page
 sidebar: right
-subheadline: Templates
+category: template
 title:  "Page/Post Right Sidebar"
 teaser: "This is a example of page/post with a sidebar on the right."
 breadcrumb: true
 tags:
     - post format
-categories:
-    - design
 image:
     thumb: "unsplash_2_thumb.jpg"
     title: "unsplash_2.jpg"
