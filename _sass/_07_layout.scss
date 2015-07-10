@@ -326,11 +326,15 @@ body.video cite { color: #fff; }
 	background: $secondary-color;
 	color: #fff;
 }
-ul.inline-list li span.heart {
+#subfooter ul.inline-list li a.heart {
 	font-size:1.5em;
 	display: inline-block;
 	position: relative;
 	top:0.05em;
+	&:hover {
+		color: #F44;
+		text-shadow: 0 0 20px #F44;
+	}
 }
 
 
