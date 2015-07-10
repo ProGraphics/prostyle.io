@@ -2,11 +2,8 @@
 layout: page-fullwidth
 title: "Configuration"
 hdr: "Title"
-subheadline: "How to use Feeling Responsive"
 teaser: "The documentation is a work in progress..."
-permalink: "/configuration/"
-header:
-   image_fullwidth: "header_roadmap_2.jpg"
+permalink: "/docs/config/"
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
