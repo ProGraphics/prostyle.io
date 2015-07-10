@@ -34,6 +34,10 @@ span.category {
 	padding: 0.1em 0.5em;
 	background: #EEE;
 	border-radius: 10% / 25%;
+  -webkit-transition: background 200ms ease-out ;  
+  -moz-transition: background 200ms ease-out;  
+  -o-transition: background 200ms ease-out;  
+  transition: background 200ms ease-out; 	
 }
 
 a:hover span.category {
