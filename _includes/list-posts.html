@@ -24,12 +24,12 @@
 
 {% assign category = include.category %}
 {% assign tag = include.tag %}
-<ul class="side-nav">
+<ul class="side-nav post-list">
 
   {% if category == NULL and tag == NULL %}
 
     {% for post in site.posts limit:include.entries offset:include.offset %}
-      <li><a href="{{ site.url }}{{ post.url }}">{% if post.category %}<span class="category">{{ post.category }}</span> &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
+      <li><a href="{{ site.url }}{{ post.url }}">{% if post.category %}<span class="category">{{ post.category }}</span> &middot; {% endif %}{{ post.title }}</a></li>
     {% endfor %}
       <li class="text-right"><a href="{{ site.url }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
 
@@ -37,7 +37,7 @@
   {% elsif category %}
     
     {% for post in site.categories.[category] limit:include.entries offset:include.offset %}
-      <li><a href="{{ site.url }}{{ post.url }}">{% if post.category %}<span class="category">{{ post.category }}</span> &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
+      <li><a href="{{ site.url }}{{ post.url }}">{% if post.category %}<span class="category">{{ post.category }}</span> &middot; {% endif %}{{ post.title }}</a></li>
     {% endfor %}
       <li class="text-right"><a href="{{ site.url }}/blog/archive/"><strong>{{ site.data.language.more }}</strong></a></li>
 
@@ -45,7 +45,7 @@
   {% elsif tag %}
 
     {% for post in site.tags.[tag] limit:include.entries %}
-      <li><a href="{{ site.url }}{{ post.url }}">{% if post.category %}<span class="category">{{ post.category }}</span> &middot; {% endif %}<strong>{{ post.title }}</strong></a></li>
+      <li><a href="{{ site.url }}{{ post.url }}">{% if post.category %}<span class="category">{{ post.category }}</span> &middot; {% endif %}{{ post.title }}</a></li>
     {% endfor %}
 
   {% endif %}
