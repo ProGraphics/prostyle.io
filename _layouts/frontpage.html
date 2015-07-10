@@ -64,21 +64,21 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
 
 {% unless site.posts == empty %}
     <div class="row t90 highlighted-posts">
-        <div class="medium-6 columns">
+        <div class="medium-7 columns">
           {% for post in site.posts limit:3 %}
-          <div class="row">
-				    <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+          <div class="row b40">
+            <div class="medium-12 columns">
+				      <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
                 {% if post.category %}<a href="/{{ post.category }}"><span class="category">{{ post.category }}</span></a> &middot; {% endif %}
                 {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
-            <p>
-                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
-            </p>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}">{{ site.data.language.read_more }}</a>
+            </div>
           </div>
           {% endfor %}
         </div>
 
 
-        <div class="medium-6 columns">
+        <div class="medium-5 columns">
             <h3>{{ site.data.language.more_articles }}</h3>
             {% include list-posts.html entries='12' offset='3' %}
         </div>
