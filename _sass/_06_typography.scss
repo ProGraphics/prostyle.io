@@ -18,7 +18,28 @@ Check typography variables › _3_typography_settings.scss
 
 */
 
+/* Front Page
+------------------------------------------------------------------- */
 
+.highlighted-posts h3 {
+	margin: 0 0 0.3em 0;
+}
+
+/* Category
+------------------------------------------------------------------- */
+
+span.category {
+	text-transform: uppercase;
+	font-size: 0.6em;
+	padding: 0.1em 0.5em;
+	background: #EEE;
+	border-radius: 10% / 25%;
+}
+
+a:hover span.category {
+	background: #345;
+	color: #FFF;
+}
 
 /* Links
 ------------------------------------------------------------------- */
@@ -277,11 +298,6 @@ mark {
 /* Typography for Articles
 ------------------------------------------------------------------- */
 
-.subheadline {
-    font-size: rem-calc(16);
-    margin: 0;
-    text-transform: uppercase;
-}
 .teaser {
     font-size: rem-calc(20);
 }
