@@ -104,7 +104,14 @@ button, .button         { letter-spacing: 1px; }
 
 .side-nav li.title { text-transform: uppercase;}
 .side-nav li { border-top: 1px solid $grey-3;}
-.side-nav li a:not(.button) { border-bottom: 0; padding: 0.4375rem 0rem; }
+.side-nav li a:not(.button) { 
+  border-bottom: 0; 
+	padding: 0.4375rem 0rem; 
+  -webkit-transition: background 200ms ease-out ;  
+  -moz-transition: background 200ms ease-out;  
+  -o-transition: background 200ms ease-out;  
+  transition: background 200ms ease-out; 
+}
 .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus { background: $grey-1; }
 
 .homepage p { margin: 0; padding: 0; color: $grey-10; }
