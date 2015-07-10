@@ -3,13 +3,13 @@
   side: right
   dropdown:
   - title: Concepts
-    url: "/concepts/"
+    url: "/docs/concepts/"
   - title: Stories
-    url: "/stories/"
+    url: "/docs/stories/"
   - title: Configuration
-    url: "/configuration/"
+    url: "/docs/config/"
   - title: Extensions
-    url: "/extensions/"
+    url: "/docs/extensions/"
 
 - title: Content
   url: "/content/"
