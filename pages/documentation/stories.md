@@ -7,15 +7,13 @@ permalink: "/docs/stories/"
 tocify: true
 ---
 <div class="row">
-<div class="medium-4 medium-push-8 columns">
+<div class="medium-4 columns">
 <div id="tocify"></div>
 </div>
 
 
 
-<div class="medium-8 medium-pull-4 columns" markdown="1">
-{% include improve_content.html %}
-
+<div class="medium-8 columns" markdown="1">
 ## Different Page/Posts Formats   {#formats}
 
 *Feeling Responsive* supports you with different templates for your content. These are the actual page/post formats:
@@ -110,7 +108,7 @@ With foundation responsive videos are easy. [More ›](http://foundation.zurb.co
 
 <img class="t60" src="{{ site.url }}/images/header_homepage_13.jpg">
 
-## Images: Title, Thumbnails, Homepage   {#images}
+## Images   {#images}
 
 There are several types of images you can define via front matter. If you want to change the images used in the header have a look at [Style your Header]({{ site.url }}/headers/). 
 
