@@ -4,8 +4,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.js"></script>
 <script>
-	 $(function() {
-		$("#tocify").tocify({ selectors: "h2,h3", hashGenerator: "pretty"});
+	$(function() {
+		var $tocify  = $('#tocify');
+		var offset_val = 170; /* todo: calculate the offset */
+
+		$tocify.tocify({ selectors:"h2,h3", hashGenerator:"pretty"});
+		
+		$(window).scroll(
+			function() {
+				var scroll_top = $(window).scrollTop();
+				console.log(scroll_top);
+				if (scroll_top >= offset_val) {
+					$tocify.addClass('fixed');
+				} else {
+					$tocify.removeClass('fixed');
+				}
+			}
+		);
 	});
 </script>
 {% endif %}
