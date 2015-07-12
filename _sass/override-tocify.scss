@@ -6,4 +6,18 @@
 	white-space: nowrap;
 	overflow-x: hidden;
 	padding: 0.3rem 0;
+	
+	li.active {
+		background: #456;
+		a {
+			color: #FFF;
+		}
+	}
+	
+	&.fixed {
+		position: fixed;
+		top: 4rem;
+		left: initial;
+		width: initial;
+	}
 }
