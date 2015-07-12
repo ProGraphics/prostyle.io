@@ -14,10 +14,14 @@
 			{% if ext.name == pm_ext.name %}
 	<script src="{{ pm_ext.url }}" type="text/javascript"></script>
 			{% endif %}
-
 		{% endfor %}
-
 	{% endfor %}
+	{% if page.tocify %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
+	{% endif %}
   <script>
     WebFontConfig = {
       google: { families: [ 'Open+Sans:400italic,700italic,700,400:latin', 'Libre+Baskerville::latin' ] }
