@@ -18,11 +18,6 @@ You write your stories using a simple text language that describes how to positi
 They are written as JSON and processed by our <a href="https://github.com/pro-graphics/pro-motion">Pro Motion</a> JavaScript library.
 </p></div></div>
 
-{% comment %}
-*
-* First check, if widget is empty or not by checking if there is a title
-*
-{% endcomment %}
 <div class="row t60">
     {% if page.widget-1.title %}
     <div class="medium-4 columns" style="text-align:center">
@@ -55,12 +50,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
     {% endif %}
 </div><!-- /.row -->
 
-
-{% comment %}
-*
-* First check, if there are any posts at all
-*
-{% endcomment %}
+{{ content }}
 
 {% unless site.posts == empty %}
     <div class="row t90 highlighted-posts">
@@ -84,14 +74,3 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
         </div>
     </div>
 {% endunless %}
-
-
-{% comment %}
-*
-* Finally, if there is content, spit it out.
-*
-{% endcomment %}
-
-<div class="row">
-    {{ content }}
-</div><!-- /.row -->
