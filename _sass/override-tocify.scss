@@ -7,10 +7,33 @@
 	overflow-x: hidden;
 	padding: 0.3rem 0;
 	
+	li {
+		a {
+			text-transform: lowercase;
+			font-weight: bold;
+			font-size: 0.9em;
+			color: #445;
+			transition: all 300ms ease-out;
+		}
+	}
+	
+	ul ul li a {
+		font-size: 1.2em;
+		font-weight: normal;
+	}
+	
+	li:hover {
+		background: #DDD;
+		a {
+			color: #000;
+		}
+	}
+	
 	li.active {
-		background: #456;
+		background: #567;
 		a {
 			color: #FFF;
+			text-shadow: 1px 1px #000;
 		}
 	}
 	
