@@ -4,6 +4,7 @@ title: "Stories"
 hdr: "Title"
 teaser: "The documentation is a work in progress..."
 permalink: "/docs/stories/"
+tocify: true
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
