@@ -1,9 +1,12 @@
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/javascript.min.js"></script>
 
-{% if page.header.image_fullwidth %}
+{% if page.tocify %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.js"></script>
 <script>
-    $("#masthead").backstretch("{{ site.urlimg }}/{{ page.header.image_fullwidth }}", {fade: 700});
-    $("#masthead-with-text").backstretch("{{ site.urlimg }}/{{ page.header.image_fullwidth }}", {fade: 700});
+	 $(function() {
+		$("#tocify").tocify({ selectors: "h2,h3", hashGenerator: "pretty"});
+	});
 </script>
 {% endif %}
 
