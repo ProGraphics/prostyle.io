@@ -6,9 +6,10 @@
 <script>
 	$(function() {
 		var $tocify  = $('#tocify');
+		var $leftCol = $('#leftCol');
 		var $nav = $("#navigation");
-		var nav_height = $nav.height();
-		var tocify_top = $tocify.offset().top + nav_height - 10;
+		var nav_height = $nav.height() + 10;
+		var tocify_top = $tocify.offset().top + nav_height - 20;
 
 		$tocify.tocify({ 
 			selectors:"h2,h3", 
@@ -19,15 +20,19 @@
 		});
 		
 		function tocifyPosition() {
+		console.log(nav_height);
 			var scroll_top = $(window).scrollTop();
-			console.log(scroll_top + '-' + tocify_top);
 			if (scroll_top >= tocify_top) {
 				$tocify.addClass('fixed');
-				$tocify.css('top', (scroll_top - tocify_top) + 'px');
-				$tocify.css('max-height', ($(window).height() - nav_height - 20) + 'px');
+				$tocify.css('top', nav_height + 'px');
+				$tocify.css('left', Math.round($leftCol.offset().left + parseFloat($leftCol.css('padding-left'))) + 'px');
+				$tocify.css('width', $leftCol.width() + 'px');
+				$tocify.css('max-height', ($(window).height() - nav_height - 10) + 'px');
 			} else {
 				$tocify.removeClass('fixed');
-				$tocify.css('top', '0');
+				$tocify.css('top', '');
+				$tocify.css('left', '');
+				$tocify.css('width', '');
 				$tocify.css('max-height', '');
 			}
 		}
