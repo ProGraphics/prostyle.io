@@ -20,6 +20,10 @@
 	transition: none;
 }
 
+.top-bar .name {
+	padding-left: ($column-gutter / 2);
+}
+
 a.logo {
 	margin-top: 2px;
 	opacity: 0.8;
