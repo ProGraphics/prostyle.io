@@ -7,10 +7,10 @@ permalink: "/docs/stories/"
 tocify: true
 ---
 <div class="row">
-<div class="medium-3 medium-push-9 columns">
+<div class="medium-3 columns">
 <div id="tocify"></div>
 </div>
-<div class="medium-9 medium-pull-3 columns" markdown="1">
+<div class="medium-9 columns" markdown="1">
 ## Different Page/Posts Formats   {#formats}
 
 *Feeling Responsive* supports you with different templates for your content. These are the actual page/post formats:
