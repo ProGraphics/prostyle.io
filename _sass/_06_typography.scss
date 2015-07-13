@@ -116,11 +116,11 @@ h1 {
 }
 h2 {
     font-size: $font-size-h2;
-    margin: 1.563em 0 0 0;
+    margin: 0;
 }
-    .blog-index h2 {
-        margin-top: 0;
-    }
+.blog-index h2 {
+		margin-top: 0;
+}
 h3 {
     font-size: $font-size-h3;
     margin: 1.152em 0 0 0;
