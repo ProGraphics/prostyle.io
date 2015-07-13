@@ -12,19 +12,22 @@
 
 		$tocify.tocify({ selectors:"h2,h3", hashGenerator:"pretty"});
 		
-		$(window).scroll(
-			function() {
-				var scroll_top = $(window).scrollTop();
-				console.log($(window).height() + '-' + nav_height);
-				if (scroll_top >= tocify_top) {
-					$tocify.addClass('fixed');
-					$tocify.css('top', (scroll_top - tocify_top) + 'px');
-					$tocify.css('max-height', ($(window).height() - nav_height - 20) + 'px');
-				} else {
-					$tocify.removeClass('fixed');
-				}
+		function tocifyPosition() {
+			var scroll_top = $(window).scrollTop();
+			console.log($(window).height() + '-' + nav_height);
+			if (scroll_top >= tocify_top) {
+				$tocify.addClass('fixed');
+				$tocify.css('top', (scroll_top - tocify_top) + 'px');
+				$tocify.css('max-height', ($(window).height() - nav_height - 20) + 'px');
+			} else {
+				$tocify.removeClass('fixed');
+				$tocify.css('top', '0');
+				$tocify.css('max-height', undefined);
 			}
-		);
+		}
+		
+		$(window).scroll(tocifyPosition);
+		$(window).resize(tocifyPosition);
 	});
 </script>
 {% endif %}
