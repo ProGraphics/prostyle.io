@@ -4,10 +4,10 @@
 	font-weight: bold;
 	font-size: 1em;
 	color: #445;
-	-webkit-transition: all 300ms ease-out ;  
-	-moz-transition: all 300ms ease-out;  
-	-o-transition: all 300ms ease-out;  
-	transition: all 300ms ease-out; 
+	-webkit-transition: color 300ms ease-out, background 300ms ease-out;  
+	-moz-transition: color 300ms ease-out, background 300ms ease-out;  
+	-o-transition: color 300ms ease-out, background 300ms ease-out;  
+	transition: color 300ms ease-out, background 300ms ease-out; 
 }
 
 @mixin hovered-item-style() {
