@@ -10,11 +10,17 @@
 		var nav_height = $nav.height();
 		var tocify_top = $tocify.offset().top + nav_height - 10;
 
-		$tocify.tocify({ selectors:"h2,h3", hashGenerator:"pretty"});
+		$tocify.tocify({ 
+			selectors:"h2,h3", 
+			hashGenerator:"pretty", 
+			extendPage:false,
+			scrollTo:nav_height,
+			smoothScroll: false
+		});
 		
 		function tocifyPosition() {
 			var scroll_top = $(window).scrollTop();
-			console.log($(window).height() + '-' + nav_height);
+			console.log(scroll_top + '-' + tocify_top);
 			if (scroll_top >= tocify_top) {
 				$tocify.addClass('fixed');
 				$tocify.css('top', (scroll_top - tocify_top) + 'px');
@@ -22,7 +28,7 @@
 			} else {
 				$tocify.removeClass('fixed');
 				$tocify.css('top', '0');
-				$tocify.css('max-height', undefined);
+				$tocify.css('max-height', '');
 			}
 		}
 		
