@@ -302,14 +302,3 @@ I only added one other javascript-module: [`backstretch`][3] by Scott Robbin. Th
 <div id="tocify"></div>
 </div>
 </div><!-- /.row -->
-
- [1]: http://kramdown.gettalong.org/converter/html.html#toc
- [2]: {{ site.url }}/blog/
- [3]: http://srobbin.com/jquery-plugins/backstretch/
- [4]: #
- [5]: #
- [6]: #
- [7]: #
- [8]: #
- [9]: #
- [10]: #
