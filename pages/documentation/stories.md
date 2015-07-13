@@ -7,10 +7,7 @@ permalink: "/docs/stories/"
 tocify: true
 ---
 <div class="row">
-<div class="medium-3 columns">
-<div id="tocify"></div>
-</div>
-<div class="medium-9 columns" markdown="1">
+<div class="small-8 medium-9 medium-push-3 large-10 large-push-2 columns" markdown="1">
 ## Different Page/Posts Formats   {#formats}
 
 *Feeling Responsive* supports you with different templates for your content. These are the actual page/post formats:
@@ -301,6 +298,9 @@ I only added one other javascript-module: [`backstretch`][3] by Scott Robbin. Th
 {% include improve_content.html %}
 
 </div><!-- /.medium-8.columns -->
+<div id="leftCol" class="small-4 medium-3 medium-pull-9 large-2 large-pull-10 columns show-for-medium-up">
+<div id="tocify"></div>
+</div>
 </div><!-- /.row -->
 
  [1]: http://kramdown.gettalong.org/converter/html.html#toc
