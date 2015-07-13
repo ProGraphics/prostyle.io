@@ -6,16 +6,20 @@
 <script>
 	$(function() {
 		var $tocify  = $('#tocify');
-		var offset_val = 170; /* todo: calculate the offset */
+		var $nav = $("#navigation");
+		var nav_height = $nav.height();
+		var tocify_top = $tocify.offset().top + nav_height - 10;
 
 		$tocify.tocify({ selectors:"h2,h3", hashGenerator:"pretty"});
 		
 		$(window).scroll(
 			function() {
 				var scroll_top = $(window).scrollTop();
-				console.log(scroll_top);
-				if (scroll_top >= offset_val) {
+				console.log($(window).height() + '-' + nav_height);
+				if (scroll_top >= tocify_top) {
 					$tocify.addClass('fixed');
+					$tocify.css('top', (scroll_top - tocify_top) + 'px');
+					$tocify.css('max-height', ($(window).height() - nav_height - 20) + 'px');
 				} else {
 					$tocify.removeClass('fixed');
 				}
