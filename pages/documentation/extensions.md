@@ -5,6 +5,7 @@ teaser: "The documentation is a work in progress..."
 permalink: "/docs/extensions/"
 ---
 ## H2 One
+{: class='t0'}
 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 ### H3 One
