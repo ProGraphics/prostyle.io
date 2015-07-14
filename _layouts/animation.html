@@ -3,21 +3,18 @@ layout: default
 format: animation
 ---
 <div class="row t30">
-	<div class="medium-4 columns">
+	<div class="medium-5 columns">
 
-		<div> SOURCE </div>
+		<pre id="editor" style="width:100%;">story = {% include {{ page.story }} %};</pre>
 
-	</div><!-- /.medium-4.columns -->
-	<div class="medium-8 columns">
+	</div>
+	<div class="medium-7 columns">
 
-		<div> ANIMATION </div>
+		<div id="animation"> ANIMATION </div>
 	
 		<article class="t30">
 			{{ content }}
 		</article>
 
-	</div><!-- /.medium-8.columns -->
-
-</div><!-- /.row -->
-
-
+	</div>
+</div>

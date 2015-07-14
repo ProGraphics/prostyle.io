@@ -1,5 +1,13 @@
 {
-	foo: {
-		bar: [0,1,2]
-	}
+  canvas: {
+    init: {bg:"#094766", corners:true}
+  },
+  item: {
+    text: "PRO",
+    init: {font:35, color:"white", pos:-25},
+    actions: [
+      {anim:2, pos:25},
+      {anim:2, pos:-25}
+    ]
+  }
 }
