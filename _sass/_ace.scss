@@ -2,3 +2,44 @@
 	border-top: solid 1px #DDD;
 	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
+
+.ace-clouds .ace_marker-layer .ace_bracket {
+	margin: 1px -1px 0 0 !important;
+	border: none !important;
+	background-color: greenyellow;
+	box-shadow: 0 0 3px 3px greenyellow;
+}
+
+span.ace_punctuation.ace_operator,
+span.ace_identifier {
+	color: #456 !important;
+}
+
+span.ace_paren.ace_lparen,
+span.ace_paren.ace_lparen {
+	color: #000 !important;
+	font-weight: bold !important;
+}
+
+span.ace_string {
+	color: navy !important;
+	background-color: rgb(255, 251, 209);
+}
+
+span.ace_boolean {
+	color: purple !important;
+	background-color: rgb(255, 251, 209);
+}
+
+span.ace_numeric {
+	color: darkgreen !important;
+	background-color: rgba(255, 251, 209, 0.5);
+}
+
+div.ace_gutter-active-line {
+	background-color: #D7D7D7 !important;
+}
+
+div.ace_active-line {
+	background-color: #FAFAFA !important;
+}
