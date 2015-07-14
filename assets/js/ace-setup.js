@@ -19,7 +19,7 @@ $(function() {
     }
 		
 		var update = throttle(function() {
-			console.log("change");
+			Pro.Motion.reload();
 		}, 5000);
 		
 		var session = editor.getSession().on('change', update);

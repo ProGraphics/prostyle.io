@@ -10,7 +10,7 @@ format: animation
 	</div>
 	<div class="medium-7 columns">
 
-		<div id="animation"> ANIMATION </div>
+		<div id="animation" data-pro-motion="animation"></div>
 	
 		<article class="t30">
 			{{ content }}
@@ -18,3 +18,11 @@ format: animation
 
 	</div>
 </div>
+<script>
+window.Pro = window.Pro || {};
+window.Pro.Motion = window.Pro.Motion || {};
+window.Pro.Motion.Stories = window.Pro.Motion.Stories || {};
+var animation = Pro.Motion.Stories.animation = Pro.Motion.Stories.animation || {};
+
+animation.story = {% include {{ page.story }} %};
+</script>
