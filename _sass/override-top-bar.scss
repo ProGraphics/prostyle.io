@@ -20,10 +20,6 @@
 	transition: none;
 }
 
-.top-bar .name {
-	padding-left: ($column-gutter / 2);
-}
-
 a.logo {
 	margin-top: 2px;
 	opacity: 0.8;
@@ -58,6 +54,27 @@ a.logo:hover {
 
 .top-bar {
 	background: transparent;
+	
+	.name {
+		padding-left: ($column-gutter / 2);
+	}
+
+	.toggle-topbar.menu-icon a {
+		opacity: 0.8;
+		color: #456;
+		-webkit-transition: opacity 300ms ease-out ;  
+		-moz-transition: opacity 300ms ease-out;  
+		-o-transition: opacity 300ms ease-out;  
+		transition: opacity 300ms ease-out; 
+		
+		span::after {
+		  box-shadow: 0 0 0 1px #567,0 7px 0 1px #567,0 14px 0 1px #567;
+		}
+		
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 
 .top-bar-section {
