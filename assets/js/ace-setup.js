@@ -29,15 +29,15 @@ $(function() {
 					showError("<i>Invalid format. It should be:</i><br><br>story = { ... };");
 				}
 				else {
+					$("#animation").removeClass("anim-error");
 					value = value.slice(8, value.length - 1);
-					showError(value);
+					Pro.Motion.Stories.animation.story = JSON5.parse(value);
+					Pro.Motion.reload();
 				}
 			}
 			catch(err) {
 				showError("<i>Error:</i><br><br>" + err.message);
 			}
-			//Pro.Motion.reload();
-			
 		};
 		
 		var showError = function(msg) {
