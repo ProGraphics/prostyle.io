@@ -7,6 +7,8 @@ $(function() {
 				maxLines: 10000
 		});
 		
+		var $btnUpdateAnim = $("#btnUpdateAnim");
+		
     var throttleTimer = null;
     function throttle(fn, delay) {
 			var context = this, args = arguments;
@@ -18,10 +20,18 @@ $(function() {
 			}
     }
 		
-		var update = throttle(function() {
+		var update = function() {
+			clearTimeout(throttleTimer);
 			Pro.Motion.reload();
-		}, 5000);
+			$btnUpdateAnim.attr("disabled","disabled");
+		};
 		
-		var session = editor.getSession().on('change', update);
-				
+		var throttledUpdate = throttle(function() {	update(); }, 10000);
+		
+		var session = editor.getSession().on('change', function() {
+			$btnUpdateAnim.removeAttr("disabled");
+			throttledUpdate();
+		});
+		
+		$btnUpdateAnim.click(update);
 });

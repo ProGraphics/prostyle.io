@@ -43,3 +43,12 @@ div.ace_gutter-active-line {
 div.ace_active-line {
 	background-color: #FAFAFA !important;
 }
+
+#btnUpdateAnim {
+	padding:10px;
+	float:right;
+	&[disabled] {
+		background-color: #EEE;
+		color: #666;
+	}
+}
