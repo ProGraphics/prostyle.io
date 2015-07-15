@@ -4,10 +4,15 @@
   },
   item: {
     text: "PRO",
-    init: {font:35, color:"white", pos:-25},
+    init: {
+      font:35,
+      color:"white",
+      pos:-25,
+      skew:-30
+    },
     actions: [
-      {anim:2, pos:25},
-      {anim:2, pos:-25}
+      {anim:2, pos:25, skew:30},
+      {anim:2, pos:-25, skew:-30}
     ]
   }
 }
