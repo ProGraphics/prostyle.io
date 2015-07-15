@@ -1,6 +1,6 @@
 {
   canvas: {
-    init: {bg:"#094766", corners:true}
+    init: {bg:"#567", corners:true}
   },
   item: {
     text: "PRO",
