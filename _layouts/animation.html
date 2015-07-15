@@ -3,11 +3,6 @@ layout: default
 format: animation
 ---
 <div class="row t30">
-	<div class="medium-5 columns">
-
-		<pre id="editor" style="width:100%;">story = {% include {{ page.story }} %};</pre>
-
-	</div>
 	<div class="medium-7 columns">
 
 		<div id="animation" data-pro-motion="animation"></div>
@@ -15,6 +10,12 @@ format: animation
 		<article class="t30">
 			{{ content }}
 		</article>
+
+	</div>
+	<div class="medium-5 columns">
+
+		{% include ad.html %}
+		<pre id="editor" class="t30" style="width:100%;">story = {% include {{ page.story }} %};</pre>
 
 	</div>
 </div>
