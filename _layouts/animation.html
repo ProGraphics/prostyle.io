@@ -18,6 +18,17 @@ format: animation
 		<pre id="editor" class="t30" style="width:100%;">story = {% include {{ page.story }} %};
 </pre>
 		<button id="btnUpdateAnim" disabled>Update</button>
+		<div class="row t60 highlighted-posts">
+			<div class="small-12 columns t60">
+				{% if page.category == 'gallery' %}
+				{% include list-posts.html category='gallery' entries='12' %}
+				{% endif %}
+				{% if page.category == 'example' %}
+				{% include list-posts.html category='example' entries='12' %}
+				{% endif %}
+			</div>
+    </div>
+
 	</div>
 </div>
 <script>
