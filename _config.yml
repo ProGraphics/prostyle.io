@@ -25,15 +25,8 @@ improve_content: https://github.com/pro-graphics/pro.io/edit/gh-pages
 urlimg: "https://pro-graphics.github.io/pro.io/images/"
 
 
-# Logo size is 600x80 pixels
-logo: "logo.png"
-
-
-# Paginates all X entries
+# See http://jekyllrb.com/docs/pagination/
 paginate: 5
-
-
-# Pagination path › Important for blog page in /blog/ to work
 paginate_path: "blog/page:num"
 
 
@@ -88,18 +81,6 @@ defaults:
 
 
 
-#       _   __            _             __  _           
-#      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____ 
-#     /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
-#    / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
-#   /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/ 
-#                       /____/                          
-#
-#  Open _data/navigation.yml to adjust the left and right topbar navigation
-#
-
-
-
 #     _____ __________ 
 #    / ___// ____/ __ \
 #    \__ \/ __/ / / / /
@@ -131,7 +112,7 @@ apple-touch-icon-76x76-precomposed:     "apple-touch-icon-76x76-precomposed.png"
 apple-touch-icon-72x72-precomposed:     "apple-touch-icon-72x72-precomposed.png"
 apple-touch-icon-precomposed:           "apple-touch-icon-precomposed.png"
 msapplication_tileimage:                "msapplication_tileimage.png"               # Size 144x144
-msapplication_tilecolor:                "#fabb00"
+msapplication_tilecolor:                "#EEE"
 
 
 #       ______                __                __  
