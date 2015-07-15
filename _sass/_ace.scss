@@ -52,3 +52,12 @@ div.ace_active-line {
 		color: #666;
 	}
 }
+
+.anim-error {
+	border: double 3px #900;
+	border-radius: 1em;
+	color: #700;
+	padding: .5em;
+	font-size: .9em;
+	font-weight: bold;
+}

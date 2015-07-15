@@ -22,9 +22,31 @@ $(function() {
 		
 		var update = function() {
 			clearTimeout(throttleTimer);
-			Pro.Motion.reload();
 			$btnUpdateAnim.attr("disabled","disabled");
+			try {
+				var value = editor.getValue().trim();
+				if (value.indexOf("story = {") !== 0 || value.slice(value.length-2) !== "};") {
+					showError("<i>Invalid format. It should be:</i><br><br>story = { ... };");
+				}
+				else {
+					value = value.slice(8, value.length - 1);
+					showError(value);
+				}
+			}
+			catch(err) {
+				showError("<i>Error:</i><br><br>" + err.message);
+			}
+			//Pro.Motion.reload();
+			
 		};
+		
+		var showError = function(msg) {
+			var $animation = $("#animation");
+			$animation.html(msg);
+			$animation.removeAttr("style");
+			$animation.removeAttr("class");
+			$animation.addClass("anim-error");
+		}
 		
 		var throttledUpdate = throttle(function() {	update(); }, 10000);
 		
