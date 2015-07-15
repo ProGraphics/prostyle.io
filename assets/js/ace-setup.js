@@ -6,6 +6,7 @@ $(function() {
 		editor.setOptions({
 				maxLines: 10000
 		});
+		editor.focus();
 		
 		var $btnUpdateAnim = $("#btnUpdateAnim");
 		
@@ -55,5 +56,8 @@ $(function() {
 			throttledUpdate();
 		});
 		
-		$btnUpdateAnim.click(update);
+		$btnUpdateAnim.click(function() {
+			editor.focus();
+			update();
+		});
 });
