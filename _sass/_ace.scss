@@ -23,17 +23,17 @@ span.ace_paren.ace_lparen {
 
 span.ace_string {
 	color: navy !important;
-	background-color: rgb(255, 251, 209);
+	background-color: rgba(255,251,209,0.6);
 }
 
 span.ace_boolean {
 	color: purple !important;
-	background-color: rgb(255, 251, 209);
+	background-color: rgba(255,251,209,0.6);
 }
 
 span.ace_numeric {
 	color: darkgreen !important;
-	background-color: rgba(255, 251, 209, 0.5);
+	background-color: rgba(255,251,209,0.6);
 }
 
 div.ace_gutter-active-line {
