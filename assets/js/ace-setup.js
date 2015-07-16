@@ -27,7 +27,6 @@ $(function() {
 		editor.setOptions({
 				maxLines: 10000
 		});
-		editor.focus();
 
     var throttleTimer = null;
     function throttle(fn, delay) {
@@ -104,4 +103,6 @@ $(function() {
 			editor.focus();
 			update();
 		});
+		
+		editor.focus();
 });
