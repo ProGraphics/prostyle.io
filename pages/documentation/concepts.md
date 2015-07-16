@@ -6,9 +6,9 @@ permalink: "/docs/concepts/"
 ---
 ## Overview
 {: class='t0'}
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 <div style="display:inline-block;max-width:160px;float:right;">{% include ad.html %}</div>
+Pro Motion animations are referred to as _stories_, written with [JSON](#){:data-toc='json'}. Stories are translated into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline-and-steps'} instructs how the content's properties are changed over time. The JSON is built with a hierarchy of [model](/docs/stories/#h3-one17) objects and [properties](#){:data-toc='properties'}.
 
 ## Story
 fsdfsdf

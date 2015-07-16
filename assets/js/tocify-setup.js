@@ -46,4 +46,9 @@ $(function() {
 		tocifyPosition()
 	});
 	calcTitleShrinkage();
+	
+	$("a[data-toc]").click(function(e,f){
+		$('li.tocify-item[data-unique="' + e.target.dataset.toc + '"]').click();
+		e.preventDefault();
+	});
 });
