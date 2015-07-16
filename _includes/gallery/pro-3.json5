@@ -6,11 +6,11 @@
     text: "PRO",
     init: {
       font:35, color:"white",
-      pos:-25
+      pos:-25, skew:-25, rot:-25
     },
     actions: [
-      {anim:2, pos:25},
-      {anim:2, pos:-25}
+      {anim:2, pos:25, skew:25, rot:25},
+      {anim:2, pos:-25, skew:-25, rot:-25}
     ]
   }
 }
