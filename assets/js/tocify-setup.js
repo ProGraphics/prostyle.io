@@ -24,7 +24,6 @@ $(function() {
 	
 	function tocifyPosition() {
 		var scroll_top = $window.scrollTop();
-		console.log($tocify.offset().top + ' - ' + nav_height + ' - ' + scroll_top + '>=' + tocify_top);
 		if (scroll_top >= (tocify_top - titleShrinkage)) {
 			$tocify.addClass('fixed');
 			$tocify.css('top', nav_height + 'px');
