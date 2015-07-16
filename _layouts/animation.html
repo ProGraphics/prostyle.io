@@ -1,6 +1,7 @@
 ---
 layout: default
 format: animation
+ace-js: true
 ---
 <div class="row t30">
 	<div class="medium-7 columns">
@@ -17,7 +18,14 @@ format: animation
 		{% include ad.html %}
 		<pre id="editor" class="t30" style="width:100%;">story = {% include {{ page.story }} %};
 </pre>
-		<button id="btnUpdateAnim" disabled>Update</button>
+		<pre id="editor2">{% if page.story2 %}story = {% include {{ page.story2 }} %};
+{% endif %}</pre>
+		<pre id="editor3">{% if page.story3 %}story = {% include {{ page.story3 }} %};
+{% endif %}</pre>
+		<button id="btnJson1" class="jsonButton" disabled>1</button>
+		<button id="btnJson2" class="jsonButton">2</button>
+		<button id="btnJson3" class="jsonButton">3</button>
+		<button id="btnUpdateAnim" class="jsonButton" disabled>Update</button>
 		<div class="row t60 highlighted-posts">
 			<div class="small-12 columns t60">
 				{% if page.category == 'gallery' %}

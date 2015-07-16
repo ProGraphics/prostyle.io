@@ -44,13 +44,19 @@ div.ace_active-line {
 	background-color: #FAFAFA !important;
 }
 
-#btnUpdateAnim {
+.jsonButton {
 	padding:10px;
-	float:right;
-	&[disabled] {
+	margin-right:5px;
+	float:left;
+	&[disabled], &[disabled]:hover {
 		background-color: #EEE;
 		color: #666;
 	}
+}
+
+#btnUpdateAnim.jsonButton {
+	float:right;
+	margin-right: 0;
 }
 
 .anim-error {
