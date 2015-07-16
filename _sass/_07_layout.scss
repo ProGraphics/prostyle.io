@@ -375,7 +375,14 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 .side-nav.post-list {
-	li span.category {
-		margin-left: 0.5em;
+	li {
+		white-space: nowrap;
+		a {
+			text-overflow: ellipsis; 
+			overflow : hidden; 
+		}
+		span.category {
+			margin-left: 0.5em;
+		}
 	}
 }
