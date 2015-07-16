@@ -10,6 +10,14 @@
 
 */
 
+body {
+	-webkit-transition: opacity 200ms ease-out;  
+	-moz-transition: opacity 200ms ease-out;  
+	-o-transition: opacity 200ms ease-out;  
+	transition: opacity 200ms ease-out; 
+	opacity: 0;
+	visibility: hidden;
+}
 
 
 /* Basics
