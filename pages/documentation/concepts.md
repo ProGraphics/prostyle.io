@@ -134,7 +134,17 @@ Pro Motion searches for and uses, _in order_, <code>scripts</code>, <code>script
 Note that some model objects have [multiple sets of properties](#){:data-toc='multiple'}. For example, the text item has word properties. When shortcutting, prefix the name of the property set. e.g. _wordScript_, _wordActions_, _wordAction_, etc.
 
 #### Setup
-_undocumented_
+All one-time configuration of a model object is defined inside a <code>setup</code> entry.  However, if you wish, you can omit this extra level.  If configuration is not found in a setup entry, it looks one level up on the model object itself.
+
+Either of these is valid for a text item.
+
+<pre data-ace="readonly" style="width:100%;">{
+  setup: { text: "animate!" }
+}</pre>
+
+<pre data-ace="readonly" style="width:100%;">{
+  text: "animate!"
+}</pre>
 
 <hr class="t60 b60">
 
