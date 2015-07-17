@@ -47,7 +47,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
           init: {...},
           scripts: [
             {
-              event: "...",
+              scriptType: "...",
               actions: [{...}, {...}]
             },
             {...}
@@ -56,7 +56,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
           frameScripts: [...],
           items: [
             {
-              item:"...",
+              itemType:"...",
               init: {...},
               scripts: [...]
             },
