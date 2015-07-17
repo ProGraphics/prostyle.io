@@ -8,8 +8,8 @@ ace-readonly-js: true;
 ## Overview
 {: class='t0'}
 
-<div style="display:inline-block;max-width:160px;float:right;">{% include ad.html %}</div>
-Pro Motion animations are referred to as _stories_, written with [JSON](#){:data-toc='json'}. Stories are translated into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline-and-steps'} instructs how the content's properties are changed over time. The JSON is built with a hierarchy of _model_ objects and configured [properties](#){:data-toc='properties'}.
+<div style="display:inline-block;max-width:160px;float:right;margin:0.5em 0 0 0.5em">{% include ad.html %}</div>
+Pro Motion animations are referred to as _stories_. They are translated from [JSON](#){:data-toc='json'} into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline-and-steps'} instructs how the content's properties are changed over time. The JSON is built with a hierarchy of _model_ objects and configured [properties](#){:data-toc='properties'}.
 
 ## Story
 Each story is composed of a _canvas_, a _frame_, and one or more _flows_. Each flow contains one or more _pages_, and each page contains one or more _items_.
