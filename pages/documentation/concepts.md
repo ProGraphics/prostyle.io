@@ -149,19 +149,61 @@ Either of these is valid for a text item.
 <hr class="t60 b60">
 
 ## JSON
-_undocumented_
+JavaScript Object Notation is a simple text file format. It uses named values.  Each value may be one of 5 basic types of information; object, array, text, number or true/false.
+
+<div class="row">
+  <div class="small-12 medium-10 medium-centered large-8 columns">
+		{% include alert text="Pro Motion uses a lenient form of JSON called <a rel='nofollow' target='_blank' href='http://json5.org/'>JSON5</a>." %}
+	</div>
+</div>
+
+<div class="row">
+  <div class="small-12 medium-10 medium-centered large-8 columns">
+		{% include alert warning="JSON supports others types of values, but these 5 are what you’ll use with Pro Motion." %}
+	</div>
+</div>
+
 
 ### Objects
-_undocumented_
+An _object_ is a container of named values.  Each object is enclosed in curly { } brackets containing zero or more named values.  Each named value is separated by a comma. Objects can have named child objects.
 
-### Values
-_undocumented_
+<pre data-ace="readonly" style="width:100%;">{
+  town: “boston”,
+  zipCode: 2112,
+  child: { … }
+}</pre>
+
+### Primitives
+There are three primitive value types.
+
+* _Numbers_ can be positive or negative, with or without a decimal point.
+    + They should not have formatting, such as commas.
+* _Strings_ are lines of text wrapped in quotes.
+* _Booleans_ are either __true__ or __false__.
+
+<pre data-ace="readonly" style="width:100%;">{
+  year: 2015,
+  title: "Pro Motion",
+  awesome: true
+}</pre>
 
 ### Arrays
-_undocumented_
+Arrays are lists of values. They are enclosed in square [ ] brackets. Listed items are separated by a comma. Arrays may hold any of the types, including child arrays.
 
-### Links
-_undocumented_
+<pre data-ace="readonly" style="width:100%;">{
+  numbers: [1,2,3],
+  strings: ["a", "b", "c"],
+  booleans: [true, false, true],
+  objects: [{number: 1}, {string:"a"}, {}],
+  arrays: [[0,0], [100,100]],
+  mixed: [652, "banana", [true, false]]
+}</pre>
+
+### Resources
+* <a rel='nofollow' target='_blank' href='http://en.wikipedia.org/wiki/JSON'>http://en.wikipedia.org/wiki/JSON</a>
+* <a rel='nofollow' target='_blank' href='http://www.json.org/'>http://www.json.org/</a>
+* <a rel='nofollow' target='_blank' href='http://www.json5.org/'>http://www.json5.org/</a>
+
 
 <hr class="t60 b60">
 
