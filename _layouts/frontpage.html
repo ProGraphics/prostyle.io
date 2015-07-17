@@ -22,7 +22,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
     {% if page.widget-1.title %}
     <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}{{ page.widget-1.url }}{% endif %}"><i class="fa {{ page.widget-1.icon }} front-icon"></i></a>
-        <h2 class="font-size-h3 t50 b20">{{ page.widget-1.title }}</h2>
+        <h2 class="t50 b20">{{ page.widget-1.title }}</h2>
         <p style="text-align:left">{{ page.widget-1.text }}</p>
         <p><a class="button radius" href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}{{ page.widget-1.url }}{% endif %}">{{ site.data.language.more }}</a></p>
     </div><!-- /.medium-4.columns -->
@@ -32,7 +32,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
     {% if page.widget-2.title %}
     <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}{{ page.widget-2.url }}{% endif %}"><i class="fa {{ page.widget-2.icon }} front-icon"></i></a>
-        <h2 class="font-size-h3 t50 b20">{{ page.widget-2.title }}</h2>
+        <h2 class="t50 b20">{{ page.widget-2.title }}</h2>
         <p style="text-align:left">{{ page.widget-2.text }}</p>
         <p><a class="button radius" href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}{{ page.widget-2.url }}{% endif %}">{{ site.data.language.more }}</a></p>
     </div><!-- /.medium-4.columns -->
@@ -43,7 +43,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
     <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}{{ page.widget-3.url }}{% endif %}"><i class="fa {{ page.widget-3.icon }} front-icon"></i></a>
         <a href="{{ page.widget-3.url }}">{% if page.widget-3.image %}<img class="lazy" data-src="{{ site.urlimg }}/{{ page.widget-3.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-3.video %}{{ page.widget-3.video }}{% endif %}</a>
-        <h2 class="font-size-h3 t50 b20">{{ page.widget-3.title }}</h2>
+        <h2 class="t50 b20">{{ page.widget-3.title }}</h2>
         <p style="text-align:left">{{ page.widget-3.text }}</p>
         <p><a class="button radius" href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}{{ page.widget-3.url }}{% endif %}">{{ site.data.language.more }}</a></p>
     </div><!-- /.medium-4.columns -->
