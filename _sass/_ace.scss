@@ -16,7 +16,7 @@ span.ace_identifier {
 }
 
 span.ace_paren.ace_lparen,
-span.ace_paren.ace_lparen {
+span.ace_paren.ace_rparen {
 	color: #000 !important;
 	font-weight: bold !important;
 }
@@ -66,4 +66,12 @@ div.ace_active-line {
 	padding: .5em;
 	font-size: .9em;
 	font-weight: bold;
+}
+
+/********* Readonly ***********/
+
+pre[data-ace] {
+	font-size: 1em;
+	background-color: #F7F7F7;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
