@@ -72,6 +72,12 @@ div.ace_active-line {
 
 pre[data-ace] {
 	font-size: 1em;
+	line-height: 1.4em;
 	background-color: #F7F7F7;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	
+	span.ace_paren.ace_lparen,
+	span.ace_paren.ace_rparen {
+		color: #89A !important;
+	}
 }
