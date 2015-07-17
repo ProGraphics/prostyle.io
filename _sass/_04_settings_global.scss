@@ -357,7 +357,7 @@ $alert-font-size: rem-calc(15);
 
 // We use these to control border styles.
 // $alert-border-style: solid;
-// $alert-border-width: 1px;
+$alert-border-width: 7px;
 // $alert-border-color: scale-color($primary-color, $lightness: $alert-function-factor);
 // $alert-bottom-margin: rem-calc(20);
 
@@ -371,7 +371,7 @@ $alert-font-size: rem-calc(15);
 // $alert-close-padding: 9px 6px 4px;
 
 // We use this to control border radius
-// $alert-radius: $global-radius;
+$alert-radius: 15px;
 
 // We use this to control transition effects
 // $alert-transition-speed: 300ms;

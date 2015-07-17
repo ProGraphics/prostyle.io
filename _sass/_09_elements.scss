@@ -56,13 +56,14 @@
 .alert-box {
   font-family: $font-family-sans-serif;
   text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
 } 
   .alert-box p {
     margin-bottom: 0;
   } 
   .alert-box a {
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-    color: #fff;
+		font-weight: bold;
+    color: #000;
     border-bottom: 1px dotted #fff;
   }
   .alert-box a:hover {
@@ -75,14 +76,14 @@
     font-family: $font-family-monospace;
   }
   .alert-box.terminal::before {
-    content: "$ ";
-    color: $ci-6;
+    content: "> ";
+    color: "green";
   }
   .alert-box.text {
-    background-color: $grey-2;
+    background-color: #FFA;
     text-shadow: 0px 0px 0px rgba(0,0,0,0.9);
-    border-color: scale-color($grey-2, $lightness: -14%);
-    color: $grey-12;
+    border-color: #CC8;
+    color: #000;
   }
 
 
