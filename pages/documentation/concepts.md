@@ -81,10 +81,50 @@ Pages and items may have scripts. Each script has actions such as to animate pro
 
 
 ### Shortcuts
-_undocumented_
+To keep story documents concise, Pro Motion supports shortcuts.  There are three kinds.
+
+1.  Flows, Pages and Items
+2.  Scripts and Actions
+3.  Setup
+
 
 #### Flows, Pages and Items
-_undocumented_
+Since a story may have more than one flow, the root of the document has a <code>flows</code> entry that accepts a list using [ ] brackets. Each entry in the list is a flow object, with { } brackets.
+
+<pre data-ace="readonly" style="width:100%;">{
+  flows: [
+    { pages: [{...}, {...}] },
+    { pages: [{...}, {...}] }
+  ]
+}</pre>
+
+However, if the story has only one flow, the document can omit the <code>flows</code> entry and use a <code>flow</code> entry instead.
+
+<pre data-ace="readonly" style="width:100%;">{
+  flow: { pages: [{...}, {...}] }
+}</pre>
+
+That's better, but if there is only one flow and it is the default simple flow, the document can just have page or pages, depending upon the number of pages.
+
+<pre data-ace="readonly" style="width:100%;">{
+  pages: [{items:[...]}, {items:[...]}]
+}</pre>
+
+<pre data-ace="readonly" style="width:100%;">{
+  page: {items:[...]}
+}</pre>
+
+Furthermore, if there is only one page, and that page doesn't override the defaults (no property init or scripts), the document can have just the child items or item, depending upon the number of items.
+
+<pre data-ace="readonly" style="width:100%;">{
+  items: [{...}, {...}]
+}</pre>
+
+<pre data-ace="readonly" style="width:100%;">{
+  item: {...}
+}</pre>
+
+When parsing a story, Pro Motion searches for and uses, _in order_, <code>flows</code>, <code>flow</code>, <code>pages</code>, <code>page</code>, <code>items</code>, <code>item</code>. Only one will be used. Once one is found, _others are ignored_.
 
 #### Scripts and Actions
 _undocumented_
