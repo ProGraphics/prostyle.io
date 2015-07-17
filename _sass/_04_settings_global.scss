@@ -1283,7 +1283,7 @@ $side-nav-divider-color: $grey-1;
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
-$table-even-row-bg: $grey-1;
+$table-even-row-bg: #F3F3F3;
 
 // These control the table cell border style
 // $table-border-style: solid;
@@ -1308,6 +1308,12 @@ $table-head-bg: $grey-2;
 // $table-display: table-cell;
 // $table-margin-bottom: rem-calc(20);
 
+table {
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	border-radius: 3px;
+}
+	
+	
 // 31. Tabs
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
