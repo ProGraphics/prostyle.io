@@ -35,7 +35,7 @@ _undocumented_
 
 ## Flows
 
-## &middot; Simple
+##&middot; Simple Flow
 _undocumented_
 
 ### Setup
@@ -63,7 +63,7 @@ _undocumented_
 
 ## Items
 
-## &middot; Text
+##&middot; Text Item
 _undocumented_
 
 ### Setup
@@ -76,7 +76,7 @@ _undocumented_
 _undocumented_
 
 
-## &middot; Image
+##&middot; Image Item
 _undocumented_
 
 ### Setup
@@ -89,7 +89,7 @@ _undocumented_
 _undocumented_
 
 
-## &middot; Layer
+##&middot; Layer Item
 _undocumented_
 
 ### Setup
