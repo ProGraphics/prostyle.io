@@ -5,6 +5,7 @@ teaser: "The documentation is a work in progress..."
 permalink: "/docs/models/"
 ---
 ## Overview
+{: class='t0'}
 _undocumented_
 
 ## Canvas
