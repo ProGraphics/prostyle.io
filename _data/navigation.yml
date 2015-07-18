@@ -4,8 +4,10 @@
   dropdown:
   - title: Concepts
     url: "/docs/concepts/"
-  - title: Stories
-    url: "/docs/stories/"
+  - title: Models
+    url: "/docs/models/"
+  - title: Properties
+    url: "/docs/properties/"
   - title: Configuration
     url: "/docs/config/"
   - title: Extensions
