@@ -1,0 +1,1 @@
+Uses the [standard corners property](/docs/properties/#corners)

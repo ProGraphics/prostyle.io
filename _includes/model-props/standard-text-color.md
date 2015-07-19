@@ -1,0 +1,1 @@
+Uses the [standard textColor property](/docs/properties/#text-color)

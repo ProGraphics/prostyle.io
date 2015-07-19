@@ -1,0 +1,1 @@
+Uses the [standard border property](/docs/properties/#border)

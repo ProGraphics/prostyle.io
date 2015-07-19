@@ -1,0 +1,1 @@
+Uses the [standard background property](/docs/properties/#background)

@@ -29,6 +29,14 @@ The canvas contains a single [frame](#){:data-toc='frame'} .
 
 ### Properties
 {% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="background" content="standard-background.md" %}
+{% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="corners" content="standard-corners.md" %}
+{% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="font" content="canvas-font.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="shadow" content="standard-shadow.md" %}
+{% include model-props.html label="textColor" content="standard-text-color.md" %}
 
 ### Example
 _undocumented_

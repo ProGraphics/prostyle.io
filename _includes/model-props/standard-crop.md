@@ -1,0 +1,1 @@
+Uses the [standard crop property](/docs/properties/#crop)

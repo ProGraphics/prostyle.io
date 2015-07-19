@@ -1,0 +1,1 @@
+Uses the [standard opacity property](/docs/properties/#opacity)

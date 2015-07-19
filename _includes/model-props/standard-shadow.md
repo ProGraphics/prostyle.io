@@ -1,0 +1,1 @@
+Uses the [standard shadow property](/docs/properties/#shadow)
