@@ -24,8 +24,8 @@ The Canvas is the outermost container. It is mapped onto a single <code>div</cod
 The canvas contains a single [frame](#){:data-toc='frame'} .
 
 ### Setup
-{% include labeled-content.html label="padding" content="/model-setup/canvas-padding.md" %}
-{% include labeled-content.html label="imageRootUrl" content="/model-setup/canvas-imageRootUrl.md" %}
+{% include model-setup.html label="padding" content="canvas-padding.md" %}
+{% include model-setup.html label="imageRootUrl" content="canvas-imageRootUrl.md" %}
 
 ### Properties
 _undocumented_
