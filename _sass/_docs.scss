@@ -2,6 +2,9 @@ div.model-setup-row,
 div.model-props-row {
 	border-left: solid 0.2em #CCC;
 	margin: 0 0 1em 0.1em !important;
+	> div > p {
+		margin: 0;
+	} 
 }
 
 div.model-setup-row { border-left-color: orange }
