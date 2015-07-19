@@ -28,7 +28,7 @@ The canvas contains a single [frame](#){:data-toc='frame'} .
 {% include model-setup.html label="imageRootUrl" content="canvas-imageRootUrl.md" %}
 
 ### Properties
-_undocumented_
+{% include model-props.html label="animation" content="standard-animation.md" %}
 
 ### Example
 _undocumented_

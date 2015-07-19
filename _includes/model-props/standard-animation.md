@@ -1,0 +1,1 @@
+Uses the [standard animation property](/docs/properties/#animation)

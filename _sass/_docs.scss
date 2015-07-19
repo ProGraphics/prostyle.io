@@ -1,4 +1,8 @@
-div.model-setup-row {
-	border-left: solid 0.1em orange;
-	margin: 0 0 1em 0 !important;
+div.model-setup-row,
+div.model-props-row {
+	border-left: solid 0.2em #CCC;
+	margin: 0 0 1em 0.1em !important;
 }
+
+div.model-setup-row { border-left-color: orange }
+div.model-props-row { border-left-color: green }
