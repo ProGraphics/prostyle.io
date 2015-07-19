@@ -4,19 +4,14 @@
   dropdown:
   - title: Concepts
     url: "/docs/concepts/"
-    target: "concepts"
   - title: Models
     url: "/docs/models/"
-    target: "models"
   - title: Properties
     url: "/docs/properties/"
-    target: "properties"
   - title: Configuration
     url: "/docs/config/"
-    target: "configuration"
   - title: Extensions
     url: "/docs/extensions/"
-    target: "extensions"
 
 - title: Content
   url: "/content/"
