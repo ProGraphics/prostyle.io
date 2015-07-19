@@ -3,6 +3,7 @@ layout: tocify
 title: "Models"
 teaser: "The documentation is a work in progress..."
 permalink: "/docs/models/"
+ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
@@ -23,7 +24,8 @@ The Canvas is the outermost container. It is mapped onto a single <code>div</cod
 The canvas contains a single [frame](#){:data-toc='frame'} .
 
 ### Setup
-{% include labeled-content.html label="Padding" content="/model-setup/canvas-padding.md"  %}
+{% include labeled-content.html label="padding" content="/model-setup/canvas-padding.md" %}
+{% include labeled-content.html label="imageRootUrl" content="/model-setup/canvas-imageRootUrl.md" %}
 
 ### Properties
 _undocumented_
