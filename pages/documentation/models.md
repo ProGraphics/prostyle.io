@@ -6,7 +6,7 @@ permalink: "/docs/models/"
 ---
 ## Overview
 {: class='t0'}
-Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/docs/concepts/#setup){:target='concepts'}, [styled](/docs/properties/){:target='properties'} and [positioned](/docs/concepts/#placement){:target='concepts'}. Their properties may be animated with scripts.
+Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/docs/concepts/#setup), [styled](/docs/properties/) and [positioned](/docs/concepts/#placement). Their properties may be animated with scripts.
 
 | Model | Description  |
 |:-:|---|

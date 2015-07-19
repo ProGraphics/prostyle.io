@@ -15,15 +15,15 @@ Pro Motion animations are referred to as _stories_. They are translated from [JS
 Each story is composed of a _canvas_, a _frame_, and one or more _flows_. Each flow contains one or more _pages_, and each page contains one or more _items_.
 
 ### Model Objects
-Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/docs/properties/){:target='properties'} and [positioned](#){:data-toc='placement'}. Their properties may be animated with scripts.
+Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/docs/properties/) and [positioned](#){:data-toc='placement'}. Their properties may be animated with scripts.
 
 | Model | Description  |
 |:-:|---|
-| [Canvas](/docs/models/#canvas){:target='models'} | The canvas is the drawing surface of the animation.  It is mapped to a single <code>div</code> element or the <code>body</code> element of an HTML page. The HTML element might be any rectangular size. For example, a body tag stretches to fit the browser window. There is only one canvas. |
-| [Frame](/docs/models/#frame){:target='models'}  | The frame is centered within and stretches to fit the canvas, minus any padding. However, unlike the canvas, the frame always maintains a configured aspect ratio. There is only one frame. |
-| [Flows](/docs/models/#flows){:target='models'}  | Flows control page-to-page animation, such as page stacks, carousels, etc. Each flow contains one or more pages. |
-| [Pages](/docs/models/#pages){:target='models'}  | Pages contain the item content. The timeline navigates from page to page. Pages are analogous to slides in old-school presentation software. |
-| [Items](/docs/models/#items){:target='models'}  | Items are the core visuals, such as text, images, and charts. |
+| [Canvas](/docs/models/#canvas) | The canvas is the drawing surface of the animation.  It is mapped to a single <code>div</code> element or the <code>body</code> element of an HTML page. The HTML element might be any rectangular size. For example, a body tag stretches to fit the browser window. There is only one canvas. |
+| [Frame](/docs/models/#frame)  | The frame is centered within and stretches to fit the canvas, minus any padding. However, unlike the canvas, the frame always maintains a configured aspect ratio. There is only one frame. |
+| [Flows](/docs/models/#flows)  | Flows control page-to-page animation, such as page stacks, carousels, etc. Each flow contains one or more pages. |
+| [Pages](/docs/models/#pages)  | Pages contain the item content. The timeline navigates from page to page. Pages are analogous to slides in old-school presentation software. |
+| [Items](/docs/models/#items)  | Items are the core visuals, such as text, images, and charts. |
 
 
 ### Structure
