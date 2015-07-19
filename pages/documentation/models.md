@@ -18,7 +18,9 @@ Models are the _things_ that exist within the story. They physically exist as we
 
 
 ## Canvas
-_undocumented_
+The Canvas is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. Pro Motion will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
+
+The canvas contains a single [frame](#){:data-toc='frame'} .
 
 ### Setup
 _undocumented_
