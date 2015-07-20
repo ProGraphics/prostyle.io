@@ -85,4 +85,8 @@ pre[data-ace] {
 	span.ace_paren.ace_rparen {
 		color: #89A !important;
 	}
+	
+	.ace_hidden-cursors {
+		opacity:0;
+	} 
 }
