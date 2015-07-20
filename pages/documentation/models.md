@@ -33,18 +33,31 @@ All model objects, except [flows](#){:data-toc="flows"}, have at least one set o
   }
 }</pre>
 
+
+#### Multiple
+
+Some model objects have more than one set of properties.  The main set of properties uses the <code>init</code> and <code>scripts</code> entries. The additional property sets use entries named to match the set.
+
+For example, the [simple bar chart](#){:data-toc="&middot;-simple-bar-chart"} has overall chart properties, such as _position_. It also has properties for the individual bars, which are initialized with <code>barsInit</code> and scripted with <code>barScripts</code>.
+
+The [text item](#){:data-toc="&middot;-text-item"} actually has _four_ sets of properties; one for the overall text, plus one for each of the sets of lines, words, and characters.  Therefore, a text item might have <code>init</code>, <code>scripts</code>, <code>linesInit</code>, <code>lineScripts</code>, <code>wordsInit</code>, <code>wordScripts</code>, <code>charsInit</code> and <code>charScripts</code> entries.
+
+#### Canvas &amp; Frame Scripts
+Because [step scripts](/docs/concepts/#steps) are only available for _pages_ and _items_, the canvas and frame must be scripted on a page, using <code>canvasScripts</code> and <code>frameScripts</code> entries. The canvas and frame properties are animated relative to when a _page_ reaches a _step_.
+
 <hr class="t60 b60">
 
 ## Canvas
 The Canvas is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. Pro Motion will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
 
-The canvas contains a single [frame](#){:data-toc='frame'} .
+The canvas contains a single [frame](#){:data-toc='frame'}.
 
 ### Setup
 {% include model-setup.html label="padding" content="canvas-padding.md" %}
 {% include model-setup.html label="imageRootUrl" content="canvas-imageRootUrl.md" %}
 
 ### Properties
+Canvas properties may be [scripted](/docs/concepts/#scripts) with a <code>canvasScripts</code> entry on a page.
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
