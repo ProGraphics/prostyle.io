@@ -30,4 +30,6 @@
 <div class="alert-box text radius">{{ include.text }}</div>
 {% elsif include.terminal %}
 <div class="alert-box terminal radius">{{ include.terminal }}</div>
+{% elsif include.story %}
+<div class="play-story"><a href="{{ include.story }}"><i class="fa fa-play-circle"></i> play</a></div>
 {% endif %}
