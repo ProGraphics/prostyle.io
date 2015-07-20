@@ -18,6 +18,8 @@ Models are the _things_ that exist within the story. They physically exist as we
 | [Items](#){:data-toc='items'}  | Items are the core visuals, such as text, images, and charts. |
 
 
+<hr class="t60 b60">
+
 ## Canvas
 The Canvas is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. Pro Motion will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
 
@@ -41,6 +43,7 @@ The canvas contains a single [frame](#){:data-toc='frame'} .
 ### Example
 _undocumented_
 
+<hr class="t60 b60">
 
 ## Frame
 _undocumented_
@@ -54,34 +57,47 @@ _undocumented_
 ### Example
 _undocumented_
 
+<hr class="t60 b60">
 
 ## Flows
+_undocumented_
+
 
 ##&middot; Simple Flow
+{:class="font-size-h3"}
 _undocumented_
 
 ### Setup
+{:class="font-size-h4"}
 _undocumented_
 
 ### Properties
+{:class="font-size-h4"}
 _undocumented_
 
 ### Example
+{:class="font-size-h4"}
 _undocumented_
 
+<hr class="t60 b60">
 
 ##&middot; Stack Flow
+{:class="font-size-h3"}
 _undocumented_
 
 ### Setup
+{:class="font-size-h4"}
 _undocumented_
 
 ### Properties
+{:class="font-size-h4"}
 _undocumented_
 
 ### Example
+{:class="font-size-h4"}
 _undocumented_
 
+<hr class="t60 b60">
 
 ## Pages
 _undocumented_
@@ -95,56 +111,78 @@ _undocumented_
 ### Example
 _undocumented_
 
+<hr class="t60 b60">
 
 ## Items
+_undocumented_
+
 
 ##&middot; Text Item
+{:class="font-size-h3"}
 _undocumented_
 
 ### Setup
+{:class="font-size-h4"}
 _undocumented_
 
 ### Properties
+{:class="font-size-h4"}
 _undocumented_
 
 ### Example
+{:class="font-size-h4"}
 _undocumented_
 
+<hr class="t60 b60">
 
 ##&middot; Image Item
+{:class="font-size-h3"}
 _undocumented_
 
 ### Setup
+{:class="font-size-h4"}
 _undocumented_
 
 ### Properties
+{:class="font-size-h4"}
 _undocumented_
 
 ### Example
+{:class="font-size-h4"}
 _undocumented_
 
+<hr class="t60 b60">
 
 ##&middot; Layer Item
+{:class="font-size-h3"}
 _undocumented_
 
 ### Setup
+{:class="font-size-h4"}
 _undocumented_
 
 ### Properties
+{:class="font-size-h4"}
 _undocumented_
 
 ### Example
+{:class="font-size-h4"}
 _undocumented_
 
+<hr class="t60 b60">
 
 ##&middot; Simple Bar Chart
+{:class="font-size-h3"}
 _undocumented_
 
 ### Setup
+{:class="font-size-h4"}
 _undocumented_
 
 ### Properties
+{:class="font-size-h4"}
 _undocumented_
 
 ### Example
+{:class="font-size-h4"}
 _undocumented_
