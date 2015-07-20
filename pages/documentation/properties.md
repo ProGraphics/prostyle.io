@@ -51,11 +51,15 @@ Since you might only need to define a subset of a property’s values, different
 Which format should you use? That’s up to you. Generally, shorter formats improve readability, but that’s subjective. Use whichever format you prefer.
 
 ### Pseudo-Properties
-_undocumented_
+Most properties alter the appearance or placement of something.  However, there are a few special cases that are a bit different.  They are grouped together with regular properties because they are configured in the same manner, with <code>init</code> blocks and/or [script](/docs/concepts/#scripts) actions.
+
+* [Animation](#){:data-toc="animation"}
+* [Class](#){:data-toc="class"}
+* [Delay](#){:data-toc="delay"}
+* [Move To](#){:data-toc="move-to"}
 
 ### Classes
 _undocumented_
-
 
 <hr class="t60 b60">
 
