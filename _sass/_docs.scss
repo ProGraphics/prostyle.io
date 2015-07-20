@@ -1,3 +1,4 @@
+div.name-value-row,
 div.model-setup-row,
 div.model-props-row {
 	border-left: solid 0.2em #CCC;
@@ -7,5 +8,6 @@ div.model-props-row {
 	} 
 }
 
-div.model-setup-row { border-left-color: orange }
-div.model-props-row { border-left-color: green }
+div.name-value-row { border-left-color: #CCC; }
+div.model-setup-row { border-left-color: orange; }
+div.model-props-row { border-left-color: green; }
