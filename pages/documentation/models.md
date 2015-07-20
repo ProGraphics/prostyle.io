@@ -26,9 +26,9 @@ All model objects, except [flows](#){:data-toc="flows"}, have at least one set o
     text: "COLOR",
     init: {color:"red", font:40, style:"bold"},
     actions:[
-      {anim:3, color:"#094766"},
-      {anim:3, color:"rgba(127,127,15,0.8)"},
-      {anim:3, color:"red"}
+      {anim:2, color:"#567"},
+      {anim:2, color:"rgba(127,15,127,0.8)"},
+      {anim:2, color:"red"}
     ]
   }
 }</pre>
