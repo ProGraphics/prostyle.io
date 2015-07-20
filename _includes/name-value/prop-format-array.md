@@ -1,0 +1,1 @@
+A JSON array with all property values. They are more concise since the values are provided by position rather than name. Properties that support this format expect the values in a particular order.

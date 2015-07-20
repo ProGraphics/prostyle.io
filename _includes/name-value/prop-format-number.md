@@ -1,0 +1,1 @@
+Good choice if only a single number value needs to be set, such as font _size_ or opacity _percent_. Properties with a prominent numeric value map this format to that value.

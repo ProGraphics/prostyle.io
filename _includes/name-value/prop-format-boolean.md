@@ -1,0 +1,1 @@
+This format is very handy to quickly turn a property _off_, or to turn it _on_ with a default “on” configuration.  For example, setting the [border](#){:data-toc="border"} property to true sets a thin black border.  Of course, true values don’t make much sense for some properties.
