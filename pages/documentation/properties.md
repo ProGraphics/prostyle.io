@@ -6,9 +6,18 @@ permalink: "/docs/properties/"
 ---
 ## Overview
 {: class='t0'}
+A property sets the _appearance_ or [placement](/docs/concepts/#placement) of a [model](/docs/models/) object.  Property values are initialized with an <code>init</code> entry and may be [scripted](/docs/concepts/#scripts) to change over time. e.g. [Rotation](#){:data-toc="rotation"}. There are also [pseudo properties](#){:data-toc="pseudo-properties"}, which are similar to regular properties but instruct _how_ to alter properties.
+
+### Values
+_undocumented_
+
+### Formats
 _undocumented_
 
 ### Pseudo-Properties
+_undocumented_
+
+### Classes
 _undocumented_
 
 
