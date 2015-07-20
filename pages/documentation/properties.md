@@ -59,7 +59,41 @@ Most properties alter the appearance or placement of something.  However, there 
 * [Move To](#){:data-toc="move-to"}
 
 ### Classes
-_undocumented_
+Use a _class_ to define property values once and reuse them in multiple places. Currently, classes may only be used in <code>init</code> blocks.
+
+Classes are not necessarily aligned to a [model object](/docs/models/) or [property set](/docs/models/#property-sets). A class may define any arbitrary set of properties. It might contain only a subset of a model object’s properties, or might contain properties for multiple model objects. A model object will use the properties it understands and simply ignore the rest.
+
+{% include alert story="/examples/class/" %}
+<pre data-ace="readonly" style="width:100%;">{
+  classes: {
+    emboss: {
+      color:"#FFF",
+      font:80,
+      opacity:0,
+      textShadow:[-0.2,-0.2,0.7]
+    }
+  },
+  frame: {
+    aspectRatio:4
+  },
+  items: [
+    {
+      text: "1..",
+      init: {class:"emboss", pos:-30},
+      action: {delay:1, opacity:100}
+    },
+    {
+      text:"2..",
+      init: {class:"emboss"},
+      action: {delay:2, opacity:100}
+    },
+    {
+      text: "3..",
+      init: {class:"emboss", pos:30},
+      actions: [{delay:3, opacity:100}, {delay:1}]
+    }
+  ]
+}</pre>
 
 <hr class="t60 b60">
 

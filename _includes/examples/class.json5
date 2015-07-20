@@ -1,0 +1,30 @@
+{
+  classes: {
+    emboss: {
+      color:"#FFF",
+      font:80,
+      opacity:0,
+      textShadow:[-0.2,-0.2,0.7]
+    }
+  },
+  frame: {
+    aspectRatio:4
+  },
+  items: [
+    {
+      text: "1..",
+      init: {class:"emboss", pos:-30},
+      action: {delay:1, opacity:100}
+    },
+    {
+      text:"2..",
+      init: {class:"emboss"},
+      action: {delay:2, opacity:100}
+    },
+    {
+      text: "3..",
+      init: {class:"emboss", pos:30},
+      actions: [{delay:3, opacity:100}, {delay:1}]
+    }
+  ]
+}
