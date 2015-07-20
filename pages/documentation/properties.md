@@ -21,6 +21,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Animation
 _undocumented_
 
@@ -33,6 +35,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Anchor
 _undocumented_
@@ -47,6 +51,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Background
 _undocumented_
 
@@ -59,6 +65,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Border
 _undocumented_
@@ -73,6 +81,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Bullets
 _undocumented_
 
@@ -85,6 +95,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Class
 _undocumented_
@@ -99,6 +111,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Corners
 _undocumented_
 
@@ -111,6 +125,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Crop
 _undocumented_
@@ -125,6 +141,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Data
 _undocumented_
 
@@ -137,6 +155,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Delay
 _undocumented_
@@ -151,6 +171,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Fill
 _undocumented_
 
@@ -163,6 +185,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Font
 _undocumented_
@@ -177,6 +201,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Move To
 _undocumented_
 
@@ -189,6 +215,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Opacity
 _undocumented_
@@ -203,6 +231,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Padding
 _undocumented_
 
@@ -215,6 +245,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Position
 _undocumented_
@@ -229,6 +261,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Rotation
 _undocumented_
 
@@ -241,6 +275,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Scale
 _undocumented_
@@ -255,6 +291,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Shadow
 _undocumented_
 
@@ -267,6 +305,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Size
 _undocumented_
@@ -281,6 +321,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Skew
 _undocumented_
 
@@ -293,6 +335,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Text Align
 _undocumented_
@@ -307,6 +351,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Text Color
 _undocumented_
 
@@ -319,6 +365,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Text Shadow
 _undocumented_
@@ -333,6 +381,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Text Style
 _undocumented_
 
@@ -346,6 +396,8 @@ _undocumented_
 _undocumented_
 
 
+<hr class="t60 b60">
+
 ## Text Width
 _undocumented_
 
@@ -358,6 +410,8 @@ _undocumented_
 ### Example
 _undocumented_
 
+
+<hr class="t60 b60">
 
 ## Transform Origin
 _undocumented_
