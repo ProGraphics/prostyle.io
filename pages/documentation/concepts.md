@@ -226,20 +226,33 @@ _undocumented_
 
 <hr class="t60 b60">
 
-## Pseudo-Properties
+## Animation
 _undocumented_
 
-<hr class="t60 b60">
-
-## Timeline and Steps
+### Timeline
 _undocumented_
 
 ### Steps
 _undocumented_
 
+### Scripts
+_undocumented_
+
+### Eases
+_undocumented_
+
+### Staggering
+_undocumented_
+
 <hr class="t60 b60">
 
-## Alignment and Origins
+## Alignment
+_undocumented_
+
+### Anchor
+_undocumented_
+
+### Transform Origin
 _undocumented_
 
 <hr class="t60 b60">
