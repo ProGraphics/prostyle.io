@@ -7,7 +7,7 @@ ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
-Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/docs/concepts/#setup), [styled](/docs/properties/) and [positioned](/docs/concepts/#placement). Their properties may be animated with scripts.
+Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/docs/concepts/#setup), [styled](/docs/concepts/#properties) and [positioned](/docs/concepts/#placement). Their properties may be animated with [scripts](/docs/concepts/#scripts).
 
 | Model | Description  |
 |:-:|---|
@@ -17,6 +17,21 @@ Models are the _things_ that exist within the story. They physically exist as we
 | [Pages](#){:data-toc='pages'}  | Pages contain the item content. The timeline navigates from page to page. Pages are analogous to slides in old-school presentation software. |
 | [Items](#){:data-toc='items'}  | Items are the core visuals, such as text, images, and charts. |
 
+### Property Sets
+All model objects, except [flows](#){:data-toc="flows"}, have at least one set of properties. For example, a [text item](#){:data-toc="&middot;-text-item"} can be _positioned_ and _rotated_.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/docs/concepts/#scripts).
+
+{% include alert story="/examples/colors/" %}
+<pre data-ace="readonly" style="width:100%;">{
+  item: {
+    text: "COLOR",
+    init: {color:"red", font:40, style:"bold"},
+    actions:[
+      {anim:3, color:"#094766"},
+      {anim:3, color:"rgba(127,127,15,0.8)"},
+      {anim:3, color:"red"}
+    ]
+  }
+}</pre>
 
 <hr class="t60 b60">
 
