@@ -48,9 +48,10 @@ a.logo:hover {
 	
 	//THE FOLLOWING THREE KEEP THE DROP SHADOW WHEN SCROLLED ALL THE WAY UP
 	position: relative;
-  z-index: 99;
+  z-index: 1000;
 	&.fixed { position: fixed; }
 }
+
 
 .top-bar {
 	background: transparent;
