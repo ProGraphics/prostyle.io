@@ -7,8 +7,6 @@ ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
-
-<div style="display:inline-block;max-width:160px;float:right;margin:0.5em 0 0 0.5em">{% include ad.html %}</div>
 Pro Motion animations are referred to as _stories_. They are translated from [JSON](#){:data-toc='json'} into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline-and-steps'} instructs how the content's [properties](#){:data-toc='properties'} are changed over time.
 
 ## Story
