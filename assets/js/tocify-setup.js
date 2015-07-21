@@ -3,6 +3,7 @@ $(function() {
 	var $tocify  = $('#tocify');
 	var $leftCol = $('#leftCol');
 	var $nav = $("#navigation");
+	var $footer = $("#footer-content");
 	var nav_height = $nav.height() + 10;
 	var tocify_top = $tocify.offset().top + nav_height - 20;
 	var titleShrinkage = 0; /* normally it is 113, about 10% of 1125*/
@@ -25,17 +26,24 @@ $(function() {
 	function tocifyPosition() {
 		var scroll_top = $window.scrollTop();
 		if (scroll_top >= (tocify_top - titleShrinkage)) {
+			var window_height = $window.height() - nav_height - 10;
+			var doc_height = $(document).height() - nav_height - 10;
+			var footer_height = $footer.height();
+			var maxHeight = Math.max(0, Math.min(window_height, doc_height - scroll_top - footer_height));
+			
 			$tocify.addClass('fixed');
 			$tocify.css('top', nav_height + 'px');
 			$tocify.css('left', Math.round($leftCol.offset().left + parseFloat($leftCol.css('padding-left'))) + 'px');
 			$tocify.css('width', $leftCol.width() + 'px');
-			$tocify.css('max-height', ($window.height() - nav_height - 10) + 'px');
+			$tocify.css('max-height', maxHeight + 'px');
+			$tocify.css('display', maxHeight > 0 ? 'block' : 'none');
 		} else {
 			$tocify.removeClass('fixed');
 			$tocify.css('top', '');
 			$tocify.css('left', '');
 			$tocify.css('width', '');
 			$tocify.css('max-height', '');
+			$tocify.css('display', 'block');
 		}
 	}
 	
