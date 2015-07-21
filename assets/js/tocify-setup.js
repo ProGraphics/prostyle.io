@@ -39,6 +39,44 @@ $(function() {
 		}
 	}
 	
+	var throttleTimer = null;
+	function throttle(fn, delay) {
+		var context = this, args = arguments;
+		return function() {
+			clearTimeout(throttleTimer);
+			throttleTimer = setTimeout(function () {
+				fn.apply(context, args);
+			}, delay);
+		}
+	}
+	var scrollToActive = function() {
+		var $active = $tocify.find("li.tocify-item.active");
+		if ($active.length > 0) {
+			if($active.parent().hasClass("tocify-subheader")) {
+				/* since it is an H3 header, set active to the parent so the whole group is scrolled to */
+				$active = $active.parent().parent();
+			}
+			var tocTop = $tocify.offset().top;
+			var tocHeight = $tocify.height() + 8;
+			var activeTop = $active.offset().top - 2;
+			var activeHeight = $active.height();
+			var oldScrollTop = $tocify.scrollTop();
+			var newScrollTop = activeTop + oldScrollTop - tocTop;
+			if (activeTop - tocTop < 0) {  /* item is above the scroll port */
+				$tocify.animate({ scrollTop: newScrollTop }, 300);
+			}
+			else if (activeTop - tocTop > tocHeight - activeHeight) {  /* item is above the scroll port */
+				$tocify.animate({ scrollTop: newScrollTop + activeHeight - tocHeight}, 300);
+			}
+		}
+	};
+	var throttledToActive = throttle(scrollToActive, 1000);
+		
+	$window.on("scroll.tocify", function(event) {
+		console.log("scroll.tocify");
+		throttledToActive();
+	});
+	
 	$window.scroll(tocifyPosition);
 	$window.resize(function() {
 		calcTitleShrinkage();
