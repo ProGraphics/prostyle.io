@@ -73,14 +73,14 @@ $(function() {
 	var throttledToActive = throttle(scrollToActive, 1000);
 		
 	$window.on("scroll.tocify", function(event) {
-		console.log("scroll.tocify");
 		throttledToActive();
 	});
 	
 	$window.scroll(tocifyPosition);
 	$window.resize(function() {
 		calcTitleShrinkage();
-		tocifyPosition()
+		tocifyPosition();
+		throttledToActive();
 	});
 	calcTitleShrinkage();
 	
