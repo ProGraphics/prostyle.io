@@ -7,7 +7,7 @@ ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
-Pro Motion animations are referred to as _stories_. They are translated from [JSON](#){:data-toc='json'} into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline-and-steps'} instructs how the content's [properties](#){:data-toc='properties'} are changed over time.
+Pro Motion animations are referred to as _stories_. They are translated from [JSON](#){:data-toc='json'} into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline'} instructs how the content's [properties](#){:data-toc='properties'} are changed over time.
 
 ## Story
 Each story is composed of a _canvas_, a _frame_, and one or more _flows_. Each flow contains one or more _pages_, and each page contains one or more _items_.
@@ -205,14 +205,31 @@ Arrays are lists of values. They are enclosed in square [ ] brackets. Listed ite
 
 <hr class="t60 b60">
 
+
 ## Setup vs. Properties
-_undocumented_
+_Setup_ and _properties_ are two distinct ways that [model objects](/docs/models/) are configured. The difference is subtle, but important.
 
 ### Setup
-_undocumented_
+Setup defines one-time configuration, which is core to how the model object works. Setup values are _immutable_.  That means that they are set once and cannot be changed.  Pro Motion uses the setup to render and optimize the object.  For instance, setup values might render determine what HTML or SVG content to use. Setup values are defined in a <code>setup</code> entry.
+
+<pre data-ace="readonly" style="width:100%;">{
+  itemType: "text",
+  setup: { text: "Pro Motion!" }
+}</pre>
 
 ### Properties
-_undocumented_
+Unlike setup, properties _can_ be changed.  They are initialized in an <code>init</code> entry and can be changed in a [script](#){:data-toc="script"}.  There are many available [properties](/docs/properties).
+
+<pre data-ace="readonly" style="width:100%;">{
+  itemType: "text",
+  setup: { text: "Pro Motion!" },
+  init: { opacity: 50 }.
+  scripts: [
+    { 
+      actions: [{ delay: 5, opacity: 0 }]
+    }
+  ]
+}</pre>
 
 <hr class="t60 b60">
 
