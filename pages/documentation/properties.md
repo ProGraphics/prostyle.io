@@ -7,15 +7,15 @@ ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
-A property sets the _appearance_ or [placement](/docs/concepts/#placement) of a [model](/docs/models/) object.  Property values are initialized with an <code>init</code> entry and may be [scripted](/docs/concepts/#scripts) to change over time. e.g. [Rotation](#){:data-toc="rotation"}. There are also [pseudo properties](#){:data-toc="pseudo-properties"}, which are similar to regular properties but instruct _how_ to alter properties.
+A property defines _appearance_ or [placement](/docs/concepts/#placement) of a [model](/docs/models/) object.  Property values are initialized with an <code>init</code> entry and may be [scripted](/docs/concepts/#scripts) to change over time. e.g. [Rotation](#){:data-toc="rotation"}. There are also [pseudo properties](#){:data-toc="pseudo-properties"}, which are similar to regular properties but instruct _how_ to alter properties.
 
 ### Values
 Each property is composed of one or more values.  For instance, the [font](#){:data-toc="font"} property has both _size_ and _family_ values.  A [position](#){:data-toc="position"} has _x_, _y_ and _z_ dimensions. Pro Motion allows you to set and animate individual property values separately or together.  This enables you to create simple animations easily, yet provides the flexibility to craft complex ones.
 
 ### Formats
-Since you might only need to define a subset of a property’s values, different formats may be used: object, number, string, boolean, or array.  The appropriate formats for a property depends on the set of values and the nature of the property. For instance, each of the following is a valid representation of a _position_.
+Since you might only need to change a subset of a property’s values, there are different formats which make it easier to change particular values.  The available formats for a property depends upon the set of values and the nature of the property. For instance, each of the following is a valid representation of a _position_.
 
-<div class="row">
+<div class="row b20">
 	<div class="large-6 columns">
 		<pre data-ace="readonly" style="width:100%;">position: {x:10, y:-20, z:30}</pre>
 	</div>
@@ -98,7 +98,7 @@ Classes are not necessarily aligned to a [model object](/docs/models/) or [prope
 <hr class="t60 b60">
 
 ## Animation
-The <code>animation</code> pseudo-property defines the characteristics of an animation, such as how long it will take, or how many times it will repeat.
+The <code>animation</code> pseudo-property defines the characteristics of an [animation](/docs/concepts/#animation), such as how long it will take, or how many times it will repeat.
 
 _Alias:_ <code>anim</code>
 
