@@ -48,7 +48,9 @@ Since you might only need to change a subset of a property’s values, there are
 {% include name-value.html label="Number" content="prop-format-number.md" %}
 {% include name-value.html label="Boolean" content="prop-format-boolean.md" %}
 
+<p class="t20">
 Which format should you use? That’s up to you. Generally, shorter formats improve readability, but that’s subjective. Use whichever format you prefer.
+</p>
 
 ### Pseudo-Properties
 Most properties alter the appearance or placement of something.  However, there are a few special cases that are a bit different.  They are grouped together with regular properties because they are configured in the same manner, with <code>init</code> blocks and/or [script](/docs/concepts/#scripts) actions.
