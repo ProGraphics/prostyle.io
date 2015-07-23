@@ -114,6 +114,10 @@ The <code>animation</code> pseudo-property defines the characteristics of an [an
 
 ### Formats
 {% include prop-format.html label="object" content="animation-object.md" %}
+{% include prop-format.html label="number" content="animation-number.md" %}
+{% include prop-format.html label="boolean" content="animation-boolean.md" %}
+{% include prop-format.html label="array" content="animation-array.md" %}
+{% include prop-format.html label="string" content="animation-string.md" %}
 
 ### Example
 _undocumented_
