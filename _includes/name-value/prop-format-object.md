@@ -1,1 +1,1 @@
-A JSON object with named values.  They are descriptive because the name of each value is given, but that also makes this format much more verbose. They are best when setting a sparse set of values.
+A [JSON](/docs/concepts/#json) object with named values.  They are descriptive because the name of each value is given, but that also makes this format much more verbose. They are best when setting a sparse set of values.
