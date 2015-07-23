@@ -98,13 +98,15 @@ Classes are not necessarily aligned to a [model object](/docs/models/) or [prope
 <hr class="t60 b60">
 
 ## Animation
-_undocumented_
+The <code>animation</code> pseudo-property defines the characteristics of an animation, such as how long it will take, or how many times it will repeat.
+
+_Alias:_ <code>anim</code>
 
 ### Values
-_undocumented_
+{% include prop-value.html label="duration" content="animation-duration.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="animation-object.md" %}
 
 ### Example
 _undocumented_
