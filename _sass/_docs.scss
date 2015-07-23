@@ -1,6 +1,8 @@
 div.name-value-row,
 div.model-setup-row,
-div.model-props-row {
+div.model-props-row,
+div.prop-value-row,
+div.prop-format-row {
 	border-left: solid 0.2em #CCC;
 	margin: 0 0 0.2em 0.1em !important;
 	> div > p {
@@ -11,6 +13,8 @@ div.model-props-row {
 div.name-value-row { border-left-color: #CCC; }
 div.model-setup-row { border-left-color: orange; }
 div.model-props-row { border-left-color: green; }
+div.prop-value-row { border-left-color: green; }
+div.prop-format-row { border-left-color: purple; }
 
 div.play-story {
 	font-size: 1.1em;
