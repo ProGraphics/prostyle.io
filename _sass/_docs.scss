@@ -26,3 +26,25 @@ div.play-story {
 		color: #FFF;
 	}
 }
+
+span.prop-format-label {
+	background-color: transparent;
+	font-family: $font-family-monospace;
+}
+
+code, samp {
+	font-size: 0.8em;
+	color: #345;
+	background-color: #F7F7F7;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	border: none;
+	padding: rem-calc(2) rem-calc(5) rem-calc(1);
+	line-height: 1.5;
+	position: relative;
+	top: -0.1em;
+}
+
+samp { background-color: rgba(255,251,209,0.6); }
+samp.number { color: darkgreen !important; }
+samp.string { color: navy !important; }
+samp.boolean { color: purple !important; }
