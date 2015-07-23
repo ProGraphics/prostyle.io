@@ -133,7 +133,11 @@ The <code>anchor</code> property defines the [alignment](/docs/concepts/#alignme
 {% include prop-value.html label="y" content="anchor-y.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="anchor-object.md" %}
+{% include prop-format.html label="number" content="anchor-number.md" %}
+{% include prop-format.html label="string" content="anchor-string.md" %}
+{% include prop-format.html label="boolean" content="anchor-boolean.md" %}
+{% include prop-format.html label="array" content="anchor-array.md" %}
 
 ### Example
 _undocumented_
