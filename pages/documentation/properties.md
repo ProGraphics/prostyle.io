@@ -102,10 +102,15 @@ Classes are not necessarily aligned to a [model object](/docs/models/) or [prope
 ## Animation
 The <code>animation</code> pseudo-property defines the characteristics of an [animation](/docs/concepts/#animation), such as how long it will take, or how many times it will repeat.
 
-_Alias:_ <code>anim</code>
+* _alias:_ <code>anim</code>
 
 ### Values
 {% include prop-value.html label="duration" content="animation-duration.md" %}
+{% include prop-value.html label="ease" content="animation-ease.md" %}
+{% include prop-value.html label="repeat" content="animation-repeat.md" %}
+{% include prop-value.html label="repeatDelay" content="animation-repeat-delay.md" %}
+{% include prop-value.html label="yoyo" content="animation-yoyo.md" %}
+{% include prop-value.html label="stagger" content="animation-stagger.md" %}
 
 ### Formats
 {% include prop-format.html label="object" content="animation-object.md" %}
