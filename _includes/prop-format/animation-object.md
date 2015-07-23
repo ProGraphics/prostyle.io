@@ -1,5 +1,6 @@
+<p class="b30">
 Any combination of values. Omitted values will use defaults.
-
+</p>
 <pre data-ace="readonly" style="width:100%;">animation: {
   duration: 0.5, 
   ease: "linear",
