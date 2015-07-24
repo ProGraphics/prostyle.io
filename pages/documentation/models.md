@@ -78,14 +78,15 @@ Each story has only one _frame_. It is nested as a direct child of the [canvas](
 
 Like the canvas, the frame will resize as needed.  Unlike the canvas, though, the frame always maintains an aspect ratio. So regardless of how the canvas is stretched, the frame will always have the same relative proportions. The frame stays centered within the canvas.
 
-### Virtual Camera
-The frame brings each of it’s child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/docs/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
-
 ### Setup
-_undocumented_
+{% include model-setup.html label="aspectRatio" content="frame-aspect-ratio.md" %}
+{% include model-setup.html label="padding" content="frame-padding.md" %}
 
 ### Properties
 _undocumented_
+
+### Virtual Camera
+The frame brings each of it’s child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/docs/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
 
 ### Demonstration
 As the canvas is resized, the frame resizes to fit. However, the frame always maintains it's aspect ratio.  All of the content within the frame will be resized to fit as well, relative to the frame's aspect ratio.
