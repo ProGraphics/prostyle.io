@@ -1,0 +1,47 @@
+<script>
+window.Pro = window.Pro || {};
+window.Pro.Motion = window.Pro.Motion || {};
+window.Pro.Motion.Stories = window.Pro.Motion.Stories || {};
+var frame = Pro.Motion.Stories.frame = Pro.Motion.Stories.frame || {};
+
+frame.story = {
+	canvas: {padding:10, bg:"#F7F7F7"},
+	frame: {aspectRatio:1},
+	item: {
+		itemType: "layer",
+		init: {size:[100,40], border: [0.5, "#AAA", "dashed"], pos:[0,-5]},
+		actions: [
+			{anim:{duration:6,ease:"linear"}, size:[40,100]},
+			{anim:{duration:6,ease:"linear"}, size:[100,40]}],
+		items: [
+			{
+				text: "canvas",
+				init: {pos:[-50,-20], font:5, color:"#AAA", anchor:[-55,-55]},
+				actions: [
+					{anim:{duration:6,ease:"linear"}, pos:[-20,-50]},
+					{anim:{duration:6,ease:"linear"}, pos:[-50,-20]}],
+			},
+			{
+				itemType: "layer",
+				init: {size:[38,38], bg:"#EEE", border:"#094766", opacity:90},
+				actions: [
+					{anim:{duration:3,ease:"linear"}, size:[68,68]},
+					{anim:{duration:3,ease:"linear"}, size:[38,38]},
+					{anim:{duration:3,ease:"linear"}, size:[68,68]},
+					{anim:{duration:3,ease:"linear"}, size:[38,38]}],
+				items: [
+					{
+						text: "frame",
+						init: {pos:[-19,-19], font:5, color:"#094766", anchor:[-55,-55]},
+						actions: [
+							{anim:{duration:3,ease:"linear"}, pos:[-34,-34]},
+							{anim:{duration:3,ease:"linear"}, pos:[-19,-19]},
+							{anim:{duration:3,ease:"linear"}, pos:[-34,-34]},
+							{anim:{duration:3,ease:"linear"}, pos:[-19,-19]}]
+					}
+				]
+			}
+		]
+	}
+};
+</script>

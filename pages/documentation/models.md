@@ -18,7 +18,7 @@ Models are the _things_ that exist within the story. They physically exist as we
 | [Items](#){:data-toc='items'}  | Items are the core visuals, such as text, images, and charts. |
 
 ### Property Sets
-All model objects, except [flows](#){:data-toc="flows"}, have at least one set of properties. For example, a [text item](#){:data-toc="&middot;-text-item"} can be _positioned_ and _rotated_.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/docs/concepts/#scripts).
+All model objects, except [flows](#){:data-toc="flows"}, have at least one set of [properties](/docs/properties/). For example, a [text item](#){:data-toc="&middot;-text-item"} has properties to _position_ and _rotate_ the text.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/docs/concepts/#scripts).
 
 {% include alert story="/examples/colors/" %}
 <pre data-ace="readonly" style="width:100%;">{
@@ -38,7 +38,7 @@ All model objects, except [flows](#){:data-toc="flows"}, have at least one set o
 
 Some model objects have more than one set of properties.  The main set of properties uses the <code>init</code> and <code>scripts</code> entries. The additional property sets use entries named to match the set.
 
-For example, the [simple bar chart](#){:data-toc="&middot;-simple-bar-chart"} has overall chart properties, such as _position_. It also has properties for the individual bars, which are initialized with <code>barsInit</code> and scripted with <code>barScripts</code>.
+For example, the [simple bar chart](#){:data-toc="&middot;-simple-bar-chart"} has a main set of chart properties, such as _position_, which apply to the overall chart. It also has properties for the individual bars, which are initialized with <code>barsInit</code> and scripted with <code>barScripts</code>.
 
 The [text item](#){:data-toc="&middot;-text-item"} actually has _four_ sets of properties; one for the overall text, plus one for each of the sets of lines, words, and characters.  Therefore, a text item might have <code>init</code>, <code>scripts</code>, <code>linesInit</code>, <code>lineScripts</code>, <code>wordsInit</code>, <code>wordScripts</code>, <code>charsInit</code> and <code>charScripts</code> entries.
 
@@ -48,7 +48,7 @@ Because [step scripts](/docs/concepts/#steps) are only available for _pages_ and
 <hr class="t60 b60">
 
 ## Canvas
-The Canvas is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. Pro Motion will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
+The _canvas_ is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. Pro Motion will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
 
 The canvas contains a single [frame](#){:data-toc='frame'}.
 
@@ -74,7 +74,12 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Frame
-_undocumented_
+Each story has only one _frame_. It is nested as a direct child of the [canvas](#){:data-toc="canvas"}. The frame contains one or more [flow](#){:data-toc="flows"} objects.
+
+Like the canvas, the frame will resize as needed.  Unlike the canvas, though, the frame always maintains an aspect ratio. So regardless of how the canvas is stretched, the frame will always have the same relative proportions. The frame stays centered within the canvas.
+
+### Virtual Camera
+The frame brings each of it’s child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/docs/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
 
 ### Setup
 _undocumented_
@@ -82,10 +87,16 @@ _undocumented_
 ### Properties
 _undocumented_
 
-### Example
-_undocumented_
+### Demonstration
+As the canvas is resized, the frame resizes to fit. However, the frame always maintains it's aspect ratio.  All of the content within the frame will be resized to fit as well, relative to the frame's aspect ratio.
 
-<hr class="t60 b60">
+<div class="row">
+	<div class="medium-9 large-7 medium-centered large-centered columns">
+		<div data-pro-motion="frame">frame</div>		
+	</div>
+</div>
+
+<hr class="t0 b60">
 
 ## Flows
 _undocumented_
