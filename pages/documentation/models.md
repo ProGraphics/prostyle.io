@@ -107,8 +107,16 @@ As the canvas is resized, the frame resizes to fit. However, the frame always ma
 <hr class="t0 b60">
 
 ## Flows
-_undocumented_
+_Flows_ provide complex orchestration and animation of [pages](#){:data-toc="pages"}. For that reason, they are sometimes referred to as _page flows_. Every story has at least one flow, but can have many.
 
+There are some setup values common to all flow types, but individual flow types can have their own. Flows do not have properties.
+
+Flows are positioned in [3D](/docs/concepts/#3d) space and brought into the frame in order, one after the other.  As the last page of a flow completes, the [virtual camera](#){:data-toc="virtual-camera"} moves to show the first page of the next flow.
+
+### Standard Setup
+The following are common to all flow types.
+
+_undocumented_
 
 ##&middot; Simple Flow
 {:class="font-size-h3"}
