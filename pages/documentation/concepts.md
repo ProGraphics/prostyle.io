@@ -12,6 +12,8 @@ Pro Motion animations are referred to as _stories_. They are translated from [JS
 ## Story
 Each story is composed of a _canvas_, a _frame_, and one or more _flows_. Each flow contains one or more _pages_, and each page contains one or more _items_.
 
+Pro Motion renders the tree of model objects into a tree of rendered HTML and SVG content and an [timeline](#){:data-toc="timeline"} that animates the content's [properties](/docs/properties/).
+
 ### Model Objects
 Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/docs/properties/) and [positioned](#){:data-toc='placement'}. Their properties may be animated with scripts.
 
@@ -233,33 +235,53 @@ Unlike setup, properties _can_ be changed.  They are initialized in an <code>ini
 
 <hr class="t60 b60">
 
-## Property Sets
-_undocumented_
-
-### Multiple
-_undocumented_
-
-<hr class="t60 b60">
-
 ## Animation
-_undocumented_
+Animation is the changing of [properties](/docs/properties/) over time using [scripts](#){:data-toc="scripts"}. Pro Motion correlates the scripts as [steps](#){:data-toc="steps"} and translates them into a sequence of commands called a [timeline](#){:data-toc="timeline"}.
 
 ### Timeline
-_undocumented_
+After reading the [JSON](#){:data-toc="json"}, Pro Motion renders and inserts the HTML and SVG into the web page, and translates the [scripts](#){:data-toc="scripts"} into a sequence of commands called a _timeline_.  Think of the timeline like a movie player.  It is linear.  The player will play from beginning to end, and the playhead can be seeked to any time as needed.
 
 ### Steps
-_undocumented_
+The timeline has markers called steps. Multiple scripts can be processed simultaneously in any step. The next step does not start until all scripts in the prior step complete. The total duration of a step is the duration of the longest script it contains. The steps belong to a page.  Every page contains one or more steps.
+
+Pro Motion determines all of the scripts on a page, which includes the page’s scripts, any canvasScripts or frameScripts, and all of the scripts for the page’s items.  Each script is associated with a step using the step event.  The timeline is then generated.
+
+Each step is associated with a single page, and each page is a member of a single flow.  Therefore, any given playhead position in the timeline is associated with one flow, one page, and one step.
 
 ### Scripts
-_undocumented_
+A script is a sequence of one or more actions which are processed when an event occurs.
+
+A script’s actions are always processed in order, one after the other. The total duration of a script is the sum of the durations of it’s actions. Extending the duration of an action pushes out the start of any remaining actions.
+
+Multiple scripts can run simultaneously, in parallel. The blending of parallel script execution, each processing a set of actions in series, makes Pro Motion very powerful.  It’s easy to make simple animations, yet flexible enough for complex interactions.
+
+#### Events
+
+Events trigger the start of scripts. There is currently only one kind of event; when a step has started. Other event types are under consideration for future versions. e.g. mouse and touch interaction.
+
+Scripts have an event parameter, which can be “step1“, “step2“, “step3“, …
+
+* If the event parameter is omitted, the default value is “step1“
+* A value of “step” is an alias for “step1“
+
+#### Actions
+
+Actions do things, such as set property values. The duration of the action is the sum of the delay and animation values.
+
+* An action can have a delay property which describes how long to wait until the changes begin.
+* An action can have an animation property which describes how to change from old property values to new ones.
+
+If two scripts attempt to change the same property value of the same model object at the same time, the second one will win.  The first one will be cancelled.
 
 ### Eases
-_undocumented_
+Eases are used to control how quickly or slowly a change occurs relative to the constant pace of time. Eases are sometimes referred to as _timing functions_, because they map the elapsed time within the duration of the animation to the completion percentage of the property change. Easing can be used to apply an effect, like bouncing or elasticity.
 
 ### Staggering
-_undocumented_
+When there are multiple targets, like bars in a chart or characters in text, each can be staggered to start after the prior.
+
 
 <hr class="t60 b60">
+
 
 ## Alignment
 _undocumented_
