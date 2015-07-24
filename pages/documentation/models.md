@@ -83,7 +83,14 @@ Like the canvas, the frame will resize as needed.  Unlike the canvas, though, th
 {% include model-setup.html label="padding" content="frame-padding.md" %}
 
 ### Properties
-_undocumented_
+Frame properties may be [scripted](/docs/concepts/#scripts) with a <code>frameScripts</code> entry on a page.
+{% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="background" content="standard-background.md" %}
+{% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="corners" content="standard-corners.md" %}
+{% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="shadow" content="standard-shadow.md" %}
 
 ### Virtual Camera
 The frame brings each of it’s child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/docs/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
