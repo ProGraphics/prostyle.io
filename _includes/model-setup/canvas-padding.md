@@ -1,8 +1,8 @@
-The amount of space injected between the _canvas_ and the _frame_. The value represents a percentage of the canvas width.
+<p class="b20" markdown="1">The amount of space injected between the _canvas_ and the _frame_. The value represents a percentage of the canvas width.</p>
 
-Valid values range from 0 to 50, although a value of 50 (50% on each side) would shrink the frame down to nothing.
+<p class="b20" markdown="1">Valid values range from <samp class="number">0</samp> to <samp class="number">50</samp>, although a value of _50_ (50% on each side) would shrink the frame down to nothing.</p>
 
-default value: <samp>0</samp>
+* _default value:_ <samp class="number">0</samp>
 
 <pre data-ace="readonly" style="width:100%;">{
   canvas:{
