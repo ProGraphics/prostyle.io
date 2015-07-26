@@ -126,7 +126,7 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Anchor
-The <code>anchor</code> property defines the [alignment](/docs/concepts/#alignment) of an [item](/docs/models/#items). Anchor values are a percentage of the item’s _natural dimensions_, the actual width and height. For example, the natural dimensions of a text item are effected by the [border](#){:data-toc="border"}, the [font](#){:data-toc="font"}, line wrapping due to the [text width](#){:data-toc="text-width"} property, and so forth.
+The <code>anchor</code> property defines the [alignment](/docs/concepts/#alignment) of an [item](/docs/models/#items). Anchor values are a percentage of the item’s _natural dimensions_, the actual width and height. For example, the natural dimensions of a text item are affected by the [border](#){:data-toc="border"}, the [font](#){:data-toc="font"}, line wrapping due to the [text width](#){:data-toc="text-width"} property, and so forth.
 
 ### Values
 {% include prop-value.html label="x" content="anchor-x.md" %}
