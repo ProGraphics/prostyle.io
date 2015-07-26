@@ -309,13 +309,13 @@ When there are multiple targets, like bars in a chart or characters in text, eac
 
 
 ## Alignment
-_undocumented_
+Unlike traditional web graphics, Pro Motion is designed to work with _center alignment_.  Add an [item](/docs/models/#items) to a [page](/docs/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Plus, because the [frame](/docs/models/#frame) maintains it's [aspect ratio](/docs/models/#demonstration), the animation will look the same on any screen of any size.
 
 ### Anchor
-_undocumented_
+With center alignment, the _center of the item_ is positioned on the _center of it’s container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/docs/properties/#anchor) and a [position property](/docs/properties/#position). Both default to <code>[0,0]</code>, which is the center of each. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.
 
 ### Transform Origin
-_undocumented_
+The _transform origin_, like the _anchor_, is a reference point on the item.  It defines the point that transforms are relative to.  For instance, to rotate an item around it's top left corner, the transform origin would be set to <code>[-50,-50]</code>. By default, items rotate around their center because the transform origin is initially set to <code>[0,0]</code>.
 
 <hr class="t60 b60">
 
