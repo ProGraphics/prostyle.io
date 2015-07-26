@@ -9,7 +9,7 @@ description: "Pro Motion is a JavaScript library that makes it easy to craft and
 
 # This URL is the main adresse. Don't include a slash at the end.
 #
-url: "https://pro.io"
+url: "http://pro.io"
 baseurl: ""
 
 # This is for the editing function in _/includes/improve_content.html
@@ -22,7 +22,7 @@ improve_content: https://github.com/pro-graphics/pro.io/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "https://pro.io/images/"
+urlimg: "http://pro.io/images/"
 
 
 # See http://jekyllrb.com/docs/pagination/
