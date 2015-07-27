@@ -1,20 +1,20 @@
-title: "Pro Motion"
+title: "ProStyle"
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: "Craft Rich Animations with Ease™"
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "Pro Motion is a JavaScript library that makes it easy to craft and play rich web animations with timelines."
+description: "ProStyle is a JavaScript library that makes it easy to craft and play rich web animations with timelines."
 
 
 # This URL is the main adresse. Don't include a slash at the end.
 #
-url: "http://pro.io"
+url: "http://prostyle.io"
 baseurl: ""
 
 # This is for the editing function in _/includes/improve_content.html
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/pro-graphics/pro.io/edit/gh-pages
+improve_content: https://github.com/pro-graphics/prostyle.io/edit/gh-pages
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash.
@@ -22,7 +22,7 @@ improve_content: https://github.com/pro-graphics/pro.io/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "http://pro.io/images/"
+urlimg: "http://prostyle.io/images/"
 
 
 # See http://jekyllrb.com/docs/pagination/
