@@ -1,25 +1,25 @@
 - name: GitHub
-  url: https://github.com/Pro-Graphics
+  url: https://github.com/Pro-Graphics/
   class: "fa fa-github"
-  title: "Pro Motion GitHub"
+  title: "ProStyle GitHub"
 
 - name: GitHub2
-  url: https://github.com/GaryChamberlain
+  url: https://github.com/GaryChamberlain/
   class: "fa fa-github"
   title: "Gary Chamberlain GitHub"
 
 - name: YouTube
-  url: http://www.youtube.com/GaryChamberlain
+  url: http://www.youtube.com/GaryChamberlain/
   class: "fa fa-youtube-play"
   title: "YouTube Videos"
 
 - name: Twitter
-  url: http://twitter.com/chamberlaingary
+  url: http://twitter.com/chamberlaingary/
   class: "fa fa-twitter"
   title: "Twitter"
 
 - name: Facebook
-  url: https://www.facebook.com/gary.j.chamberlain
+  url: https://www.facebook.com/gary.j.chamberlain/
   class: "fa fa-facebook"
   title: "Facebook"
 

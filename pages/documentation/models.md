@@ -48,7 +48,7 @@ Because [step scripts](/docs/concepts/#steps) are only available for _pages_ and
 <hr class="t60 b60">
 
 ## Canvas
-The _canvas_ is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. Pro Motion will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
+The _canvas_ is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. ProStyle will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
 
 The canvas contains a single [frame](#){:data-toc='frame'}.
 
@@ -100,7 +100,7 @@ As the canvas is resized, the frame resizes to fit. However, the frame always ma
 
 <div class="row">
 	<div class="medium-9 large-7 medium-centered large-centered columns">
-		<div data-pro-motion="frame">frame</div>		
+		<div data-prostyle="frame">frame</div>		
 	</div>
 </div>
 

@@ -1,2 +1,2 @@
-# pro.io
-[Pro Motion](https://github.com/pro-graphics/pro-motion) Documentation
+# prostyle.io
+[ProStyle](https://github.com/pro-graphics/prostyle) Documentation

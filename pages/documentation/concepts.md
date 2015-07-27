@@ -7,12 +7,12 @@ ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
-Pro Motion animations are referred to as _stories_. They are translated from [JSON](#){:data-toc='json'} into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline'} instructs how the content's [properties](#){:data-toc='properties'} are changed over time.
+ProStyle animations are referred to as _stories_. They are translated from [JSON](#){:data-toc='json'} into _web content_ and a _timeline_. The [timeline](#){:data-toc='timeline'} instructs how the content's [properties](#){:data-toc='properties'} are changed over time.
 
 ## Story
 Each story is composed of a _canvas_, a _frame_, and one or more _flows_. Each flow contains one or more _pages_, and each page contains one or more _items_.
 
-Pro Motion renders the tree of model objects into a tree of rendered HTML and SVG content and an [timeline](#){:data-toc="timeline"} that animates the content's [properties](/docs/properties/).
+ProStyle renders the tree of model objects into a tree of rendered HTML and SVG content and an [timeline](#){:data-toc="timeline"} that animates the content's [properties](/docs/properties/).
 
 ### Model Objects
 Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/docs/properties/) and [positioned](#){:data-toc='placement'}. Their properties may be animated with scripts.
@@ -81,7 +81,7 @@ Pages and items may have scripts. Each script has actions such as to animate pro
 
 
 ### Shortcuts
-To keep story documents concise, Pro Motion supports shortcuts.  There are three kinds.
+To keep story documents concise, ProStyle supports shortcuts.  There are three kinds.
 
 1.  Flows, Pages and Items
 2.  Scripts and Actions
@@ -124,12 +124,12 @@ Furthermore, if there is only one page, and that page doesn't override the defau
   item: {...}
 }</pre>
 
-When parsing a story, Pro Motion searches for and uses, _in order_, <code>flows</code>, <code>flow</code>, <code>pages</code>, <code>page</code>, <code>items</code>, <code>item</code>. Only one will be used. Once one is found, _others are ignored_.
+When parsing a story, ProStyle searches for and uses, _in order_, <code>flows</code>, <code>flow</code>, <code>pages</code>, <code>page</code>, <code>items</code>, <code>item</code>. Only one will be used. Once one is found, _others are ignored_.
 
 #### Scripts and Actions
 Scripts and actions may be shortcutted like flows, pages, and items.  If there are multiple scripts, then a <code>scripts</code> entry must be used. Otherwise, just use <code>script</code>.  If the one script is the default <code>scriptType</code> (step) then just use <code>actions</code> or <code>action</code> depending upon the count of actions.
 
-Pro Motion searches for and uses, _in order_, <code>scripts</code>, <code>script</code>, <code>actions</code>, <code>action</code>. Only one will be used. Once one is found, _others are ignored_.
+ProStyle searches for and uses, _in order_, <code>scripts</code>, <code>script</code>, <code>actions</code>, <code>action</code>. Only one will be used. Once one is found, _others are ignored_.
 
 Note that some model objects have [multiple sets of properties](#){:data-toc='multiple'}. For example, the text item has word properties. When shortcutting, prefix the name of the property set. e.g. _wordScript_, _wordActions_, _wordAction_, etc.
 
@@ -153,13 +153,13 @@ JavaScript Object Notation is a simple text file format. It uses named values.  
 
 <div class="row">
   <div class="small-12 medium-10 medium-centered large-8 columns">
-		{% include alert text="Pro Motion uses a lenient form of JSON called <a rel='nofollow' target='_blank' href='http://json5.org/'>JSON5</a>." %}
+		{% include alert text="ProStyle uses a lenient form of JSON called <a rel='nofollow' target='_blank' href='http://json5.org/'>JSON5</a>." %}
 	</div>
 </div>
 
 <div class="row">
   <div class="small-12 medium-10 medium-centered large-8 columns">
-		{% include alert warning="JSON supports others types of values, but these 5 are what you’ll use with Pro Motion." %}
+		{% include alert warning="JSON supports others types of values, but these 5 are what you’ll use with ProStyle." %}
 	</div>
 </div>
 
@@ -183,7 +183,7 @@ There are three primitive value types.
 
 <pre data-ace="readonly" style="width:100%;">{
   year: 2015,
-  title: "Pro Motion",
+  title: "ProStyle",
   awesome: true
 }</pre>
 
@@ -212,11 +212,11 @@ Arrays are lists of values. They are enclosed in square [ ] brackets. Listed ite
 _Setup_ and _properties_ are two distinct ways that [model objects](/docs/models/) are configured. The difference is subtle, but important.
 
 ### Setup
-Setup defines one-time configuration, which is core to how the model object works. Setup values are _immutable_.  That means that they are set once and cannot be changed.  Pro Motion uses the setup to render and optimize the object.  For instance, setup values might render determine what HTML or SVG content to use. Setup values are defined in a <code>setup</code> entry.
+Setup defines one-time configuration, which is core to how the model object works. Setup values are _immutable_.  That means that they are set once and cannot be changed.  ProStyle uses the setup to render and optimize the object.  For instance, setup values might render determine what HTML or SVG content to use. Setup values are defined in a <code>setup</code> entry.
 
 <pre data-ace="readonly" style="width:100%;">{
   itemType: "text",
-  setup: { text: "Pro Motion!" }
+  setup: { text: "ProStyle!" }
 }</pre>
 
 ### Properties
@@ -224,7 +224,7 @@ Unlike setup, properties _can_ be changed.  They are initialized in an <code>ini
 
 <pre data-ace="readonly" style="width:100%;">{
   itemType: "text",
-  setup: { text: "Pro Motion!" },
+  setup: { text: "ProStyle!" },
   init: { opacity: 50 }.
   scripts: [
     { 
@@ -239,7 +239,7 @@ Unlike setup, properties _can_ be changed.  They are initialized in an <code>ini
 _Animation_ is the [changing of properties](/docs/properties/#animation) over time using [scripts](#){:data-toc="scripts"}. Multiple scripts may run concurrently within a [step](#){:data-toc="steps"}, and the steps are sequenced into a _timeline_.
 
 ### Timeline
-After reading the [JSON](#){:data-toc="json"}, Pro Motion inserts the required HTML and SVG into the web page, and sequences the [scripts](#){:data-toc="scripts"} into a _timeline_.  Think of the timeline like a movie player.  It is linear.  The player will play from beginning to end, and the playhead can be seeked to any time as needed.
+After reading the [JSON](#){:data-toc="json"}, ProStyle inserts the required HTML and SVG into the web page, and sequences the [scripts](#){:data-toc="scripts"} into a _timeline_.  Think of the timeline like a movie player.  It is linear.  The player will play from beginning to end, and the playhead can be seeked to any time as needed.
 
 <p><div class="row">
 <div class="medium-8 medium-centered large-6 columns">
@@ -258,12 +258,12 @@ A _script_ is a sequence of one or more _actions_. A script's actions are execut
 
 The total duration of a script is the sum of the durations of it’s actions. Extending the duration of an action pushes out the start of any remaining actions.
 
-The combination of serial _steps_ of parallel _scripts_ of serial _actions_ makes Pro Motion very powerful.  It’s easy to craft simple animations, yet flexible enough for complex interactions.
+The combination of serial _steps_ of parallel _scripts_ of serial _actions_ makes ProStyle very powerful.  It’s easy to craft simple animations, yet flexible enough for complex interactions.
 
 
 #### Set-Properties Action
 
-Actions do things, such as set property values. Currently, Pro Motion only supports one type of action: _set properties_.  So, the default <code>actionType</code> entry is <samp class="string">"properties"</samp>.  Future versions of Pro Motion might support other types of actions. 
+Actions do things, such as set property values. Currently, ProStyle only supports one type of action: _set properties_.  So, the default <code>actionType</code> entry is <samp class="string">"properties"</samp>.  Future versions of ProStyle might support other types of actions. 
 
 <p><div class="row">
 <div class="medium-8 medium-centered large-6 columns">
@@ -293,7 +293,7 @@ Scripts have an event parameter, which can be “step1“, “step2“, “step3
 ### Steps
 The timeline has markers called _steps_. Multiple scripts can be processed simultaneously starting at a step. The next step does not start until all scripts in the prior step complete. The total duration of a step is the duration of the longest script it contains. The steps belong to a page.  Every page contains one or more steps.
 
-Pro Motion determines all of the scripts on a page, which includes the page’s scripts, any canvasScripts or frameScripts, and all of the scripts for the page’s items.  Each script is associated with a step using the step event.  The timeline is then generated.
+ProStyle determines all of the scripts on a page, which includes the page’s scripts, any canvasScripts or frameScripts, and all of the scripts for the page’s items.  Each script is associated with a step using the step event.  The timeline is then generated.
 
 Each step is associated with a single page, and each page is a member of a single flow.  Therefore, any given playhead position in the timeline is associated with one flow, one page, and one step.
 
@@ -309,7 +309,7 @@ When there are multiple targets, like bars in a chart or characters in text, eac
 
 
 ## Alignment
-Unlike traditional web graphics, Pro Motion is designed to work with _center alignment_.  Add an [item](/docs/models/#items) to a [page](/docs/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Plus, because the [frame](/docs/models/#frame) maintains it's [aspect ratio](/docs/models/#demonstration), the animation will look the same on any screen of any size.
+Unlike traditional web graphics, ProStyle is designed to work with _center alignment_.  Add an [item](/docs/models/#items) to a [page](/docs/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Plus, because the [frame](/docs/models/#frame) maintains it's [aspect ratio](/docs/models/#demonstration), the animation will look the same on any screen of any size.
 
 ### Anchor
 With center alignment, the _center of the item_ is positioned on the _center of it’s container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/docs/properties/#anchor) and a [position property](/docs/properties/#position). Both default to <code>[0,0]</code>, which is the center of each. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.

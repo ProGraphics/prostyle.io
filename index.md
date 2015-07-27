@@ -5,7 +5,7 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "Pro Motion"
+title: "ProStyle"
 hdr: "FrontPage"
 breadcrumbs: false
 extensions:

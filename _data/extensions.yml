@@ -1,5 +1,5 @@
 - name: "item.simpleBarChart"
-  url: "/assets/js/pro.motion.item.simpleBarChart.js"
+  url: "/assets/js/prostyle.item.simpleBarChart.min.js"
 
 - name: "flow.pageStack"
-  url: "https://d2buqb93zlai30.cloudfront.net/js/0.17/pro.motion.flow.pageStack.min.js"
+  url: "/assets/js/prostyle.flow.pageStack.min.js"
