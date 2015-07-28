@@ -146,13 +146,21 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Background
-_undocumented_
+The <code>background</code> property configures the look of the rectangular background.
 
 ### Values
-_undocumented_
+{% include prop-value.html label="color" content="background-color.md" %}
+{% include prop-value.html label="image" content="background-image.md" %}
+{% include prop-value.html label="repeat" content="background-repeat.md" %}
+{% include prop-value.html label="position" content="background-position.md" %}
+{% include prop-value.html label="size" content="background-size.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="background-object.md" %}
+{% include prop-format.html label="number" content="background-number.md" %}
+{% include prop-format.html label="string" content="background-string.md" %}
+{% include prop-format.html label="boolean" content="background-boolean.md" %}
+{% include prop-format.html label="array" content="background-array.md" %}
 
 ### Example
 _undocumented_
@@ -161,13 +169,19 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Border
-_undocumented_
+The <code>border</code> property draws a line around the outer edge. The [corners](#){:data-toc="corners"} property may be used to round the corners.
 
 ### Values
-_undocumented_
+{% include prop-value.html label="color" content="border-color.md" %}
+{% include prop-value.html label="size" content="border-size.md" %}
+{% include prop-value.html label="style" content="border-style.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="border-object.md" %}
+{% include prop-format.html label="number" content="border-number.md" %}
+{% include prop-format.html label="boolean" content="border-boolean.md" %}
+{% include prop-format.html label="array" content="border-array.md" %}
+{% include prop-format.html label="string" content="border-string.md" %}
 
 ### Example
 _undocumented_
@@ -176,13 +190,19 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Bullets
-_undocumented_
+The <code>bullets</code> property renders a graphical element on the left side of each line.
+
+There are many styles of bullets.
 
 ### Values
-_undocumented_
+{% include prop-value.html label="style" content="bullets-style.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="bullets-object.md" %}
+{% include prop-format.html label="string" content="bullets-string.md" %}
+{% include prop-format.html label="boolean" content="bullets-boolean.md" %}
+{% include prop-format.html label="number" content="bullets-number.md" %}
+{% include prop-format.html label="array" content="bullets-array.md" %}
 
 ### Example
 _undocumented_
@@ -206,13 +226,22 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Corners
-_undocumented_
+The <code>corners</code> property defines whether each corner is rounded or comes to a point.
+
+Each corner radius is a _percentage_ of the height of the container the item is within. They are not a percentage of the dimensions of the item itself, by design. For example, a text item might have it’s [textWidth](#){:data-toc="text-width"} property set, which causes word wrapping.  Regardless of how many lines of text are wrapped, the corner radii will stay consistent, because the containing page dimensions do not change.
 
 ### Values
-_undocumented_
+{% include prop-value.html label="topLeft" content="corners-topLeft.md" %}
+{% include prop-value.html label="topRight" content="corners-topRight.md" %}
+{% include prop-value.html label="bottomRight" content="corners-bottomRight.md" %}
+{% include prop-value.html label="bottomLeft" content="corners-bottomLeft.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="corners-object.md" %}
+{% include prop-format.html label="number" content="corners-number.md" %}
+{% include prop-format.html label="boolean" content="corners-boolean.md" %}
+{% include prop-format.html label="array" content="corners-array.md" %}
+{% include prop-format.html label="string" content="corners-string.md" %}
 
 ### Example
 _undocumented_
@@ -281,13 +310,23 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Font
-_undocumented_
+The font property is used to set the typeface and line size of rendered text.
+
+Modern web browsers generally support a standard set of font faces, commonly referred to as web safe fonts. Any of these fonts may be used.  Furthermore, any external font faces may be loaded in the HTML and used, such as those at Google Fonts.
+
+While it is possible to animate the size and lineHeight values, it is a relatively high computational process to render text, and might result in jerky animation.  For better performance, define the font properties once and then use the scale property.
 
 ### Values
-_undocumented_
+{% include prop-value.html label="family" content="font-family.md" %}
+{% include prop-value.html label="size" content="font-size.md" %}
+{% include prop-value.html label="lineHeight" content="font-lineHeight.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="font-object.md" %}
+{% include prop-format.html label="number" content="font-number.md" %}
+{% include prop-format.html label="string" content="font-string.md" %}
+{% include prop-format.html label="array" content="font-array.md" %}
+{% include prop-format.html label="boolean" content="font-boolean.md" %}
 
 ### Example
 _undocumented_
@@ -311,13 +350,19 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Opacity
-_undocumented_
+The opacity property determines how transparent the target is. Hardware acceleration is used when available, so the animation is usually quite smooth.
+
+Alias: opac
 
 ### Values
-_undocumented_
+{% include prop-value.html label="percent" content="opacity-percent.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="opacity-object.md" %}
+{% include prop-format.html label="number" content="opacity-number.md" %}
+{% include prop-format.html label="boolean" content="opacity-boolean.md" %}
+{% include prop-format.html label="array" content="opacity-array.md" %}
+{% include prop-format.html label="string" content="opacity-string.md" %}
 
 ### Example
 _undocumented_
@@ -326,13 +371,21 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Padding
-_undocumented_
+The padding property defines how much extra space appears between a target’s edge and the content within. Padding can be defined on any or all of the four sides.  The top and bottom values are a percentage of the height of the container. e.g. item on a page. The left and right values are a percentage of the width of the container.
+
 
 ### Values
-_undocumented_
+{% include prop-value.html label="left" content="padding-left.md" %}
+{% include prop-value.html label="top" content="padding-top.md" %}
+{% include prop-value.html label="right" content="padding-right.md" %}
+{% include prop-value.html label="bottom" content="padding-bottom.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="padding-object.md" %}
+{% include prop-format.html label="number" content="padding-number.md" %}
+{% include prop-format.html label="boolean" content="padding-boolean.md" %}
+{% include prop-format.html label="array" content="padding-array.md" %}
+{% include prop-format.html label="string" content="padding-string.md" %}
 
 ### Example
 _undocumented_
@@ -341,13 +394,25 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Position
-_undocumented_
+The position property determines where a target object is located in 3D space. The X axis extends from left to right, and the Y axis extends from top to bottom. Also, an imaginary Z axis extends from behind the screen, through the screen, to in front of it.  All three axes intersect in the middle of the page.
+
+Unlike standard web animation, Pro Motion uses center alignment. See Alignment and Origins.  The position defines where the target’s anchor is, which by default is at the center of the target’s dimensions.
+
+Hardware acceleration is used when available, so the animation is usually quite smooth.
+
+Alias: pos
 
 ### Values
-_undocumented_
+{% include prop-value.html label="x" content="position-x.md" %}
+{% include prop-value.html label="y" content="position-y.md" %}
+{% include prop-value.html label="z" content="position-z.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="position-object.md" %}
+{% include prop-format.html label="array" content="position-array.md" %}
+{% include prop-format.html label="number" content="position-number.md" %}
+{% include prop-format.html label="boolean" content="position-boolean.md" %}
+{% include prop-format.html label="string" content="position-string.md" %}
 
 ### Example
 _undocumented_
@@ -356,13 +421,30 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Rotation
-_undocumented_
+The rotation property turns a target object in 3D space. There are three axes. The X axis extends horizontally, the Y axis extends vertically, and the Z axis extends from back to front. The position in which all three axes intersect is called the transform origin. By default, it is located in the center of the target object, but can be adjusted with the transformOrigin property. See Alignment and Origins.
+
+Standard two dimensional rotation is the equivalent of rotating around the z axis in 3D. Picture an axis line poking perpendicularly through the center of an image, and then the image rotating around that z axis. With Pro Motion, you can rotate around all three axes independently. Some visually attractive effects can be achieved by rotating along all three axes, but in different scripts, at different speeds.
+
+Values are always absolute angles, in degrees.  They are not added to any existing values. The property is therefore named rotation, not rotate, since the latter might incorrectly hint that it is relative. Nevertheless, rotate can be used as an alias, but the values are always absolute.
+
+When animating, Pro Motion will tween from the current rotation to the new one.  For example, an object rotated 360 degrees will look the same as if it were rotated 0 degrees. However, when animating, it will rotate around one revolution.  To turn it two times, counterclockwise, you could set the rotation to -720.
+
+Hardware acceleration is used when available, so the animation is usually quite smooth.
+
+Aliases: rot, rotate
+
 
 ### Values
-_undocumented_
+{% include prop-value.html label="x" content="rotation-x.md" %}
+{% include prop-value.html label="y" content="rotation-y.md" %}
+{% include prop-value.html label="z" content="rotation-z.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="rotation-object.md" %}
+{% include prop-format.html label="array" content="rotation-array.md" %}
+{% include prop-format.html label="number" content="rotation-number.md" %}
+{% include prop-format.html label="boolean" content="rotation-boolean.md" %}
+{% include prop-format.html label="string" content="rotation-string.md" %}
 
 ### Example
 _undocumented_
@@ -371,13 +453,21 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Scale
-_undocumented_
+The scale property stretches the target in x and y directions.   Hardware acceleration is used when available, so the animation is usually quite smooth.  However, the target will look increasingly pixelated with larger scale values.
+
+The actual width and height of a target is referred to as it’s natural dimensions. The way the size is determined is specific to the type of the target. For instance, the text item uses a font property, which has values that determine the height of each text line. The textWidth property might induce line wrapping.  Those properties and others, such as border and padding, contribute to the natural dimensions of the item.
+
 
 ### Values
-_undocumented_
+{% include prop-value.html label="x" content="scale-x.md" %}
+{% include prop-value.html label="y" content="scale-y.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="scale-object.md" %}
+{% include prop-format.html label="number" content="scale-number.md" %}
+{% include prop-format.html label="boolean" content="scale-boolean.md" %}
+{% include prop-format.html label="array" content="scale-array.md" %}
+{% include prop-format.html label="string" content="scale-string.md" %}
 
 ### Example
 _undocumented_
@@ -386,13 +476,26 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Shadow
-_undocumented_
+The shadow property adds one or more shadows to the surrounding box. Shadows may be standard drop shadows, outside the box.  They may also be inset, inside the surrounding box, which appear like a cutout hole.
+
+The shadow gives the appearance of depth. However, it is rendered on the same two dimensional plane as the target.  If you rotate the target, for instance, the shadow rotates with it.  See 3D.
+
+alias: shadows
 
 ### Values
-_undocumented_
+{% include prop-value.html label="x" content="shadow-x.md" %}
+{% include prop-value.html label="y" content="shadow-y.md" %}
+{% include prop-value.html label="blur" content="shadow-blur.md" %}
+{% include prop-value.html label="color" content="shadow-color.md" %}
+{% include prop-value.html label="spread" content="shadow-spread.md" %}
+{% include prop-value.html label="inset" content="shadow-inset.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="shadow-object.md" %}
+{% include prop-format.html label="boolean" content="shadow-boolean.md" %}
+{% include prop-format.html label="number" content="shadow-number.md" %}
+{% include prop-format.html label="array" content="shadow-array.md" %}
+{% include prop-format.html label="string" content="shadow-string.md" %}
 
 ### Example
 _undocumented_
@@ -416,13 +519,20 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Skew
-_undocumented_
+The skew property applies a left or right slant to the target. Hardware acceleration is used when available, so the animation is usually quite smooth.
+
+Pro Motion only supports skewing in the horizontal direction, but vertical skewing can be emulated by skewing horizontally and also rotating.
+
 
 ### Values
-_undocumented_
+{% include prop-value.html label="degrees" content="skew-degrees.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="skew-object.md" %}
+{% include prop-format.html label="number" content="skew-number.md" %}
+{% include prop-format.html label="boolean" content="skew-boolean.md" %}
+{% include prop-format.html label="array" content="skew-array.md" %}
+{% include prop-format.html label="string" content="skew-string.md" %}
 
 ### Example
 _undocumented_
@@ -431,13 +541,19 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Text Align
-_undocumented_
+The textAlign property positions the contents of rendered lines of text, relative to each other.
+
+alias: align
 
 ### Values
-_undocumented_
+{% include prop-value.html label="align" content="textAlign-align.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="textAlign-object.md" %}
+{% include prop-format.html label="string" content="textAlign-string.md" %}
+{% include prop-format.html label="boolean" content="textAlign-boolean.md" %}
+{% include prop-format.html label="number" content="textAlign-number.md" %}
+{% include prop-format.html label="array" content="textAlign-array.md" %}
 
 ### Example
 _undocumented_
@@ -446,13 +562,20 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Text Color
-_undocumented_
+The textColor property defines the color of text.
+
+alias: color
 
 ### Values
-_undocumented_
+{% include prop-value.html label="color" content="textColor-color.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="textColor-object.md" %}
+{% include prop-format.html label="string" content="textColor-string.md" %}
+{% include prop-format.html label="number" content="textColor-number.md" %}
+{% include prop-format.html label="boolean" content="textColor-boolean.md" %}
+{% include prop-format.html label="array" content="textColor-array.md" %}
+
 
 ### Example
 _undocumented_
@@ -461,13 +584,24 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Text Shadow
-_undocumented_
+The textShadow property adds one or more shadows to the text itself. Text shadows are very similar to box shadows, however the spread and inset values are not supported.
+
+The shadow gives the appearance of depth. However, it is rendered on the same two dimensional plane as the text.  If you rotate the text, for instance, the shadow rotates with it.  See 3D.
+
+alias: textShadows
 
 ### Values
-_undocumented_
+{% include prop-value.html label="x" content="textShadow-x.md" %}
+{% include prop-value.html label="y" content="textShadow-y.md" %}
+{% include prop-value.html label="blur" content="textShadow-blur.md" %}
+{% include prop-value.html label="color" content="textShadow-color.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="textShadow-object.md" %}
+{% include prop-format.html label="boolean" content="textShadow-boolean.md" %}
+{% include prop-format.html label="number" content="textShadow-number.md" %}
+{% include prop-format.html label="array" content="textShadow-array.md" %}
+{% include prop-format.html label="string" content="textShadow-string.md" %}
 
 ### Example
 _undocumented_
@@ -476,13 +610,22 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Text Style
-_undocumented_
+The textStyle property defines how to visually augment the text to call attention to it.
+
+aliases:  textStyles, styles, style
 
 ### Values
-_undocumented_
+{% include prop-value.html label="bold" content="textStyle-bold.md" %}
+{% include prop-value.html label="italic" content="textStyle-italic.md" %}
+{% include prop-value.html label="line" content="textStyle-line.md" %}
+{% include prop-value.html label="smallCaps" content="textStyle-smallCaps.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="textStyle-object.md" %}
+{% include prop-format.html label="string" content="textStyle-string.md" %}
+{% include prop-format.html label="boolean" content="textStyle-boolean.md" %}
+{% include prop-format.html label="number" content="textStyle-number.md" %}
+{% include prop-format.html label="array" content="textStyle-array.md" %}
 
 ### Example
 _undocumented_
@@ -491,13 +634,19 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Text Width
-_undocumented_
+The textWidth property defines the maximum width of a text item. The natural width of a line of text depends on the font values and the set of characters.  If a text width is defined that is shorter than the natural width, those that don’t fit will wrap to the next line.
+
+aliases: width
 
 ### Values
-_undocumented_
+{% include prop-value.html label="width" content="textWidth-width.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="textWidth-object.md" %}
+{% include prop-format.html label="number" content="textWidth-number.md" %}
+{% include prop-format.html label="boolean" content="textWidth-boolean.md" %}
+{% include prop-format.html label="string" content="textWidth-string.md" %}
+{% include prop-format.html label="array" content="textWidth-array.md" %}
 
 ### Example
 _undocumented_
@@ -506,13 +655,19 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Transform Origin
-_undocumented_
+The transformOrigin property defines the reference point when transforming a target object. By default, the origin is centered on the target, at [0,0,0]. You might change it to rotate the target around a different point, in 3D space.
+
+Like the anchor property, the values are a percentage of the target’s dimensions. However, transformOrigin and anchor serve two very distinct purposes. See Alignment and Origins.
+
+Alias: origin
 
 ### Values
-_undocumented_
+{% include prop-value.html label="x" content="transformOrigin-x.md" %}
+{% include prop-value.html label="y" content="transformOrigin-y.md" %}
+{% include prop-value.html label="z" content="transformOrigin-z.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="array" content="transformOrigin-array.md" %}
 
 ### Example
 _undocumented_
