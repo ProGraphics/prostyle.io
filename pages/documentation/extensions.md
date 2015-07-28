@@ -7,11 +7,12 @@ permalink: "/docs/extensions/"
 ## H2 One
 {: class='t0'}
 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-<div style="display:inline-block;max-width:160px;float:right;">{% include ad.html %}</div>
 
+{% include alert story="/examples/class/" %}
 {% highlight javascript %}foo: {
 	bar: "baz",
 	num: 0,
+	boo: true,
 	arr: [1,2,3],
 	arr2:[
 		{
