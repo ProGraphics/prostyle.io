@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+The name of the style from the list above.
 </p>
-{% highlight javascript %}
+{% highlight javascript %}bullets: "disc"
 {% endhighlight %}

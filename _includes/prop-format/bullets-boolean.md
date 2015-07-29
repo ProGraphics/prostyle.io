@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+False sets the value to “none”.  True sets the value to “disc”.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}bullets: false{% endhighlight %}
+{% highlight javascript %}bullets: true{% endhighlight %}

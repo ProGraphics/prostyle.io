@@ -1,4 +1,3 @@
-_undocumented_
+One of the styles, listed above.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="string">“none”</samp>

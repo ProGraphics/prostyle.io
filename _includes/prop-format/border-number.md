@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+The number is applied to the size value. The style will be solid and the color will be black.
 </p>
-{% highlight javascript %}
+{% highlight javascript %}border: 2
 {% endhighlight %}

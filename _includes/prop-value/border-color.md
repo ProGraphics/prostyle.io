@@ -1,4 +1,3 @@
-_undocumented_
+Any valid color may be used.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="string">“transparent”</samp>
