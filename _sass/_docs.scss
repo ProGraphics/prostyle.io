@@ -44,7 +44,7 @@ code, samp {
 	top: -0.1em;
 }
 
-samp { background-color: rgba(255,251,209,0.6); }
+samp { background-color: rgb(255,251,191); }
 samp.number { color: darkgreen !important; }
-samp.string { color: navy !important; }
+samp.string { color: #d14 !important; }
 samp.boolean { color: purple !important; }

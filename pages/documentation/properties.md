@@ -17,28 +17,28 @@ Since you might only need to change a subset of a property’s values, there are
 
 <div class="row b20">
 	<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: {x:10, y:-20, z:30}</pre>
+		{% highlight javascript %}position: {x:10, y:-20, z:30}{% endhighlight %}
 	</div>
 	<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: [10, -20, 30]</pre>
+		{% highlight javascript %}position: [10, -20, 30]{% endhighlight %}
 	</div>
 	<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: "10,-20,30"</pre>
+		{% highlight javascript %}position: "10,-20,30"{% endhighlight %}
 	</div>
 	<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: {x:-10, y:-20}</pre>
+		{% highlight javascript %}position: {x:-10, y:-20}{% endhighlight %}
 	</div>
 		<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: [10, -20]</pre>
+		{% highlight javascript %}position: [10, -20]{% endhighlight %}
 	</div>
 	<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: "10,-20"</pre>
+		{% highlight javascript %}position: "10,-20"{% endhighlight %}
 	</div>
 	<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: 10</pre>
+		{% highlight javascript %}position: 10{% endhighlight %}
 	</div>
 	<div class="large-6 columns">
-		<pre data-ace="readonly" style="width:100%;">position: false</pre>
+		{% highlight javascript %}position: false{% endhighlight %}
 	</div>
 </div>
 
@@ -66,7 +66,7 @@ Use a _class_ to define property values once and reuse them in multiple places. 
 Classes are not necessarily aligned to a [model object](/docs/models/) or [property set](/docs/models/#property-sets). A class may define any arbitrary set of properties. It might contain only a subset of a model object’s properties, or might contain properties for multiple model objects. A model object will use the properties it understands and simply ignore the rest.
 
 {% include alert story="/examples/class/" %}
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}{
   classes: {
     emboss: {
       color:"#FFF",
@@ -95,7 +95,7 @@ Classes are not necessarily aligned to a [model object](/docs/models/) or [prope
       actions: [{delay:3, opacity:100}, {delay:1}]
     }
   ]
-}</pre>
+}{% endhighlight %}
 
 <hr class="t60 b60">
 
@@ -250,7 +250,7 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Crop
-_undocumented_
+The <code>crop</code> property determines whether the contained content is visible outside of the container.  Cropping causes [3D](/docs/concepts/#3d) to be rendered flat.
 
 ### Values
 _undocumented_

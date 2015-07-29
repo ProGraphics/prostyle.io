@@ -1,4 +1,5 @@
-<p class="b30">
-_True_ sets the <code>duration</code> value to 1 second. The other values are set to defaults. _False_ has no effect.
+<p class="b30" markdown="1">
+<samp class="boolean">true</samp> sets the <code>duration</code> value to 1 second. The other values are set to defaults. <samp class="boolean">false</samp> has no effect.
 </p>
-<pre data-ace="readonly" style="width:100%;">anim: true</pre>
+{% highlight javascript %}anim: true
+{% endhighlight %}

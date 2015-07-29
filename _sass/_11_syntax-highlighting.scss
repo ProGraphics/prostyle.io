@@ -3,7 +3,7 @@
 ------------------------------------------------------------------- */
 
 @mixin field {
-	background-color: rgb(255, 255, 191);
+	background-color: rgb(255, 255, 223);
 	padding: 0 2px;
 }
 
@@ -23,6 +23,7 @@
 			code {
 				background-color: transparent;
 				box-shadow: none;
+				line-height: 1em;
 			}
 		}
 		
@@ -47,10 +48,10 @@
     .gs    { font-weight: bold } // Generic.Strong
     .gu    { color: #aaa } // Generic.Subheading
     .gt    { color: #a00 } // Generic.Traceback
-    .kc    { color: #039; @include field; } // Keyword.Constant
+    .kc    { color: purple; @include field; } // Keyword.Constant
     .kd    { font-weight: bold } // Keyword.Declaration
     .kp    { font-weight: bold } // Keyword.Pseudo
-    .kr    { font-weight: bold } // Keyword.Reserved
+    .kr    { } // Keyword.Reserved
     .kt    { color: #458; font-weight: bold } // Keyword.Type
     .m     { color: #099 } // Literal.Number
     .s     { color: #d14 } // Literal.String
@@ -66,10 +67,10 @@
     .nv    { color: #008080 } // Name.Variable
     .ow    { font-weight: bold } // Operator.Word
     .w     { color: #bbb } // Text.Whitespace
-    .mf    { color: #063; @include field; } // Literal.Number.Float
-    .mh    { color: #063; @include field; } // Literal.Number.Hex
-    .mi    { color: #063; @include field; } // Literal.Number.Integer
-    .mo    { color: #063; @include field; } // Literal.Number.Oct
+    .mf    { color: darkgreen; @include field; } // Literal.Number.Float
+    .mh    { color: darkgreen; @include field; } // Literal.Number.Hex
+    .mi    { color: darkgreen; @include field; } // Literal.Number.Integer
+    .mo    { color: darkgreen; @include field; } // Literal.Number.Oct
     .sb    { color: #d14; @include field; } // Literal.String.Backtick
     .sc    { color: #d14; @include field; } // Literal.String.Char
     .sd    { color: #d14; @include field; } // Literal.String.Doc
