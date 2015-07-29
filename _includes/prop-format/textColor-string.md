@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The string is applied to the color value.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}color: "red"{% endhighlight %}

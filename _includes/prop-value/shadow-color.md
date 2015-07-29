@@ -1,4 +1,3 @@
-_undocumented_
+The color of the shadow.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="string">“rgba(0,0,0,0.7)”</samp>

@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+False removes any previous setting. True sets the align value to justify.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}align: false{% endhighlight %}
+{% highlight javascript %}align: true{% endhighlight %}

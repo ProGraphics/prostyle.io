@@ -1,4 +1,3 @@
-_undocumented_
+Either true or false. If true, all non-capital letters will be rendered as capital, but smaller than the normal capitals.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _alias:_ <code>caps</code>

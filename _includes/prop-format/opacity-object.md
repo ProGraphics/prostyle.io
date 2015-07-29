@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+Since this property has only one value, it is more common to use the number format.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}opacity: { percent: 50 }{% endhighlight %}
+{% highlight javascript %}opac: { pct: 50 }{% endhighlight %}

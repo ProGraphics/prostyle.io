@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The first number, if present, is applied to the degrees value. Subsequent entries are ignored.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}skew: [45]{% endhighlight %}

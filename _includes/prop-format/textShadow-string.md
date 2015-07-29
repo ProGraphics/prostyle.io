@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The string is split at the commas and processed as an array.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}textShadow: "1,1"{% endhighlight %}

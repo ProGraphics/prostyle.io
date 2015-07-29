@@ -1,4 +1,1 @@
-_undocumented_
-
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+Either true or false. If true, the text is rendered slanted.

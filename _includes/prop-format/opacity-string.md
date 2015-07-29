@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The string is converted to a number and applied to the percent value.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}opacity: "50"{% endhighlight %}

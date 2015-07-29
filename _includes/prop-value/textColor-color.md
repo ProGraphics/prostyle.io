@@ -1,4 +1,3 @@
-_undocumented_
+A color.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="boolean">black</samp>

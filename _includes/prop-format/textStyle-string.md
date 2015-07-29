@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The string is parsed for any combination of the words bold, italic, caps, under, through or over. For those that are found, the matching style is enabled, and all others are disabled.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}style: "bold italic"{% endhighlight %}

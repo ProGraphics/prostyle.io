@@ -1,4 +1,3 @@
-_undocumented_
+False for a standard drop shadow.  True for an inner shadow.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="boolean">false</samp>

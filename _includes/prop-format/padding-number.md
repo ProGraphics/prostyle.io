@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The number is applied to all four sides.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}padding: 10{% endhighlight %}

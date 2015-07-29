@@ -1,4 +1,3 @@
-_undocumented_
+The number of degrees of rotation around the horizontal x axis.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="number">0</samp>

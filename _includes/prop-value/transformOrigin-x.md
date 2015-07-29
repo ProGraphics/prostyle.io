@@ -1,4 +1,3 @@
-_undocumented_
+A percentage of the target’s width. Position 0 is at the horizontal center of the container. The left edge of the container is -50, and the right edge is 50.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="number">0</samp>

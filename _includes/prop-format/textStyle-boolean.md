@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+False removes any previous styling. True sets the styling to bold and italic.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}style: false{% endhighlight %}
+{% highlight javascript %}style: true{% endhighlight %}

@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+The first three numbers are applied to x, y and z in order. Missing entries are set to 0.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}position: [25,25]{% endhighlight %}
+{% highlight javascript %}position: [0,0,10]{% endhighlight %}

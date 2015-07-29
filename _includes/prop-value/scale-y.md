@@ -1,4 +1,3 @@
-_undocumented_
+A percentage the natural height.
 
-* _default:_ <samp class="number|string|boolean">...</samp>
-* _alias:_ <code>...</code>
+* _default:_ <samp class="number">100</samp>

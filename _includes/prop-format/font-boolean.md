@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-_undocumented_
+False sets the values to their defaults, essentially turning off any previous settings. True has no effect.
 </p>
-{% highlight javascript %}
+{% highlight javascript %}font: false
 {% endhighlight %}

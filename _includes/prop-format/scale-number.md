@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The number is applied to both dimensions.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}scale: 150{% endhighlight %}

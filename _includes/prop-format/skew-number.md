@@ -1,5 +1,4 @@
 <p class="b30" markdown="1">
-_undocumented_
+The number is applied to the x value.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}skew: 45{% endhighlight %}
