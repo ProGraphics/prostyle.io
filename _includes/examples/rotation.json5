@@ -1,0 +1,21 @@
+{
+  classes: { text:{color:"#094766", font:20}},
+  frame: { aspectRatio:0.8},
+  items: [
+    {
+      text:"x axis",
+      init:{class:"text", pos:{y:-35}},
+      action:{anim:[3,"linear"], rot:{x:360}}
+    },
+    {
+      text:"z axis",
+      init:{class:"text", pos:{y:-5}},
+      action:{anim:[3,"linear"], rot:360}
+    },
+    {
+      text:"y axis",
+      init:{class:"text", pos:{y:25}},
+      action:{anim:[3,"linear"], rot:{y:360}}
+    }
+  ]
+}

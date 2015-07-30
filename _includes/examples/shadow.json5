@@ -1,0 +1,25 @@
+{
+  item:{
+    text:"Shadow",
+    init: {
+      color:"#FFF",
+      bg:"#094766",
+      font:35,
+      padding:true,
+      corners:true,
+      shadow:[2,2,5,"black",0]
+    },
+    actions:[
+      { anim:1,
+        pos:[-3,-3],
+        scale:105,
+        shadow:[5,5,7,"rgba(0,0,0,0.8)",-1]
+      },
+      { anim:1,
+        pos:false,
+        scale:false,
+        shadow:[2,2,5,"black",0]
+      }
+    ]
+  }
+}

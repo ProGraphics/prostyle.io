@@ -1,0 +1,16 @@
+{
+  item: {
+      text:"skew y",
+      init: {
+        color:"#094766",
+        font:55,
+        skew:-20,
+        rot:-15
+      },
+      action: {
+        anim:[3,"less curve inout",1,0,true],
+        skew:20,
+        rot:15
+      }
+    }
+}

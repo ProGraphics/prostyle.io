@@ -326,8 +326,27 @@ Each corner radius is a _percentage_ of the height of the container the item is 
 {% include prop-format.html label="string" content="corners-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/corners/" %}
+{% highlight javascript %}{
+  item: {
+    text:"corners",
+    init: {
+      padding:5,
+      border:[1, "#094766"],
+      font:40,
+      color:"#094766"
+    },
+    actions:[
+      { anim:2, corners:15},
+      { anim:2, corners:[40,10,30,5]},
+      { anim:2, corners:{bottomRight:5}},
+      { anim:2, corners:[10,40]},
+      { anim:2, corners:false}
+    ]
+  }
+}
 
+{% endhighlight %}
 
 <hr class="t60 b60">
 
@@ -411,7 +430,41 @@ While it is possible to animate the size and lineHeight values, it is a relative
 {% include prop-format.html label="boolean" content="font-boolean.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/font/" %}
+{% highlight javascript %}
+{
+  item:  {
+    text:"font",
+    init: {
+      pos:[-50,-50], anchor:[-50,-50],
+      origin:[-50,-50], color:"#094766",
+      font:30, scale:100
+    },
+    action: {
+      anim:{ dur:5, rep:1, yoyo:true },
+      scale:1000
+    }
+  }
+}
+{% endhighlight %}
+
+{% include alert story="/examples/font-2/" %}
+{% highlight javascript %}
+{
+  item:  {
+    text:"font",
+    init: {
+      pos:[-50,-50], anchor:[-50,-50],
+      origin:[-50,-50], color:"#094766",
+      font:30, scale:100
+    },
+    action: {
+      anim:{ dur:5, rep:1, yoyo:true },
+      scale:1000
+    }
+  }
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -447,7 +500,25 @@ Alias: opac
 {% include prop-format.html label="string" content="opacity-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/opacity/" %}
+{% highlight javascript %}{
+  items:[
+    {
+      text:"UNDER",
+      init: {color:"#094766",style:"bold",font:45}
+    },
+    {
+      text:"OVER",
+      init: {color:"orange",style:"bold",font:55},
+      actions:[
+        {delay:1, anim:2, opacity:0},
+        {anim:2, opacity:false}
+      ]
+    }
+  ]
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -470,8 +541,26 @@ The padding property defines how much extra space appears between a target’s e
 {% include prop-format.html label="string" content="padding-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/padding/" %}
+{% highlight javascript %}{
+  item: {
+    text:"padding",
+    init: {
+      border:[2,"#094766"],
+      font:30,
+      color:"#094766"
+    },
+    actions:[
+      { anim:2, padding:5},
+      { anim:2, padding:[0,0,20,0]},
+      { anim:2, padding:{right:10}},
+      { anim:2, padding:[20,10]},
+      { anim:2, padding:false}
+    ]
+  }
+}
 
+{% endhighlight %}
 
 <hr class="t60 b60">
 
@@ -497,7 +586,29 @@ Alias: pos
 {% include prop-format.html label="string" content="position-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/position/" %}
+{% highlight javascript %}{
+  item:  {
+    text:"pos",
+    init: {
+      color:"#094766",
+      font:25,
+      pos:[-20,-20,20]
+    },
+    actions: [
+      {anim:1, pos:{z:-20}},
+      {anim:1, pos:{x:20}},
+      {anim:1, pos:{z:20}},
+      {anim:1, pos:{y:20}},
+      {anim:1, pos:{z:-20}},
+      {anim:1, pos:{x:-20}},
+      {anim:1, pos:{z:20}},
+      {anim:1, pos:{y:-20}}
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -529,7 +640,30 @@ Aliases: rot, rotate
 {% include prop-format.html label="string" content="rotation-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/rotation/" %}
+{% highlight javascript %}{
+  classes: { text:{color:"#094766", font:20}},
+  frame: { aspectRatio:0.8},
+  items: [
+    {
+      text:"x axis",
+      init:{class:"text", pos:{y:-35}},
+      action:{anim:[3,"linear"], rot:{x:360}}
+    },
+    {
+      text:"z axis",
+      init:{class:"text", pos:{y:-5}},
+      action:{anim:[3,"linear"], rot:360}
+    },
+    {
+      text:"y axis",
+      init:{class:"text", pos:{y:25}},
+      action:{anim:[3,"linear"], rot:{y:360}}
+    }
+  ]
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -552,7 +686,19 @@ The actual width and height of a target is referred to as it’s natural dimensi
 {% include prop-format.html label="string" content="scale-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/scale/" %}
+{% highlight javascript %}{
+  item:  {
+    text:"scale",
+    init: {color:"#094766", font:70},
+    actions: [
+      {anim:2, scale:30},
+      {anim:2, scale:false}
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -580,7 +726,34 @@ alias: shadows
 {% include prop-format.html label="string" content="shadow-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/shadow/" %}
+{% highlight javascript %}{
+  item:{
+    text:"Shadow",
+    init: {
+      color:"#FFF",
+      bg:"#094766",
+      font:35,
+      padding:true,
+      corners:true,
+      shadow:[2,2,5,"black",0]
+    },
+    actions:[
+      { anim:1,
+        pos:[-3,-3],
+        scale:105,
+        shadow:[5,5,7,"rgba(0,0,0,0.8)",-1]
+      },
+      { anim:1,
+        pos:false,
+        scale:false,
+        shadow:[2,2,5,"black",0]
+      }
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -617,7 +790,42 @@ Pro Motion only supports skewing in the horizontal direction, but vertical skewi
 {% include prop-format.html label="string" content="skew-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/skew/" %}
+{% highlight javascript %}{
+  item: {
+    text:"skew x",
+    init: {
+      color:"#094766",
+      font:55,
+      skew:-20
+    },
+    action:{
+      anim:[3,"less curve inout",1,0,true],
+      skew:20
+    }
+  }
+}
+
+{% endhighlight %}
+{% include alert story="/examples/skew-2/" %}
+{% highlight javascript %}{
+  item: {
+      text:"skew y",
+      init: {
+        color:"#094766",
+        font:55,
+        skew:-20,
+        rot:-15
+      },
+      action: {
+        anim:[3,"less curve inout",1,0,true],
+        skew:20,
+        rot:15
+      }
+    }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -638,7 +846,25 @@ alias: align
 {% include prop-format.html label="array" content="textAlign-array.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/textAlign/" %}
+{% highlight javascript %}{
+  item: {
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    init: {
+      color:"#094766",
+      textWidth:90,
+      font:7
+    },
+    actions:[
+      {delay:1, align:"c"},
+      {delay:1, align:"r"},
+      {delay:1, align:"j"},
+      {delay:1, align:"l"},
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -660,7 +886,20 @@ alias: color
 
 
 ### Example
-_undocumented_
+{% include alert story="/examples/textColor/" %}
+{% highlight javascript %}{
+  item: {
+    text: "COLOR",
+    init: {color:"red", font:40, style:"bold"},
+    actions:[
+      {anim:3, color:"#094766"},
+      {anim:3, color:"rgba(127,127,15,0.8)"},
+      {anim:3, color:"red"}
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -686,7 +925,24 @@ alias: textShadows
 {% include prop-format.html label="string" content="textShadow-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/textShadow/" %}
+{% highlight javascript %}{
+  item:{
+    text:"TEXT",
+    init: {
+      color:"#FFF",
+      font:60,
+      textShadow:[0,0,3,"#094766"]
+    },
+    charAction: {
+      anim:[1,"less curve inout",1,0,true,0.2],
+      textShadow:[0,0,10,"#094766"],
+      scale:103
+    }
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -710,7 +966,24 @@ aliases:  textStyles, styles, style
 {% include prop-format.html label="array" content="textStyle-array.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/textStyle/" %}
+{% highlight javascript %}{
+  item: {
+    text: "Style",
+    init: {color:"#094766", font:40},
+    actions:[
+      {delay:1, style:"bold"},
+      {delay:1, style:"italic"},
+      {delay:1, style:"under"},
+      {delay:1, style:"through"},
+      {delay:1, style:"over"},
+      {delay:1, style:"caps"},
+      {delay:1, style:false}
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -731,7 +1004,27 @@ aliases: width
 {% include prop-format.html label="array" content="textWidth-array.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/textWidth/" %}
+{% highlight javascript %}{
+  item: {
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    init: {
+      color:"#094766",
+      border:"#094766",
+      padding:true,
+      width:94,
+      font:6,
+      pos:[-49,-49],
+      anchor:[-50,-50]
+    },
+    actions:[
+      {anim:4, width:60},
+      {anim:4, width:94}
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -752,4 +1045,22 @@ Alias: origin
 {% include prop-format.html label="array" content="transformOrigin-array.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/transformOrigin/" %}
+{% highlight javascript %}{
+  classes: { text: {pos:[0,0,30], origin:[0,0,-40], font:50}},
+  frame: { setup:{aspectRatio:0.8}},
+  items: [
+    {
+      text:"x",
+      init: {class:"text", color:"rgba(127,0,0,0.7)", rot:{x:180}},
+      action: {anim:[5,"linear"], rot:{x:-180}}
+    },
+    {
+      text:"y",
+      init: {class:"text", color:"rgba(0,127,0,0.7)"},
+      action: {anim:[5,"linear"], rot:{y:360}}
+    }
+  ]
+}
+
+{% endhighlight %}

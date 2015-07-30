@@ -1,0 +1,14 @@
+{
+  item:  {
+    text:"font",
+    init: {
+      pos:[-50,-50], anchor:[-50,-50],
+      origin:[-50,-50], color:"#094766",
+      font:30, scale:100
+    },
+    action: {
+      anim:{ dur:5, rep:1, yoyo:true },
+      scale:1000
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  items:[
+    {
+      text:"UNDER",
+      init: {color:"#094766",style:"bold",font:45}
+    },
+    {
+      text:"OVER",
+      init: {color:"orange",style:"bold",font:55},
+      actions:[
+        {delay:1, anim:2, opacity:0},
+        {anim:2, opacity:false}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  item: {
+    text:"corners",
+    init: {
+      padding:5,
+      border:[1, "#094766"],
+      font:40,
+      color:"#094766"
+    },
+    actions:[
+      { anim:2, corners:15},
+      { anim:2, corners:[40,10,30,5]},
+      { anim:2, corners:{bottomRight:5}},
+      { anim:2, corners:[10,40]},
+      { anim:2, corners:false}
+    ]
+  }
+}

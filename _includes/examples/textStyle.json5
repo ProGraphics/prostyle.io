@@ -1,0 +1,15 @@
+{
+  item: {
+    text: "Style",
+    init: {color:"#094766", font:40},
+    actions:[
+      {delay:1, style:"bold"},
+      {delay:1, style:"italic"},
+      {delay:1, style:"under"},
+      {delay:1, style:"through"},
+      {delay:1, style:"over"},
+      {delay:1, style:"caps"},
+      {delay:1, style:false}
+    ]
+  }
+}

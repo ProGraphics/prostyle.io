@@ -1,0 +1,15 @@
+{
+  item:{
+    text:"TEXT",
+    init: {
+      color:"#FFF",
+      font:60,
+      textShadow:[0,0,3,"#094766"]
+    },
+    charAction: {
+      anim:[1,"less curve inout",1,0,true,0.2],
+      textShadow:[0,0,10,"#094766"],
+      scale:103
+    }
+  }
+}

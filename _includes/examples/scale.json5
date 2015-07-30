@@ -1,0 +1,10 @@
+{
+  item:  {
+    text:"scale",
+    init: {color:"#094766", font:70},
+    actions: [
+      {anim:2, scale:30},
+      {anim:2, scale:false}
+    ]
+  }
+}

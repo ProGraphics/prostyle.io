@@ -1,0 +1,20 @@
+{
+  item:  {
+    text:"pos",
+    init: {
+      color:"#094766",
+      font:25,
+      pos:[-20,-20,20]
+    },
+    actions: [
+      {anim:1, pos:{z:-20}},
+      {anim:1, pos:{x:20}},
+      {anim:1, pos:{z:20}},
+      {anim:1, pos:{y:20}},
+      {anim:1, pos:{z:-20}},
+      {anim:1, pos:{x:-20}},
+      {anim:1, pos:{z:20}},
+      {anim:1, pos:{y:-20}}
+    ]
+  }
+}

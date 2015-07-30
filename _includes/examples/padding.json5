@@ -1,0 +1,17 @@
+{
+  item: {
+    text:"padding",
+    init: {
+      border:[2,"#094766"],
+      font:30,
+      color:"#094766"
+    },
+    actions:[
+      { anim:2, padding:5},
+      { anim:2, padding:[0,0,20,0]},
+      { anim:2, padding:{right:10}},
+      { anim:2, padding:[20,10]},
+      { anim:2, padding:false}
+    ]
+  }
+}
