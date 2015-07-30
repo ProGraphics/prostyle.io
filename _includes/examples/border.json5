@@ -1,0 +1,23 @@
+{
+  item: {
+    text:"border",
+    init: { 
+        padding:5, 
+        corners:10, 
+        font:50, 
+        color:"#094766"
+    },
+    actions:[
+      { delay:1, 
+        border:{size:1,color:"#AAA",style:"dashed"}
+      },
+      { delay:1,
+        border:{size:2,color:"#666",style:"dotted"}
+      },
+      { delay:1,
+        border:{size:3,color:"#094766",style:"solid"}
+      },
+      { delay:1, border:false}
+    ]
+  }
+}

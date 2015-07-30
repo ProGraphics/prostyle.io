@@ -1,0 +1,26 @@
+{
+  item: {
+    text: [
+      "Lorem ipsum dolor sit amet",
+      "Consectetur adipiscing elit",
+      "Sed do eiusmod tempor",
+      "Incididunt ut labore",
+      "Et dolore magna aliqua"
+    ],
+    linesInit: { bullets:"disc", color:"#094766"},
+    lineActions:[
+      {
+        anim:{dur:1, stagger:0.2},
+        bullets:"circle"
+      },
+      {
+        anim:{dur:1, stagger:0.2},
+        bullets:false
+      },
+      {
+        anim:{dur:1, stagger:0.2},
+        bullets:"disc"
+      }
+    ]
+  }
+}

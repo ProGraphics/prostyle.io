@@ -184,8 +184,21 @@ The <code>border</code> property draws a line around the outer edge. The [corner
 {% include prop-format.html label="string" content="border-string.md" %}
 
 ### Example
-_undocumented_
-
+{% include alert story="/examples/border/" %}
+{% highlight javascript %}
+{
+  item: {
+    text:"border",
+    init: { padding:5, corners:10, font:50, color:"#094766"},
+    actions:[
+      { delay:1, border:{size:1,color:"#AAA",style:"dashed"}},
+      { delay:1, border:{size:2,color:"#666",style:"dotted"}},
+      { delay:1, border:{size:3,color:"#094766",style:"solid"}},
+      { delay:1, border:false}
+    ]
+  }
+}
+{% endhighlight %}
 
 <hr class="t60 b60">
 
@@ -245,7 +258,36 @@ There are many styles of bullets.
 {% include prop-format.html label="array" content="bullets-array.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/bullets/" %}
+{% highlight javascript %}
+{
+  item: {
+    text: [
+      "Lorem ipsum dolor sit amet",
+      "Consectetur adipiscing elit",
+      "Sed do eiusmod tempor",
+      "Incididunt ut labore",
+      "Et dolore magna aliqua"
+    ],
+    linesInit: { bullets:"disc", color:"#094766"},
+    lineActions:[
+      {
+        anim:{dur:1, stagger:0.2},
+        bullets:"circle"
+      },
+      {
+        anim:{dur:1, stagger:0.2},
+        bullets:false
+      },
+      {
+        anim:{dur:1, stagger:0.2},
+        bullets:"disc"
+      }
+    ]
+  }
+}
+
+{% endhighlight %}
 
 
 <hr class="t60 b60">
