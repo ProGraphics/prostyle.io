@@ -2,12 +2,12 @@
 layout: tocify
 title: "Properties"
 teaser: "The documentation is a work in progress..."
-permalink: "/docs/properties/"
+permalink: "/properties/"
 ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
-A property defines _appearance_ or [placement](/docs/concepts/#placement) of a [model](/docs/models/) object.  Property values are initialized with an <code>init</code> entry and may be [scripted](/docs/concepts/#scripts) to change over time. e.g. [Rotation](#){:data-toc="rotation"}. There are also [pseudo properties](#){:data-toc="pseudo-properties"}, which are similar to regular properties but instruct _how_ to alter properties.
+A property defines _appearance_ or [placement](/concepts/#placement) of a [model](/models/) object.  Property values are initialized with an <code>init</code> entry and may be [scripted](/concepts/#scripts) to change over time. e.g. [Rotation](#){:data-toc="rotation"}. There are also [pseudo properties](#){:data-toc="pseudo-properties"}, which are similar to regular properties but instruct _how_ to alter properties.
 
 ### Values
 Each property is composed of one or more values.  For instance, the [font](#){:data-toc="font"} property has both _size_ and _family_ values.  A [position](#){:data-toc="position"} has _x_, _y_ and _z_ dimensions. ProStyle allows you to set and animate individual property values separately or together.  This enables you to create simple animations easily, yet provides the flexibility to craft complex ones.
@@ -53,7 +53,7 @@ Which format should you use? That’s up to you. Generally, shorter formats impr
 </p>
 
 ### Pseudo-Properties
-Most properties alter the appearance or placement of something.  However, there are a few special cases that are a bit different.  They are grouped together with regular properties because they are configured in the same manner, with <code>init</code> blocks and/or [script](/docs/concepts/#scripts) actions.
+Most properties alter the appearance or placement of something.  However, there are a few special cases that are a bit different.  They are grouped together with regular properties because they are configured in the same manner, with <code>init</code> blocks and/or [script](/concepts/#scripts) actions.
 
 * [Animation](#){:data-toc="animation"}
 * [Class](#){:data-toc="class"}
@@ -63,7 +63,7 @@ Most properties alter the appearance or placement of something.  However, there 
 ### Classes
 Use a _class_ to define property values once and reuse them in multiple places. Currently, classes may only be used in <code>init</code> blocks.
 
-Classes are not necessarily aligned to a [model object](/docs/models/) or [property set](/docs/models/#property-sets). A class may define any arbitrary set of properties. It might contain only a subset of a model object’s properties, or might contain properties for multiple model objects. A model object will use the properties it understands and simply ignore the rest.
+Classes are not necessarily aligned to a [model object](/models/) or [property set](/models/#property-sets). A class may define any arbitrary set of properties. It might contain only a subset of a model object’s properties, or might contain properties for multiple model objects. A model object will use the properties it understands and simply ignore the rest.
 
 {% include alert story="/examples/class/" %}
 {% highlight javascript %}{
@@ -100,7 +100,7 @@ Classes are not necessarily aligned to a [model object](/docs/models/) or [prope
 <hr class="t60 b60">
 
 ## Animation
-The <code>animation</code> pseudo-property defines the characteristics of an [animation](/docs/concepts/#animation), such as how long it will take, or how many times it will repeat.
+The <code>animation</code> pseudo-property defines the characteristics of an [animation](/concepts/#animation), such as how long it will take, or how many times it will repeat.
 
 * _alias:_ <code>anim</code>
 
@@ -126,7 +126,7 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Anchor
-The <code>anchor</code> property defines the [alignment](/docs/concepts/#alignment) of an [item](/docs/models/#items). Anchor values are a percentage of the item’s _natural dimensions_, the actual width and height. For example, the natural dimensions of a text item are affected by the [border](#){:data-toc="border"}, the [font](#){:data-toc="font"}, line wrapping due to the [text width](#){:data-toc="text-width"} property, and so forth.
+The <code>anchor</code> property defines the [alignment](/concepts/#alignment) of an [item](/models/#items). Anchor values are a percentage of the item’s _natural dimensions_, the actual width and height. For example, the natural dimensions of a text item are affected by the [border](#){:data-toc="border"}, the [font](#){:data-toc="font"}, line wrapping due to the [text width](#){:data-toc="text-width"} property, and so forth.
 
 ### Values
 {% include prop-value.html label="x" content="anchor-x.md" %}
@@ -351,7 +351,7 @@ Each corner radius is a _percentage_ of the height of the container the item is 
 <hr class="t60 b60">
 
 ## Crop
-The <code>crop</code> property determines whether the contained content is visible outside of the container.  Cropping causes [3D](/docs/concepts/#3d) to be rendered flat.
+The <code>crop</code> property determines whether the contained content is visible outside of the container.  Cropping causes [3D](/concepts/#3d) to be rendered flat.
 
 ### Values
 _undocumented_

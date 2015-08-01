@@ -3,15 +3,15 @@
   side: right
   dropdown:
   - title: Concepts
-    url: "/docs/concepts/"
+    url: "/concepts/"
   - title: Models
-    url: "/docs/models/"
+    url: "/models/"
   - title: Properties
-    url: "/docs/properties/"
+    url: "/properties/"
   - title: Controllers
     url: "/controllers/"
   - title: Extensions
-    url: "/docs/extensions/"
+    url: "/extensions/"
 
 - title: Content
   url: "/content/"

@@ -2,7 +2,7 @@
 layout: tocify
 title: "Extensions"
 teaser: "The documentation is a work in progress..."
-permalink: "/docs/extensions/"
+permalink: "/extensions/"
 ---
 ## H2 One
 {: class='t0'}

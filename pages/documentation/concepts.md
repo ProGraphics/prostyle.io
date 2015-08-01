@@ -2,7 +2,7 @@
 layout: tocify
 title: "Concepts"
 teaser: "The documentation is a work in progress..."
-permalink: "/docs/concepts/"
+permalink: "/concepts/"
 ace-readonly-js: true;
 ---
 ## Overview
@@ -12,18 +12,18 @@ ProStyle animations are referred to as _stories_. They are translated from [JSON
 ## Story
 Each story is composed of a _canvas_, a _frame_, and one or more _flows_. Each flow contains one or more _pages_, and each page contains one or more _items_.
 
-ProStyle renders the tree of model objects into a tree of rendered HTML and SVG content and an [timeline](#){:data-toc="timeline"} that animates the content's [properties](/docs/properties/).
+ProStyle renders the tree of model objects into a tree of rendered HTML and SVG content and an [timeline](#){:data-toc="timeline"} that animates the content's [properties](/properties/).
 
 ### Model Objects
-Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/docs/properties/) and [positioned](#){:data-toc='placement'}. Their properties may be animated with scripts.
+Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/properties/) and [positioned](#){:data-toc='placement'}. Their properties may be animated with scripts.
 
 | Model | Description  |
 |:-:|---|
-| [Canvas](/docs/models/#canvas) | The canvas is the drawing surface of the animation.  It is mapped to a single <code>div</code> element or the <code>body</code> element of an HTML page. The HTML element might be any rectangular size. For example, a body tag stretches to fit the browser window. There is only one canvas. |
-| [Frame](/docs/models/#frame)  | The frame is centered within and stretches to fit the canvas, minus any padding. However, unlike the canvas, the frame always maintains a configured aspect ratio. There is only one frame. |
-| [Flows](/docs/models/#flows)  | Flows control page-to-page animation, such as page stacks, carousels, etc. Each flow contains one or more pages. |
-| [Pages](/docs/models/#pages)  | Pages contain the item content. The timeline navigates from page to page. Pages are analogous to slides in old-school presentation software. |
-| [Items](/docs/models/#items)  | Items are the core visuals, such as text, images, and charts. |
+| [Canvas](/models/#canvas) | The canvas is the drawing surface of the animation.  It is mapped to a single <code>div</code> element or the <code>body</code> element of an HTML page. The HTML element might be any rectangular size. For example, a body tag stretches to fit the browser window. There is only one canvas. |
+| [Frame](/models/#frame)  | The frame is centered within and stretches to fit the canvas, minus any padding. However, unlike the canvas, the frame always maintains a configured aspect ratio. There is only one frame. |
+| [Flows](/models/#flows)  | Flows control page-to-page animation, such as page stacks, carousels, etc. Each flow contains one or more pages. |
+| [Pages](/models/#pages)  | Pages contain the item content. The timeline navigates from page to page. Pages are analogous to slides in old-school presentation software. |
+| [Items](/models/#items)  | Items are the core visuals, such as text, images, and charts. |
 
 
 ### Structure
@@ -209,7 +209,7 @@ Arrays are lists of values. They are enclosed in square [ ] brackets. Listed ite
 
 
 ## Setup vs. Properties
-_Setup_ and _properties_ are two distinct ways that [model objects](/docs/models/) are configured. The difference is subtle, but important.
+_Setup_ and _properties_ are two distinct ways that [model objects](/models/) are configured. The difference is subtle, but important.
 
 ### Setup
 Setup defines one-time configuration, which is core to how the model object works. Setup values are _immutable_.  That means that they are set once and cannot be changed.  ProStyle uses the setup to render and optimize the object.  For instance, setup values might render determine what HTML or SVG content to use. Setup values are defined in a <code>setup</code> entry.
@@ -220,7 +220,7 @@ Setup defines one-time configuration, which is core to how the model object work
 }</pre>
 
 ### Properties
-Unlike setup, properties _can_ be changed.  They are initialized in an <code>init</code> entry and can be changed in a [script](#){:data-toc="script"}.  There are many available [properties](/docs/properties).
+Unlike setup, properties _can_ be changed.  They are initialized in an <code>init</code> entry and can be changed in a [script](#){:data-toc="script"}.  There are many available [properties](/properties/).
 
 <pre data-ace="readonly" style="width:100%;">{
   itemType: "text",
@@ -236,7 +236,7 @@ Unlike setup, properties _can_ be changed.  They are initialized in an <code>ini
 <hr class="t60 b60">
 
 ## Animation
-_Animation_ is the [changing of properties](/docs/properties/#animation) over time using [scripts](#){:data-toc="scripts"}. Multiple scripts may run concurrently within a [step](#){:data-toc="steps"}, and the steps are sequenced into a _timeline_.
+_Animation_ is the [changing of properties](/properties/#animation) over time using [scripts](#){:data-toc="scripts"}. Multiple scripts may run concurrently within a [step](#){:data-toc="steps"}, and the steps are sequenced into a _timeline_.
 
 ### Timeline
 After reading the [JSON](#){:data-toc="json"}, ProStyle inserts the required HTML and SVG into the web page, and sequences the [scripts](#){:data-toc="scripts"} into a _timeline_.  Think of the timeline like a movie player.  It is linear.  The player will play from beginning to end, and the playhead can be seeked to any time as needed.
@@ -271,8 +271,8 @@ Actions do things, such as set property values. Currently, ProStyle only support
 </div>
 </div></p>
 
-* An action may have a [delay property](/docs/properties/#delay) which describes how long to wait until the changes begin.
-* An action may have an [animation property](/docs/properties/#animation) which describes how to change from old property values to new ones.
+* An action may have a [delay property](/properties/#delay) which describes how long to wait until the changes begin.
+* An action may have an [animation property](/properties/#animation) which describes how to change from old property values to new ones.
 
 The duration of the action is the sum of the _delay_ and _animation_ values. If properties are set without a _delay_ or _animation_ then they will change instantly once the script executes the action, and the action will have no duration.
 
@@ -309,10 +309,10 @@ When there are multiple targets, like bars in a chart or characters in text, eac
 
 
 ## Alignment
-Unlike traditional web graphics, ProStyle is designed to work with _center alignment_.  Add an [item](/docs/models/#items) to a [page](/docs/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Plus, because the [frame](/docs/models/#frame) maintains it's [aspect ratio](/docs/models/#demonstration), the animation will look the same on any screen of any size.
+Unlike traditional web graphics, ProStyle is designed to work with _center alignment_.  Add an [item](/models/#items) to a [page](/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Plus, because the [frame](/models/#frame) maintains it's [aspect ratio](/models/#demonstration), the animation will look the same on any screen of any size.
 
 ### Anchor
-With center alignment, the _center of the item_ is positioned on the _center of it’s container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/docs/properties/#anchor) and a [position property](/docs/properties/#position). Both default to <code>[0,0]</code>, which is the center of each. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.
+With center alignment, the _center of the item_ is positioned on the _center of it’s container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/properties/#anchor) and a [position property](/properties/#position). Both default to <code>[0,0]</code>, which is the center of each. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.
 
 ### Transform Origin
 The _transform origin_, like the _anchor_, is a reference point on the item.  It defines the point that transforms are relative to.  For instance, to rotate an item around it's top left corner, the transform origin would be set to <code>[-50,-50]</code>. By default, items rotate around their center because the transform origin is initially set to <code>[0,0]</code>.

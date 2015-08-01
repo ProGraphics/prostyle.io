@@ -2,12 +2,12 @@
 layout: tocify
 title: "Models"
 teaser: "The documentation is a work in progress..."
-permalink: "/docs/models/"
+permalink: "/models/"
 ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}
-Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/docs/concepts/#setup), [styled](/docs/concepts/#properties) and [positioned](/docs/concepts/#placement). Their properties may be animated with [scripts](/docs/concepts/#scripts).
+Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/concepts/#setup), [styled](/concepts/#properties) and [positioned](/concepts/#placement). Their properties may be animated with [scripts](/concepts/#scripts).
 
 | Model | Description  |
 |:-:|---|
@@ -18,7 +18,7 @@ Models are the _things_ that exist within the story. They physically exist as we
 | [Items](#){:data-toc='items'}  | Items are the core visuals, such as text, images, and charts. |
 
 ### Property Sets
-All model objects, except [flows](#){:data-toc="flows"}, have at least one set of [properties](/docs/properties/). For example, a [text item](#){:data-toc="&middot;-text-item"} has properties to _position_ and _rotate_ the text.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/docs/concepts/#scripts).
+All model objects, except [flows](#){:data-toc="flows"}, have at least one set of [properties](/properties/). For example, a [text item](#){:data-toc="&middot;-text-item"} has properties to _position_ and _rotate_ the text.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/concepts/#scripts).
 
 {% include alert story="/examples/colors/" %}
 <pre data-ace="readonly" style="width:100%;">{
@@ -43,7 +43,7 @@ For example, the [simple bar chart](#){:data-toc="&middot;-simple-bar-chart"} ha
 The [text item](#){:data-toc="&middot;-text-item"} actually has _four_ sets of properties; one for the overall text, plus one for each of the sets of lines, words, and characters.  Therefore, a text item might have <code>init</code>, <code>scripts</code>, <code>linesInit</code>, <code>lineScripts</code>, <code>wordsInit</code>, <code>wordScripts</code>, <code>charsInit</code> and <code>charScripts</code> entries.
 
 #### Canvas &amp; Frame Scripts
-Because [step scripts](/docs/concepts/#steps) are only available for _pages_ and _items_, the canvas and frame must be scripted on a page, using <code>canvasScripts</code> and <code>frameScripts</code> entries. The canvas and frame properties are animated relative to when a _page_ reaches a _step_.
+Because [step scripts](/concepts/#steps) are only available for _pages_ and _items_, the canvas and frame must be scripted on a page, using <code>canvasScripts</code> and <code>frameScripts</code> entries. The canvas and frame properties are animated relative to when a _page_ reaches a _step_.
 
 <hr class="t60 b60">
 
@@ -57,7 +57,7 @@ The canvas contains a single [frame](#){:data-toc='frame'}.
 {% include model-setup.html label="imageRootUrl" content="canvas-imageRootUrl.md" %}
 
 ### Properties
-Canvas properties may be [scripted](/docs/concepts/#scripts) with a <code>canvasScripts</code> entry on a page.
+Canvas properties may be [scripted](/concepts/#scripts) with a <code>canvasScripts</code> entry on a page.
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
@@ -83,7 +83,7 @@ Like the canvas, the frame will resize as needed.  Unlike the canvas, though, th
 {% include model-setup.html label="padding" content="frame-padding.md" %}
 
 ### Properties
-Frame properties may be [scripted](/docs/concepts/#scripts) with a <code>frameScripts</code> entry on a page.
+Frame properties may be [scripted](/concepts/#scripts) with a <code>frameScripts</code> entry on a page.
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
@@ -93,7 +93,7 @@ Frame properties may be [scripted](/docs/concepts/#scripts) with a <code>frameSc
 {% include model-props.html label="shadow" content="standard-shadow.md" %}
 
 ### Virtual Camera
-The frame brings each of it’s child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/docs/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
+The frame brings each of it’s child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
 
 ### Demonstration
 As the canvas is resized, the frame resizes to fit. However, the frame always maintains it's aspect ratio.  All of the content within the frame will be resized to fit as well, relative to the frame's aspect ratio.
@@ -111,7 +111,7 @@ _Flows_ provide complex orchestration and animation of [pages](#){:data-toc="pag
 
 There are some setup values common to all flow types, but individual flow types can have their own. Flows do not have properties.
 
-Flows are positioned in [3D](/docs/concepts/#3d) space and brought into the frame in order, one after the other.  As the last page of a flow completes, the [virtual camera](#){:data-toc="virtual-camera"} moves to show the first page of the next flow.
+Flows are positioned in [3D](/concepts/#3d) space and brought into the frame in order, one after the other.  As the last page of a flow completes, the [virtual camera](#){:data-toc="virtual-camera"} moves to show the first page of the next flow.
 
 ### Standard Setup
 The following are common to all flow types.
