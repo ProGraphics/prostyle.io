@@ -8,8 +8,8 @@
     url: "/docs/models/"
   - title: Properties
     url: "/docs/properties/"
-  - title: Configuration
-    url: "/docs/config/"
+  - title: Controllers
+    url: "/controllers/"
   - title: Extensions
     url: "/docs/extensions/"
 
