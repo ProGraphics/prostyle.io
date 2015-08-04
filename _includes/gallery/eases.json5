@@ -1,0 +1,128 @@
+{
+	classes:{
+			label:{ font:6, color:"#6A287E", anchor:-50, origin:-50, rot:-90 }
+	},
+	frame:{
+		setup:{padding:15}
+	},
+	items:[
+		{
+			setup:{text:"linear"},
+			init:{pos:[-48,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[-48,-32]},
+			actions:[
+				{anim:{dur:4, ease:"linear"}, pos:[-48,45]},
+				{anim:{dur:4, ease:"linear"}, pos:[-48,-32]}
+			]
+		},
+		{
+			setup:{text:"bounce"},
+			init:{pos:[-36,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[-36,-32]},
+			actions:[
+				{anim:{dur:4, ease:"bounce"}, pos:[-36,45]},
+				{anim:{dur:4, ease:"bounce in"}, pos:[-36,-32]}
+			]
+		},
+		{
+			setup:{text:"elastic"},
+			init:{pos:[-24,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[-24,-32]},
+			actions:[
+				{anim:{dur:4, ease:"elastic"}, pos:[-24,45]},
+				{anim:{dur:4, ease:"elastic in"}, pos:[-24,-32]}
+			]
+		},
+		{
+			setup:{text:"back"},
+			init:{pos:[-12,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[-12,-32]},
+			actions:[
+				{anim:{dur:4, ease:"back"}, pos:[-12,45]},
+				{anim:{dur:4, ease:"back in"}, pos:[-12,-32]}
+			]
+		},
+		{
+			setup:{text:"sine"},
+			init:{pos:[0,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[0, -32]},
+			actions:[
+				{anim:{dur:4, ease:"sine"}, pos:[0,45]},
+				{anim:{dur:4, ease:"sine in"}, pos:[0,-32]}
+			]
+		},
+		{
+			setup:{text:"curve"},
+			init:{pos:[12,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[12,-32]},
+			actions:[
+				{anim:{dur:4, ease:"curve"}, pos:[12,45]},
+				{anim:{dur:4, ease:"curve in"}, pos:[12,-32]}
+			]
+		},
+		{
+			setup:{text:"expo"},
+			init:{pos:[24,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[24,-32]},
+			actions:[
+				{anim:{dur:4, ease:"expo"}, pos:[24,45]},
+				{anim:{dur:4, ease:"expo in"}, pos:[24,-32]}
+			]
+		},
+		{
+			setup:{text:"slow mo"},
+			init:{pos:[36,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[36,-32]},
+			actions:[
+				{anim:{dur:4, ease:"slowmo less"}, pos:[36,45]},
+				{anim:{dur:4, ease:"slowmoback less"}, pos:[36,-32]}
+			]
+		},
+		{
+			setup:{text:"slow mo"},
+			init:{pos:[48,-35], class:"label"}
+		},
+		{
+			itemType:"image",
+			setup:{src:"ball.gif", width:5},
+			init:{pos:[48,-32]},
+			actions:[
+				{anim:{dur:4, ease:"slowmo more"}, pos:[48,45]},
+				{anim:{dur:4, ease:"slowmoback more"}, pos:[48,-32]},
+				{delay:1}
+			]
+		}
+	]
+}
