@@ -1,0 +1,24 @@
+{
+	canvas:{
+		padding:15,
+		init:{bg:"#855E42"}
+	},
+	flow: {
+		flowType:"pageStack",
+		placement:{pos:100},
+		pages:[
+			{ item:{
+					text:"This is a seven page 'Page Stack' using the default configuration.",
+					init:{font:7, width:90, align:"center"},
+					action:{delay:3}
+				}
+			},
+			{ item:{text:"2"} },
+			{ item:{text:"3"} },
+			{ item:{text:"4"} },
+			{ item:{text:"5"} },
+			{ item:{text:"6"} },
+			{ item:{text:"7"} }
+		]
+	}
+}
