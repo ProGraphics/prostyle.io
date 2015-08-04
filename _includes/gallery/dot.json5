@@ -1,0 +1,28 @@
+{
+	canvas:{init:{bg:"#FFC"}},
+	frame:{setup:{aspectRatio:1}, init:{bg:"gray"}},
+	items:[
+		{
+			setup:{text:["Layer", "Cropping", "Techniques"]},
+			init:{font:20, style:"caps", color:"#EEE"}
+		},
+		{
+			itemType:"layer",
+			init:{crop:true, size:[24,24], border:[1,"#094766"], corners:12, bg:"#FFC", pos:[-40,-25]},
+			scripts:[
+				{action:{anim:{dur:3, ease:"bounce"}, pos:{y:25}}},
+				{action:{anim:4, pos:{x:40}}},
+				{action:{delay:5, anim:{dur:3, ease:"elastic"}, pos:[-40,-25]}}
+			],
+			item:{
+				setup:{text:["Layer", "Cropping", "Techniques"]},
+				init:{font:20, style:"caps", color:"#094766", pos:[40,25]},
+				scripts:[
+					{action:{anim:{dur:3, ease:"bounce"}, pos:{y:-25}}},
+					{action:{anim:4,pos:{x:-40}}},
+					{action:{delay:5, anim:{dur:3, ease:"elastic"}, pos:[40,25]}}
+				]
+			}
+		}
+	]
+}
