@@ -320,13 +320,13 @@ The _transform origin_, like the _anchor_, is a reference point on the item.  It
 <hr class="t60 b60">
 
 ## Color
-_undocumented_
+ProStyle supports the standard web formats for describing color.
 
 ### Named Colors
-_undocumented_
+The simplest option is to use a color by name.  All standard browsers support a large set of [HTML and X11 color names](http://en.wikipedia.org/wiki/Web_colors#HTML_color_names). Any of these names may be used in a property that expects a color. They are _not_ case sensitive.
 
 ### RGB
-_undocumented_
+Another common way to describe a color is to combine the three primary colors; red, green and blue.  Display devices use an [additive color model](https://en.wikipedia.org/wiki/Additive_color) so adding these primary colors results in lighter colors, topping out at white. Reducing the amount of primary color results in darker colors, approaching black.  Each value has a decimal range of 0-255.  A red value of 0 means no red.  A red value of 255 means as much red as possible.  Any combination of these three colors can be written using the <code>rgb()</code> syntax. <code>rgb(0,0,0)</code> equals black. <code>rgb(255,255,255)</code> equals white. <code>rgb(255,255,0)</code> equals yellow, and so on.
 
 ### Hex
 _undocumented_
