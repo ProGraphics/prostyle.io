@@ -354,7 +354,53 @@ A different way to describe colors is with hue, saturation, and lightness. _Hue_
 <hr class="t60 b60">
 
 ## 3D
-_undocumented_
+ProStyle makes it simple to [place](#){:data-toc="placement"} and [animate](#){:data-toc="animation"} objects in _three_ dimensions. It’s important to note, though, that the objects themselves have no depth. Imagine a piece of paper held out in front of you. It has width and height, but no depth. Of course paper does have a small amount of depth, but imagine it didn’t. If it were turned 90 degrees on it’s side, you would no longer be able to see it. With ProStyle, two dimensional objects can be positioned anywhere in _3D space_, just as our piece of paper can be moved around the room.
+
+Since the device’s screen is also two dimensional, modern browsers have built-in support to emulate a third dimension by using _perspective_, which ProStyle leverages when rendering. ProStyle configures a vanishing point in the center of the screen.  The dimensions of the frame provide the horizontal and vertical extents of the view space. The depth, or length of the Z axis, is calculated based on the X and Y axes, using [Euclidean geometry](http://en.wikipedia.org/wiki/Euclidean_geometry).
+
+### Example
+
+{% include alert story="/examples/3d/" %}
+{% highlight javascript %}
+{
+  classes: {
+      text3d: {
+        color: "#094766",
+        position: {z:3},
+        font: 32,
+        textShadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
+      }
+  },
+  item: {
+      item: "layer",
+      init: {
+        size: [50,40],
+        scale: 50,
+        border: "#094766",
+        bg: "rgba(255,255,127,0.7)",
+        corners: true,
+        shadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
+      },
+      scripts: [
+          { action: {delay:1, anim:10, rot:{x:540}, scale:100}},
+          { action: {delay:0.5, anim:[12,"bounce"], rot:{y:540}}},
+          { action: {anim:11, rot:{z:-540}}},
+          { event: "step2", actions: [
+              {delay:1, origin:[0,50]},
+              {anim:2, rot:{x:400}, scale:[200,150], opacity:0}
+          ]}
+      ],
+      items: [{
+        text:"In 3D!",
+        init: {class:"text3d", pos:{z:2}}
+      },
+      {
+        text:"In 3D!",
+        init: {class:"text3d", pos:{z:-2}}
+      }]
+  }
+}
+{% endhighlight %}
 
 <hr class="t60 b60">
 
