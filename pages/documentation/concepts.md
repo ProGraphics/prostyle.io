@@ -343,11 +343,13 @@ color: "#F00"
 
 Notice the last one has only one hex value per primary color. This is a short form which uses shorter strings in return for less granularity.
 
-### HSL
-_undocumented_
+### HSL and Alpha
+A different way to describe colors is with hue, saturation, and lightness. _Hue_ is the 360 degree color wheel value representing the rainbow of colors. _Saturation_ describes how vivid the color is.  100% is as vivid as possible. Lower numbers make the color grayer (washed out).  A _lightness_ higher than 50% approaches white, and a lightness less than 50% approaches black.  Optionally, an _alpha_ value between 0 and 1 may be used to make the color semi-transparent.  <code>hsl(0,100%,50%)</code> is red.  <code>hsla(120,100%,50%,0.5)</code> is semi-transparent green.
 
 ### Links
-_undocumented_
+* [http://en.wikipedia.org/wiki/Web_colors](http://en.wikipedia.org/wiki/Web_colors)
+* [http://en.wikipedia.org/wiki/Color](http://en.wikipedia.org/wiki/Color)
+
 
 <hr class="t60 b60">
 
