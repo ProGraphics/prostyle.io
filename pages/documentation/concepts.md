@@ -448,10 +448,6 @@ The _scale_ and _opacity_ properties do not really influence _where_ an object i
 	</div>
 </div>
 
-<hr class="t60 b60">
-
-## Stacks
-_undocumented_
 
 <hr class="t60 b60">
 
@@ -467,4 +463,10 @@ Individual content is processed by the GPU separately and then combined. Think o
 Once a layer is created, it can be manipulated very quickly using hardware-based routines. The layer can be scaled, rotated, made semi transparent, and so forth. Animating properties that force the layer to be redrawn will be slower than those that manipulate an existing layer. If an animation changes only one or more of the [placement](#){:data-toc="placement"} properties, it may likely be hardware accelerated by the GPU.
  
 ### Size Vs. Scale
+_undocumented_
+
+
+<hr class="t60 b60">
+
+## Stacks
 _undocumented_
