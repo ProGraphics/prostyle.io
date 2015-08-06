@@ -392,38 +392,32 @@ Since the device’s screen is also two dimensional, modern browsers have built-
 {
   classes: {
       text3d: {
-        color: "#094766",
         position: {z:3},
-        font: 32,
+        font: 30,
+        color: "#456",
         textShadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
       }
   },
   item: {
-      item: "layer",
+      itemType: "layer",
       init: {
         size: [50,40],
-        scale: 50,
-        border: "#094766",
         bg: "rgba(255,255,127,0.7)",
         corners: true,
         shadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
       },
       scripts: [
-          { action: {delay:1, anim:10, rot:{x:540}, scale:100}},
+          { action: {delay:1, anim:10, rot:{x:540}}},
           { action: {delay:0.5, anim:[12,"bounce"], rot:{y:540}}},
-          { action: {anim:11, rot:{z:-540}}},
-          { event: "step2", actions: [
-              {delay:1, origin:[0,50]},
-              {anim:2, rot:{x:400}, scale:[200,150], opacity:0}
-          ]}
+          { action: {anim:11, rot:{z:-540}}}
       ],
       items: [{
         text:"In 3D!",
-        init: {class:"text3d", pos:{z:2}}
+        init: {class:"text3d", pos:{z:4}}
       },
       {
         text:"In 3D!",
-        init: {class:"text3d", pos:{z:-2}}
+        init: {class:"text3d", pos:{z:-4}}
       }]
   }
 }
