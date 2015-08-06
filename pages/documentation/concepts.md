@@ -429,10 +429,18 @@ Since the device’s screen is also two dimensional, modern browsers have built-
 }
 {% endhighlight %}
 
+
 <hr class="t60 b60">
 
 ## Placement
-_undocumented_
+_Placement_ is a term used to describe where an object is in [3D](#){:data-toc="3d"} space. When this documentation refers to placement, or how an object is placed, it means the combination of the following four _properties_.
+
+* [Position](/properties/#position)
+* [Rotation](/properties/#rotation)
+* [Scale](/properties/#scale)
+* [Opacity](/properties/#opacity)
+
+The _scale_ and _opacity_ properties do not really influence _where_ an object is placed, but they are included in this definition nevertheless. It is not always easy to distinguish whether an object is moved along the z axis (three d) or simply scaled larger.  Opacity is included because the transparency level indicates what can be seen behind it.
 
 <hr class="t60 b60">
 
