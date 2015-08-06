@@ -440,7 +440,13 @@ _Placement_ is a term used to describe where an object is in [3D](#){:data-toc="
 * [Scale](/properties/#scale)
 * [Opacity](/properties/#opacity)
 
-The _scale_ and _opacity_ properties do not really influence _where_ an object is placed, but they are included in this definition nevertheless. It is not always easy to distinguish whether an object is moved along the z axis (three d) or simply scaled larger.  Opacity is included because the transparency level indicates what can be seen behind it. Animating only placement properties will likely trigger [hardware acceleration](#){:data-toc="performance"} on devices that support it.
+The _scale_ and _opacity_ properties do not really influence _where_ an object is placed, but they are included in this definition nevertheless. It is not always easy to visually distinguish whether an object is moved along the z axis (three d) or simply scaled larger.  Opacity is included because the transparency level indicates what can be seen behind it.
+
+<div class="row">
+  <div class="small-12 medium-10 medium-centered large-8 columns">
+		{% include alert text="Animating only placement properties may trigger hardware acceleration on devices that support it, for fast, smooth animation." %}
+	</div>
+</div>
 
 <hr class="t60 b60">
 
@@ -456,7 +462,7 @@ The way in which a story is written will impact whether parts of the animation m
 
 
 ### Compositing
-Individual content is processed by the GPU separately and then combined. Think of it like layers in photoshop. Each layer represents a two-deminsional array of pixels.  The browser will rasterize the content (draw it as pixel) into each layer. The size, in pixels, is defined by the content (e.g. font size). The act of drawing the pixels is not hardware accelerated because the software in the CPU must build the bitmap that will then be processed by the GPU.
+Individual content is processed by the GPU separately and then combined. Think of it like layers in photoshop. Each layer represents a two-deminsional array of pixels.  The browser will rasterize the content (draw it as pixels) into each layer. The size, in pixels, is defined by the content (e.g. font size). The act of drawing the pixels is not hardware accelerated because the software in the CPU must build the bitmap that will later be processed by the GPU.
 
 Once a layer is created, it can be manipulated very quickly using hardware-based routines. The layer can be scaled, rotated, made semi transparent, and so forth. Animating properties that force the layer to be redrawn will be slower than those that manipulate an existing layer. If an animation changes only one or more of the [placement](#){:data-toc="placement"} properties, it may likely be hardware accelerated by the GPU.
  
