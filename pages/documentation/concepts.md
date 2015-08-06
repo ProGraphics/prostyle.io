@@ -387,7 +387,7 @@ Since the device’s screen is also two dimensional, modern browsers have built-
 
 ### Example
 
-{% include alert story="/examples/3d/" %}
+{% include alert story="/gallery/3d/" %}
 {% highlight javascript %}
 {
   classes: {
@@ -454,11 +454,11 @@ The _scale_ and _opacity_ properties do not really influence _where_ an object i
 ## Performance
 ProStyle generates web content and scripts that leverage _hardware acceleration_ whenever possible. Hardware acceleration happens when the animation uses certain approaches that allow the video card processors (GPU) to do calculations, and use algorithms that are embedded in hardware, as opposed to programs in random access memory. They can be significantly faster than using standard CPU processors. Video processors are designed to maximize parallel execution.
 
-The way in which a story is written will impact whether parts of the animation may be processed by the video hardware. A general understanding of compositing will help you write more efficient animations.
+The way in which a story is written will impact whether parts of the animation may be processed by the video hardware. A general understanding of _compositing_ will help you write more efficient animations.
 
 
 ### Compositing
-Individual content is processed by the GPU separately and then combined. Think of it like layers in photoshop. Each layer represents a two-deminsional array of pixels.  The browser will rasterize the content (draw it as pixels) into each layer. The size, in pixels, is defined by the content (e.g. font size). The act of drawing the pixels is not hardware accelerated because the software in the CPU must build the bitmap that will later be processed by the GPU.
+Individual content is processed by the GPU separately and then combined. Think of it like layers in Photoshop. Each layer represents a two-deminsional array of pixels.  The browser will rasterize the content (draw it as pixels) into each layer. The size, in pixels, is defined by the content (e.g. font size). The act of drawing the pixels is not hardware accelerated because the software in the CPU must build the bitmap that will later be processed by the GPU.
 
 Once a layer is created, it can be manipulated very quickly using hardware-based routines. The layer can be scaled, rotated, made semi transparent, and so forth. Animating properties that force the layer to be redrawn will be slower than those that manipulate an existing layer. If an animation changes _only_ one or more of the [placement](#){:data-toc="placement"} properties, it may likely be hardware accelerated by the GPU.
  
