@@ -35,7 +35,8 @@ All story documents follow the same general structure. See if you can recognize 
 	</div>
 </div>
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   canvas: {
     setup: {...},
     init: {..}
@@ -73,7 +74,8 @@ All story documents follow the same general structure. See if you can recognize 
       ],
     }
   ]
-}</pre>
+}
+{% endhighlight %}
 
 The above might look a bit complicated.  If you study it for a moment, though, you’ll see a pattern.  Each model object can have [setup, properties, or both](#){:data-toc='setup-vs.-properties'}.  Properties are initialized with <code>init</code>.
 
@@ -91,38 +93,50 @@ To keep story documents concise, ProStyle supports shortcuts.  There are three k
 #### Flows, Pages and Items
 Since a story may have more than one flow, the root of the document has a <code>flows</code> entry that accepts a list using [ ] brackets. Each entry in the list is a flow object, with { } brackets.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   flows: [
     { pages: [{...}, {...}] },
     { pages: [{...}, {...}] }
   ]
-}</pre>
+}
+{% endhighlight %}
 
 However, if the story has only one flow, the document can omit the <code>flows</code> entry and use a <code>flow</code> entry instead.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   flow: { pages: [{...}, {...}] }
-}</pre>
+}
+{% endhighlight %}
 
 That's better, but if there is only one flow and it is the default simple flow, the document can just have page or pages, depending upon the number of pages.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   pages: [{items:[...]}, {items:[...]}]
-}</pre>
+}
+{% endhighlight %}
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   page: {items:[...]}
-}</pre>
+}
+{% endhighlight %}
 
 Furthermore, if there is only one page, and that page doesn't override the defaults (no property init or scripts), the document can have just the child items or item, depending upon the number of items.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   items: [{...}, {...}]
-}</pre>
+}
+{% endhighlight %}
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   item: {...}
-}</pre>
+}
+{% endhighlight %}
 
 When parsing a story, ProStyle searches for and uses, _in order_, <code>flows</code>, <code>flow</code>, <code>pages</code>, <code>page</code>, <code>items</code>, <code>item</code>. Only one will be used. Once one is found, _others are ignored_.
 
@@ -138,13 +152,17 @@ All one-time configuration of a model object is defined inside a <code>setup</co
 
 Either of these is valid for a text item.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   setup: { text: "animate!" }
-}</pre>
+}
+{% endhighlight %}
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   text: "animate!"
-}</pre>
+}
+{% endhighlight %}
 
 <hr class="t60 b60">
 
@@ -167,11 +185,13 @@ JavaScript Object Notation is a simple text file format. It uses named values.  
 ### Objects
 An _object_ is a container of named values.  Each object is enclosed in curly { } brackets containing zero or more named values.  Each named value is separated by a comma. Objects can have named child objects.
 
-<pre data-ace="readonly" style="width:100%;">{
-  town: “boston”,
+{% highlight javascript %}
+{
+  town: "boston",
   zipCode: 2112,
-  child: { … }
-}</pre>
+  child: { ... }
+}
+{% endhighlight %}
 
 ### Primitives
 There are three primitive value types.
@@ -181,23 +201,27 @@ There are three primitive value types.
 * _Strings_ are lines of text wrapped in quotes.
 * _Booleans_ are either __true__ or __false__.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   year: 2015,
   title: "ProStyle",
   awesome: true
-}</pre>
+}
+{% endhighlight %}
 
 ### Arrays
 Arrays are lists of values. They are enclosed in square [ ] brackets. Listed items are separated by a comma. Arrays may hold any of the types, including child arrays.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   numbers: [1,2,3],
   strings: ["a", "b", "c"],
   booleans: [true, false, true],
   objects: [{number: 1}, {string:"a"}, {}],
   arrays: [[0,0], [100,100]],
   mixed: [652, "banana", [true, false]]
-}</pre>
+}
+{% endhighlight %}
 
 ### Resources
 * <a rel='nofollow' target='_blank' href='http://en.wikipedia.org/wiki/JSON'>http://en.wikipedia.org/wiki/JSON</a>
@@ -214,15 +238,17 @@ _Setup_ and _properties_ are two distinct ways that [model objects](/models/) ar
 ### Setup
 Setup defines one-time configuration, which is core to how the model object works. Setup values are _immutable_.  That means that they are set once and cannot be changed.  ProStyle uses the setup to render and optimize the object.  For instance, setup values might render determine what HTML or SVG content to use. Setup values are defined in a <code>setup</code> entry.
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}
+{
   itemType: "text",
   setup: { text: "ProStyle!" }
-}</pre>
+}
+{% endhighlight %}
 
 ### Properties
 Unlike setup, properties _can_ be changed.  They are initialized in an <code>init</code> entry and can be changed in a [script](#){:data-toc="script"}.  There are many available [properties](/properties/).
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}{
   itemType: "text",
   setup: { text: "ProStyle!" },
   init: { opacity: 50 }.
@@ -231,7 +257,8 @@ Unlike setup, properties _can_ be changed.  They are initialized in an <code>ini
       actions: [{ delay: 5, opacity: 0 }]
     }
   ]
-}</pre>
+}
+{% endhighlight %}
 
 <hr class="t60 b60">
 
