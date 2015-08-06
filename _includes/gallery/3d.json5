@@ -1,0 +1,32 @@
+{
+  classes: {
+      text3d: {
+        position: {z:3},
+        font: 30,
+        color: "#456",
+        textShadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
+      }
+  },
+  item: {
+      itemType: "layer",
+      init: {
+        size: [50,40],
+        bg: "rgba(255,255,127,0.7)",
+        corners: true,
+        shadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
+      },
+      scripts: [
+          { action: {delay:1, anim:10, rot:{x:540}}},
+          { action: {delay:0.5, anim:[12,"bounce"], rot:{y:540}}},
+          { action: {anim:11, rot:{z:-540}}}
+      ],
+      items: [{
+        text:"In 3D!",
+        init: {class:"text3d", pos:{z:4}}
+      },
+      {
+        text:"In 3D!",
+        init: {class:"text3d", pos:{z:-4}}
+      }]
+  }
+}
