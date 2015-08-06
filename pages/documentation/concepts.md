@@ -463,9 +463,26 @@ Individual content is processed by the GPU separately and then combined. Think o
 Once a layer is created, it can be manipulated very quickly using hardware-based routines. The layer can be scaled, rotated, made semi transparent, and so forth. Animating properties that force the layer to be redrawn will be slower than those that manipulate an existing layer. If an animation changes _only_ one or more of the [placement](#){:data-toc="placement"} properties, it may likely be hardware accelerated by the GPU.
  
 ### Size vs. Scale
-The [scale](/properties/#scale) property stretches content vertically or horizontally. The stretching is performed _after_ the content has been rasterized to pixels. So, scaling larger will make the content look pixelated. To avoid pixelation, the content may be rendered larger and initially scaled much smaller. The animation can then scale up to the natural dimensions. However, there is a tradeoff.  This approach will render a larger bitmap layer in the GPU memory.
+The [scale](/properties/#scale) property stretches content vertically or horizontally. The stretching is performed _after_ the content has been rasterized to pixels. So, scaling larger will make the content look pixelated. To avoid pixelation, the content may be rendered larger and initially scaled much smaller. The animation can then scale up to the natural dimensions. However, there is a tradeoff.  This approach will render a larger bitmap layer and use more GPU memory.
 
-_example_
+
+{% include alert story="/examples/size-vs-scale/" %}
+{% highlight javascript %}
+{
+  item:  {
+    text:"font",
+    init: {
+      pos:[-50,-50], anchor:[-50,-50],
+      origin:[-50,-50], color:"#094766",
+      font:300, scale:10
+    },
+    action: {
+      anim:{ dur:5, rep:1, yoyo:true },
+      scale:100
+    }
+  }
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">
