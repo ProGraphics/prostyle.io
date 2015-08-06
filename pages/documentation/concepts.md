@@ -450,7 +450,10 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Performance
-_undocumented_
+ProStyle generates web content and scripts that leverage _hardware acceleration_ whenever possible. Hardware acceleration happens when the animation uses certain approaches that allow the video card processors (GPU) to do calculations, and use algorithms that are embedded in hardware, as opposed to programs in random access memory. They can be significantly faster than using standard CPU processors. Video processors are designed to maximize parallel execution.
+
+The way in which a story is written will impact whether parts of the animation may be processed by the video hardware. A general understanding of compositing will help you write more efficient animations.
+
 
 ### Compositing
 Hardware Acceleration - _undocumented_
