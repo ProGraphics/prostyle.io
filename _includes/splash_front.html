@@ -23,15 +23,15 @@ splash.story = {
 				charInit: {scale:[600,300], textShadow:[[0,8,10,"rgba(255,255,255,0)"],[0.5,8.5,10,"rgba(0,0,0,0)"]]},
 				charActions: [
 					{anim:{dur:2,stagger:0.2,ease:"circle"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
-					{delay:3.1, anim:{dur:0.5,stagger:0.03}, pos:{y:-9}}
+					{delay:1.9, anim:{dur:0.5,stagger:0.03}, pos:{y:-9}}
 				]
 			},
 			{
 				text: "WEB",
-				init: { color:"white", font:30, pos:[-35,-8], style:"bold", textShadow:true},
+				init: { color:"white", font:30, pos:[-35,-7.7], style:"bold", textShadow:true},
 				charInit: {opacity:0, scale:{y:0}},
 					charActions: [
-						{delay:6.7, anim:{dur:0.5,stagger:0.1}, opacity:100, scale:100}
+						{delay:5.5, anim:{dur:0.5,stagger:0.1}, opacity:100, scale:100}
 					]
 			},
 			{
@@ -39,8 +39,8 @@ splash.story = {
 				init: { color:"white", font:12.5, pos:[15,-100], style:"bold"},
 				charInit: {scale:[600,300], textShadow:[[0,10,10,"rgba(255,255,255,0)"],[0.5,10.5,10,"rgba(0,0,0,0)"]]},
 				charActions: [
-					{delay:1.5, anim:{dur:2,stagger:0.2,ease:"circle"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
-					{delay:1.6, anim:{dur:0.5,stagger:0.03}, pos:{y:12.5}}
+					{delay:0.5, anim:{dur:2,stagger:0.2,ease:"circle"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
+					{delay:1.4, anim:{dur:0.5,stagger:0.03}, pos:{y:12.5}}
 				]
 			},
 			{
@@ -48,8 +48,8 @@ splash.story = {
 				init: { color:"white", font:13.5, pos:[15,-80], style:"bold"},
 				charInit: {scale:[600,300], textShadow:[[0,20,10,"rgba(255,255,255,0)"],[0.5,20.5,10,"rgba(0,0,0,0)"]]},
 				charActions: [
-					{delay:3, anim:{dur:2,stagger:0.2,ease:"circle"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
-					{delay:0.5, anim:{dur:0.5,stagger:0.03}, pos:{y:7}}
+					{delay:1, anim:{dur:2,stagger:0.2,ease:"circle"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
+					{delay:1.2, anim:{dur:0.5,stagger:0.03}, pos:{y:7}}
 				]
 			},
 			{
@@ -58,7 +58,7 @@ splash.story = {
 				script: {
 					scriptType: "step2",
 					actions: [
-						{ anim:{dur:2, ease:"expo"}, pos:false}
+						{ delay:2, anim:{dur:2, ease:"expo"}, pos:false}
 					]
 				},
 				items: [
@@ -68,8 +68,8 @@ splash.story = {
 						items: [
 							{
 								itemType: "simpleBarChart",
-								setup: {bars:18, domain:60, width:26, height:50, margin:0.3, pos:{z:2}},
-								init: {},
+								setup: {bars:18, domain:60, width:26, height:50, margin:0.3},
+								init: {pos:{z:0.3}},
 								barInit: {fill: "#557E8E"},
 								barScript: {
 									scriptType: "step3",
