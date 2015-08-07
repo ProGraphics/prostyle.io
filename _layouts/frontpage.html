@@ -6,9 +6,9 @@ format: blog-index
 <div id="header-home">
     <div class="row">
         <div class="small-12 columns">
-        </div><!-- /.medium-4.columns -->
-    </div><!-- /.row -->
-</div><!-- /#header-home -->
+        </div>
+    </div>
+</div>
 
 <div class="row t80"><div class="medium-12 columns"><p class="teaser">
 Ever wanted to create stunning animation and add it to your web page or web application?
@@ -25,7 +25,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
         <h2 class="t50 b20">{{ page.widget-1.title }}</h2>
         <p style="text-align:left">{{ page.widget-1.text }}</p>
         <p><a class="button radius" href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}{{ page.widget-1.url }}{% endif %}">{{ site.data.language.more }}</a></p>
-    </div><!-- /.medium-4.columns -->
+    </div>
     {% endif %}
 
 
@@ -35,7 +35,7 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
         <h2 class="t50 b20">{{ page.widget-2.title }}</h2>
         <p style="text-align:left">{{ page.widget-2.text }}</p>
         <p><a class="button radius" href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}{{ page.widget-2.url }}{% endif %}">{{ site.data.language.more }}</a></p>
-    </div><!-- /.medium-4.columns -->
+    </div>
     {% endif %}
 
 
@@ -46,9 +46,9 @@ They are written as JSON and processed by our <a href="https://github.com/pro-gr
         <h2 class="t50 b20">{{ page.widget-3.title }}</h2>
         <p style="text-align:left">{{ page.widget-3.text }}</p>
         <p><a class="button radius" href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}{{ page.widget-3.url }}{% endif %}">{{ site.data.language.more }}</a></p>
-    </div><!-- /.medium-4.columns -->
+    </div>
     {% endif %}
-</div><!-- /.row -->
+</div>
 
 {{ content }}
 
