@@ -19,10 +19,10 @@ splash.story = {
 		items: [
 			{
 				text: "Craft rich",
-				init: {color:"transparent", font:14, pos:[15,-20], style:"bold"},
-				charInit: {scale:300, textShadow:[[0,0,10,"rgba(255,255,255,0)"],[0.5,0.5,10,"rgba(0,0,0,0)"]]},
+				init: {color:"white", font:14, pos:[15,-120], style:"bold"},
+				charInit: {scale:300, textShadow:[[0,8,10,"rgba(255,255,255,0)"],[0.5,8.5,10,"rgba(0,0,0,0)"]]},
 				charActions: [
-					{anim:{dur:2,stagger:0.1}, pos:-50, scale:100, textShadow:[[0,0,0,"rgba(255,255,255,1)"],[0.5,0.5,1,"rgba(0,0,0,1)"]]},
+					{anim:{dur:2,stagger:0.1,ease:"curve"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
 					{delay:1, anim:{dur:0.5,stagger:0.03}, pos:{y:-9}}
 				]
 			},
@@ -36,20 +36,20 @@ splash.story = {
 			},
 			{
 				text: "animation",
-				init: { color:"transparent", font:12.5, pos:[15,0], style:"bold"},
-				charInit: {scale:300, textShadow:[[0,0,10,"rgba(255,255,255,0)"],[0.5,0.5,10,"rgba(0,0,0,0)"]]},
+				init: { color:"white", font:12.5, pos:[15,-100], style:"bold"},
+				charInit: {scale:300, textShadow:[[0,10,10,"rgba(255,255,255,0)"],[0.5,10.5,10,"rgba(0,0,0,0)"]]},
 				charActions: [
-					{delay:0.5, anim:{dur:2,stagger:0.1}, pos:-50, scale:100, textShadow:[[0,0,0,"rgba(255,255,255,1)"],[0.5,0.5,1,"rgba(0,0,0,1)"]]},
+					{delay:0.5, anim:{dur:2,stagger:0.1,ease:"curve"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
 					{delay:0.5, anim:{dur:0.5,stagger:0.03}, pos:{y:12.5}}
 				]
 			},
 			{
 				text: "with ease",
-				init: { color:"transparent", font:13.5, pos:[15,20], style:"bold"},
-				charInit: {scale:300, textShadow:[[0,0,10,"rgba(255,255,255,0)"],[0.5,0.5,10,"rgba(0,0,0,0)"]]},
+				init: { color:"white", font:13.5, pos:[15,-80], style:"bold"},
+				charInit: {scale:300, textShadow:[[0,20,10,"rgba(255,255,255,0)"],[0.5,20.5,10,"rgba(0,0,0,0)"]]},
 				charActions: [
-					{delay:1, anim:{dur:2,stagger:0.01}, pos:-50, scale:100, textShadow:[[0,0,0,"rgba(255,255,255,1)"],[0.5,0.5,1,"rgba(0,0,0,1)"]]},
-					{delay:0.8, anim:{dur:0.5,stagger:0.03}, pos:{y:7}}
+					{delay:1, anim:{dur:2,stagger:0.1,ease:"curve"}, pos:-50, scale:100, textShadow:[[0,52,0,"rgba(255,255,255,1)"],[0.5,52.5,1,"rgba(0,0,0,1)"]]},
+					{delay:0.1, anim:{dur:0.5,stagger:0.03}, pos:{y:7}}
 				]
 			},
 			{
