@@ -1,9 +1,5 @@
 <script>
-window.ProStyle = window.ProStyle || {};
-ProStyle.Stories = ProStyle.Stories || {};
-var splash = ProStyle.Stories.splash = ProStyle.Stories.splash || {};
-
-splash.story = {
+ProStyle.Stories.splash = {
 	classes: {
 		text3d: {
 			color: "rgba(15,31,47,0.8)",
@@ -172,6 +168,9 @@ splash.story = {
 	}
 };
 
-ProStyle.Stories.Config.default.auto.advance = true;
-ProStyle.Stories.Config.default.auto.restart = false;
+ProStyle.defaultControllers = [
+	{ controllerType: "auto", start: true, stepAdvance: true, restart: false },
+	{ controllerType: "track" },
+	{ controllerType: "mouseWheel" }
+];
 </script>

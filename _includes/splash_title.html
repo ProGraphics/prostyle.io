@@ -1,9 +1,5 @@
 <script>
-window.ProStyle = window.ProStyle || {};
-ProStyle.Stories = ProStyle.Stories || {};
-var splash = ProStyle.Stories.splash = ProStyle.Stories.splash || {};
-
-splash.story = {
+ProStyle.Stories.splash = {
 	frame: { aspectRatio: 1000/100 },
 	page: {
 		init: { font: "'Libre Baskerville',serif" },
@@ -19,4 +15,9 @@ splash.story = {
 		]
 	}
 };
+
+ProStyle.defaultControllers = [
+	{ controllerType: "auto" },
+	{ controllerType: "track" }
+];
 </script>
