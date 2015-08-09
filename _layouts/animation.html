@@ -42,7 +42,11 @@ ace-js: true
 <script>
 window.ProStyle = window.ProStyle || {};
 ProStyle.Stories = ProStyle.Stories || {};
-var animation = ProStyle.Stories.animation = ProStyle.Stories.animation || {};
+ProStyle.Stories.animation = {% include {{ page.story }} %};
 
-animation.story = {% include {{ page.story }} %};
+ProStyle.defaultControllers = [
+	{ controllerType:"auto", start:true, stepAdvance:true, restart:true },
+	{ controllerType:"track" },
+	{ controllerType:"mouseWheel" }
+];
 </script>

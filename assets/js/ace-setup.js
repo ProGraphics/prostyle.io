@@ -50,7 +50,7 @@ $(function() {
 				else {
 					$("#animation").removeClass("anim-error");
 					value = value.slice(8, value.length - 1);
-					ProStyle.Stories.animation.story = JSON5.parse(value);
+					ProStyle.Stories.animation = JSON5.parse(value);
 					ProStyle.reload();
 				}
 			}
