@@ -1,16 +1,29 @@
 {
-  classes: { text: {pos:[0,0,30], origin:[0,0,-40], font:50}},
-  frame: { setup:{aspectRatio:0.8}},
+  classes: { 
+      text: {
+          pos:[0,0,35], 
+          origin:[0,0,-35], 
+          font:["monospace", 50]
+      }
+  },
+  frame: { setup:{aspectRatio:1.2} },
   items: [
     {
-      text:"x",
-      init: {class:"text", color:"rgba(127,0,0,0.7)", rot:{x:180}},
-      action: {anim:[5,"linear"], rot:{x:-180}}
+      text:"X",
+      init: {
+          class:"text",
+          color:"rgba(127,0,0,0.8)",
+          rot:{x:180}
+      },
+      action: {anim:[7,"linear"], rot:{x:-180}}
     },
     {
-      text:"y",
-      init: {class:"text", color:"rgba(0,127,0,0.7)"},
-      action: {anim:[5,"linear"], rot:{y:360}}
+      text:"Y",
+      init: {
+          class:"text",
+          color:"rgba(0,127,127,0.8)"
+      },
+      action: {anim:[7,"linear"], rot:{y:360}}
     }
   ]
 }
