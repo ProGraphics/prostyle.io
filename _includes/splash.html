@@ -1,9 +1,9 @@
-{% if page.hdr == "FrontPage" %}
+{% if page.splash == "frontpage" %}
 
 <header id="hdr-frontpage" class="hdr"><div id="hdr-highlight"><div class="row" data-prostyle="splash"><h1 class="hdr-text">{{ page.title }}</h1><div class="hdr-text">Craft rich web animations with ease.</div></div></div></header>
 {% include splash_front.html %}
 
-{% elsif page.hdr == "Title" %}
+{% elsif page.splash == "title" %}
 
 <header id="hdr-title" class="hdr"><div id="hdr-highlight"><div class="row" data-prostyle="splash"><h1 class="hdr-text">{{ page.title }}</h1></div></div></header>
 {% include splash_title.html %}

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Gallery"
-hdr: "Title"
 permalink: "/gallery/"
 ---
 <style>

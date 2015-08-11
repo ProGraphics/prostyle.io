@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Blog"
-hdr: "Title"
 subheadline: "ToDo-List &amp; Ideas"
 teaser: "Here are some ideas and features I want to implement in the future."
 permalink: "/blog/"

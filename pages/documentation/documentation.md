@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Documentation"
-hdr: "Title"
 permalink: "/documentation/"
 noindex: true
 ---

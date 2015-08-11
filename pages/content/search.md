@@ -1,8 +1,6 @@
 ---
 layout: page
-show_meta: false
 title: "Search"
-hdr: "Title"
 permalink: "/search/"
 ---
 

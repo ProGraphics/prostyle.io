@@ -1,8 +1,6 @@
 ---
 layout: page
-show_meta: false
 title: "Content"
-hdr: "Title"
 permalink: "/content/"
 ---
 

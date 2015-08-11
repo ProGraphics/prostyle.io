@@ -6,7 +6,6 @@
 #
 layout: page-front
 title: "ProStyle"
-hdr: "FrontPage"
 breadcrumbs: false
 extensions:
  - name: "controller.tap"
