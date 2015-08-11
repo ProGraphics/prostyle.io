@@ -1,5 +1,14 @@
-- name: "item.simpleBarChart"
-  url: "/assets/js/prostyle.item.simpleBarChart.min.js"
+- name: "controller.tap"
+  url: "/assets/js/prostyle.controller.tap.min.js"
 
-- name: "flow.pageStack"
-  url: "/assets/js/prostyle.flow.pageStack.min.js"
+- name: "controller.mousemove"
+  url: "/assets/js/prostyle.controller.mousemove.min.js"
+
+- name: "controller.mousewheel"
+  url: "/assets/js/prostyle.controller.mousewheel.min.js"
+
+- name: "item.simplebarchart"
+  url: "/assets/js/prostyle.item.simplebarchart.min.js"
+
+- name: "flow.pagestack"
+  url: "/assets/js/prostyle.flow.pagestack.min.js"

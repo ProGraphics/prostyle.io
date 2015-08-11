@@ -9,7 +9,9 @@ title: "ProStyle"
 hdr: "FrontPage"
 breadcrumbs: false
 extensions:
- - name: "item.simpleBarChart"
+ - name: "controller.tap"
+ - name: "controller.mousewheel"
+ - name: "item.simplebarchart"
 widget-1:
     title: "Get Started"
     url: '/getting-started/'
