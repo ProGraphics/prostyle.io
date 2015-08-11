@@ -1,9 +1,8 @@
 ---
 layout: page
-show_meta: false
 title: "Write Stories"
 teaser: "This step-by-step guide helps you start crafting animated stories."
-permalink: "/getting-started/"
+permalink: "/write-stories/"
 ---
 
 Write Stories

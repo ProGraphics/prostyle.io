@@ -1,6 +1,7 @@
 ---
 layout: default
 splash: frontpage
+breadcrumbs: false
 ---
 
 <div class="row t80"><div class="medium-12 columns"><p class="teaser">
@@ -16,8 +17,9 @@ Our <a href="/write-stories/">ProStyle</a> JavaScript library then transforms yo
     <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}{{ page.widget-1.url }}{% endif %}"><i class="fa {{ page.widget-1.icon }} front-icon"></i></a>
         <h2 class="t50 b20">{{ page.widget-1.title }}</h2>
-        <p style="text-align:left">{{ page.widget-1.text }}</p>
-        <p><a class="button radius" href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}{{ page.widget-1.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        <p style="text-align:left">{{ page.widget-1.text }}
+            <a href="{% if page.widget-1.url contains 'http' %}{{ page.widget-1.url }}{% else %}{{ site.baseurl }}{{ page.widget-1.url }}{% endif %}">{{ site.data.language.more | downcase }}</a>
+        </p>
     </div>
     {% endif %}
 
@@ -26,8 +28,9 @@ Our <a href="/write-stories/">ProStyle</a> JavaScript library then transforms yo
     <div class="medium-4 columns" style="text-align:center">
         <a href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}{{ page.widget-2.url }}{% endif %}"><i class="fa {{ page.widget-2.icon }} front-icon"></i></a>
         <h2 class="t50 b20">{{ page.widget-2.title }}</h2>
-        <p style="text-align:left">{{ page.widget-2.text }}</p>
-        <p><a class="button radius" href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}{{ page.widget-2.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        <p style="text-align:left">{{ page.widget-2.text }}
+            <a href="{% if page.widget-2.url contains 'http' %}{{ page.widget-2.url }}{% else %}{{ site.baseurl }}{{ page.widget-2.url }}{% endif %}">{{ site.data.language.more | downcase }}</a>
+        </p>
     </div>
     {% endif %}
 
@@ -37,8 +40,9 @@ Our <a href="/write-stories/">ProStyle</a> JavaScript library then transforms yo
         <a href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}{{ page.widget-3.url }}{% endif %}"><i class="fa {{ page.widget-3.icon }} front-icon"></i></a>
         <a href="{{ page.widget-3.url }}">{% if page.widget-3.image %}<img class="lazy" data-src="{{ site.urlimg }}/{{ page.widget-3.image }}" width="302" height="182" alt="">{% endif %}{% if page.widget-3.video %}{{ page.widget-3.video }}{% endif %}</a>
         <h2 class="t50 b20">{{ page.widget-3.title }}</h2>
-        <p style="text-align:left">{{ page.widget-3.text }}</p>
-        <p><a class="button radius" href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}{{ page.widget-3.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        <p style="text-align:left">{{ page.widget-3.text }}
+            <a href="{% if page.widget-3.url contains 'http' %}{{ page.widget-3.url }}{% else %}{{ site.baseurl }}{{ page.widget-3.url }}{% endif %}">{{ site.data.language.more | downcase }}</a>
+        </p>
     </div>
     {% endif %}
 </div>
@@ -49,11 +53,11 @@ Our <a href="/write-stories/">ProStyle</a> JavaScript library then transforms yo
     <div class="row t90 highlighted-posts">
         <div class="medium-7 columns">
           {% for post in site.posts limit:4 %}
-          <div class="row b40">
+          <div class="row b50">
             <div class="medium-12 columns">
 				      <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
                 {% if post.category %}<a href="/{{ post.category }}"><span class="category">{{ post.category }}</span></a> &middot; {% endif %}
-                {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+                {% if post.teaser %}{{ post.teaser | strip_html | escape }}{% else post.desc %}{{ post.desc | strip_html | escape }}{% endif %}
                 <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}">{{ site.data.language.read_more }}</a>
             </div>
           </div>
