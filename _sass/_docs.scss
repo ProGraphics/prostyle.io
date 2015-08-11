@@ -10,11 +10,23 @@ div.prop-format-row {
 	} 
 }
 
-div.name-value-row { border-left-color: #CCC; }
-div.model-setup-row { border-left-color: #789; }
-div.model-props-row { border-left-color: green; }
-div.prop-value-row { border-left-color: green; }
-div.prop-format-row { border-left-color: #789; }
+
+@mixin row-gradient($edge) {
+	border-left-color: $edge;
+	background: -moz-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 20%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,247,247,1)), color-stop(20%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 20%);
+	background: -o-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 20%);
+	background: -ms-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 20%);
+	background: linear-gradient(to right, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 20%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff', GradientType=1 );	
+}
+
+div.name-value-row { @include row-gradient(#CCC); }
+div.model-setup-row { @include row-gradient(#BCD); }
+div.model-props-row { @include row-gradient(#CDC); }
+div.prop-value-row { @include row-gradient(#CDC); }
+div.prop-format-row { @include row-gradient(#BCD); }
 
 div.play-story {
 	font-size: 1.1em;
@@ -29,7 +41,7 @@ div.play-story {
 
 span.prop-format-label {
 	background-color: transparent;
-	font-family: $font-family-monospace;
+	font-style: italic;
 }
 
 code, samp {
