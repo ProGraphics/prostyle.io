@@ -1,7 +1,6 @@
 ---
-layout: tocify
+layout: page-doc
 title: "Controllers"
-teaser: "The documentation is a work in progress..."
 permalink: "/controllers/"
 ---
 ## H2 One

@@ -1,9 +1,7 @@
 ---
-layout: tocify
+layout: page-doc
 title: "Concepts"
-teaser: "The documentation is a work in progress..."
 permalink: "/concepts/"
-ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}

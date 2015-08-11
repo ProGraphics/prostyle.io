@@ -1,9 +1,7 @@
 ---
-layout: tocify
+layout: page-doc
 title: "Properties"
-teaser: "The documentation is a work in progress..."
 permalink: "/properties/"
-ace-readonly-js: true;
 ---
 ## Overview
 {: class='t0'}

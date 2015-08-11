@@ -1,7 +1,6 @@
 ---
-layout: tocify
+layout: page-doc
 title: "Extensions"
-teaser: "The documentation is a work in progress..."
 permalink: "/extensions/"
 ---
 ## H2 One
