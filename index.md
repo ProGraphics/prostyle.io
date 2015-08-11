@@ -1,29 +1,29 @@
 ---
-#
-# Use the widgets beneath and the content will be
-# inserted automagically in the webpage. To make
-# this work, you have to use › layout: frontpage
-#
 layout: page-front
 title: "ProStyle"
-breadcrumbs: false
+desc: "Craft rich web animations with ease™"
 extensions:
  - name: "controller.tap"
  - name: "controller.mousewheel"
  - name: "item.simplebarchart"
 widget-1:
-    title: "Get Started"
-    url: '/getting-started/'
-    text: "It's easy. Learn how to configure your web page to display stunning web animations."
-    icon: 'fa-power-off'
-widget-2:
-    title: "Write Stories"
-    url: '/docs/stories/'
-    text: 'Learn how to craft and display your own animations using a simple JSON language.'
+    title: "Stories"
+    url: '/write-stories/'
+    text: "Write impressive web animations using a simple JSON language and add them to your website."
     icon: 'fa-pencil'
-widget-3:
+widget-2:
     title: "Gallery"
     url: '/gallery/'
-    text: 'Looking for inspiration? View a bunch of example animations and see what can be created.'
+    text: 'Looking for inspiration? View example animations. Try changing the story right in the gallery.'
     icon: 'fa-desktop'
+widget-3:
+    title: "Plus"
+    url: '/plus/'
+    text: 'An assortment of premium extensions that you can plug into your stories to make them even better.'
+    icon: 'fa-plus'
 ---
+<div class="row" style="display:none">
+  <div class="small-10 medium-9 small-centered large-8 columns t50">
+		{% include alert text="Looking for someone to create a great animation for you? &nbsp; <a href='http://pro.graphics'>Hire us!</a>" %}
+	</div>
+</div>
