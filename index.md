@@ -4,7 +4,7 @@
 # inserted automagically in the webpage. To make
 # this work, you have to use › layout: frontpage
 #
-layout: frontpage
+layout: page-front
 title: "ProStyle"
 hdr: "FrontPage"
 breadcrumbs: false
