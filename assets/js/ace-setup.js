@@ -22,11 +22,17 @@ $(function() {
 		}
 
     var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/clouds");
-    editor.getSession().setMode("ace/mode/javascript");
-		editor.setOptions({
-				maxLines: 10000
-		});
+	var session = editor.getSession();
+	
+    session.setOptions({
+		mode: "ace/mode/javascript",
+		tabSize:2
+	});
+	
+	editor.setOptions({
+			maxLines: 10000,
+			theme: "ace/theme/clouds"
+	});
 
     var throttleTimer = null;
     function throttle(fn, delay) {
@@ -69,7 +75,7 @@ $(function() {
 
 		var throttledUpdate = throttle(function() {	update(); }, 10000);
 
-		var session = editor.getSession().on('change', function() {
+		session.on('change', function() {
 			$btnUpdateAnim.removeAttr("disabled");
 			var value = editor.getValue().trim();
 			$btnJson1.attr("disabled", "disabled");
