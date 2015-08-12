@@ -1,15 +1,13 @@
 ---
-layout: default
-title: "ProStyle Blog Archive"
-teaser: "Check out all blog posts in my blog archive. Click on a headline to read the teaser."
+layout: page
+title: "All ProStyle Posts"
+desc: "A chronological list of all the gallery, example and blog posts"
 breadcrumb: true
-permalink: "blog/archive/"
+breadcrumb-title: All
+permalink: "posts/all/"
 ---
 <div id="blog-index" class="row">
 	<div class="small-12 columns t30">
-		<h1>{{ page.title }}</h1>
-		{% if page.teaser %}<p class="teaser">{{ page.teaser }}</p>{% endif %}
-
 		<dl class="accordion" data-accordion>
 			{% assign counter = 1 %}
 			{% for post in site.posts limit:1000 %}
@@ -23,5 +21,5 @@ permalink: "blog/archive/"
 			{% assign counter=counter | plus:1 %}
 			{% endfor %}
 		</dl>
-	</div><!-- /.small-12.columns -->
-</div><!-- /.row -->
+	</div>
+</div>

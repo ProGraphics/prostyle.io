@@ -9,10 +9,13 @@
 <div class="row"><div class="medium-12 columns">
 <nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
  <li><a href="{{ site.url }}">{{ site.data.language.breadcrumb_start }}</a></li>
+ {% if page.breadcrumb-base %}<li><a href="/{{ page.breadcrumb-base }}/">{{ page.breadcrumb-base }}</a></li>{% endif %}
  {% assign crumbs = page.url | split: '/' %}
    {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
-        <li class="current">{{ page.title }}</li>
+        {% if crumb != "index.html" %}
+            <li class="current">{% if page.breadcrumb-title %}{{ page.breadcrumb-title }}{% else %}{{ page.title }}{% endif %}</li>
+        {% endif %}
     {% else %}
         <li><a href="{{ site.url }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' }}</a>
     {% endif %}
