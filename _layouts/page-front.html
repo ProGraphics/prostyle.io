@@ -55,15 +55,16 @@ Our <a href="/write-stories/">ProStyle</a> JavaScript library then transforms yo
           {% for post in site.posts limit:4 %}
           <div class="row b50">
             <div class="medium-12 columns">
-				      <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-                {% if post.category %}<a href="/{{ post.category }}"><span class="category">{{ post.category }}</span></a> &middot; {% endif %}
+                <h3>{{ post.title }}</h3>
+                <p>
+                {% if post.category %}<a href="/{{ post.category }}"><span class="category">{{ post.category }}</span></a>{% endif %}
                 {% if post.teaser %}{{ post.teaser | strip_html | escape }}{% else post.desc %}{{ post.desc | strip_html | escape }}{% endif %}
-                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}">{{ site.data.language.read_more }}</a>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}">{{ site.data.language.more | downcase }}</a>
+                </p>
             </div>
           </div>
           {% endfor %}
         </div>
-
 
         <div class="medium-5 columns">
             <h3>{{ site.data.language.more_articles }}</h3>

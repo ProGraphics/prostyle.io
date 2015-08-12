@@ -33,7 +33,9 @@ span.category {
 	font-size: 0.6em;
 	padding: 0.1em 0.5em;
 	background: #EEE;
-	border-radius: 10% / 25%;
+    min-width: 7em;
+    text-align: center;
+    display: inline-block;
   -webkit-transition: background 200ms ease-out ;  
   -moz-transition: background 200ms ease-out;  
   -o-transition: background 200ms ease-out;  

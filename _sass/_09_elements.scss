@@ -113,7 +113,9 @@ button, .button         { letter-spacing: 1px; }
   -o-transition: background 200ms ease-out;  
   transition: background 200ms ease-out; 
 }
-.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus { background: $grey-1; }
+.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
+  background: $grey-1;
+}
 
 .homepage p { margin: 0; padding: 0; color: $grey-10; }
 
