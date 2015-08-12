@@ -83,12 +83,42 @@ p {
 p a,
 article a {
     font-weight: bold;
-    border-bottom: 1px dotted;
+    text-decoration: none;
+	position: relative;
+    transition: 0.7s;
+    &:before {
+        content: '';
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #EEE;
+    }
+    &:hover:before {
+        background: #DDD;
+		transition: 0.2s;
+	}
+    &:after {
+        content: '';
+        margin-top: 1px;
+        margin-bottom: 1px;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        background: #DDD;
+        transition: 1.2s;
+    }
+    &:hover:after {
+		left:0;
+		width: 100%;
+        background: #345;
+		transition: 0.2s;
+	}
 }
-p a:hover,
-article a:hover {
-    border-bottom: 2px solid;
-}
+
 p a.button,
 .button,
 .button:hover {
