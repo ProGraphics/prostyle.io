@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Text Color Example"
 category: examples
 meta_teaser: "Text Color example."

@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Text Width Example"
 category: examples
 meta_teaser: "Text Width example."

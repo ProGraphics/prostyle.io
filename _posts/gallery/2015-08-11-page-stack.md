@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Page Stack"
 category: gallery
 meta_teaser: "Animating a stack of pages in Pro Style using the pageStack extension with custom configuration."

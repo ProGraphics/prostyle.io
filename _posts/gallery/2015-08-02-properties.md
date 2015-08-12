@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Properties"
 category: gallery
 meta_teaser: "Some of the many properties that can be animated using Pro Style."

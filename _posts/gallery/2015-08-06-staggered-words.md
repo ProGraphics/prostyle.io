@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Staggered Words"
 category: gallery
 meta_teaser: "Staggered word animation using Pro Style."

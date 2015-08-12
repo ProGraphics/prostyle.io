@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Size vs. Scale"
 category: examples
 meta_teaser: "Size vs Scale."

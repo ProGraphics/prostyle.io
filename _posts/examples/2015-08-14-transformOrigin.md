@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Transform Origin Example"
 category: examples
 meta_teaser: "Transform Origin example."

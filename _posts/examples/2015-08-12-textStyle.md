@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Text Style Example"
 category: examples
 meta_teaser: "Text Style example."

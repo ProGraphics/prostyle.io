@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Hello World"
 category: gallery
 meta_teaser: "Hello World 3d text animation using Pro Style."

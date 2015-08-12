@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Text Align Example"
 category: examples
 meta_teaser: "Text Align example."

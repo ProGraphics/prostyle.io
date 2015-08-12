@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Text Shadow Example"
 category: examples
 meta_teaser: "Text Shadow example."

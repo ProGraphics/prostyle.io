@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Staggered Lines"
 category: gallery
 meta_teaser: "Text animation staggered by line using Pro Style."

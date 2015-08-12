@@ -1,5 +1,5 @@
 ---
-layout: animation
+layout: post-animation
 title: "Staggered Characters"
 category: gallery
 meta_teaser: "This is an example of staggered character animation using Pro Style."
