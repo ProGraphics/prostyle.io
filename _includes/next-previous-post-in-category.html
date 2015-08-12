@@ -30,10 +30,9 @@
 {% assign prev_post = post.url %}
 {% endif %}
 {% endfor %}
-{% if next_post %}
-<a class="left button tiny radius icon-chevron-left r15" href="{{ next_post }}">{{ site.data.language.next_post_in }} {{ cat | upcase }}</a>
-{% endif %}
 {% if prev_post %}
-<a class="button tiny radius" href="{{ prev_post }}">{{ site.data.language.previous_post_in }} {{ cat | upcase }}<span class="icon-chevron-right"></span></a>
+<a class="left" href="{{ prev_post }}"><span class="icon-chevron-left"></span>PREV</a>
 {% endif %}
-
+{% if next_post %}
+<a class="right" href="{{ next_post }}">NEXT<span class="icon-chevron-right"></span></a>
+{% endif %}
