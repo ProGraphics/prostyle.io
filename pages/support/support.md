@@ -1,8 +1,6 @@
 ---
 layout: page
-title: "Contact"
-meta_title: "Contact"
-show_meta: false
+title: "Support"
 permalink: "/support/"
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact"
-show_meta: false
+breadcrumb-base: support
 permalink: "/contact/"
 ---
 
