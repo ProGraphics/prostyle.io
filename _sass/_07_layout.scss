@@ -290,6 +290,9 @@ body.video cite { color: #fff; }
 	margin: 0;
 	ul.inline-list { margin: 0; }
 }
+#subfooter-left {
+	margin-top: rem-calc(4);
+}
 #subfooter-left ul.inline-list {
 	float: left;
 	margin: 0;
@@ -304,11 +307,11 @@ body.video cite { color: #fff; }
 	color: #fff;
 }
 #subfooter .social-icons li a {
-	font-size: rem-calc(30);
+	font-size: rem-calc(20);
 	display: block;
-	width: rem-calc(40);
-	height: rem-calc(40);
-	padding: rem-calc(4);
+	width: rem-calc(30);
+	height: rem-calc(30);
+	padding: rem-calc(5.5);
 	border-radius: 50%;
 	color: $subfooter-bg;
 	background: $subfooter-color;

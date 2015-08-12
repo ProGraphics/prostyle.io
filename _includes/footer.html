@@ -13,7 +13,8 @@
 
             <p class="shadow-black">
               {{ site.description }}
-              <br><a href="{{ site.url }}/getting-started/">{{ site.data.language.more }}</a>
+              <br><br>
+              ProStyle is a trademark of Pro Graphics, Inc.
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -66,25 +67,23 @@
 							{% endif %}
             {% endfor %}
             </ul>
-          </div><!-- /.large-3.columns -->
-        </div><!-- /.row -->
-
-      </div><!-- /#footer -->
-
+          </div>
+        </div>
+      </div>
 
       <div id="subfooter">
         <nav class="row">
-          <section id="subfooter-left" class="small-12 medium-6 columns">
-            <ul class="inline-list">
-              <li>Created with <a href="http://www.typescriptlang.org/" target="_blank" class="heart">&hearts;</a> by <a style="display:inline;" href="https://pro.graphics/">Pro Graphics, Inc.</a></li>
-            </ul>
-          </section>
-
-          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+          <section id="subfooter-left" class="small-12 medium-6 columns social-icons">
             <ul class="inline-list">
             {% for social_item in site.data.socialmedia %}
               <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
             {% endfor %}
+            </ul>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list">
+              <li>Created with <a href="http://www.typescriptlang.org/" target="_blank" class="heart">&hearts;</a> by <a style="display:inline;" href="https://pro.graphics/">Pro Graphics, Inc.</a></li>
             </ul>
           </section>
         </nav>
