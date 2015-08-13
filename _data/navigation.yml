@@ -21,6 +21,8 @@
     url: "/search/"
   - title: Gallery
     url: "/gallery/"
+  - title: Examples
+    url: "/examples/"
   - title: Blog
     url: "/blog/"
 

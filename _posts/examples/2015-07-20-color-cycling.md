@@ -2,7 +2,7 @@
 layout: post-animation
 title: "Color Cycling"
 category: examples
-desc: "Demonstration of cycling through multiple colors, blending from each to the next."
+desc: "Demonstration of cycling through multiple colors, blending from each color to the next."
 tags: 
   - text-color
 story: "examples/color.json5"

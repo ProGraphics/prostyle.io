@@ -2,6 +2,7 @@
 layout: page
 title: "Gallery"
 permalink: "/gallery/"
+noindex: true
 ---
 <style>
 	div.gallery.row li {
