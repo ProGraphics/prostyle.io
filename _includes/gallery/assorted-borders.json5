@@ -1,7 +1,7 @@
 {
 	items: [
 		{
-			setup: {text:"padding"},
+			text:"padding",
 			init: {border:[1,"green","double"]},
 			actions: [
 				{anim:2, padding:[27,0,0,0]},
@@ -12,8 +12,8 @@
 			]
 		},
 		{
-			setup: {text:"corners"},
-			init: {pos:[-35,-35], border:"purple", corners:false, padding:true},
+			text:"corners",
+			init: {pos:[-30,-30], border:"purple", corners:false, padding:true},
 			actions: [
 				{anim:2, corners:10},
 				{anim:2, corners:[10,1]},
@@ -22,8 +22,8 @@
 			]
 		},
 		{
-			setup: {text:"border"},
-			init: {pos:[35,35], border:true, padding:true},
+			text:"border",
+			init: {pos:[30,30], border:true, padding:true},
 			actions: [
 				{anim:2, border:[5,"blue"]},
 				{anim:3, border:[2,"green","groove"]},
@@ -32,8 +32,8 @@
 			]
 		},
 		{
-			setup: {text:"border"},
-			init: {pos:[35,-35], border:true, padding:true},
+			text:"border",
+			init: {pos:[30,-30], border:true, padding:true},
 			actions: [
 				{anim:2, border:[2,"green","dashed"]},
 				{anim:2, border:[2,"red","dotted"]},
@@ -42,8 +42,8 @@
 			]
 		},
 		{
-			setup: {text:"shadow"},
-			init: {pos:[-35,35], border:"orange", padding:true, shadow:true, corners:true,},
+			text:"shadow",
+			init: {pos:[-30,30], border:"orange", padding:true, shadow:true, corners:true,},
 			actions: [
 				{anim:2, shadow:[2,2,5]},
 				{anim:2, shadow:true},
