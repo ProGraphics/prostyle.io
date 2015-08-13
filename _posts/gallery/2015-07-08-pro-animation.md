@@ -5,7 +5,7 @@ desc: "Example text that demonstrates how to animate the word PRO back and forth
 category: gallery
 tags: 
   - text
-thumbnail: "pro.png"
+thumbnail: "pro-animation.png"
 story: "gallery/pro.json5"
 story2: "gallery/pro-2.json5"
 story3: "gallery/pro-3.json5"

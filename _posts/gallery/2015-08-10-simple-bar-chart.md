@@ -1,16 +1,16 @@
 ---
 layout: post-animation
-title: "Bar Chart"
+title: "Simple Bar Chart"
 category: gallery
 meta_teaser: "This Pro Style demo uses using the simple bar chart extension."
 teaser: "This Pro Style demo uses using the simple bar chart extension."
 tags: 
   - text
-thumbnail: "bar-chart.png"
+thumbnail: "animated-bar-chart.png"
 story: "gallery/bar-chart.json5"
 story2: "gallery/bar-chart-2.json5"
 ---
-# Bar Chart
+# Simple Bar Chart
 
 
 ### Configuration

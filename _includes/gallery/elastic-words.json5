@@ -3,13 +3,11 @@
 		init:{bg:"#BADA55"}
 	},
 	item:{
-		setup:{ 
-			text:[
-				"The Quick Brown",
-				"Fox Jumped Over",
-				"The Lazy Dog !"
-			]
-		},
+		text:[
+			"The Quick Brown",
+			"Fox Jumped Over",
+			"The Lazy Dog !"
+		],
 		init:{
 			font:{size:14, lineHeight:100},
 			width:90
