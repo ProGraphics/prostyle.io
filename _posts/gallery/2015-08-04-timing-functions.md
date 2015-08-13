@@ -5,7 +5,7 @@ category: gallery
 desc: "The timing function determines how far an animation has progressed at a particular duration."
 tags: 
   - text
-thumbnail: "eases.png"
+thumbnail: "timing-functions.png"
 story: "gallery/timing-functions.json5"
 
 ---

@@ -1,0 +1,22 @@
+{
+	items:[
+		{
+			text:"ProStyle",
+			init: { font: 30 },
+			charInit:{
+				pos:{z:30},
+				origin:[0,20,-15],
+				color:"rgba(22,33,44,0.7)"
+			},
+			charAction:{
+				anim:{ dur:15, stagger:0.12, ease:"elastic in" }, 
+				rotation:{x:-360}
+			}
+		},
+		{
+			itemType:"image",
+			setup:{src:"sep.svg", width:90},
+			init:{pos:{z:5}}
+		}
+	]
+}
