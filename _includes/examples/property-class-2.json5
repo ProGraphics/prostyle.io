@@ -1,0 +1,21 @@
+{
+  classes: {
+    label: { 
+      border: "blue",
+      corners:10,
+      font:25,
+      color:"blue",
+      padding: 3
+    }
+  },
+  items: [
+    {
+      text:"One",
+      init: { class:"label", pos:-20 }
+    },
+    {
+      text:"Two",
+      init: { class:"label", pos:20 }
+    }
+  ]
+}
