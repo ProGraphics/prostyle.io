@@ -1,0 +1,10 @@
+div.gallery.row img {
+	box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.5);
+	transition: 300ms;
+}
+
+div.gallery.row img:hover {
+	box-shadow: 0.4em 0.4em 1.2em rgba(0,0,0,0.8);
+	transform: rotate(-7deg) translate3d(0,0,1em) scale(1.1);
+	z-index: 100;
+}
