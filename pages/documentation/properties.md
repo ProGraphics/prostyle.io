@@ -550,7 +550,7 @@ The padding property defines how much extra space appears between a target’s e
 ## Position
 The position property determines where a target object is located in 3D space. The X axis extends from left to right, and the Y axis extends from top to bottom. Also, an imaginary Z axis extends from behind the screen, through the screen, to in front of it.  All three axes intersect in the middle of the page.
 
-Unlike standard web animation, Pro Motion uses center alignment. See Alignment and Origins.  The position defines where the target’s anchor is, which by default is at the center of the target’s dimensions.
+Unlike standard web animation, ProStyle uses center alignment. See Alignment and Origins.  The position defines where the target’s anchor is, which by default is at the center of the target’s dimensions.
 
 Hardware acceleration is used when available, so the animation is usually quite smooth.
 
@@ -599,11 +599,11 @@ Alias: pos
 ## Rotation
 The rotation property turns a target object in 3D space. There are three axes. The X axis extends horizontally, the Y axis extends vertically, and the Z axis extends from back to front. The position in which all three axes intersect is called the transform origin. By default, it is located in the center of the target object, but can be adjusted with the transformOrigin property. See Alignment and Origins.
 
-Standard two dimensional rotation is the equivalent of rotating around the z axis in 3D. Picture an axis line poking perpendicularly through the center of an image, and then the image rotating around that z axis. With Pro Motion, you can rotate around all three axes independently. Some visually attractive effects can be achieved by rotating along all three axes, but in different scripts, at different speeds.
+Standard two dimensional rotation is the equivalent of rotating around the z axis in 3D. Picture an axis line poking perpendicularly through the center of an image, and then the image rotating around that z axis. With ProStyle, you can rotate around all three axes independently. Some visually attractive effects can be achieved by rotating along all three axes, but in different scripts, at different speeds.
 
 Values are always absolute angles, in degrees.  They are not added to any existing values. The property is therefore named rotation, not rotate, since the latter might incorrectly hint that it is relative. Nevertheless, rotate can be used as an alias, but the values are always absolute.
 
-When animating, Pro Motion will tween from the current rotation to the new one.  For example, an object rotated 360 degrees will look the same as if it were rotated 0 degrees. However, when animating, it will rotate around one revolution.  To turn it two times, counterclockwise, you could set the rotation to -720.
+When animating, ProStyle will tween from the current rotation to the new one.  For example, an object rotated 360 degrees will look the same as if it were rotated 0 degrees. However, when animating, it will rotate around one revolution.  To turn it two times, counterclockwise, you could set the rotation to -720.
 
 Hardware acceleration is used when available, so the animation is usually quite smooth.
 
@@ -759,7 +759,7 @@ _undocumented_
 ## Skew
 The skew property applies a left or right slant to the target. Hardware acceleration is used when available, so the animation is usually quite smooth.
 
-Pro Motion only supports skewing in the horizontal direction, but vertical skewing can be emulated by skewing horizontally and also rotating.
+ProStyle only supports skewing in the horizontal direction, but vertical skewing can be emulated by skewing horizontally and also rotating.
 
 
 ### Values
