@@ -1,5 +1,6 @@
 <p class="b30" markdown="1">
-_undocumented_
+ <code>expand</code> is set to <samp class="boolean">false</samp>.
 </p>
 {% highlight javascript %}
+origin: -50
 {% endhighlight %}

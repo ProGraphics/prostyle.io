@@ -1013,37 +1013,47 @@ aliases: width
 <hr class="t60 b60">
 
 ## Transform Origin
-The transformOrigin property defines the reference point when transforming a target object. By default, the origin is centered on the target, at [0,0,0]. You might change it to rotate the target around a different point, in 3D space.
+The <code>transformOrigin</code> property defines the reference point when transforming a target object. By default, the origin is centered on the item, with the values <samp class="number">[0,0,0]</samp>. Like this, an item will rotate around it's center. Values of <samp class="number">[-50,-50]</samp> represent the item's top-left corner.  Optionally, the <code>expand</code> value may be set to use an origin relative to the _item's container_.
 
-Like the anchor property, the values are a percentage of the target’s dimensions. However, transformOrigin and anchor serve two very distinct purposes. See Alignment and Origins.
+Like the [anchor](#){:data-toc="anchor"} property, the values are a percentage of the target’s dimensions. However, transformOrigin and anchor serve two very distinct purposes. See [Alignment](/concepts/#alignment).
 
-Alias: origin
+Alias: <code>origin</code>
 
 ### Values
 {% include prop-value.html label="x" content="transformOrigin-x.md" %}
 {% include prop-value.html label="y" content="transformOrigin-y.md" %}
 {% include prop-value.html label="z" content="transformOrigin-z.md" %}
+{% include prop-value.html label="expand" content="transformOrigin-expand.md" %}
 
 ### Formats
+{% include prop-format.html label="array" content="transformOrigin-object.md" %}
 {% include prop-format.html label="array" content="transformOrigin-array.md" %}
+{% include prop-format.html label="array" content="transformOrigin-number.md" %}
+{% include prop-format.html label="array" content="transformOrigin-boolean.md" %}
 
 ### Example
 {% include alert story="/examples/transformOrigin/" %}
 {% highlight javascript %}{
-  classes: { text: {pos:[0,0,30], origin:[0,0,-40], font:50}},
-  frame: { setup:{aspectRatio:0.8}},
+  classes: { 
+    text: { pos:{z:40}, origin:{z:-40}, font:40 }
+  },
+  frame: { aspectRatio:1 },
   items: [
-    {
-      text:"x",
-      init: {class:"text", color:"rgba(127,0,0,0.7)", rot:{x:180}},
-      action: {anim:[5,"linear"], rot:{x:-180}}
+    { text:"X",
+      init: {
+        class:"text",
+        color:"rgba(0,127,127,0.8)"
+      },
+      action: {anim:[5,"linear"], rot:{x:360}}
     },
-    {
-      text:"y",
-      init: {class:"text", color:"rgba(0,127,0,0.7)"},
-      action: {anim:[5,"linear"], rot:{y:360}}
+    { text:"Y",
+      init: {
+        class:"text", 
+        color:"rgba(127,0,0,0.8)",
+        rot:{y:-180}
+      },
+      action: {anim:[5,"linear"], rot:{y:180}}
     }
   ]
 }
-
 {% endhighlight %}
