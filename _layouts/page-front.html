@@ -57,7 +57,7 @@ Our <a href="/write-stories/">ProStyle</a> JavaScript library then transforms yo
             <div class="medium-12 columns">
                 <h3>{{ post.title }}</h3>
                 <p>
-                {% if post.category %}<a href="/{{ post.category }}"><span class="category">{{ post.category }}</span></a>{% endif %}
+                {% if post.category %}<a class="noline" href="/{{ post.category }}"><span class="category">{{ post.category }}</span></a>{% endif %}
                 {% if post.teaser %}{{ post.teaser | strip_html | escape }}{% else post.desc %}{{ post.desc | strip_html | escape }}{% endif %}
                 <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}">{{ site.data.language.more | downcase }}</a>
                 </p>

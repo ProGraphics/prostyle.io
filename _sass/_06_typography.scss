@@ -80,8 +80,8 @@ p {
     -ms-hyphens: auto;
     hyphens: auto;
 }
-p a,
-article a {
+p a:not(.noline),
+article a:not(.noline) {
     font-weight: bold;
     text-decoration: none;
 	position: relative;
