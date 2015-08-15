@@ -829,7 +829,7 @@ alias: align
 {% include prop-format.html label="array" content="textAlign-array.md" %}
 
 ### Example
-{% include alert story="/examples/textAlign/" %}
+{% include alert story="/examples/text-align/" %}
 {% highlight javascript %}{
   item: {
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -869,7 +869,7 @@ alias: color
 
 
 ### Example
-{% include alert story="/examples/textColor/" %}
+{% include alert story="/examples/text-color/" %}
 {% highlight javascript %}{
   item: {
     text: "COLOR",
@@ -908,7 +908,7 @@ alias: textShadows
 {% include prop-format.html label="string" content="textShadow-string.md" %}
 
 ### Example
-{% include alert story="/examples/textShadow/" %}
+{% include alert story="/examples/text-shadow/" %}
 {% highlight javascript %}{
   item:{
     text:"TEXT",
@@ -949,7 +949,7 @@ aliases:  textStyles, styles, style
 {% include prop-format.html label="array" content="textStyle-array.md" %}
 
 ### Example
-{% include alert story="/examples/textStyle/" %}
+{% include alert story="/examples/text-style/" %}
 {% highlight javascript %}{
   item: {
     text: "Style",
@@ -972,9 +972,9 @@ aliases:  textStyles, styles, style
 <hr class="t60 b60">
 
 ## Text Width
-The textWidth property defines the maximum width of a text item. The natural width of a line of text depends on the font values and the set of characters.  If a text width is defined that is shorter than the natural width, those that don’t fit will wrap to the next line.
+The <code>textWidth</code> property defines the maximum width of a text item. The _natural_ width of text depends on the [font](#){:data-toc="font"} values and the set of characters.  If a text width is defined that is shorter than the natural width, that which don’t fit will wrap to the next line.
 
-aliases: width
+alias: <code>width</code>
 
 ### Values
 {% include prop-value.html label="width" content="textWidth-width.md" %}
@@ -987,26 +987,24 @@ aliases: width
 {% include prop-format.html label="array" content="textWidth-array.md" %}
 
 ### Example
-{% include alert story="/examples/textWidth/" %}
+{% include alert story="/examples/word-wrapping/" %}
 {% highlight javascript %}{
   item: {
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     init: {
-      color:"#094766",
-      border:"#094766",
-      padding:true,
-      width:94,
-      font:6,
-      pos:[-49,-49],
+      border:0.1,
+      padding:5,
+      font:5,
+      width:100,
+      pos:[-50,-50],
       anchor:[-50,-50]
     },
-    actions:[
-      {anim:4, width:60},
-      {anim:4, width:94}
-    ]
+    action: {
+      anim:{ dur:4, rep:1, yoyo:true }, 
+      width:60
+    }
   }
 }
-
 {% endhighlight %}
 
 
@@ -1032,7 +1030,7 @@ Alias: <code>origin</code>
 {% include prop-format.html label="array" content="transformOrigin-boolean.md" %}
 
 ### Example
-{% include alert story="/examples/transformOrigin/" %}
+{% include alert story="/examples/transform-origin/" %}
 {% highlight javascript %}{
   classes: { 
     text: { pos:{z:40}, origin:{z:-40}, font:40 }
