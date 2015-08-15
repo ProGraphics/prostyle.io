@@ -1,1 +1,1 @@
-Either true or false. If true, the text is rendered slanted.
+If <samp class="boolean">true</samp>, the text is rendered slanted.

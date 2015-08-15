@@ -931,9 +931,9 @@ alias: textShadows
 <hr class="t60 b60">
 
 ## Text Style
-The textStyle property defines how to visually augment the text to call attention to it.
+The <code>textStyle</code> property defines how text is visually augmented. This is generally done to call attention to it.
 
-aliases:  textStyles, styles, style
+aliases:  <code>textStyles</code>, <code>styles</code>, <code>style</code>
 
 ### Values
 {% include prop-value.html label="bold" content="textStyle-bold.md" %}
@@ -953,7 +953,7 @@ aliases:  textStyles, styles, style
 {% highlight javascript %}{
   item: {
     text: "Style",
-    init: {color:"#094766", font:40},
+    init: {font:40},
     actions:[
       {delay:1, style:"bold"},
       {delay:1, style:"italic"},

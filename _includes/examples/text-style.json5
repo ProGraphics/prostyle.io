@@ -1,7 +1,7 @@
 {
   item: {
     text: "Style",
-    init: {color:"#094766", font:40},
+    init: {font:40},
     actions:[
       {delay:1, style:"bold"},
       {delay:1, style:"italic"},

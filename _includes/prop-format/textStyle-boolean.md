@@ -1,5 +1,5 @@
 <p class="b30" markdown="1">
-False removes any previous styling. True sets the styling to bold and italic.
+<samp class="boolean">false</samp> removes any previous styling. <samp class="boolean">true</samp> sets the styling to bold and italic.
 </p>
 {% highlight javascript %}style: false{% endhighlight %}
 {% highlight javascript %}style: true{% endhighlight %}
