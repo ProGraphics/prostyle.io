@@ -1,23 +1,23 @@
 {
   classes: { 
-    text: { pos:{z:35}, origin:{z:-35}, font:35 }
+    text: { pos:{z:40}, origin:{z:-40}, font:40 }
   },
-  frame: { aspectRatio:1.6 },
+  frame: { aspectRatio:1 },
   items: [
     { text:"X",
       init: {
         class:"text",
         color:"rgba(0,127,127,0.8)"
       },
-      action: {anim:[10,"linear"], rot:{x:360}}
+      action: {anim:[5,"linear"], rot:{x:360}}
     },
     { text:"Y",
       init: {
         class:"text", 
         color:"rgba(127,0,0,0.8)",
-        rot:{y:180}
+        rot:{y:-180}
       },
-      action: {anim:[10,"linear"], rot:{y:-180}}
+      action: {anim:[5,"linear"], rot:{y:180}}
     }
   ]
 }

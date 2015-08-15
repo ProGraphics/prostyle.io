@@ -1,30 +1,32 @@
 {
   classes: { 
-    text: { pos:{z:35}, origin:{z:-35}, font:35 }
+    text: { pos:{z:40}, origin:{z:-40}, font:40 }
   },
-  frame: { aspectRatio:1.6 },
+  frame: { aspectRatio:1 },
   items: [
     { text:"X",
       init: {
         class:"text",
         color:"rgba(127,0,0,0.8)"
       },
-      action: {anim:[10,"linear"], rot:{x:360}}
+      action: {anim:[5,"linear"], rot:{x:360}}
     },
     { text:"Y",
       init: {
         class:"text", 
         color:"rgba(0,127,0,0.8)",
-        rot:{y:180}
+        rot:{y:-120}
       },
-      action: {anim:[10,"linear"], rot:{y:-180}}
+      action: {anim:[5,"linear"], rot:{y:240}}
     },
     { text:"Z",
       init: {
-        pos: {x:-35}, origin:{x:35}, font:35,
-        color:"rgba(0,0,127,0.8)"
+        pos: {x:-26}, font:40,
+        origin:{x:40, y:20, expand:true},
+        color:"rgba(0,0,127,0.8)",
+        rot:-240
       },
-      action: {anim:[10,"linear"], rot:360}
+      action: {anim:[5,"linear"], rot:120}
     }
   ]
 }
