@@ -1,0 +1,23 @@
+{
+  item:{
+    text:"TEXT",
+    init: {
+      color:"#FFF",
+      font:60,
+      textShadow:[
+        [0,0,1,"black"],
+        [0,0,1,"black"],
+        [0,0,1,"black"]
+      ]
+    },
+    charAction: {
+      anim:[0.5,"sine inout",3,0,true,0.5],
+      textShadow:[
+        [0.5,0.5,0.5,"black"],
+        [0,-2,10,"cyan"],
+        [0,2,10,"navy"]
+      ],
+      scale:105
+    }
+  }
+}
