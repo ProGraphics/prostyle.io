@@ -1,0 +1,7 @@
+{
+  item: {
+    text:"In 3D!",
+    init: { font: 40 },
+    action: {anim:10, rot:[540,540,-540]}
+  }
+}

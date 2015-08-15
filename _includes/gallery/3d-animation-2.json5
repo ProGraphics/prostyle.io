@@ -1,0 +1,11 @@
+{
+  item: {
+    text:"In 3D!",
+    init: { font: 40 },
+    scripts: [
+        { action: {del:1, anim:10, rot:{x:540}}},
+        { action: {del:0.5, anim:[12,"bounce"], rot:{y:540}}},
+        { action: {anim:11, rot:{z:-540}}}
+    ]
+  }
+}
