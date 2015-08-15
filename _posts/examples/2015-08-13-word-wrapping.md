@@ -2,7 +2,7 @@
 layout: post-animation
 title: "Word Wrapping"
 category: examples
-desc: "A demonstration that uses the text width property to induce and animate word wrapping"
+desc: "A demonstration that uses the text width property to induce and animate word wrapping."
 tags: 
   - text
   - textWidth

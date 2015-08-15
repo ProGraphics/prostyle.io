@@ -2,7 +2,7 @@
 layout: post-animation
 title: "Transform Origin"
 category: examples
-desc: "Defines the point in 3D space in which transforms, such as rotation, are relative to. The origin defaults to the center of the item, but may be moved relative to that."
+desc: "Defines the point in 3D space in which transforms, such as rotation, are relative to."
 tags: 
   - text
   - transform-origin
