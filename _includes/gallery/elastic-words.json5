@@ -14,7 +14,7 @@
 		},
 		lineInit:{ padding:true },
 		wordInit:{
-			origin:[0,-50], 
+			origin:{y:-50, expand:true}, 
 			rotation:{x:100}, 
 			opacity:0, 
 			bg:"orange", 
