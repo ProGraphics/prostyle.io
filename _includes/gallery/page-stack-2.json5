@@ -1,24 +1,25 @@
 {
-	canvas:{
-		padding:15,
-		init:{bg:"#855E42"}
-	},
-	flow: {
-		flowType:"pageStack",
-		placement:{pos:100},
+  classes: { text: {pos:{z:1}, font:7, align:"center"} },
+	canvas: { padding:7, init: {bg:"#678"} },
+	frame: { padding:13	},
+	flow:{
+		flowType:"stack",
+		pageAspectRatio:1.333,
+		stacks:{
+			current:{ pos:[-5,-10,-10], rot:[-10,15,-10], scale:100, opacity:100 },
+			future:{ pos:[-33,-45,-35], rot:[-10,15,-10], scale:100, opacity:80,
+				offset:{ pos:[-10,-9,-4], rot:[0,-5,3], scale:100, opacity:80 }},
+			past:{ pos:[70,70,100], rot:[0,10,-5], scale:100, opacity:0,
+				offset:{ pos:[0,0,0], rot:[0,0,0], scale:100, opacity:0 }}
+		},
 		pages:[
-			{ item:{
-					text:"This is a seven page 'Page Stack' using the default configuration.",
-					init:{font:7, width:90, align:"center"},
-					action:{delay:3}
-				}
-			},
+			{ item:{ text:["A 'Page Stack' with", "custom configuration."]} },
 			{ item:{text:"2"} },
 			{ item:{text:"3"} },
 			{ item:{text:"4"} },
 			{ item:{text:"5"} },
 			{ item:{text:"6"} },
-			{ item:{text:"7"} }
+			{ item:{text:"7"} },
 		]
 	}
 }

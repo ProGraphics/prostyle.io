@@ -10,5 +10,5 @@
 - name: "item.simplebarchart"
   url: "/assets/js/prostyle.item.simplebarchart.min.js"
 
-- name: "flow.pagestack"
-  url: "/assets/js/prostyle.flow.pagestack.min.js"
+- name: "flow.stack"
+  url: "/assets/js/prostyle.flow.stack.min.js"
