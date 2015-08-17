@@ -5,6 +5,7 @@
 	flow:{
 		flowType:"stack",
 		pageAspectRatio:1.333,
+		placement:{ pos:[-100,-100,0]},
 		stacks:{
 			current:{ pos:[-5,-10,-10], rot:[-10,15,-10], scale:100, opacity:100 },
 			future:{ pos:[-33,-45,-35], rot:[-10,15,-10], scale:100, opacity:80,
