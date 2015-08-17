@@ -1,0 +1,36 @@
+{
+  classes: { 
+    text: { font:45, style:"bold caps" },
+    x1: {pos:{x:-37}}, x2: {pos:{x:37}},
+    y1: {pos:{y:-24}}, y2: {pos:{y:24}},
+    goBack: {anim:[3,"elastic"]},
+    goDown: {anim:[3,"bounce"]},
+    goRight: {anim:4}
+  },
+	canvas:{padding:10, init:{bg:"#FFE"}},
+	frame:{setup:{aspectRatio:2}, init:{bg:"#666"}},
+	items:[
+		{
+			text:["Layer", "Cropping"],
+			init:{color:"#FFE"}
+		},
+		{
+			itemType:"layer",
+			init:{crop:true, size:[36,72], border:[1,"#0F0"], corners:36, bg:"#000", class:"x1,y1"},
+			scripts:[
+				{action:{class:"y2,goDown"}},
+				{action:{class:"x2,goRight"}},
+				{action:{delay:5, class:"x1,y1,goBack"}}
+			],
+			item:{
+				text:["Layer", "Cropping"],
+				init:{color:"#0F0", class:"x2,y2"},
+				scripts:[
+					{action:{class:"y1,goDown"}},
+					{action:{class:"x1,goRight"}},
+					{action:{delay:5, class:"x2,y2,goBack"}}
+				]
+			}
+		}
+	]
+}

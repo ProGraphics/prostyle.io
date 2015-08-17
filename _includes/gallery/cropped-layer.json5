@@ -1,0 +1,30 @@
+{
+  classes: { 
+    text: { font:70, style:"bold caps" },
+    animation: { anim:[3,"sine inout",1,0,true] },
+    x1: { pos:{x:-40}, class:"animation"},
+    x2: { pos:{x:40}, class:"animation"}
+  },
+	frame:{ aspectRatio:5 },
+	items:[
+		{
+			text:"Cropped Layer",
+			init:{ color:"#EEE" }
+		},
+		{
+			itemType:"layer",
+			init:{
+			  class:"x1",
+			  crop:true,
+			  size:[15,75],
+			  border:[2,"#345"]
+			},
+			action:{class:"x2"},
+			item:{
+				text:"Cropped Layer",
+				init:{ class:"x2", color:"#345" },
+				action:{ class:"x1" }
+			}
+		}
+	]
+}
