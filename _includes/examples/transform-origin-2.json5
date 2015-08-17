@@ -1,19 +1,19 @@
 {
   classes: { 
-    text: { pos:{z:40}, origin:{z:-40}, font:40 }
+    z: { pos:{z:40}, origin:{z:-40}, font:40 }
   },
   frame: { aspectRatio:1 },
   items: [
     { text:"X",
       init: {
-        class:"text",
+        class:"z",
         color:"rgba(127,0,0,0.8)"
       },
       action: {anim:[5,"linear"], rot:{x:360}}
     },
     { text:"Y",
       init: {
-        class:"text", 
+        class:"z", 
         color:"rgba(0,127,0,0.8)",
         rot:{y:-120}
       },
