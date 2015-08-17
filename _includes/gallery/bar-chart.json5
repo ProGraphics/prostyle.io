@@ -1,39 +1,11 @@
 {
 	item: {
-		itemType: "layer",
-		init: {bg: "#EEE", size: [60,60], corners: 1, position: {z:-1}},
-		items: [
-			{
-				itemType: "barChart",
-				setup: {bars:10, domain:10, width:50, height:50, margin:1},
-				barActions: [
-					{
-						anim: {dur:3, ease:"elastic", stagger:0.05},
-						data: [1,2,3,4,5,6,7,8,9,10]
-					},
-					{
-						anim: {dur:3, ease:"elastic", stagger:0.05},
-						data: [1,-2,3,-4,5,-6,7,-8,9,-10],
-						fill: "purple",
-						opacity: 50
-					},
-					{
-						anim: {dur:3, stagger:0.05},
-						data: [8,5,4,3,2,2,3,4,5,8],
-						fill: "orange",
-						opacity: 100
-					},
-					{
-						anim: {dur:3, ease:"bounce", stagger:0.05},
-						data: [1,2,3,4,5,6,7,8,9,10]
-					},
-					{
-						anim: 0.5,
-						data: false,
-						fill: "red"
-					}
-				]
-			}
+		itemType: "barChart",
+		setup: { bars:7, domain:7, margin:7 },
+		barsInit: { fill:"#567" },
+		barActions: [
+			{ anim:3, data:[1,2,3,4,5,6,7]	},
+			{ anim:1, data:false }
 		]
 	}
 }
