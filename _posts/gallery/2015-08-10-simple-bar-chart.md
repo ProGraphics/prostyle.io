@@ -5,7 +5,7 @@ category: gallery
 meta_teaser: "This Pro Style demo uses using the simple bar chart extension."
 teaser: "This Pro Style demo uses using the simple bar chart extension."
 extensions:
- - name: "item.simplebarchart"
+ - name: "item.barchart"
 tags: 
   - text
 thumbnail: "animated-bar-chart.png"

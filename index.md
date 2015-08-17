@@ -5,7 +5,7 @@ desc: "Craft rich web animations with ease™"
 extensions:
  - name: "controller.tap"
  - name: "controller.mousewheel"
- - name: "item.simplebarchart"
+ - name: "item.barchart"
 widget-1:
     title: "Stories"
     url: '/write-stories/'

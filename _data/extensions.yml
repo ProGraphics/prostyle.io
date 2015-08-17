@@ -7,8 +7,8 @@
 - name: "controller.mousewheel"
   url: "/assets/js/prostyle.controller.mousewheel.min.js"
 
-- name: "item.simplebarchart"
-  url: "/assets/js/prostyle.item.simplebarchart.min.js"
+- name: "item.barchart"
+  url: "/assets/js/prostyle.item.barchart.min.js"
 
 - name: "flow.stack"
   url: "/assets/js/prostyle.flow.stack.min.js"

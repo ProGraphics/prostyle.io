@@ -1,7 +1,7 @@
 {
   items: [
     {
-      itemType: "simpleBarChart",
+      itemType: "barChart",
       setup: {bars:30, domain:50, width:99, height:70, margin:0.3},
 			init: {pos:{y:14}},
       barInit: {fill: "#557E8E"},
@@ -22,7 +22,7 @@
     ]
   },
   {
-    itemType: "simpleBarChart",
+    itemType: "barChart",
     setup: {bars:30, domain:50, width:99, height:70, margin:2},
 		init: {pos:{y:14}},
     barInit: {fill:"#BE7467"},
