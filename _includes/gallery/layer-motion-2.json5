@@ -1,0 +1,38 @@
+{
+  canvas: { padding:20, init:{bg:"#FFF"} },
+	frame:{ aspectRatio:1.333 },
+	item:{
+		itemType:"layer",
+		init:{
+			corners:true,
+			size:[100,100],
+			rot:{x:40},
+		bg:"rgba(255,255,255,0)"
+		},
+		scripts:[
+			{
+				action:{anim:[25,"linear"], rot:1080}
+			},
+			{
+				actions:[
+					{delay:5, anim:7, bg:"rgba(247,247,247,0.3)", shadow:[0,0,1,"#234"]},
+					{delay:8, anim:3, bg:"rgba(255,255,255,0)", shadow:false}
+				]
+			}
+		],
+		items:[
+			{
+				itemType:"layer",
+				init: { size:[18,24], shadow:[0,0,1,"#234"], corners:12 }
+			},
+			{
+				itemType:"layer",
+				init: { size:[15,20], pos:{z:55}, bg:"#678",border:"#234", corners:10	},
+				action:{
+					anim:[1,"sine inout",24,0,true],
+					pos:{z:-200}
+				}
+			}
+		]
+	}
+}

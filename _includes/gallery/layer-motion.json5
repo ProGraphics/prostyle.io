@@ -1,22 +1,21 @@
 {
-	frame:{
-		setup:{aspectRatio:1}
-	},
+  canvas: { padding:20, init:{bg:"#FFF"} },
+	frame:{ aspectRatio:1.333 },
 	item:{
 		itemType:"layer",
 		init:{
 			corners:true,
-			size:[90,70],
-			rot:{x:25},
+			size:[100,100],
+			rot:{x:40},
 			bg:"#FFF"
 		},
 		scripts:[
 			{
-				action:{anim:{dur:25, ease:"linear"}, rot:1800}
+				action:{anim:[25,"linear"], rot:1080}
 			},
 			{
 				actions:[
-					{delay:5, anim:7, bg:"#EEE", shadow:[0,0,1,"#094766"]},
+					{delay:5, anim:7, bg:"#EEE", shadow:[0,0,1,"#234"]},
 					{delay:8, anim:3, bg:"#FFF", shadow:false}
 				]
 			}
@@ -24,22 +23,17 @@
 		items:[
 			{
 				itemType:"image",
-				setup:{
-					src:"pro-1000x829.png",
-					width:70
-				},
-				init: {
-					pos:{z:5}
-				},
+				src:"pro-1000x829.png",
+				width:60,
+				init: { pos:{z:5}	},
 				action:{
-					anim:{dur:25, ease:"linear"},
-					rot:-1800
+					anim:[25,"linear"],
+					rot:-1080
 				}
 			},
 			{
-				itemType:"text",
-				setup:{text:"MOTION"},
-				init:{font:8, pos:[0,30,21], opacity:0, color:"#FFF", textShadow:[0,0,1,"#094766"]},
+				text:"STYLE",
+				init:{font:12, pos:[0,50,21], opacity:0, color:"#FFF", textShadow:[0,0,0.5,"#234"]},
 				actions:[
 					{delay:6, anim:3, opacity:100},
 					{delay:11, anim:3, opacity:0}
