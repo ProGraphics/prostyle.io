@@ -9,7 +9,7 @@ extensions:
 widget-1:
     title: "Stories"
     url: '/write-stories/'
-    text: "Write impressive web animations using a simple JSON language and add them to your website."
+    text: "Get Started. Write web animations using a simple JSON language and add them to your website."
     icon: 'fa-pencil'
 widget-2:
     title: "Gallery"
