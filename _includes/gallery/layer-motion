@@ -1,0 +1,25 @@
+{
+  canvas: { padding:20, init:{bg:"#FFF"} },
+	item:{
+		itemType:"layer",
+		init:{
+			size: [36,64],
+		pos: 20,
+		bg: "transparent",
+		origin: {x:-2,y:32, expand:true}
+		},
+		action: { anim:[5,"linear"], rot: -360 },
+		items:[
+			{
+				itemType:"layer",
+				init: {
+				size: [9,16],
+				bg: "red",
+				pos: -20,
+				origin: {x:24.5,y:8, expand:true}
+				},
+				action: { anim:[1,"linear",4], rot: 360 }
+			}
+		]
+	}
+}
