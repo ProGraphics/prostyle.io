@@ -1,0 +1,40 @@
+{
+	canvas:{
+		init:{bg:"#BADA55"}
+	},
+	item:{
+		text:[
+			"The Quick Brown",
+			"Fox Jumped Over",
+			"The Lazy Dog !"
+		],
+		init:{
+			font:{size:14, lineHeight:100},
+			width:90
+		},
+		lineInit:{ padding:true },
+		wordInit:{
+			origin:{y:-50, expand:true}, 
+			rotation:{x:100}, 
+			opacity:0, 
+			bg:"orange", 
+			border:true,
+			corners:true,
+			padding:true
+		},
+		wordActions:[
+			{
+				anim:{dur:6, stagger:0.12, ease:"elastic"},
+				rotation:false,
+				opacity:false
+			},
+			{
+				anim:{dur:5, stagger:0.2},
+				pos:{y:30,z:50},
+				rot:{x:90},
+				scale:120,
+				opacity:0
+			}
+		]
+	}
+}
