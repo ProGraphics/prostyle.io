@@ -14,7 +14,7 @@ story3: "gallery/cropped-layer-3.json5"
 ---
 # Cropped Layer
 
-Layer cropping is an advanced technique which makes it look like there is a see-through moving item.  However, it is an illusion.  The moving item is a layer with it's own content.  The layer contains a text item that matches the one on the page, differing only by color.
+Layer cropping is an advanced technique which makes it look like there is a see-through moving item.  However, it is an illusion.  The moving item is a [layer](/models/#&middot;-layer-item) with it's own content.  The layer contains a text item that matches the one on the page, differing only by color.
 
 Whenever the layer is repositioned, the text within the layer is also repositioned, but with _exactly the opposite_ values. So, the text in the layer appears to not move at all _relative to the page_. The layer has it's [crop](/properties/#crop) property set to <samp class="boolean">true</samp>, so the text outside the layer is not visible.
 
