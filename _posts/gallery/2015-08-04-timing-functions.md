@@ -10,7 +10,7 @@ story: "gallery/timing-functions.json5"
 
 ---
 # Timing Functions
-The timing function determines how far an animation has progressed at a particular time in the animation's duration. The simplest example is <samp class="string">linear</samp> which is aligned directly to the duration; e.g. the animation is 25% along when the duration time is 25% complete.  More elaborate functions provide _effects_ such as bouncing or elasticity.
+The timing function, also known as _ease_, determines how far an animation has progressed at a particular time in the animation's duration. The simplest example is <samp class="string">linear</samp> which is aligned directly to the duration; e.g. the animation is 25% along when the duration time is 25% complete.  More elaborate functions provide _effects_ such as bouncing or elasticity.
 
 The timing function is defined with the _ease_ value of the [animation](/properties/#animation) property. 
 
