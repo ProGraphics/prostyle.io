@@ -13,7 +13,7 @@ story3: "gallery/layer-motion-3.json5"
 ---
 # Layer Motion
 
-Layers are items that can be placed like any other item.
+Layers are items that can be placed like any other item. 
 
 ### Configuration
 
