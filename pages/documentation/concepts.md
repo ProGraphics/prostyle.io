@@ -321,9 +321,52 @@ Each step is associated with a single page, and each page is a member of a singl
 
 
 ### Eases
-Eases are used to control how quickly or slowly a change occurs relative to the constant pace of time. Eases are sometimes referred to as _timing functions_, because they map the elapsed time within the duration of the animation to the completion percentage of the property change. Easing can be used to apply an effect, like bouncing or elasticity.
+Eases are used to control how quickly or slowly a change occurs relative to the constant pace of time. They map any time within the duration of the animation to the completion percentage of the property change. Easing can be used to apply an effect, like bouncing or elasticity.
+
+An ease is composed of a [timing function](/gallery/timing-functions/), a _direction_ and a _strength_.
+
+#### Timing Functions
+
+| Function | Description  |
+|:-:|---|
+| <samp>"back"</samp> | The property value goes beyond the target value, slows down, and then returns and rests at the target value. It is like a one-pass elastic ease. |
+| <samp>"bounce"</samp> | The property value reaches the target value quickly, bounces back toward the start value, over and over, diminishing in strength each iteration. |
+| <samp>"circle"</samp> | A curved function that looks like a circle when plotted. It is only slightly different than sine. |
+| <samp>"curve"</samp> | a simple quadratic curve where the activity starts quickly and slows as the target value approaches. |
+| <samp>"elastic"</samp> | Similar to bounce except the diminishing bounces alternate between each side of the target value. |
+| <samp>"expo"</samp> | a simple reverse exponential curve where the activity starts quickly and slows as the target value approaches. |
+| <samp>"linear"</samp> | The property moves from starting value to target value at a constant rate. |
+| <samp>"sine"</samp> | A curved function based on the sine trigonometric function. It is only slightly different than circle. |
+| <samp>"slowmo"</samp> | The property quickly progresses and then slowly progresses and then quickly progresses to the target value. |
+| <samp>"slowmoback"</samp> | Similar to slowmo except the slow part plays backward. |
+| <samp>"stepped"</samp> | The distance between the starting and target values is segmented into 3, 6, 12 or 24 steps, depending upon the strength. |
+| <samp>"stop"</samp> | The animation starts quickly, decelerates to a stop in the middle, and then accelerates to the target value. |
+| <samp>"stopandreturn"</samp> | Similar to stop, but the stop point is the target value and the animation ends back at the start value. |
+
+
+#### Direction
+
+| Direction | Description  |
+|:-:|---|
+| <samp>"out"</samp> | The effect of a timing function happens at the target value side. This is the default. |
+| <samp>"in"</samp> | The effect of a timing function happens at the starting value side. |
+| <samp>"inout"</samp> | The effect happens on both sides. |
+
+
+#### Strength
+
+The impact of each strength value is particular to each timing function. For example, it effects the number of steps with <samp>"stepped"</samp>, the length of the slow section of <samp>"slowmo"</samp>, the iterations with <samp>"elastic"</samp>, etc. 
+
+| Strength | Description  |
+|:-:|---|
+| <samp>"less"</samp> | The effect is diminished. |
+| <samp>"normal"</samp> | The default configuration, usually the best. |
+| <samp>"more"</samp> | The effect is stronger. |
+| <samp>"extra"</samp> | The effect is very strong. |
+
 
 ### Staggering
+
 When there are multiple targets, like bars in a chart or characters in text, each can be staggered to start after the prior.
 
 
