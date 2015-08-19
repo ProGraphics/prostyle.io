@@ -352,6 +352,8 @@ The simplest option is to use a color by name.  All standard browsers support a 
 ### RGB
 Another common way to describe a color is to combine the three primary colors; red, green and blue.  Display devices use an [additive color model](https://en.wikipedia.org/wiki/Additive_color) so adding these primary colors results in lighter colors, topping out at white. Reducing the amount of primary color results in darker colors, approaching black.  Each value has a decimal range of 0-255.  A red value of 0 means no red.  A red value of 255 means as much red as possible.  Any combination of these three colors can be written using the <code>rgb()</code> syntax. <code>rgb(0,0,0)</code> equals black. <code>rgb(255,255,255)</code> equals white. <code>rgb(255,255,0)</code> equals yellow, and so on.
 
+There is also a version of rgb that supports semi-transparency.  The forth parameter of <code>rgba(255,255,0,0.5)</code> is a number between 0 and 1, where 0 is completely transparent and 1 is completely opaque.
+
 ### Hex
 It is very common for web colors to be described with _hexadecimal_ numbers. Instead of each digit having 10 values (0 to 9), each digit has 16 values (0123456789ABCDEF). Color values in hexadecimal range from 00 to FF, which is 256 distinct values just like 0 to 255 is in decimal.  Hex colors are prefixed with a hash character to distinguish them.
 
@@ -368,7 +370,9 @@ color: "#F00"
 Notice the last one has only one hex value per primary color. This is a short form which uses shorter strings in return for less granularity.
 
 ### HSL and Alpha
-A different way to describe colors is with hue, saturation, and lightness. _Hue_ is the 360 degree color wheel value representing the rainbow of colors. _Saturation_ describes how vivid the color is.  100% is as vivid as possible. Lower numbers make the color grayer (washed out).  A _lightness_ higher than 50% approaches white, and a lightness less than 50% approaches black.  Optionally, an _alpha_ value between 0 and 1 may be used to make the color semi-transparent.  <code>hsl(0,100%,50%)</code> is red.  <code>hsla(120,100%,50%,0.5)</code> is semi-transparent green.
+A different way to describe colors is with hue, saturation, and lightness. _Hue_ is the 360 degree color wheel value representing the rainbow of colors. _Saturation_ describes how vivid the color is.  100% is as vivid as possible. Lower numbers make the color grayer (washed out).  A _lightness_ higher than 50% approaches white, and a lightness lower than 50% approaches black.
+
+Optionally, an _alpha_ value between 0 and 1 may be used to make the color semi-transparent.  <code>hsl(0,100%,50%)</code> is red.  <code>hsla(120,100%,50%,0.5)</code> is semi-transparent green.
 
 ### Links
 * [http://en.wikipedia.org/wiki/Web_colors](http://en.wikipedia.org/wiki/Web_colors)
