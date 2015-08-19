@@ -10,10 +10,10 @@ ProStyle animations are referred to as _stories_. They are translated from [JSON
 ## Story
 Each story is composed of a _canvas_, a _frame_, and one or more _flows_. Each flow contains one or more _pages_, and each page contains one or more _items_.
 
-ProStyle renders the tree of model objects into a tree of rendered HTML and SVG content and an [timeline](#){:data-toc="timeline"} that animates the content's [properties](/properties/).
+ProStyle renders the tree of model objects into a tree of HTML and SVG content and a [timeline](#){:data-toc="timeline"} that animates the content's [properties](/properties/).
 
 ### Model Objects
-Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/properties/) and [positioned](#){:data-toc='placement'}. Their properties may be animated with scripts.
+Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](#){:data-toc='setup'}, [styled](/properties/) and [positioned](#){:data-toc='placement'}. Their properties may be animated with [scripts](#){:data-toc="scripts"}.
 
 | Model | Description  |
 |:-:|---|
@@ -143,7 +143,7 @@ Scripts and actions may be shortcutted like flows, pages, and items.  If there a
 
 ProStyle searches for and uses, _in order_, <code>scripts</code>, <code>script</code>, <code>actions</code>, <code>action</code>. Only one will be used. Once one is found, _others are ignored_.
 
-Note that some model objects have [multiple sets of properties](#){:data-toc='multiple'}. For example, the text item has word properties. When shortcutting, prefix the name of the property set. e.g. _wordScript_, _wordActions_, _wordAction_, etc.
+Note that some model objects have [multiple sets of properties](/models/#property-sets). For example, the text item has word properties. When shortcutting, prefix the name of the property set. e.g. _wordScript_, _wordActions_, _wordAction_, etc.
 
 #### Setup
 All one-time configuration of a model object is defined inside a <code>setup</code> entry.  However, if you wish, you can omit this extra level.  If configuration is not found in a setup entry, it looks one level up on the model object itself.
@@ -234,7 +234,7 @@ Arrays are lists of values. They are enclosed in square [ ] brackets. Listed ite
 _Setup_ and _properties_ are two distinct ways that [model objects](/models/) are configured. The difference is subtle, but important.
 
 ### Setup
-Setup defines one-time configuration, which is core to how the model object works. Setup values are _immutable_.  That means that they are set once and cannot be changed.  ProStyle uses the setup to render and optimize the object.  For instance, setup values might render determine what HTML or SVG content to use. Setup values are defined in a <code>setup</code> entry.
+Setup defines one-time configuration, which is core to how the model object works. Setup values are _immutable_.  That means that they are set once and cannot be changed.  ProStyle uses the setup to render and optimize the object.  For instance, setup values might determine what HTML or SVG content to use. Setup values are defined in a <code>setup</code> entry.
 
 {% highlight javascript %}
 {
@@ -244,24 +244,20 @@ Setup defines one-time configuration, which is core to how the model object work
 {% endhighlight %}
 
 ### Properties
-Unlike setup, properties _can_ be changed.  They are initialized in an <code>init</code> entry and can be changed in a [script](#){:data-toc="script"}.  There are many available [properties](/properties/).
+Unlike setup, [properties](/properties/) _can_ be changed.  They are initialized in an <code>init</code> entry and can be changed in a [script](#){:data-toc="scripts"}.
 
 {% highlight javascript %}{
   itemType: "text",
   setup: { text: "ProStyle!" },
   init: { opacity: 50 }.
-  scripts: [
-    { 
-      actions: [{ delay: 5, opacity: 0 }]
-    }
-  ]
+  action: { delay: 5, opacity: 0 }
 }
 {% endhighlight %}
 
 <hr class="t60 b60">
 
 ## Animation
-_Animation_ is the [changing of properties](/properties/#animation) over time using [scripts](#){:data-toc="scripts"}. Multiple scripts may run concurrently within a [step](#){:data-toc="steps"}, and the steps are sequenced into a _timeline_.
+_Animation_ is the changing of properties [over time](/properties/#animation) using [scripts](#){:data-toc="scripts"}. Multiple scripts may execute concurrently within a [step](#){:data-toc="steps"}, and the steps are sequenced into a _timeline_.
 
 ### Timeline
 After reading the [JSON](#){:data-toc="json"}, ProStyle inserts the required HTML and SVG into the web page, and sequences the [scripts](#){:data-toc="scripts"} into a _timeline_.  Think of the timeline like a movie player.  It is linear.  The player will play from beginning to end, and the playhead can be seeked to any time as needed.
@@ -281,7 +277,9 @@ A _script_ is a sequence of one or more _actions_. A script's actions are execut
 </div>
 </div></p>
 
-The total duration of a script is the sum of the durations of it’s actions. Extending the duration of an action pushes out the start of any remaining actions.
+The duration of a _script_ is the _sum_ of it's _action's_ durations. Extending the duration of an action pushes out the start of any remaining actions within that script.
+
+The duration of a _step_ is the duration of it's longest _script_. 
 
 The combination of serial _steps_ of parallel _scripts_ of serial _actions_ makes ProStyle very powerful.  It’s easy to craft simple animations, yet flexible enough for complex interactions.
 
@@ -306,19 +304,18 @@ If two scripts attempt to change the same property value of the same model objec
 
 #### Events
 
-Events trigger the start of scripts. There is currently only one kind of event; when a step has started. Other event types are under consideration for future versions. e.g. mouse and touch interaction.
+Events trigger the start of scripts. Events are also referred to as _script types_. There is currently only one kind; when a [step](#){:data-toc="steps"} has started. Other script types are under consideration for future versions. e.g. mouse and touch interaction.
 
-Scripts have an event parameter, which can be “step1“, “step2“, “step3“, …
+Scripts have a <code>scriptType</code> parameter, which can be “step1“, “step2“, “step3“, …
 
-* If the event parameter is omitted, the default value is “step1“
+* If the scriptType is omitted, the default value is “step1“
 * A value of “step” is an alias for “step1“
 
 
-
 ### Steps
-The timeline has markers called _steps_. Multiple scripts can be processed simultaneously starting at a step. The next step does not start until all scripts in the prior step complete. The total duration of a step is the duration of the longest script it contains. The steps belong to a page.  Every page contains one or more steps.
+The [timeline](#){:data-toc="timeline"} has markers called _steps_. Multiple scripts can be processed simultaneously starting at a step. The next step does not start until all scripts in the prior step complete. The total duration of a step is the duration of the longest script it contains. The steps belong to a page.  Every page contains one or more steps.
 
-ProStyle determines all of the scripts on a page, which includes the page’s scripts, any canvasScripts or frameScripts, and all of the scripts for the page’s items.  Each script is associated with a step using the step event.  The timeline is then generated.
+ProStyle generates a timeline by parsing all of the scripts on each page, which includes the page’s scripts, any <code>canvasScripts</code> or <code>frameScripts</code>, and all of the scripts for the page’s items.  Each script is associated with a step. The timeline plays each step in order, moving from page to page, as the last step of each page completes.
 
 Each step is associated with a single page, and each page is a member of a single flow.  Therefore, any given playhead position in the timeline is associated with one flow, one page, and one step.
 
