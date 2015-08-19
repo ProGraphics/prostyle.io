@@ -382,13 +382,13 @@ Optionally, an _alpha_ value between 0 and 1 may be used to make the color semi-
 <hr class="t60 b60">
 
 ## 3D
-ProStyle makes it simple to [place](#){:data-toc="placement"} and [animate](#){:data-toc="animation"} objects in _three_ dimensions. It’s important to note, though, that the objects themselves have no depth. Imagine a piece of paper held out in front of you. It has width and height, but no depth. Of course paper does have a small amount of depth, but imagine it didn’t. If it were turned 90 degrees on it’s side, you would no longer be able to see it. With ProStyle, two dimensional objects can be positioned anywhere in _3D space_, just as our piece of paper can be moved around the room.
+ProStyle makes it simple to [place](#){:data-toc="placement"} and [animate](#){:data-toc="animation"} objects in _three_ dimensions. It’s important to note, though, that the objects themselves have no depth. Imagine a piece of paper held out in front of you. It has width and height, but no depth. Of course paper does have a small amount of depth, but imagine it didn’t. If it was turned 90 degrees on it’s side, you would no longer be able to see it. With ProStyle, two dimensional objects can be positioned anywhere in _3D space_, just as our piece of paper can be moved around the room.
 
 Since the device’s screen is also two dimensional, modern browsers have built-in support to emulate a third dimension by using _perspective_, which ProStyle leverages when rendering. ProStyle configures a vanishing point in the center of the screen.  The dimensions of the frame provide the horizontal and vertical extents of the view space. The depth, or length of the Z axis, is calculated based on the X and Y axes, using [Euclidean geometry](http://en.wikipedia.org/wiki/Euclidean_geometry).
 
 ### Example
 
-{% include alert story="/gallery/3d/" %}
+{% include alert story="/gallery/3d-text-animation/" %}
 {% highlight javascript %}
 {
   classes: {
