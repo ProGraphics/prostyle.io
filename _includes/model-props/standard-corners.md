@@ -1,1 +1,1 @@
-Uses the [standard corners property](/docs/properties/#corners)
+Uses the [standard corners property](/properties/#corners)

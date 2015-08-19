@@ -1,1 +1,1 @@
-Uses the [standard font property](/docs/properties/#font) to set a default font for all [text items](#){:data-toc="&middot;-text-item"} in the story
+Uses the [standard font property](/properties/#font) to set a default font for all [text items](#){:data-toc="&middot;-text-item"} in the story

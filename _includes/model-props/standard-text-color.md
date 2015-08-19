@@ -1,1 +1,1 @@
-Uses the [standard textColor property](/docs/properties/#text-color)
+Uses the [standard textColor property](/properties/#text-color)

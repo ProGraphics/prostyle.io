@@ -1,1 +1,1 @@
-Uses the [standard border property](/docs/properties/#border)
+Uses the [standard border property](/properties/#border)

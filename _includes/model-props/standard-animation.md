@@ -1,1 +1,1 @@
-Uses the [standard animation property](/docs/properties/#animation)
+Uses the [standard animation property](/properties/#animation)

@@ -1,1 +1,1 @@
-Uses the [standard shadow property](/docs/properties/#shadow)
+Uses the [standard shadow property](/properties/#shadow)
