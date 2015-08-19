@@ -1,6 +1,6 @@
 ---
 layout: post-animation
-title: "3D Animation"
+title: "3D Text Animation"
 category: gallery
 desc: "Three stories that progress from a simple 3D text animation to a similar but more advanced one."
 tags: 
@@ -10,7 +10,7 @@ story: "gallery/3d-animation.json5"
 story2: "gallery/3d-animation-2.json5"
 story3: "gallery/3d-animation-3.json5"
 ---
-# 3D Animation
+# 3D Text Animation
 
 These three stories show similar 3-dimensional animations, each adding a little more complexity and visual impact than the prior one.
 
