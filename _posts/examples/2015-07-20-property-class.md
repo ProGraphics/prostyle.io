@@ -15,4 +15,4 @@ This example demonstrates how to define and use a [property class](/properties/#
 
 To create a class, add a <code>classes</code> entry in the root of the story.  Within the classes object, add a named child object with whatever property values you want.
 
-This first example creates a class named <code>emboss</code> with properties that provide a sunken look. The three text items use the [class pseudo-property](/docs/properties/#class) in the <code>init</code> entry.
+This first example creates a class named <code>emboss</code> with properties that provide a sunken look. The three text items use the [class pseudo-property](/properties/#class) in the <code>init</code> entry.
