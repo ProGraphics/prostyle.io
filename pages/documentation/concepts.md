@@ -331,13 +331,15 @@ When there are multiple targets, like bars in a chart or characters in text, eac
 
 
 ## Alignment
-Unlike traditional web graphics, ProStyle is designed to work with _center alignment_.  Add an [item](/models/#items) to a [page](/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Plus, because the [frame](/models/#frame) maintains it's [aspect ratio](/models/#demonstration), the animation will look the same on any screen of any size.
+Unlike traditional web graphics, ProStyle is designed to work with _center alignment_.  Add an [item](/models/#items) to a [page](/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Because the [frame](/models/#frame) maintains it's [aspect ratio](/models/#demonstration), the animation will look the same on _any screen_ of _any size_.
 
 ### Anchor
-With center alignment, the _center of the item_ is positioned on the _center of it’s container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/properties/#anchor) and a [position property](/properties/#position). Both default to <code>[0,0]</code>, which is the center of each. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.
+With center alignment, the _center of the item_ is positioned on the _center of it’s container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/properties/#anchor) and a [position property](/properties/#position). Both default to <samp class="number">[0,0]</samp>, which is the center of the item. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.
 
 ### Transform Origin
-The _transform origin_, like the _anchor_, is a reference point on the item.  It defines the point that transforms are relative to.  For instance, to rotate an item around it's top left corner, the transform origin would be set to <code>[-50,-50]</code>. By default, items rotate around their center because the transform origin is initially set to <code>[0,0]</code>.
+The [transform origin](/properties/#transform-origin), like the _anchor_, is a reference point on the item (unless expanded).  It defines the point that transforms are relative to.  For instance, to rotate an item around it's top left corner, the transform origin would be set to <code>[-50,-50]</code>. By default, items rotate around their center because the transform origin is initially set to <code>[0,0]</code>.
+
+By default, the <code>x</code> and <code>y</code> values of the transform origin are percentages of the item's dimensions. However, if the <code>expand</code> value is set to <samp class="boolean">true</samp>, the numbers will be considered a percentage of the container's dimensions, usually the page.
 
 <hr class="t60 b60">
 
