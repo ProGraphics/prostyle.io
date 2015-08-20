@@ -139,15 +139,17 @@ Simple flow is the default flow. It will be used if the <code>flowType</code> en
 
 ##&middot; Stack Flow
 {:class="font-size-h3"}
-_undocumented_
+
+The _Stack_ flow transitions it's pages from one stack to another. Each page begins on the _future_ stack, becomes the _current_ page, and then moves to the _past_ stack.
+
+The [placement](/concepts/#placement) of the stacks, and the offset of each page in each stack may be configured. It is quite flexible.
 
 ### Setup
 {:class="font-size-h4"}
-_undocumented_
+{% include model-setup.html label="pageClass" content="flow.stack-pageClass.md" %}
+{% include model-setup.html label="placement" content="flow.common-placement.md" %}
+{% include model-setup.html label="stacks" content="flow.stack-stacks.md" %}
 
-### Properties
-{:class="font-size-h4"}
-_undocumented_
 
 ### Example
 {:class="font-size-h4"}
