@@ -1,0 +1,1 @@
+A [placement](/concepts/#placement) relative to the camera start point, where the first flow in the story would be by default. After the last page of a flow is completed, the [virtual camera](#){:data-toc="virtual-camera"} moves to the first page of the next flow.

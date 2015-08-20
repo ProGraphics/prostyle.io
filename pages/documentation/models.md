@@ -105,32 +105,35 @@ As the canvas is resized, the frame resizes to fit. However, the frame always ma
 <hr class="t0 b60">
 
 ## Flows
-_Flows_ provide complex orchestration and animation of [pages](#){:data-toc="pages"}. For that reason, they are sometimes referred to as _page flows_. Every story has at least one flow, but can have many.
-
-There are some setup values common to all flow types, but individual flow types can have their own. Flows do not have properties.
+_Flows_ provide complex orchestration and animation between [pages](#){:data-toc="pages"}. For that reason, they are sometimes referred to as _page flows_. Every story has at least one flow, but might have many.
 
 Flows are positioned in [3D](/concepts/#3d) space and brought into the frame in order, one after the other.  As the last page of a flow completes, the [virtual camera](#){:data-toc="virtual-camera"} moves to show the first page of the next flow.
 
-### Standard Setup
-The following are common to all flow types.
-
-_undocumented_
 
 ##&middot; Simple Flow
 {:class="font-size-h3"}
-_undocumented_
+The _Simple_ flow is simply a stack of pages directly on top of each other. When transitioning between pages, the current one is faded out and the next is faded in. While it is technically a flow, there is no motion page-to-page motion.
+
+Simple flow is the default flow. It will be used if the <code>flowType</code> entry is not specified.
 
 ### Setup
 {:class="font-size-h4"}
-_undocumented_
-
-### Properties
-{:class="font-size-h4"}
-_undocumented_
+{% include model-setup.html label="pageClass" content="flow.simple-pageClass.md" %}
+{% include model-setup.html label="placement" content="flow.common-placement.md" %}
 
 ### Example
 {:class="font-size-h4"}
-_undocumented_
+{% highlight javascript %}{
+  flowType: "simple",
+  placement: { position:[100,-100,0], rotation:[0,0,0], scale:100 },
+  pageClass: "simplePage" 
+  pages: [
+    {},
+    {}
+  ]
+}
+{% endhighlight %}{
+
 
 <hr class="t60 b60">
 
