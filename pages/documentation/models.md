@@ -206,7 +206,7 @@ Pages contain zero or more [items](#){:data-toc="items"}, although a page withou
 <hr class="t60 b60">
 
 ## Items
-_undocumented_
+Items are the core visuals, such as text, images, charts, etc. Items are always [placed](/concepts/#placement) on a [page](#){:data-toc="pages"}. They may be animated independent of each other.
 
 
 ##&middot; Text Item
