@@ -1,0 +1,1 @@
+Use the [standard font property](/properties/#font). This property is _only available for text_. It's not available with lines, words, and characters.

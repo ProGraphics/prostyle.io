@@ -1,0 +1,1 @@
+The [text color property](/properties/#text-color) defines the color of the text

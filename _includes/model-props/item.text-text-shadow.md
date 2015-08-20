@@ -1,0 +1,1 @@
+The [text shadow property](/properties/#text-shadow) applies a shadow to the text itself

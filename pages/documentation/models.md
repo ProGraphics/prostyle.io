@@ -223,7 +223,34 @@ A _line_ might be made up of a single word, or multiple sentences. If the [textW
 
 ### Properties
 {:class="font-size-h4"}
-_undocumented_
+Properties are initialized with an <code>init</code> entry and scripted with [scripts](/concepts/#scripts).  You may also use <code>lineInit</code> and <code>lineScripts</code> to set properties on lines, <code>wordInit</code> and <code>wordScripts</code> to set properties on words, and <code>charInit</code> and <code>charScripts</code> to set properties on characters.  The plural form, <code>linesInit</code>, <code>linesScripts</code>, and so on, are available as aliases.
+
+Lines, words and characters may have [staggered](/concepts/#staggering) animation.
+
+Unless otherwise noted, each of the following properties may be used with text, lines, words and characters.
+
+{% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="anchor" content="item.text-anchor.md" %}
+{% include model-props.html label="background" content="standard-background.md" %}
+{% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="bullets" content="item.text-bullets.md" %}
+{% include model-props.html label="corners" content="standard-corners.md" %}
+{% include model-props.html label="crop" content="item.text-crop.md" %}
+{% include model-props.html label="font" content="page-font.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="padding" content="standard-padding.md" %}
+{% include model-props.html label="position" content="standard-position.md" %}
+{% include model-props.html label="rotation" content="standard-rotation.md" %}
+{% include model-props.html label="scale" content="standard-scale.md" %}
+{% include model-props.html label="shadow" content="standard-shadow.md" %}
+{% include model-props.html label="skew" content="standard-skew.md" %}
+{% include model-props.html label="textAlign" content="item.text-text-align.md" %}
+{% include model-props.html label="textColor" content="item.text-text-color.md" %}
+{% include model-props.html label="textShadow" content="item.text-text-shadow.md" %}
+{% include model-props.html label="textStyle" content="item.text-text-style.md" %}
+{% include model-props.html label="textWidth" content="item.text-text-width.md" %}
+{% include model-props.html label="transformOrigin" content="item.text-transform-origin.md" %}
+
 
 ### Example
 {:class="font-size-h4"}

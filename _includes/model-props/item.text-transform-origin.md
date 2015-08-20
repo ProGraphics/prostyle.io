@@ -1,0 +1,1 @@
+Use the [standard transform origin property](/properties/#transform-origin). This property is _only available for text_. It's not available with lines, words, and characters.

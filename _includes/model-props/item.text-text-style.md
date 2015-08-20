@@ -1,0 +1,1 @@
+The [text style property](/properties/#text-style) applies bold, italic, line or smallcaps styling to the text

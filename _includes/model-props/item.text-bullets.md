@@ -1,0 +1,1 @@
+The [bullets property](/properties/#bullets) is used to adorn individual lines with rendered pictograms. This property is _only available for lines_.

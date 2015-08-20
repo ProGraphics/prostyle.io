@@ -1,0 +1,1 @@
+Use the [standard scale property](/properties/#scale)

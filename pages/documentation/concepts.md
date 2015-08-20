@@ -367,7 +367,7 @@ The impact of each strength value is particular to each timing function. For exa
 
 ### Staggering
 
-When there are multiple targets, like bars in a chart or characters in text, each can be staggered to start after the prior.
+When there are multiple targets, like bars in a chart or characters in text, each can be staggered by applying a delay using the <code>stagger</code> value of the [animation](/properties/#animation) property.
 
 
 <hr class="t60 b60">

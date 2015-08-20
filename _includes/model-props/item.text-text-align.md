@@ -1,0 +1,1 @@
+The [text align property](/properties/#text-align) defines whether the left and/or right edges of the individual text lines line up with each other. This property is _only available for text_. It's not available with lines, words, and characters.
