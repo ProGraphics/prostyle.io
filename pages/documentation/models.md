@@ -188,16 +188,20 @@ The [placement](/concepts/#placement) of the stacks, and the offset of each page
 <hr class="t60 b60">
 
 ## Pages
-_undocumented_
-
-### Setup
-_undocumented_
+Pages contain zero or more [items](#){:data-toc="items"}, although a page without items is kind of boring. Items on a page may be [animated](/concepts/#animation). Also, pages themselves may be animated as part of a [flow](#){:data-toc="flows"}.
 
 ### Properties
-_undocumented_
+{% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="background" content="standard-background.md" %}
+{% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="color" content="page-text-color.md" %}
+{% include model-props.html label="corners" content="standard-corners.md" %}
+{% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="font" content="page-font.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="shadow" content="standard-shadow.md" %}
+{% include model-props.html label="textShadow" content="page-text-shadow.md" %}
 
-### Example
-_undocumented_
 
 <hr class="t60 b60">
 

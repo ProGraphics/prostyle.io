@@ -1,1 +1,1 @@
-Uses the [standard opacity property](/properties/#opacity)
+Use the [standard opacity property](/properties/#opacity)

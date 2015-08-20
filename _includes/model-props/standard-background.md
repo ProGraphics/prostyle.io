@@ -1,1 +1,1 @@
-Uses the [standard background property](/properties/#background)
+Use the [standard background property](/properties/#background)

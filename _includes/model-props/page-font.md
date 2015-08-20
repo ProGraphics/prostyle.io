@@ -1,0 +1,1 @@
+Use the [standard font property](/properties/#font) to set a default font for all [text items](#){:data-toc="&middot;-text-item"} on the page

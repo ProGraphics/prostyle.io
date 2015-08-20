@@ -1,0 +1,1 @@
+Use the [standard textShadow property](/properties/#text-color) to set a default shadow for all [text items](#){:data-toc="&middot;-text-item"} on the page

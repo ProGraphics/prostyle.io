@@ -1,1 +1,1 @@
-Uses the [standard crop property](/properties/#crop)
+Use the [standard crop property](/properties/#crop)

@@ -1,0 +1,1 @@
+Use the [standard textColor property](/properties/#text-color) to default the color of all [text items](#){:data-toc="&middot;-text-item"} on the page

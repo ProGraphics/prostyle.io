@@ -1,1 +1,1 @@
-Uses the [standard textColor property](/properties/#text-color)
+Use the [standard textColor property](/properties/#text-color)
