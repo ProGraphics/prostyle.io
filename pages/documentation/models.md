@@ -140,7 +140,7 @@ Simple flow is the default flow. It will be used if the <code>flowType</code> en
 ##&middot; Stack Flow
 {:class="font-size-h3"}
 
-The _Stack_ flow transitions it's pages from one stack to another. Each page begins on the _future_ stack, becomes the _current_ page, and then moves to the _past_ stack.
+The _Stack_ flow is a premium extension that comes with [ProStyle Plus](/plus/).  It transitions it's pages from one stack to another. Each page begins on the _future_ stack, becomes the _current_ page, and then moves to the _past_ stack.
 
 The [placement](/concepts/#placement) of the stacks, and the offset of each page in each stack may be configured. It is quite flexible.
 
@@ -153,7 +153,35 @@ The [placement](/concepts/#placement) of the stacks, and the offset of each page
 
 ### Example
 {:class="font-size-h4"}
-_undocumented_
+
+{% include alert story="/gallery/page-stacks/" %}
+{% highlight javascript %}{
+	classes:{
+		stackedPage: { border:[5,"orange"] }
+	},
+	flow:{
+		flowType:"stack",
+		pageAspectRatio:1.333,
+		placement:{ pos:[-100,-100,0]},
+		stacks:{
+			current:{ pos:[-5,-10,-10], rot:[-10,15,-10], scale:100, opacity:100 },
+			future:{ pos:[-33,-45,-35], rot:[-10,15,-10], scale:100, opacity:80,
+				offset:{ pos:[-10,-9,-4], rot:[0,-5,3], scale:100, opacity:80 }},
+			past:{ pos:[70,70,100], rot:[0,10,-5], scale:100, opacity:0,
+				offset:{ pos:[0,0,0], rot:[0,0,0], scale:100, opacity:0 }}
+		},
+		pages:[
+			{ item:{ text:["A 'Page Stack' with", "custom configuration."]} },
+			{ item:{ text:"2"} },
+			{ item:{ text:"3"} },
+			{ item:{ text:"4"} },
+			{ item:{ text:"5"} },
+			{ item:{ text:"6"} },
+			{ item:{ text:"7"} },
+		]
+	}
+}
+{% endhighlight %}
 
 <hr class="t60 b60">
 
