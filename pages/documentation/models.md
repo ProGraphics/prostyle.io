@@ -219,7 +219,7 @@ A _line_ might be made up of a single word, or multiple sentences. If the [textW
 
 ### Setup
 {:class="font-size-h4"}
-_undocumented_
+{% include model-setup.html label="text" content="item.text-text.md" %}
 
 ### Properties
 {:class="font-size-h4"}
