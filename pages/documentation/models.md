@@ -19,7 +19,7 @@ Models are the _things_ that exist within the story. They physically exist as we
 All model objects, except [flows](#){:data-toc="flows"}, have at least one set of [properties](/properties/). For example, a [text item](#){:data-toc="&middot;-text-item"} has properties to _position_ and _rotate_ the text.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/concepts/#scripts).
 
 {% include alert story="/examples/colors/" %}
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}{
   item: {
     text: "COLOR",
     init: {color:"red", font:40, style:"bold"},
@@ -29,7 +29,7 @@ All model objects, except [flows](#){:data-toc="flows"}, have at least one set o
       {anim:2, color:"red"}
     ]
   }
-}</pre>
+}{% endhighlight %}
 
 
 #### Multiple

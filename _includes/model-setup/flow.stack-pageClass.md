@@ -2,11 +2,11 @@ The [class](/properties/#class) name that all pages within the flow automaticall
 
 * _default value:_ <code>stackedPage</code>
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}{
   classes: {
     stackedPage: {
       background: "white",
       border: true
     }
   }
-}</pre>
+}{% endhighlight %}

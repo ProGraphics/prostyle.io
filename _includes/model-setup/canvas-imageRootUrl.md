@@ -2,10 +2,10 @@
 
 * _default value:_ <samp>''</samp>
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}{
   canvas:{
     setup:{
       imageRootUrl:'https://s3.foo.com/images/'
     }
   }
-}</pre>
+}{% endhighlight %}

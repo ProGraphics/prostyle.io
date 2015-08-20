@@ -12,10 +12,10 @@
 
 * _default value:_ <samp class="number">1.7777</samp>
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}{
   frame:{
     setup:{
       aspectRatio: 1.3333
     }
   }
-}</pre>
+}{% endhighlight %}

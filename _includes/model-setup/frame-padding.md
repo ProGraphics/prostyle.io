@@ -2,10 +2,10 @@
 
 * _default value:_ <samp class="number">0</samp>
 
-<pre data-ace="readonly" style="width:100%;">{
+{% highlight javascript %}{
   frame:{
     setup:{
       padding:10
     }
   }
-}</pre>
+}{% endhighlight %}
