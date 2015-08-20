@@ -1,0 +1,25 @@
+{
+  classes: {
+    text: { font: 40, style: "bold" },
+    rotate: {
+      anim: [4,"less curve",10,0,false,1.25],
+      rot: [180,540,-540] 
+    }
+  },
+  items: [
+    {
+      text: "CHARS",
+      init: { pos:{z:10}, color:"#33F" },
+      charAction: { class:"rotate" }
+    },
+    {
+      text: "CHARS",
+      init: {
+        textShadow:[0,0,10],
+        color:"transparent",
+        pos:{y:7}
+      },
+      charAction: { class:"rotate" }
+    }
+  ]
+}
