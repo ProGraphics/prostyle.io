@@ -206,12 +206,16 @@ Pages contain zero or more [items](#){:data-toc="items"}, although a page withou
 <hr class="t60 b60">
 
 ## Items
-Items are the core visuals, such as text, images, charts, etc. Items are always [placed](/concepts/#placement) on a [page](#){:data-toc="pages"}. They may be animated independent of each other.
+Items are the core visuals, such as text, images, charts, etc. Items are always [placed](/concepts/#placement) on a [page](#){:data-toc="pages"}. They may be animated independently.
 
 
 ##&middot; Text Item
 {:class="font-size-h3"}
-_undocumented_
+The _text item_ is used to add single-line or multiple-line text to a page. Properties may be applied at the text, line, word or character level. Many of the property values inherit. For instance, setting text color on the lines affects all the words and characters, unless words or characters explicitly override it.
+
+The text, lines, words and characters make up a four level hierarchy. Each may be [positioned](/concepts/#placement) in [3D](/concepts/#3d) space, relative to where it would normally be.
+
+A _line_ might be made up of a single word, or multiple sentences. If the [textWidth](/properties/#text-width) property is used to induce word wrapping, a single line might wrap into multiple rendered lines. Regardless, it is still animated as a single line. This makes it possible to animate paragraphs, if desired.
 
 ### Setup
 {:class="font-size-h4"}
