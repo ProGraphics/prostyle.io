@@ -254,7 +254,23 @@ Unless otherwise noted, each of the following properties may be used with text, 
 
 ### Example
 {:class="font-size-h4"}
-_undocumented_
+{% include alert story="/examples/spinning-letters/" %}
+{% highlight javascript %}{
+  item: {
+    text: "CHARS",
+    init: {
+      font: 40,
+      style: "bold",
+      pos: {z:10},
+      color: "#33F"
+    },
+    charAction: {
+      anim: [4,"less curve",10,0,false,1.25],
+      rot: [180,540,-540]
+    }
+  }
+}
+{% endhighlight %}
 
 <hr class="t60 b60">
 

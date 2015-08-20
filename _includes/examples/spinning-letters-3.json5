@@ -1,6 +1,6 @@
 {
   classes: {
-    text: { font: 40, style: "bold" },
+    text: { font:40, style:"bold" },
     rotate: {
       anim: [4,"less curve",10,0,false,1.25],
       rot: [180,540,-540] 

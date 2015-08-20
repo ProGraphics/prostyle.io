@@ -4,8 +4,8 @@
     init: {
       font: 40,
       style: "bold",
-      pos:{z:10},
-      color:"#33F"
+      pos: {z:10},
+      color: "#33F"
     },
     charAction: {
       anim: [4,"less curve",10,0,false,1.25],
