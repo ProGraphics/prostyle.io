@@ -33,4 +33,4 @@ The second story can be viewed by clicking the button labeled __2__ under the ed
 
 ### Snaked Pages
 
-The third story uses a different custom configuration that moves the pages in a two dimensional snake pattern.
+The third story uses a different custom configuration that moves the pages in a two dimensional snake pattern. It overrides the <code>pageAspectRatio</code> to make each page short and wide.

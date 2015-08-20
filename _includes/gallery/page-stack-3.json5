@@ -3,14 +3,14 @@
 	frame:{padding:15},
 	flow:{
 		flowType:"stack",
+		pageAspectRatio: 2.5,
 		placement:{ pos:[-100,-100,0]},
-		pageAspectRatio:1.333,
 		stacks:{
-				current:{ scale:90},
-				future:{ pos:[60,-75,-10], scale:40, opacity:80,
-					offset:{ pos:[-45,0,0], opacity:80 }},
-				past:{ pos:[-60,75,-10], scale:40,
-					offset:{ pos:[45,0,0], opacity:80 }}
+			current:{ scale:90},
+			future:{ pos:[60,-75,-10], scale:40, opacity:80,
+				offset:{ pos:[-45,0,0], opacity:80 }},
+			past:{ pos:[-60,75,-10], scale:40,
+				offset:{ pos:[45,0,0], opacity:80 }}
 		},
 		pages:[
 			{

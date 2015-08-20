@@ -119,6 +119,7 @@ Simple flow is the default flow. It will be used if the <code>flowType</code> en
 ### Setup
 {:class="font-size-h4"}
 {% include model-setup.html label="pageClass" content="flow.simple-pageClass.md" %}
+{% include model-setup.html label="pageAspectRatio" content="flow.common-pageAspectRatio.md" %}
 {% include model-setup.html label="placement" content="flow.common-placement.md" %}
 
 ### Example
@@ -147,6 +148,7 @@ The [placement](/concepts/#placement) of the stacks, and the offset of each page
 ### Setup
 {:class="font-size-h4"}
 {% include model-setup.html label="pageClass" content="flow.stack-pageClass.md" %}
+{% include model-setup.html label="pageAspectRatio" content="flow.common-pageAspectRatio.md" %}
 {% include model-setup.html label="placement" content="flow.common-placement.md" %}
 {% include model-setup.html label="stacks" content="flow.stack-stacks.md" %}
 

@@ -1,0 +1,1 @@
+The width-to-height ratio of each page in the flow.  It defaults to the [frame's apect ratio](#){:data-toc="frame"}. 
