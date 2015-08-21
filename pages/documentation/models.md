@@ -287,7 +287,17 @@ The _image item_ adds a bitmap or vector image to a [page](#){:data-toc="pages"}
 
 ### Properties
 {:class="font-size-h4"}
-_undocumented_
+{% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="anchor" content="standard-anchor.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
+{% include model-props.html label="corners" content="standard-corners.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="position" content="standard-position.md" %}
+{% include model-props.html label="rotation" content="standard-rotation.md" %}
+{% include model-props.html label="scale" content="standard-scale.md" %}
+{% include model-props.html label="shadow" content="standard-shadow.md" %}
+{% include model-props.html label="skew" content="standard-skew.md" %}
+{% include model-props.html label="transformOrigin" content="standard-transform-origin.md" %}
 
 ### Example
 {:class="font-size-h4"}
