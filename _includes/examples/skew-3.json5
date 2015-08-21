@@ -1,0 +1,14 @@
+{
+  item: {
+    text:"up/dn",
+    init: {
+      color:"#345",
+      font:40
+    },
+    action: {
+      anim:[5,"less elastic inout",1,0,true],
+      skew:-360,
+      rot:-180
+    }
+  }
+}

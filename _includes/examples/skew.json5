@@ -2,8 +2,8 @@
   item: {
     text:"skew x",
     init: {
-      color:"#094766",
-      font:55,
+      color:"#345",
+      font:50,
       skew:-20
     },
     action:{
