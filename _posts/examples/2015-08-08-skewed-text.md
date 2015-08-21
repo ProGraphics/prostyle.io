@@ -2,7 +2,7 @@
 layout: post-animation
 title: "Skewed Text"
 category: examples
-desc: "Examples of skewing text both horizontally and vertically."
+desc: "Skewing text horizontally and vertically and adding rotation to the mix."
 tags: 
   - text
   - skew
