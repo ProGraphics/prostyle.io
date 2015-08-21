@@ -37,7 +37,7 @@ Luckily, it's fairly easy to fix this.
 ### Adding a Shadow
 The second story can be viewed by clicking the button labeled __2__ under the editor. This story creates a second text item to act as the shadow. It has the same size and style, and animates the same way. The shadow text is made transparent, but with a shadow.  This way, all you see is the shadow.
 
-{% include alert text="Unfortunately, this technique for rendering a shadow doesn't work in either Microsoft Internet Explorer or Microsoft Edge browser due to a bug where they render shadows at the same opacity as the fore color. Hopefully they'll fix it. In the interim, use *any* other browser." %}
+{% include alert text="Unfortunately, this technique for rendering a shadow doesn't work in either Microsoft Internet Explorer or Microsoft Edge due to a bug that renders text shadows at the same opacity as the fore color. Hopefully they'll fix it. In the interim, use *any* other browser." %}
 
 
 ### Make the Story Shorter
