@@ -133,7 +133,7 @@ Simple flow is the default flow. It will be used if the <code>flowType</code> en
     {}
   ]
 }
-{% endhighlight %}{
+{% endhighlight %}
 
 
 <hr class="t60 b60">
