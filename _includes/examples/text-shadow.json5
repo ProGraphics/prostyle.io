@@ -1,0 +1,15 @@
+{
+  item:{
+    text:"S",
+    init: {
+      color:"#246",
+      font:60,
+      textShadow:[0,0,3,"black"]
+    },
+    action: {
+      anim:{dur:2, rep:1, yoyo:true},
+      pos:[0,0,20],
+      textShadow:[5,5,10,"rgba(0,0,0,0.7)"]
+    }
+  }
+}
