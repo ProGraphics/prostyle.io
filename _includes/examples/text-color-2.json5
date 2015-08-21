@@ -1,0 +1,30 @@
+{
+  classes: { 
+    a:{ anim:{dur:0.5, ease:"linear"} }
+  },
+  item: {
+    text: "COLOR",
+    init: {
+      font:40, style:"bold",
+      color:"hsl(0,50%,50%)"
+    },
+    actions:[
+      {class:"a", color:"hsl(16,50%,50%)"},
+      {class:"a", color:"hsl(32,50%,50%)"},
+      {class:"a", color:"hsl(48,50%,50%)"},
+      {class:"a", color:"hsl(64,50%,50%)"},
+      {class:"a", color:"hsl(80,50%,50%)"},
+      {class:"a", color:"hsl(96,50%,50%)"},
+      {class:"a", color:"hsl(112,50%,50%)"},
+      {class:"a", color:"hsl(128,50%,50%)"},
+      {class:"a", color:"hsl(144,50%,50%)"},
+      {class:"a", color:"hsl(160,50%,50%)"},
+      {class:"a", color:"hsl(176,50%,50%)"},
+      {class:"a", color:"hsl(192,50%,50%)"},
+      {class:"a", color:"hsl(208,50%,50%)"},
+      {class:"a", color:"hsl(224,50%,50%)"},
+      {class:"a", color:"hsl(240,50%,50%)"},
+      {class:"a", color:"hsl(0,50%,50%)"}
+    ]
+  }
+}

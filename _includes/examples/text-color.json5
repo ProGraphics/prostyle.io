@@ -1,0 +1,12 @@
+{
+  item: {
+    text: "COLOR",
+    init: {color:"red", font:40, style:"bold"},
+    actions:[
+      {anim:2, color:"#bada55"},
+      {anim:2, color:"rgba(127,0,127,0.8)"},
+      {anim:2, color:"hsla(224,65%,45%,0.8)"},
+      {anim:2, color:"red"}
+    ]
+  }
+}
