@@ -111,7 +111,7 @@ Flows are positioned in [3D](/concepts/#3d) space and brought into the frame in 
 
 
 ##&middot; Simple Flow
-{:class="font-size-h3"}
+{:class="font-size-h3 t90"}
 The _Simple_ flow is simply a stack of pages directly on top of each other. When transitioning between pages, the current one is faded out and the next is faded in. While it is technically a flow, there is no motion page-to-page motion.
 
 Simple flow is the default flow. It will be used if the <code>flowType</code> entry is not specified.
@@ -210,8 +210,8 @@ Items are the core visuals, such as text, images, charts, etc. Items are always 
 
 
 ##&middot; Text Item
-{:class="font-size-h3"}
-The _text item_ is used to add single-line or multiple-line text to a page. Properties may be applied at the text, line, word or character level. Many of the property values inherit. For instance, setting text color on the lines affects all the words and characters, unless words or characters explicitly override it.
+{:class="font-size-h3 t90"}
+The _text item_ adds single-line or multiple-line text to a [page](#){:data-toc="pages"} or a [layer](#){:data-toc="&middot;-layer-item"}. Properties may be applied at the text, line, word or character level. Many of the property values inherit. For instance, setting text color on the lines affects all the words and characters, unless words or characters explicitly override it.
 
 The text, lines, words and characters make up a four level hierarchy. Each may be [positioned](/concepts/#placement) in [3D](/concepts/#3d) space, relative to where it would normally be.
 
@@ -277,11 +277,13 @@ Unless otherwise noted, each of the following properties may be used with text, 
 
 ##&middot; Image Item
 {:class="font-size-h3"}
-_undocumented_
+The _image item_ adds a bitmap or vector image to a [page](#){:data-toc="pages"} or a [layer](#){:data-toc="&middot;-layer-item"}. Any format supported by the browser may be used, including png, jpeg, gif and svg.
 
 ### Setup
 {:class="font-size-h4"}
-_undocumented_
+{% include model-setup.html label="img" content="item.image-img.md" %}
+{% include model-setup.html label="width" content="item.image-width.md" %}
+{% include model-setup.html label="height" content="item.image-height.md" %}
 
 ### Properties
 {:class="font-size-h4"}
