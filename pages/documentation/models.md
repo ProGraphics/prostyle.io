@@ -234,6 +234,7 @@ Unless otherwise noted, each of the following properties may be used with text, 
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
 {% include model-props.html label="bullets" content="item.text-bullets.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="item.text-crop.md" %}
 {% include model-props.html label="font" content="page-font.md" %}
@@ -294,15 +295,32 @@ _undocumented_
 
 ##&middot; Layer Item
 {:class="font-size-h3"}
-_undocumented_
+The _layer_ is a container for zero or more child items. The child items are [placed](/concepts/#placement) relative to the center of the layer, regardless of where the layer is place within it's parent. Layers make it simple to manipulate many items as a group.
+
+Layers may be nested in layers to any reasonable depth.
 
 ### Setup
 {:class="font-size-h4"}
-_undocumented_
+{% include model-setup.html label="items" content="item.layer-items.md" %}
 
 ### Properties
 {:class="font-size-h4"}
-_undocumented_
+{% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="anchor" content="standard-anchor.md" %}
+{% include model-props.html label="background" content="standard-background.md" %}
+{% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
+{% include model-props.html label="corners" content="standard-corners.md" %}
+{% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="crop" content="item.layer-moveto.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="position" content="standard-position.md" %}
+{% include model-props.html label="rotation" content="standard-rotation.md" %}
+{% include model-props.html label="scale" content="standard-scale.md" %}
+{% include model-props.html label="shadow" content="standard-shadow.md" %}
+{% include model-props.html label="size" content="item.layer-size.md" %}
+{% include model-props.html label="skew" content="standard-skew.md" %}
+{% include model-props.html label="transformOrigin" content="standard-transform-origin.md" %}
 
 ### Example
 {:class="font-size-h4"}
