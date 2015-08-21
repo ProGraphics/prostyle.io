@@ -1,6 +1,6 @@
 {
   item: {
-    text:"up/dn",
+    text:"up-dn",
     init: {
       color:"#345",
       font:40
