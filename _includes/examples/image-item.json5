@@ -1,0 +1,26 @@
+{
+  frame: { aspectRatio: 1 },
+  item: {
+    itemType: "image",
+    src: "html5.png",
+    height: 70, width: 70,
+    init: { origin:[0,50], pos:[0,10] },
+    scripts: [
+      { actions: [
+          { anim:0.5, pos:[0,13], scale:140 },
+          { anim:0.5, pos:[0,10] }
+        ]
+      },
+      { action: {
+          delay:0.5,
+          anim:[3,"more elastic"],
+          scale:{x:100}}
+      },
+      { action: {
+          delay:0.5,
+          anim:[3,"extra elastic"],
+          scale:{y:100}}
+      }
+    ]
+  }
+}

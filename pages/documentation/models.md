@@ -301,7 +301,34 @@ The _image item_ adds a bitmap or vector image to a [page](#){:data-toc="pages"}
 
 ### Example
 {:class="font-size-h4"}
-_undocumented_
+{% include alert story="/examples/image-item/" %}
+{% highlight javascript %}{
+  frame: { aspectRatio: 1 },
+  item: {
+    itemType: "image",
+    src: "html5.png",
+    height: 70, width: 70,
+    init: { origin:[0,50], pos:[0,10] },
+    scripts: [
+      { actions: [
+          { anim:0.5, pos:[0,13], scale:140 },
+          { anim:0.5, pos:[0,10] }
+        ]
+      },
+      { action: {
+          delay:0.5,
+          anim:[3,"more elastic"],
+          scale:{x:100}}
+      },
+      { action: {
+          delay:0.5,
+          anim:[3,"extra elastic"],
+          scale:{y:100}}
+      }
+    ]
+  }
+}
+{% endhighlight %}
 
 <hr class="t60 b60">
 
@@ -334,9 +361,6 @@ Layers may be nested in layers to any reasonable depth.
 {% include model-props.html label="skew" content="standard-skew.md" %}
 {% include model-props.html label="transformOrigin" content="standard-transform-origin.md" %}
 
-### Example
-{:class="font-size-h4"}
-_undocumented_
 
 <hr class="t60 b60">
 
