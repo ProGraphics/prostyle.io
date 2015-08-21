@@ -1,6 +1,6 @@
 ---
 layout: post-animation
-title: "Changing Text Styles"
+title: "Text Styles"
 category: examples
 desc: "Text Styling can be changed at any time in the timeline, but the style will change instantly."
 tags: 
