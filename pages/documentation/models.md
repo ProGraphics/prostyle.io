@@ -52,7 +52,7 @@ The canvas contains a single [frame](#){:data-toc='frame'}.
 
 ### Setup
 {% include model-setup.html label="padding" content="canvas-padding.md" %}
-{% include model-setup.html label="imageRootUrl" content="canvas-imageRootUrl.md" %}
+{% include model-setup.html label="mediaUrl" content="canvas-mediaUrl.md" %}
 
 ### Properties
 Canvas properties may be [scripted](/concepts/#scripts) with a <code>canvasScripts</code> entry on a page.
