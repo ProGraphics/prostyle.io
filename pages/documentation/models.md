@@ -364,13 +364,21 @@ Layers may be nested in layers to any reasonable depth.
 
 <hr class="t60 b60">
 
-##&middot; Simple Bar Chart
+##&middot; Bar Chart
 {:class="font-size-h3"}
-_undocumented_
+The _Bar Chart_ is a premium extension that comes with [ProStyle Plus](/plus/). It translates data into vertical bars. For horizontal bars, rotate the chart with the [rotation](/properties/#rotation) property.
+
+The chart supports both single value data and two-value range data. See the data section below.
+
+Multiple series may be added by using one chart per, all stacked directly on each other, using congruent range data. See the example below.
 
 ### Setup
 {:class="font-size-h4"}
-_undocumented_
+{% include model-setup.html label="bars" content="item.barChart-bars.md" %}
+{% include model-setup.html label="domain" content="item.barChart-domain.md" %}
+{% include model-setup.html label="width" content="item.barChart-width.md" %}
+{% include model-setup.html label="height" content="item.barChart-height.md" %}
+{% include model-setup.html label="margin" content="item.barChart-margin.md" %}
 
 ### Properties
 {:class="font-size-h4"}
