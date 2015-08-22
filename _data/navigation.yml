@@ -31,10 +31,10 @@
   side: right
   dropdown:
   - title: Download
-    url: "https://github.com/pro-graphics/prostyle/"
+    url: "https://github.com/prographics/prostyle/"
   - title: Releases
-    url: "https://github.com/pro-graphics/prostyle/releases/"
+    url: "https://github.com/prographics/prostyle/releases/"
   - title: Issues
-    url: "https://github.com/pro-graphics/prostyle/issues/"
+    url: "https://github.com/prographics/prostyle/issues/"
   - title: Contact
     url: "/contact/"
