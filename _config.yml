@@ -1,5 +1,5 @@
 language: "en"
-title: "ProStyle"
+title: "ProStyle Web Animation""
 description: "ProStyle is a JavaScript library that makes it easy to craft and play rich web animations with timelines."
 url: "http://prostyle.io"   # Don't include a slash at the end.
 baseurl: ""
@@ -67,14 +67,14 @@ apple-touch-icon-precomposed:           "apple-touch-icon-precomposed.png"
 msapplication_tileimage:                "msapplication_tileimage.png"               # Size 144x144
 msapplication_tilecolor:                "#EEE"
 
-   
+
 # Facebook-Optimization › http://j.mp/fb_optimize
-og_image:                           "http://images.phlow.de/phlow/phlow_de-logo-512x.png"
+og_image:                           "http://prostyle.io/images/pro.svg"
 og_locale:                          "en_EN"
 og_type:                            "website"
-og_title:                           "Feeling Responsive – A Responsive Theme for Jekyll"
-og_description:                     "Feeling Responsive is built on the fabulous Foundation Framework and comes with lots of features to show your content right."
-# og_url:                           ""
+og_title:                           "ProStyle Web Animation"
+og_description:                     "ProStyle is a JavaScript library that makes it easy to craft and play rich web animations with timelines."
+og_url:                             "http://prostyle.io/"
 # og_site_name:                     ""
 
 
