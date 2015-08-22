@@ -79,6 +79,7 @@ a.logo:hover {
 }
 
 .top-bar-section {
+	margin-right: 5px;
 	ul {
 		li {
 			@include top-bar-style();
