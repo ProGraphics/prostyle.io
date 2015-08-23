@@ -2,20 +2,17 @@
   item: {
     text:"border",
     init: { 
-        padding:5, 
-        corners:10, 
-        font:50, 
-        color:"#094766"
+        padding:5, corners:15, font:50, color:"#234"
     },
     actions:[
       { delay:1, 
-        border:{size:1,color:"#AAA",style:"dashed"}
+        border:{size:0.1,color:"#678",style:"dashed"}
       },
       { delay:1,
-        border:{size:2,color:"#666",style:"dotted"}
+        border:{size:1,color:"#456",style:"dotted"}
       },
       { delay:1,
-        border:{size:3,color:"#094766",style:"solid"}
+        border:{size:3,color:"#234",style:"solid"}
       },
       { delay:1, border:false}
     ]
