@@ -3,8 +3,7 @@ layout: post-animation
 title: "Page Stacks"
 category: gallery
 desc: "Stacks of pages with different layouts are animated in and out of focus."
-extensions:
- - name: "flow.stack"
+flow_stack: true
 tags: 
   - text
 thumbnail: "page-stack.png"

@@ -1,14 +1,5 @@
-- name: "controller.tap"
-  url: "/assets/js/prostyle.controller.tap.min.js"
-
-- name: "controller.mousemove"
-  url: "/assets/js/prostyle.controller.mousemove.min.js"
-
-- name: "controller.mousewheel"
-  url: "/assets/js/prostyle.controller.mousewheel.min.js"
-
-- name: "item.barchart"
-  url: "/assets/js/prostyle.item.barchart.min.js"
-
-- name: "flow.stack"
-  url: "/assets/js/prostyle.flow.stack.min.js"
+cont_tap: "/assets/js/prostyle.controller.tap.min.js"
+cont_mousemove: "/assets/js/prostyle.controller.mousemove.min.js"
+cont_mousewheel: "/assets/js/prostyle.controller.mousewheel.min.js"
+item_barchart: "/assets/js/prostyle.item.barchart.min.js"
+flow_stack: "/assets/js/prostyle.flow.stack.min.js"

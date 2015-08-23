@@ -11,15 +11,15 @@
 	{% endif %}
 	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr.min.js"></script>
 	<script src="/assets/js/pro.greensock.min.js" type="text/javascript"></script>
-	<script src="/assets/js/prostyle.min.js" type="text/javascript"></script>
-	{% for ext in page.extensions %}
-		{% for pm_ext in site.data.extensions %}
-			{% if ext.name == pm_ext.name %}
-	<script src="{{ pm_ext.url }}" type="text/javascript"></script>
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
-  <script>
+	<script src="/assets/js/prostyle.js" type="text/javascript"></script>
+	
+	{% if page.cont_tap %}<script src="{{ site.data.extensions.cont_tap }}" type="text/javascript"></script>{% endif %}
+	{% if page.cont_mousemove %}<script src="{{ site.data.extensions.cont_mousemove }}" type="text/javascript"></script>{% endif %}
+	{% if page.cont_mousewheel %}<script src="{{ site.data.extensions.cont_mousewheel }}" type="text/javascript"></script>{% endif %}
+	{% if page.item_barchart %}<script src="{{ site.data.extensions.item_barchart }}" type="text/javascript"></script>{% endif %}
+	{% if page.flow_stack %}<script src="{{ site.data.extensions.flow_stack }}" type="text/javascript"></script>{% endif %}
+
+    <script>
     WebFontConfig = {
       google: { families: [ 'Open+Sans:300,400,600,400italic,600italic:latin' ] }
     };

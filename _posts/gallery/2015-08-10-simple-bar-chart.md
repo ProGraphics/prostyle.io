@@ -3,8 +3,7 @@ layout: post-animation
 title: "Simple Bar Chart"
 category: gallery
 desc: "Translate an array of data into a simple animated bar chart."
-extensions:
- - name: "item.barchart"
+item_barchart: true
 tags: 
   - text
 thumbnail: "animated-bar-chart.png"

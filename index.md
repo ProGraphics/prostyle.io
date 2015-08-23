@@ -2,10 +2,9 @@
 layout: page-front
 title: "ProStyle"
 desc: "Craft rich web animations with ease™"
-extensions:
- - name: "controller.tap"
- - name: "controller.mousewheel"
- - name: "item.barchart"
+cont_tap: true
+cont_mousewheel: true
+item_barchart: true
 widget-1:
     title: "Stories"
     url: '/write-stories/'

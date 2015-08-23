@@ -4,8 +4,7 @@ title: "Gallery"
 splash: title
 permalink: "/gallery/"
 noindex: true
-extensions:
- - name: "controller.mousemove"
+cont_mousemove: true
 ---
 
 <div class="gallery row t30">
