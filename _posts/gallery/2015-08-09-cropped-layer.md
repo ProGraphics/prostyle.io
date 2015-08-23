@@ -2,8 +2,7 @@
 layout: post-animation
 title: "Cropped Layer"
 category: gallery
-meta_teaser: "This Pro Style example uses non-moving text on the page and the same text on a cropped layer. The text on the layer is moved in the opposite direction as the layer, so it appears not to move relative to the other text. This provides an illusion of a see-through dot."
-teaser: "This Pro Style example uses non-moving text on the page and the same text on a cropped layer. The text on the layer is moved in the opposite direction as the layer, so it appears not to move relative to the other text. This provides an illusion of a see-through dot."
+desc: "Demonstration of how to use a layer cropping technique to make the illusion of see-through objects."
 tags: 
   - text
 thumbnail: "layer-cropping.png"

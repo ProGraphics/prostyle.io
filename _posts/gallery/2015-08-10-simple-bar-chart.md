@@ -2,8 +2,7 @@
 layout: post-animation
 title: "Simple Bar Chart"
 category: gallery
-meta_teaser: "This Pro Style demo uses using the simple bar chart extension."
-teaser: "This Pro Style demo uses using the simple bar chart extension."
+desc: "Translate an array of data into a simple animated bar chart."
 extensions:
  - name: "item.barchart"
 tags: 
