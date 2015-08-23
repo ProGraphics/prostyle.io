@@ -1,0 +1,20 @@
+{
+  item:{
+    text:"Shadow",
+    init: { font:25, padding:true, corners:true },
+    actions:[
+      {
+        anim:[1,"less curve"],
+        shadow:[1,1,5,"#234"] },
+      {
+        anim:[1,"less curve in"],
+        shadow:false },
+      {
+        anim:[1,"less curve"],
+        shadow:[1,1,5,"#234",0,true] },
+      {
+        anim:[1,"less curve in"],
+        shadow:[0,0,0,"#000",0,true] }
+    ]
+  }
+}
