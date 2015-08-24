@@ -1,0 +1,30 @@
+{
+  classes: { 
+    text:{
+      color:"rgba(22,33,44,0.5)",
+      origin:{y:7},
+      font:20
+    }
+  },
+  frame: { aspectRatio:1.5},
+  item: {
+    itemType:"layer",
+    init:{ origin:{x:-20,expand:true}, pos:20 },
+    action:{ anim:[10,"linear",2], rot:360 },
+    item: {
+      itemType:"layer",
+      action:{ anim:[10,"linear",2], rot:-360 },
+      items: [
+        {
+          text:"x axis",
+          init:{origin:{y:5}},
+          action:{anim:[3,"linear",9], rot:{x:360}}
+        },
+        {
+          text:"y axis",
+          action:{anim:[3,"linear",9], rot:{y:360}}
+        }
+      ]
+    }
+  }
+}

@@ -1,21 +1,24 @@
 {
-  classes: { text:{color:"#094766", font:20}},
-  frame: { aspectRatio:0.8},
+  classes: { 
+    text:{
+      color:"rgba(22,33,44,0.5)",
+      origin:{y:7},
+      font:40
+    }
+  },
+  frame: { aspectRatio:1.5},
   items: [
     {
       text:"x axis",
-      init:{class:"text", pos:{y:-35}},
-      action:{anim:[3,"linear"], rot:{x:360}}
-    },
-    {
-      text:"z axis",
-      init:{class:"text", pos:{y:-5}},
-      action:{anim:[3,"linear"], rot:360}
+      action:{anim:3, rot:{x:360}}
     },
     {
       text:"y axis",
-      init:{class:"text", pos:{y:25}},
-      action:{anim:[3,"linear"], rot:{y:360}}
+      action:{delay:3,anim:3, rot:{y:360}}
+    },
+    {
+      text:"z axis",
+      action:{delay:6,anim:3, rot:360}
     }
   ]
 }
