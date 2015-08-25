@@ -1,11 +1,31 @@
 ---
 layout: page
 title: "Content"
+desc: ""
 permalink: "/content/"
+noindex: true
 ---
 
-{% include google_search.html %}
+#### Search
 
-<form style="padding-bottom: 200px;" onsubmit="google_search()" >
-  <input type="text" id="google-search" placeholder="{{ site.data.language.enter_search_term }}">
-</form>
+Use Google to search the ProStyle.io website. [More.](/search/)
+
+
+
+#### Gallery
+
+Looking for inspiration? Check out the gallery to see some creative animations that were crafted as ProStyle stories [More.](/gallery/)
+
+
+
+#### Examples
+
+The examples are short stories that align with the documentation to demonstrate how a feature of ProStyle works. [More.](/examples/)
+
+
+
+#### Blog
+
+The blog contains articles related to ProStyle and web animation. [More.](/blog/)
+
+

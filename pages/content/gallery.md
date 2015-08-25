@@ -2,6 +2,7 @@
 layout: default
 title: "Gallery"
 splash: title
+breadcrumb-base: content
 permalink: "/gallery/"
 noindex: true
 cont_mousemove: true

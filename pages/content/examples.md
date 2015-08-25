@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Examples"
+breadcrumb-base: content
 permalink: "/examples/"
 noindex: true
 ---
