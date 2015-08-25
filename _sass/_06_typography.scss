@@ -80,8 +80,8 @@ p {
     -ms-hyphens: auto;
     hyphens: auto;
 }
-p a:not(.noline),
-article a:not(.noline) {
+p a:not(.noline):not([class^='gs']),
+article a:not(.noline):not([class^='gs']) {
     font-weight: bold;
     text-decoration: none;
 	position: relative;

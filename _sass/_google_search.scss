@@ -1,0 +1,64 @@
+@mixin google-table() {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	tr td {
+		padding: 0;
+	}
+	div {
+		background: transparent;
+	}
+}
+
+#___gcse_0 {
+	padding: 1em;
+}
+
+table.gsc-search-box {
+	@include google-table();
+	table {
+		@include google-table();
+	}
+}
+
+div.gsc-control-cse {
+	background: transparent;
+	border: none;
+	table {
+		@include google-table();
+	}
+	
+	.gs-result .gs-title, .gs-result .gs-title b {
+		font-size: 1.3rem;
+		height: 2rem;
+		font-weight: normal;
+	}
+	
+	.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType {
+		font-size: 0.8rem;
+		padding-left: 8px;
+	}
+}
+
+input.gsc-search-button.gsc-search-button-v2 {
+	width: auto;
+	height: auto;
+}
+
+div.gsc-webResult.gsc-result {
+	background: transparent;
+	border: solid 1px transparent;
+}
+
+.gsc-results .gsc-cursor-box {
+	font-size: 1.3rem;
+	div.gsc-cursor-page.gsc-cursor-current-page {
+		padding: 0.5rem;
+		background: #567;
+		color:#FFF;
+	}
+}
+
+div.gsc-selected-option-container {
+	width: 110px!important;
+}
