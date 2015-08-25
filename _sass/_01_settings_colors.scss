@@ -19,6 +19,11 @@ body {
 	visibility: hidden;
 }
 
+.content-area {
+	background: #fdfdfd;
+	min-height: 300px;
+}
+
 $number-field: darkgreen;
 $string-field: #D14;
 $bool-field: purple;
@@ -31,7 +36,7 @@ $highlight-color: #456;
 
 $text-color:       	#111;
 $body-font-color: 	$text-color;
-$body-bg: 			#fdfdfd;
+$body-bg: 			#313131;
 
 
 $ci-1: #334D5C;		// dark turquoise
