@@ -1,0 +1,18 @@
+{
+  item: {
+    itemType: "image",
+    src: "html5.png",
+    height: 100, width: 70,
+    init: { origin:[0,50], rot:[45], pos:[0,-5,-10] },
+    actions: [
+      {
+        anim:[1,"less curve inout"],
+        rot:{y:-75}
+      },
+      {
+        anim:[8,"elastic"],
+        rot:{y:360}
+      }
+    ]
+  }
+}

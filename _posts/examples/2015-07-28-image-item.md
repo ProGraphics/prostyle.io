@@ -7,6 +7,7 @@ tags:
   - text
   - eases
 story: "examples/image-item.json5"
+story2: "examples/image-item-2.json5"
 ---
 # Image Item
 This example adds a single image item and then scripts it with an elastic bounce.
