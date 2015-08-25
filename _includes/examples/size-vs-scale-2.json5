@@ -3,7 +3,7 @@
     text:"font",
     init: {
       pos:[-50,-50], anchor:[-50,-50],
-      origin:[-50,-50], color:"#094766",
+      origin:[-50,-50], color:"#456",
       font:300, scale:10
     },
     action: {
