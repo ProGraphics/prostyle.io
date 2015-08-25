@@ -1,0 +1,24 @@
+<script>
+window.ProStyle = window.ProStyle || {};
+ProStyle.Stories = ProStyle.Stories || {};
+
+ProStyle.Stories.fourOhFour = {
+  item:{
+    text:"404",
+    init: {
+      color: "#FDFDFD",
+      font:80
+    },
+    charAction: {
+      anim:[0.50,"sine inout",99,0,true,0.25],
+      textShadow:[0,4,8],
+      pos:{z:5}
+    }
+  },
+  controllers: [
+    { controllerType: "auto", start: true, stepAdvance: true, restart: true },
+    { controllerType: "resize" },
+    { controllerType: "mouseWheel" }
+  ]
+};
+</script>

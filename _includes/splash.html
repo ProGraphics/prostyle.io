@@ -9,6 +9,9 @@
 {% include splash_title.html %}
 
 {% endif %}
+{% if page.fourOhFour %}
+{% include splash_404.html %}
+{% endif %}
 {% if page.title == "Models" %}
 {% include story_frame.html %}
 {% endif %}
