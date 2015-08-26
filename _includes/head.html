@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
+	<script>
+        var canonical = "{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}";
+        if (window.location.href !== canonical) window.location.href = canonical;
+	</script>
 	<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/styles.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	{% if page.tocify-js %}
