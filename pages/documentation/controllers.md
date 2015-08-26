@@ -158,10 +158,19 @@ _undocumented_
 
 
 ## MouseWheel
-The _mousewheel_ controller...
+The _mousewheel_ controller pauses and then seeks the timeline relative to it's current position. The wheel's direction defines whether the timeline is advanced or retreated. To experience it, position your mouse over almost any of the animations on this website, including the [front page's](/) splash and all the examples in the [gallery](/gallery/). Spin the wheel with or without the CTRL and ALT keys pressed.
+
+Each wheel click moves the timeline <samp class="number">0.01</samp> seconds. The CTRL and ALT keys can be pressed to alter the amount of change.
+
+| CTRL | ALT  | Seconds |
+|:-:|:-:|---|
+| | | <samp class="number">0.01</samp>
+| pressed | | <samp class="number">0.001</samp>
+| | pressed | <samp class="number">1</samp>
+| pressed | pressed | <samp class="number">0.1</samp>
 
 ### Options
-_undocumented_
+_none_
 
 
 
