@@ -197,7 +197,13 @@ _undocumented_
 
 
 ## Track
-The _track_ controller...
+The _track_ controller renders a trackbar at the bottom of the story.  The user can seek the timeline to any position by clicking on the bar.  It also provides control buttons to play and pause, rewind, and play next.
+
+The track controller can be seen in the [gallery](/gallery/). All gallery examples use it.
 
 ### Options
-_undocumented_
+{% include controller-option.html label="color" content="track-color.md" %}
+{% include controller-option.html label="highlightColor" content="track-highlight-color.md" %}
+{% include controller-option.html label="backColor" content="track-back-color.md" %}
+{% include controller-option.html label="stepColor1" content="track-step-color-1.md" %}
+{% include controller-option.html label="stepColor2" content="track-step-color-2.md" %}
