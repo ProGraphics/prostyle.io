@@ -1,8 +1,8 @@
 - menu_name: "Links"
 
-- name: "Contact"
-  url: "/contact/"
-  title: "Contact"
+- name: "Plus"
+  url: "/plus/"
+  title: "ProStyle Plus"
 
 - name: "RSS"
   url: "/feed.xml"
