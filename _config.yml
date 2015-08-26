@@ -1,9 +1,9 @@
 language: "en"
 title: "ProStyle Web Animation"
 description: "ProStyle is a JavaScript library that makes it easy to craft and play rich web animations with timelines."
-url: "http://prostyle.io"   # Don't include a slash at the end.
+url: "https://prostyle.io"   # Don't include a slash at the end.
 baseurl: ""
-urlimg: "http://prostyle.io/images/" # Include a slash at the end
+urlimg: "https://prostyle.io/images/" # Include a slash at the end
 
 improve_content: https://github.com/prographics/prostyle.io/edit/gh-pages
 
@@ -69,12 +69,12 @@ msapplication_tilecolor:                "#EEE"
 
 
 # Facebook-Optimization › http://j.mp/fb_optimize
-og_image:                           "http://prostyle.io/images/pro.svg"
+og_image:                           "https://prostyle.io/images/pro.svg"
 og_locale:                          "en_EN"
 og_type:                            "website"
 og_title:                           "ProStyle Web Animation"
 og_description:                     "ProStyle is a JavaScript library that makes it easy to craft and play rich web animations with timelines."
-og_url:                             "http://prostyle.io/"
+og_url:                             "https://prostyle.io/"
 # og_site_name:                     ""
 
 

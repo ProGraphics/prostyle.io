@@ -1,17 +1,17 @@
 - menu_name: "Thanks"
 
 - name: "TypeScript"
-  url: "http://pro.graphics/thanks/"
+  url: "https://pro.graphics/thanks/"
   title: "TypeScript"
 
 - name: "Greensock"
-  url: "http://pro.graphics/thanks/"
+  url: "https://pro.graphics/thanks/"
   title: "Greensock"
 
 - name: "Github"
-  url: "http://pro.graphics/thanks/"
+  url: "https://pro.graphics/thanks/"
   title: "GitHub"
 
 - name: "More"
-  url: "http://pro.graphics/thanks/"
+  url: "https://pro.graphics/thanks/"
   title: "More"
