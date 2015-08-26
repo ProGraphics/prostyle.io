@@ -39,11 +39,16 @@ The _auto_ controller configures the _automatic_ behavior of the player. Use it 
 {% include controller-option.html label="restart" content="auto-restart.md" %}
 
 
+
+<hr class="t60 b60">
+
+
+
 ## Debug
-The _debug_ controller...
+The _debug_ controller displays status information in the upper-left corner of the canvas.  It shows the elaspsed time, completion percentage, and the zero-based indexes of the current flow, page and step. 
 
 ### Options
-_undocumented_
+{% include controller-option.html label="cssClass" content="debug-css-class.md" %}
 
 
 
