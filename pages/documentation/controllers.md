@@ -184,10 +184,14 @@ The _resize_ controller monitors for resizing of the browser window. If the stor
 
 
 ## Tap
-The _tap_ controller...
+The _tap_ controller segments the canvas into four areas that can be tapped or clicked to control playback. There are two rows. The first row contains tap areas that correspond to the _back_, _toggle_, and _next_ actions. The second row is a non-visible trackbar. The timeline will seek the story to the position relative to where on the tap area was hit. The relative sizes of the rows and the relative sizes of the tap areas on the first row are configurable.
+
+The _tap_ controller is used on the [front page's](/) splash animation.
 
 ### Options
-_undocumented_
+{% include controller-option.html label="playbuttonSizes" content="tap-play-button-sizes.md" %}
+{% include controller-option.html label="rowSizes" content="tap-row-sizes.md" %}
+{% include controller-option.html label="cursors" content="tap-cursors.md" %}
 
 
 
