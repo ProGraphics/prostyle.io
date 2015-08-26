@@ -58,10 +58,84 @@ The _debug_ controller displays status information in the upper-left corner of t
 
 
 ## Keyboard
-The _keyboard_ controller...
+The _keyboard_ controller maps user interaction to playback activity. The user presses keys on a keyboard or related device, such as a presentation clicker, to start, pause, restart, advance, or rewind the player.
+
+There are seven actions that can be triggered. Each has a default set of key codes that trigger the action, but they can be overridden with the <code>keys</code> option.
+
+
+<table>
+	<thead><tr><th>Action</th><th>Description</th></tr></thead>
+	<tbody><tr><td><em>play</em></td><td>
+		Starts playback at the current position if it is currently paused.
+		<table class="nested-table">
+			<thead><tr><th>KeyCode</th><th>Key</th></tr></thead>
+			<tbody>
+				<tr><td>13</td><td>Enter</td></tr>
+				<tr><td>116</td><td>F5</td></tr>
+			</tbody>
+		</table>
+	</td></tr><tr><td><em>pause</em></td><td>
+		Stops playback at the current position if it is currently playing.
+		<table class="nested-table">
+			<thead><tr><th>KeyCode</th><th>Key</th></tr></thead>
+			<tbody>
+				<tr><td>19</td><td>Pause</td></tr>
+				<tr><td>27</td><td>Escape</td></tr>
+			</tbody>
+		</table>
+	</td></tr><tr><td><em>toggle</em></td><td>
+		Toggles between <em>play</em> and <em>pause</em>.
+		<table class="nested-table">
+			<thead><tr><th>KeyCode</th><th>Key</th></tr></thead>
+			<tbody>
+				<tr><td>32</td><td>Space</td></tr>
+			</tbody>
+		</table>
+	</td></tr><tr><td><em>back</em></td><td>
+		The playhead rewinds to the start of the current step. If the playhead is already at the start of the step, it rewinds to the start of the previous step.
+		<table class="nested-table">
+			<thead><tr><th>KeyCode</th><th>Key</th></tr></thead>
+			<tbody>
+				<tr><td>8</td><td>Backspace</td></tr>
+				<tr><td>33</td><td>Page Up</td></tr>
+				<tr><td>37</td><td>Left</td></tr>
+				<tr><td>38</td><td>Up</td></tr>
+				<tr><td>188</td><td>Comma</td></tr>
+			</tbody>
+		</table>
+	</td></tr><tr><td><em>next</em></td><td>
+		If the playhead is at the beginning of a step, it starts playing. Otherwise, it fast forwards to the next step and then starts playing.
+		<table class="nested-table">
+			<thead><tr><th>KeyCode</th><th>Key</th></tr></thead>
+			<tbody>
+				<tr><td>34</td><td>Page Down</td></tr>
+				<tr><td>39</td><td>Right</td></tr>
+				<tr><td>40</td><td>Down</td></tr>
+				<tr><td>9</td><td>Tab</td></tr>
+			</tbody>
+		</table>
+	</td></tr><tr><td><em>start</em></td><td>
+		Positions the playhead at the beginning of the story.
+		<table class="nested-table">
+			<thead><tr><th>KeyCode</th><th>Key</th></tr></thead>
+			<tbody>
+				<tr><td>36</td><td>Home</td></tr>
+				<tr><td>190</td><td>Period ('blank screen' in PowerPoint)</td></tr>
+			</tbody>
+		</table>
+	</td></tr><tr><td><em>end</em></td><td>
+		Positions the playhead at the end of the story.
+		<table class="nested-table">
+			<thead><tr><th>KeyCode</th><th>Key</th></tr></thead>
+			<tbody>
+				<tr><td>35</td><td>End</td></tr>
+			</tbody>
+		</table>
+	</td></tr></tbody>
+</table>
 
 ### Options
-_undocumented_
+{% include controller-option.html label="keys" content="keyboard-keys.md" %}
 
 
 
