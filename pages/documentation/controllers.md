@@ -145,10 +145,15 @@ There are seven actions that can be triggered. Each has a default set of key cod
 
 
 ## MouseMove
-The _mousemove_ controller...
+The _mousemove_ controller maps mouse movement over a story to a position on it's timeline. It then instantly seeks the timeline to that position. When the mouse is moved off of the story, the player starts from the current position and plays until the end of the story, unless otherwise configured with the [auto](#){:data-toc="auto"} controller.
+
+The hot spot normally ranges from the left edge of the [frame](/models/#frame) to the right edge. If the mouse is positioned 25% of the way across the frame, the timeline will be positioned to 25% complete.  The starting and ending points of the hotspot can be configured.
+
+The _mousemove_ controller can be experienced by positioning your mouse over the <samp class="string">Controllers</samp> heading at the top of this page.
 
 ### Options
-_undocumented_
+{% include controller-option.html label="start" content="mousemove-start.md" %}
+{% include controller-option.html label="end" content="mousemove-end.md" %}
 
 
 
