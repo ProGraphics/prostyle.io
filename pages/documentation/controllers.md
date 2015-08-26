@@ -97,10 +97,10 @@ _undocumented_
 
 
 ## Resize
-The _resize_ controller...
+The _resize_ controller monitors for resizing of the browser window. If the story's canvas size changes, the resize controller rebuilds the story animation to match the new size.  
 
 ### Options
-_undocumented_
+{% include controller-option.html label="throttleDelay" content="resize-throttle-delay.md" %}
 
 
 
