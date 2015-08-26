@@ -1,4 +1,5 @@
 div.name-value-row,
+div.controller-option-row,
 div.model-setup-row,
 div.model-props-row,
 div.prop-value-row,
@@ -23,6 +24,7 @@ div.prop-format-row {
 }
 
 div.name-value-row { @include row-gradient(#CCC); }
+div.controller-option-row { @include row-gradient(#CDC); }
 div.model-setup-row { @include row-gradient(#BCD); }
 div.model-props-row { @include row-gradient(#CDC); }
 div.prop-value-row { @include row-gradient(#CDC); }
