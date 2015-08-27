@@ -21,8 +21,8 @@ widget-3:
     text: 'An assortment of premium extensions that you can plug into your stories to make them even better.'
     icon: 'fa-plus'
 ---
-<div class="row" style="display:none">
+<div class="row">
   <div class="small-10 medium-9 small-centered large-8 columns t50">
-		{% include alert text="Looking for someone to create a great animation for you? &nbsp; <a href='https://pro.graphics'>Hire us!</a>" %}
+		{% include alert text="Looking for someone to create a great animation for you? &nbsp; <a href='https://pro.graphics/custom-animation/'>Hire us!</a>" %}
 	</div>
 </div>
