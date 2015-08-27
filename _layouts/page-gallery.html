@@ -1,0 +1,21 @@
+---
+layout: default
+splash: title
+cont_mousemove: true
+---
+<div class="row">
+<div class="medium-7 large-8 columns" markdown="1">
+{{ content }}
+</div>
+<div class="medium-5 large-4 columns">
+{% for post in site.categories.gallery limit:2 %}
+	<a class="page-gallery-items" href="{{ site.url }}{{ post.url }}"><img width="100%" alt="{{ post.title }}" title="{{ post.title }}" src="/images/gallery/{{post.thumbnail}}"></a>
+{% endfor %}
+<div style="margin:2em 0;">
+{% include ads/google-doc-ad.html %}
+</div>
+{% for post in site.categories.gallery limit:6 offset:2 %}
+	<a class="page-gallery-items" href="{{ site.url }}{{ post.url }}"><img width="100%" alt="{{ post.title }}" title="{{ post.title }}" src="/images/gallery/{{post.thumbnail}}"></a>
+{% endfor %}
+</div>
+</div>

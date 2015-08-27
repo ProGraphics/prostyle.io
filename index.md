@@ -23,6 +23,6 @@ widget-3:
 ---
 <div class="row">
   <div class="small-10 medium-9 small-centered large-8 columns t50">
-		{% include alert text="Looking for someone to create a great animation for you? &nbsp; <a href='https://pro.graphics/custom-animation/'>Hire us!</a>" %}
+		{% include alert text="Looking for someone to create great animation for you? &nbsp; <a href='https://pro.graphics/custom-animation/'>Hire us!</a>" %}
 	</div>
 </div>

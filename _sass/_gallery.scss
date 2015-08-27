@@ -8,3 +8,9 @@ div.gallery.row img:hover {
 	transform: rotate(-7deg) translate3d(0,0,1em) scale(1.1);
 	z-index: 100;
 }
+
+a.page-gallery-items {
+	img {
+		margin: 0.8em 0;
+	}
+}
