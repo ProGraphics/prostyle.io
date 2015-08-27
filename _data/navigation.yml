@@ -30,9 +30,11 @@
   url: "/support/"
   side: right
   dropdown:
-  - title: Download
-    url: "https://github.com/prographics/prostyle/"
+  - title: Pricing
+    url: "/pricing/"
   - title: Releases
-    url: "https://github.com/prographics/prostyle/releases/"
+    url: "/support/"
   - title: Issues
-    url: "https://github.com/prographics/prostyle/issues/"
+    url: "/support/"
+  - title: GitHub
+    url: "/support/"
