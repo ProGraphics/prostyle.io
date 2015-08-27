@@ -12,7 +12,7 @@ permalink: "posts/all/"
 			{% assign counter = 1 %}
 			{% for post in site.posts limit:1000 %}
 			<dd class="accordion-navigation">
-			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.category %}{{ post.category }} &middot; {% endif %}<strong>{{ post.title }}</strong></a>
+			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.category %}<span class="category">{{ post.category }}</span> {% endif %}<strong>{{ post.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">
 					{% if post.teaser %}{{ post.teaser | strip_html | escape }}{% elsif post.desc %}{{ post.desc | strip_html | escape }}{% endif %}
 					<a href="{{ site.url }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>

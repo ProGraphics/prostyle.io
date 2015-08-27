@@ -39,7 +39,10 @@ span.category {
   -webkit-transition: background 200ms ease-out ;  
   -moz-transition: background 200ms ease-out;  
   -o-transition: background 200ms ease-out;  
-  transition: background 200ms ease-out; 	
+  transition: background 200ms ease-out;
+  &::before {
+      content:'' !important;
+  }
 }
 
 a:hover span.category {
