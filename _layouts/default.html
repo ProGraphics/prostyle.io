@@ -3,20 +3,14 @@ layout: compress
 ---
 {% include head.html %}
 <body id="top-of-page">
+	{% include api/facebook.html %}
 	{% include navigation.html %}
-
 	{% include splash.html %}
-	
 	<div class="content-area">
-	
 	{% include breadcrumb.html %}
-
 	{{ content }}
-
 	</div>
-	
 	{% include footer.html %}
-
 	{% include footer_scripts.html %}
 </body>
 </html>
