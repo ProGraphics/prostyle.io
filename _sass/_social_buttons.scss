@@ -1,5 +1,24 @@
+
+@mixin social-buttons-gradient() {
+	background: rgb(253,253,253); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(253,253,253,1) 0%, rgba(238,238,238,1) 49%, rgba(68,85,102,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(253,253,253,1)), color-stop(49%,rgba(238,238,238,1)), color-stop(100%,rgba(68,85,102,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(253,253,253,1) 0%,rgba(238,238,238,1) 49%,rgba(68,85,102,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(253,253,253,1) 0%,rgba(238,238,238,1) 49%,rgba(68,85,102,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(253,253,253,1) 0%,rgba(238,238,238,1) 49%,rgba(68,85,102,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(253,253,253,1) 0%,rgba(238,238,238,1) 49%,rgba(68,85,102,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#445566',GradientType=1 ); /* IE6-9 */
+}
+
 .social-buttons {
-	background: #fdfdfd;
-	padding: 0.5em;
 	margin: 2em 0 1em 0;
+	.facebook-like {
+		@include social-buttons-gradient();
+		padding: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	.google-plusone {
+		@include social-buttons-gradient();
+		padding: 0.5em;
+	}
 }
