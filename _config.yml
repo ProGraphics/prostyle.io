@@ -8,7 +8,7 @@ urlimg: "https://prostyle.io/images/" # Include a slash at the end
 improve_content: https://github.com/prographics/prostyle.io/edit/gh-pages
 
 # See http://jekyllrb.com/docs/pagination/
-paginate: 5
+paginate: 10
 paginate_path: "posts/page:num"
 
 
