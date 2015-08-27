@@ -2,6 +2,7 @@
 layout: page
 title: "Pricing"
 desc: "Pricing"
+breadcrumb-base: support
 permalink: "/pricing/"
 ---
 
