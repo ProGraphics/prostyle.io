@@ -28,7 +28,7 @@
     background: #89A;
     font-size: 1rem;
     &:hover {
-      background: #234;
+      background: #050;
     }
   }
 }
@@ -43,4 +43,22 @@
 
 .bullet-item.dynamic {
   color: #050;
+}
+
+dl.accordion.faq {
+  dd {
+    margin: 0;
+    a{
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+    div.content p {
+      font-size:0.8rem;
+      margin: 0 0 0.4rem 1rem;
+      a {
+        font-weight: bold;
+        font-size:0.8rem;
+      }
+    }
+  }
 }
