@@ -94,7 +94,7 @@ permalink: "/pricing/"
       <dd class="accordion-navigation">
         <a href="#panel7" class="noline"><span class="iconfont"></span>Custom enterprise licensing?</a>
         <div id="panel7" class="content">
-          <p>Need a license tailored to your company's needs? No problem. Tell us the specifics and we will work with you to make an enterprise agreement for you.</p>
+          <p markdown="1">Need a license tailored to your company's needs? No problem. [Tell us the specifics](https://pro.graphics/prostyle/question/) and we will work with you to make an enterprise agreement for you.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
@@ -106,14 +106,14 @@ permalink: "/pricing/"
       <dd class="accordion-navigation">
         <a href="#panel9" class="noline"><span class="iconfont"></span>Can I create a CMS plugin?</a>
         <div id="panel9" class="content">
-          <p>Sure. If the plugin only allows the user to paste in previously written stories or to hand-edit them, you and your users can use the free <em>Static Stories</em> license. If your plugin will provide tooling that helps the user generate the JSON, you will need the <em>Dynamic Stories</em> license.</p>
-          <p>You may say that the plugin is powered by ProStyle, but you may not indicate that it is an official plugin without express consent from Pro Graphics, Inc.</p>
+          <p>Sure. If the plugin only allows the user to paste in previously written stories or to hand-edit the JSON with a text editor, you and your users can use the free <em>Static Stories</em> license. If your plugin will provide tooling that helps the user create or maintain an animation, anything beyond a JSON text editor, you will need the <em>Dynamic Stories</em> license.</p>
+          <p>You may say that the plugin is powered by ProStyle, but you may not indicate that it is an official plugin without express written consent from Pro Graphics, Inc.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel10" class="noline"><span class="iconfont"></span>Can I create a SAAS tool?</a>
+        <a href="#panel10" class="noline"><span class="iconfont"></span>Can I create an editor tool?</a>
         <div id="panel10" class="content">
-          <p>We are very open to partnering with organizations that would like to build online tools based on ProStyle, especially those that let end-users easily craft animations. Reach out and let's discuss it.</p>
+          <p markdown="1">We are very open to partnering with organizations that would like to build online tools based on ProStyle, especially those that let end-users easily craft animations. [Reach out](https://pro.graphics/prostyle/question/) and let's discuss it.</p>
         </div>
       </dd>
     </dl>
