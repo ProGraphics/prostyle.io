@@ -7,7 +7,7 @@ permalink: "/pricing/"
 ---
 <div class="row">
   <div class="columns">
-    <p class="teaser b60" markdown="1">We strive to make ProStyle accessible to as many people as possible.  To that end, we do not charge for the most common way it is used; placing prebuilt animations into web pages and web applications. We fund further development and support by charging for the less common scenario where the integrations dynamically generate animations, and by selling [ProStyle Plus](/plus/), a set of premium extensions.</p>
+    <p class="teaser b60" markdown="1">We strive to make ProStyle accessible to as many people as possible.  To that end, we do not charge for the most common way it is used; placing prebuilt animations into web pages and web applications. We fund further development and support by charging for the less common scenario of when the animations are dynamically generated, and by selling [ProStyle Plus](/plus/), a set of premium extensions.</p>
   </div>
 </div>
 <div class="row">
@@ -40,7 +40,7 @@ permalink: "/pricing/"
         <li class="bullet-item">Commercial Use</li>
         <li class="bullet-item">Add Extensions</li>
         <li class="bullet-item dynamic">Integration with a program that generates the animation JSON dynamically</li>
-        <li class="cta-button price-call-to-action"><a class="button text-transform noline" href="#">Contact Us</a></li>
+        <li class="cta-button price-call-to-action"><a class="button text-transform noline" href="https://pro.graphics/prostyle/question/">Contact Us</a></li>
         </ul>
       </div>
     </div>
