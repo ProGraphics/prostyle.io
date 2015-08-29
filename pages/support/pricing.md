@@ -5,7 +5,11 @@ desc: "Pricing"
 breadcrumb-base: support
 permalink: "/pricing/"
 ---
-
+<div class="row">
+  <div class="columns">
+    <p class="teaser b60" markdown="1">We strive to make ProStyle accessible to as many people as possible.  To that end, we do not charge for the most common way it is used; placing prebuilt animations into web pages and web applications. We fund further development and support by charging for the less common scenario where the integrations dynamically generate animations, and by selling [ProStyle Plus](/plus/), a set of premium extensions.</p>
+  </div>
+</div>
 <div class="row">
   <div class="large-8 columns">
     <div class="row"> 
