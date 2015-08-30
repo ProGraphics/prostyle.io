@@ -351,7 +351,7 @@ Layers may be nested in layers to any reasonable depth.
 {% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
-{% include model-props.html label="crop" content="item.layer-moveto.md" %}
+{% include model-props.html label="moveTo" content="item.layer-moveto.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="position" content="standard-position.md" %}
 {% include model-props.html label="rotation" content="standard-rotation.md" %}
@@ -387,7 +387,6 @@ These properties may be initialized with an <code>init</code> entry and [scripte
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
-{% include model-props.html label="crop" content="item.layer-moveto.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="position" content="standard-position.md" %}
 {% include model-props.html label="rotation" content="standard-rotation.md" %}
