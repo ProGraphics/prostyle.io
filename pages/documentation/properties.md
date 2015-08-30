@@ -5,7 +5,7 @@ permalink: "/properties/"
 ---
 ## Overview
 {: class='t0'}
-A property defines _appearance_ or [placement](/concepts/#placement) of a [model](/models/) object.  Property values are initialized with an <code>init</code> entry and may be [scripted](/concepts/#scripts) to change over time. e.g. [Rotation](#){:data-toc="rotation"}. There are also [pseudo properties](#){:data-toc="pseudo-properties"}, which are similar to regular properties but instruct _how_ to alter properties.
+A property defines _appearance_ or [placement](/concepts/#placement) of a [model](/models/) object.  Property values are initialized with an <code>init</code> entry and may be [scripted](/concepts/#animation) to change over time. e.g. [Rotation](#){:data-toc="rotation"}. There are also [pseudo properties](#){:data-toc="pseudo-properties"}, which are similar to regular properties but instruct _how_ to alter properties.
 
 ### Values
 Each property is composed of one or more values.  For instance, the [font](#){:data-toc="font"} property has both _size_ and _family_ values.  A [position](#){:data-toc="position"} has _x_, _y_ and _z_ dimensions. ProStyle allows you to set and animate individual property values separately or together.  This enables you to create simple animations easily, yet provides the flexibility to craft complex ones.
@@ -51,7 +51,7 @@ Which format should you use? That’s up to you. Generally, shorter formats impr
 </p>
 
 ### Pseudo-Properties
-Most properties alter the appearance or placement of something.  However, there are a few special cases that are a bit different.  They are grouped together with regular properties because they are configured in the same manner, with <code>init</code> blocks and/or [script](/concepts/#scripts) actions.
+Most properties alter the appearance or placement of something.  However, there are a few special cases that are a bit different.  They are grouped together with regular properties because they are configured in the same manner, with <code>init</code> blocks and/or [script](/concepts/#animation) actions.
 
 * [Animation](#){:data-toc="animation"}
 * [Class](#){:data-toc="class"}

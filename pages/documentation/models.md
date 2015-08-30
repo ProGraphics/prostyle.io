@@ -5,7 +5,7 @@ permalink: "/models/"
 ---
 ## Overview
 {: class='t0'}
-Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/concepts/#setup), [styled](/concepts/#properties) and [positioned](/concepts/#placement). Their properties may be animated with [scripts](/concepts/#scripts).
+Models are the _things_ that exist within the story. They physically exist as web content. They can be [configured](/concepts/#setup), [styled](/concepts/#properties) and [positioned](/concepts/#placement). Their properties may be animated with [scripts](/concepts/#animation).
 
 | Model | Description  |
 |:-:|---|
@@ -16,7 +16,7 @@ Models are the _things_ that exist within the story. They physically exist as we
 | [Items](#){:data-toc='items'}  | Items are the core visuals, such as text, images, and charts. |
 
 ### Property Sets
-All model objects, except [flows](#){:data-toc="flows"}, have at least one set of [properties](/properties/). For example, a [text item](#){:data-toc="&middot;-text-item"} has properties to _position_ and _rotate_ the text.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/concepts/#scripts).
+All model objects, except [flows](#){:data-toc="flows"}, have at least one set of [properties](/properties/). For example, a [text item](#){:data-toc="&middot;-text-item"} has properties to _position_ and _rotate_ the text.  Each property may have its default values overridden in an <code>init</code> block. The values may also be changed later in a [script](/concepts/#animation).
 
 {% include alert story="/examples/color-cycling/" %}
 {% highlight javascript %}{
@@ -55,7 +55,7 @@ The canvas contains a single [frame](#){:data-toc='frame'}.
 {% include model-setup.html label="mediaUrl" content="canvas-mediaUrl.md" %}
 
 ### Properties
-Canvas properties may be [scripted](/concepts/#scripts) with a <code>canvasScripts</code> entry on a page.
+Canvas properties may be [scripted](/concepts/#animation) with a <code>canvasScripts</code> entry on a page.
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
@@ -81,7 +81,7 @@ Like the canvas, the frame will resize as needed.  Unlike the canvas, though, th
 {% include model-setup.html label="padding" content="frame-padding.md" %}
 
 ### Properties
-Frame properties may be [scripted](/concepts/#scripts) with a <code>frameScripts</code> entry on a page.
+Frame properties may be [scripted](/concepts/#animation) with a <code>frameScripts</code> entry on a page.
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
@@ -223,7 +223,7 @@ A _line_ might be made up of a single word, or multiple sentences. If the [textW
 
 ### Properties
 {:class="font-size-h4"}
-Properties are initialized with an <code>init</code> entry and scripted with [scripts](/concepts/#scripts).  You may also use <code>lineInit</code> and <code>lineScripts</code> to set properties on lines, <code>wordInit</code> and <code>wordScripts</code> to set properties on words, and <code>charInit</code> and <code>charScripts</code> to set properties on characters.  The plural form, <code>linesInit</code>, <code>linesScripts</code>, and so on, are available as aliases.
+Properties are initialized with an <code>init</code> entry and scripted with [scripts](/concepts/#animation).  You may also use <code>lineInit</code> and <code>lineScripts</code> to set properties on lines, <code>wordInit</code> and <code>wordScripts</code> to set properties on words, and <code>charInit</code> and <code>charScripts</code> to set properties on characters.  The plural form, <code>linesInit</code>, <code>linesScripts</code>, and so on, are available as aliases.
 
 Lines, words and characters may have [staggered](/concepts/#staggering) animation.
 
