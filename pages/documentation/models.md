@@ -380,9 +380,30 @@ Multiple series may be added by using one chart per, all stacked directly on eac
 {% include model-setup.html label="height" content="item.barChart-height.md" %}
 {% include model-setup.html label="margin" content="item.barChart-margin.md" %}
 
-### Properties
+### Chart Properties
 {:class="font-size-h4"}
-_undocumented_
+These properties may be initialized with an <code>init</code> entry and [scripted](/concepts/#animation) with <code>scripts</code>, <code>script</code>, <code>actions</code> or <code>action</code>.
+
+{% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
+{% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="crop" content="item.layer-moveto.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="position" content="standard-position.md" %}
+{% include model-props.html label="rotation" content="standard-rotation.md" %}
+{% include model-props.html label="scale" content="standard-scale.md" %}
+{% include model-props.html label="skew" content="standard-skew.md" %}
+
+### Bar Properties
+{:class="font-size-h4"}
+These properties may be initialized with a <code>barsInit</code> entry and [scripted](/concepts/#animation) with <code>barScripts</code>, <code>barScript</code>, <code>barActions</code> or <code>barAction</code>.
+
+{% include model-props.html label="animation" content="standard-animation.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
+{% include model-props.html label="fill" content="item.barChart.bar-fill.md" %}
+{% include model-props.html label="opacity" content="standard-opacity.md" %}
+{% include model-props.html label="skew" content="standard-skew.md" %}
+{% include model-props.html label="data" content="item.barChart.bar-data.md" %}
 
 ### Example
 {:class="font-size-h4"}
