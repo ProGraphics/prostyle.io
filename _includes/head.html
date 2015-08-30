@@ -7,6 +7,8 @@
 	<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
 	<script>
         var canonical = "{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}";
+		var locationParts = window.location.href.split('#');
+		if (locationParts.length > 1) canonical += '#' + locationParts[1];
         if (window.location.href !== canonical) window.location.href = canonical;
 	</script>
 	<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/styles.css">
