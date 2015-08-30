@@ -3,7 +3,7 @@ The expected range of data as an array of two numbers. The bottom number represe
 </p>
 
 <p class="b20" markdown="1">
-optionally, use a single number may as the top number and the bottom number will be set to <samp class="number">0</samp>.  
+If the value provided is a single number, it will be used as the top number and the bottom number will be set to <samp class="number">0</samp>. 
 </p>
 
 {% highlight javascript %}
