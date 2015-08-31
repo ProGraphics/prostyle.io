@@ -1,4 +1,4 @@
-<p class="b30" markdown="1">
-The number represents a hue in a color wheel. The value is added to hsl() as the hue. The saturation and lightness are both set to 50%. Valid values range from 0 to 360, where 0 = red, 120 = green, 240 = blue and 360 = red.
+<p class="b20" markdown="1">
+The number represents a _hue_ in a color wheel. The value is added to <code>hsl()</code> as the hue. The saturation and lightness are both set to <samp class="string">50%</samp>. Valid values range from <samp class="number">0</samp> to <samp class="number">360</samp>, where <samp class="number">0</samp> = red, <samp class="number">120</samp> = green, <samp class="number">240</samp> = blue and <samp class="number">360</samp> = red.
 </p>
-{% highlight javascript %}align: 4{% endhighlight %}
+{% highlight javascript %}color: 120{% endhighlight %}
