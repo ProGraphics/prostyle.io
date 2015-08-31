@@ -379,19 +379,38 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Fill
-_undocumented_
+The _fill_ property defines the color used to fill part of an item that is created with scalable vector graphics.
+
 
 ### Values
-_undocumented_
+{% include prop-value.html label="color" content="fill-color.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="fill-object.md" %}
+{% include prop-format.html label="string" content="fill-string.md" %}
+{% include prop-format.html label="number" content="fill-number.md" %}
+{% include prop-format.html label="boolean" content="fill-boolean.md" %}
+{% include prop-format.html label="array" content="fill-array.md" %}
+
 
 ### Example
-_undocumented_
+{% include alert story="/gallery/simple-bar-chart/" %}
+{% highlight javascript %}{
+	item: {
+		itemType: "barChart",
+		setup: { bars:7, domain:7, margin:7 },
+		barsInit: { fill:"#567" },
+		barActions: [
+			{ anim:3, data:[1,2,3,4,5,6,7]	},
+			{ anim:1, data:false }
+		]
+	}
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">
+  
 
 ## Font
 The font property is used to set the typeface and line size of rendered text.
@@ -869,7 +888,7 @@ alias: color
 
 
 ### Example
-{% include alert story="/examples/text-color/" %}
+{% include alert story="/examples/color-cycling/" %}
 {% highlight javascript %}{
   item: {
     text: "COLOR",
