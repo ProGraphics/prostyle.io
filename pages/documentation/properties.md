@@ -489,7 +489,7 @@ _undocumented_
 ## Opacity
 The opacity property determines how transparent the target is. Hardware acceleration is used when available, so the animation is usually quite smooth.
 
-Alias: opac
+* _alias:_ <code>opac</code>
 
 ### Values
 {% include prop-value.html label="percent" content="opacity-percent.md" %}
@@ -573,7 +573,7 @@ Unlike standard web animation, ProStyle uses center alignment. See Alignment and
 
 Hardware acceleration is used when available, so the animation is usually quite smooth.
 
-Alias: pos
+* _alias:_ <code>pos</code>
 
 ### Values
 {% include prop-value.html label="x" content="position-x.md" %}
@@ -626,7 +626,8 @@ When animating, ProStyle will tween from the current rotation to the new one.  F
 
 Hardware acceleration is used when available, so the animation is usually quite smooth.
 
-Aliases: rot, rotate
+* _alias:_ <code>rot</code>
+* _alias:_ <code>rotate</code>
 
 
 ### Values
@@ -710,7 +711,7 @@ The shadow property adds one or more shadows to the surrounding box. Shadows may
 
 The shadow gives the appearance of depth. However, it is rendered on the same two dimensional plane as the target.  If you rotate the target, for instance, the shadow rotates with it.  See 3D.
 
-alias: shadows
+* _alias:_ <code>shadows</code>
 
 ### Values
 {% include prop-value.html label="x" content="shadow-x.md" %}
@@ -835,7 +836,7 @@ ProStyle only supports skewing in the horizontal direction, but vertical skewing
 ## Text Align
 The textAlign property positions the contents of rendered lines of text, relative to each other.
 
-alias: align
+* _alias:_ <code>align</code>
 
 ### Values
 {% include prop-value.html label="align" content="textAlign-align.md" %}
@@ -874,7 +875,7 @@ alias: align
 ## Text Color
 The textColor property defines the color of text.
 
-alias: color
+* _alias:_ <code>color</code>
 
 ### Values
 {% include prop-value.html label="color" content="textColor-color.md" %}
@@ -911,7 +912,7 @@ The textShadow property adds one or more shadows to the text itself. Text shadow
 
 The shadow gives the appearance of depth. However, it is rendered on the same two dimensional plane as the text.  If you rotate the text, for instance, the shadow rotates with it.  See 3D.
 
-alias: textShadows
+* _alias:_ <code>textShadows</code>
 
 ### Values
 {% include prop-value.html label="x" content="textShadow-x.md" %}
@@ -952,7 +953,9 @@ alias: textShadows
 ## Text Style
 The <code>textStyle</code> property defines how text is visually augmented. This is generally done to call attention to it.
 
-aliases:  <code>textStyles</code>, <code>styles</code>, <code>style</code>
+* _alias:_ <code>textStyles</code>
+* _alias:_ <code>styles</code>
+* _alias:_ <code>style</code>
 
 ### Values
 {% include prop-value.html label="bold" content="textStyle-bold.md" %}
@@ -993,7 +996,7 @@ aliases:  <code>textStyles</code>, <code>styles</code>, <code>style</code>
 ## Text Width
 The <code>textWidth</code> property defines the maximum width of a text item. The _natural_ width of text depends on the [font](#){:data-toc="font"} values and the set of characters.  If a text width is defined that is shorter than the natural width, that which don’t fit will wrap to the next line.
 
-alias: <code>width</code>
+* _alias:_ <code>width</code>
 
 ### Values
 {% include prop-value.html label="width" content="textWidth-width.md" %}
@@ -1034,7 +1037,7 @@ The <code>transformOrigin</code> property defines the reference point when trans
 
 Like the [anchor](#){:data-toc="anchor"} property, the values are a percentage of the target’s dimensions. However, transformOrigin and anchor serve two very distinct purposes. See [Alignment](/concepts/#alignment).
 
-Alias: <code>origin</code>
+* _alias:_ <code>origin</code>
 
 ### Values
 {% include prop-value.html label="x" content="transformOrigin-x.md" %}
