@@ -1,0 +1,1 @@
+Use the [fill property](/properties/#fill). The default value is <samp class="string">"rgba(0,0,0,0.5)"</samp>
