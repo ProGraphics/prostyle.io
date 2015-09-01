@@ -61,6 +61,7 @@ Canvas properties may be [scripted](/concepts/#animation) with a <code>canvasScr
 {% include model-props.html label="border" content="standard-border.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="font" content="canvas-font.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="shadow" content="standard-shadow.md" %}
@@ -87,6 +88,7 @@ Frame properties may be [scripted](/concepts/#animation) with a <code>frameScrip
 {% include model-props.html label="border" content="standard-border.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="shadow" content="standard-shadow.md" %}
 
@@ -197,6 +199,7 @@ Pages contain zero or more [items](#){:data-toc="items"}, although a page withou
 {% include model-props.html label="color" content="page-text-color.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="font" content="page-font.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="shadow" content="standard-shadow.md" %}
@@ -237,6 +240,7 @@ Unless otherwise noted, each of the following properties may be used with text, 
 {% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="item.text-crop.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="font" content="page-font.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="padding" content="standard-padding.md" %}
@@ -291,6 +295,7 @@ The _image item_ adds a bitmap or vector image to a [page](#){:data-toc="pages"}
 {% include model-props.html label="anchor" content="standard-anchor.md" %}
 {% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="position" content="standard-position.md" %}
 {% include model-props.html label="rotation" content="standard-rotation.md" %}
@@ -351,6 +356,7 @@ Layers may be nested in layers to any reasonable depth.
 {% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="moveTo" content="item.layer-moveto.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="position" content="standard-position.md" %}
@@ -387,6 +393,7 @@ These properties may be initialized with an <code>init</code> entry and [scripte
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="position" content="standard-position.md" %}
 {% include model-props.html label="rotation" content="standard-rotation.md" %}
@@ -400,6 +407,7 @@ These properties may be initialized with a <code>barsInit</code> entry and [scri
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="data" content="standard-data.md" %}
+{% include model-props.html label="delay" content="standard-delay.md" %}
 {% include model-props.html label="fill" content="item.barChart.bar-fill.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="skew" content="standard-skew.md" %}

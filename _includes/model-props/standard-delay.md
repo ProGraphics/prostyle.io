@@ -1,0 +1,1 @@
+Use the [standard delay property](/properties/#delay)
