@@ -5,12 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
+	{% if page.no-canonical-redirect %}
+	{% else %}
 	<script>
         var canonical = "{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}";
 		var locationParts = window.location.href.split('#');
 		if (locationParts.length > 1) canonical += '#' + locationParts[1];
         if (window.location.href !== canonical) window.location.href = canonical;
 	</script>
+	{% endif %}
 	<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/styles.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	{% if page.tocify-js %}
