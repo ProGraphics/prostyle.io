@@ -366,16 +366,24 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Delay
-_undocumented_
-
-### Values
-_undocumented_
+The _delay_ property inserts a pause into an action before the action begins. If the action performs an [animation](#){:data-toc="animation"} the delay is performed first and then the animation begins.  The duration of an action is the sum of it's delay and it's animation.
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="number" content="delay-number.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/text-style/" %}
+{% highlight javascript %}{
+  item: {
+    text: "Style",
+    actions:[
+      {delay:1, style:"bold"},
+      {delay:1, style:"italic"},
+      {delay:1, style:"under"}
+    ]
+  }
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">

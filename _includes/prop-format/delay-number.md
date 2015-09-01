@@ -1,5 +1,4 @@
-<p class="b30" markdown="1">
-_undocumented_
+<p class="b20" markdown="1">
+The number of seconds to wait until an action begins.
 </p>
-{% highlight javascript %}
-{% endhighlight %}
+{% highlight javascript %}delay: 1.5{% endhighlight %}
