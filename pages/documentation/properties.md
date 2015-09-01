@@ -254,9 +254,11 @@ There are many styles of bullets.
 <hr class="t60 b60">
 
 ## Class
-Use a _class_ to define property values once and reuse them in multiple places. Currently, classes may only be used in <code>init</code> blocks.
+Use a _class_ to define property values once and reuse them in multiple places. Classes may be used in <code>init</code> blocks and in [script actions](/concepts/#animation).
 
-Classes are not necessarily aligned to a [model object](/models/) or [property set](/models/#property-sets). A class may define any arbitrary set of properties. It might contain only a subset of a model object’s properties, or might contain properties for multiple model objects. A model object will use the properties it understands and simply ignore the rest.
+The property values defined in a classes do not necessarily need to be aligned to a particular [model object](/models/) or [property set](/models/#property-sets). A class may define any arbitrary set of properties. It might contain only a subset of a model object’s properties, or might contain properties for multiple model objects. A model object will use the properties it understands and simply ignore the rest.
+
+Each model object has a default class name. For example, if you define a class named <code>text</code> then all text items will pick up those values without needing to associate the class with each item. However, you can create classes with other names and then explicitly associate them using the _class_ property.
 
 ### Formats
 {% include prop-format.html label="string" content="class-string.md" %}
