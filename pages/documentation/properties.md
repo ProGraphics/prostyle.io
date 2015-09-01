@@ -360,7 +360,19 @@ The _data_ property is used to pass one or more arrays of data.  The structure o
 {% include prop-format.html label="boolean" content="data-boolean.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/gallery/simple-bar-chart/" %}
+{% highlight javascript %}{
+	item: {
+		itemType: "barChart",
+		setup: { bars:7, domain:7, margin:7 },
+		barsInit: { fill:"#567" },
+		barActions: [
+			{ anim:3, data:[1,2,3,4,5,6,7]	},
+			{ anim:1, data:false }
+		]
+	}
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">
