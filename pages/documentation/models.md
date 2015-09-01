@@ -59,6 +59,7 @@ Canvas properties may be [scripted](/concepts/#animation) with a <code>canvasScr
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
 {% include model-props.html label="delay" content="standard-delay.md" %}
@@ -86,6 +87,7 @@ Frame properties may be [scripted](/concepts/#animation) with a <code>frameScrip
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
 {% include model-props.html label="delay" content="standard-delay.md" %}
@@ -196,6 +198,7 @@ Pages contain zero or more [items](#){:data-toc="items"}, although a page withou
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="background" content="standard-background.md" %}
 {% include model-props.html label="border" content="standard-border.md" %}
+{% include model-props.html label="class" content="standard-class.md" %}
 {% include model-props.html label="color" content="page-text-color.md" %}
 {% include model-props.html label="corners" content="standard-corners.md" %}
 {% include model-props.html label="crop" content="standard-crop.md" %}
