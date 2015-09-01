@@ -368,9 +368,9 @@ Layers may be nested in layers to any reasonable depth.
 {:class="font-size-h3"}
 The _Bar Chart_ is a premium extension that comes with [ProStyle Plus](/plus/). It translates data into vertical bars. For horizontal bars, rotate the chart with the [rotation](/properties/#rotation) property.
 
-The chart supports both single value data and two-value range data. See the data section below.
+The chart supports both single value data and two-value range data. See the Data section below.
 
-Multiple series may be added by using one chart per, all stacked directly on each other, using congruent range data. See the example below.
+Multiple series may be added by using one chart per, all stacked directly on each other, using congruent range data. See the example.
 
 ### Setup
 {:class="font-size-h4"}
@@ -399,11 +399,25 @@ These properties may be initialized with a <code>barsInit</code> entry and [scri
 
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="class" content="standard-class.md" %}
+{% include model-props.html label="data" content="item.barChart.bar-data.md" %}
 {% include model-props.html label="fill" content="item.barChart.bar-fill.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="skew" content="standard-skew.md" %}
-{% include model-props.html label="data" content="item.barChart.bar-data.md" %}
+
+### Data
+Use a single array of numbers to have bars that range from a _bottom_ value of <samp class="number">0</samp> to each array entry as the _top_ value. Alternatively, use an array of arrays where each nested array provides two numbers representing the bottom and top numbers in turn. Use nested arrays to define bars with range data.  See the third story in the example for a demonstration of using range data with multiple series. 
 
 ### Example
 {:class="font-size-h4"}
-_undocumented_
+{% include alert story="/gallery/simple-bar-chart/" %}
+{% highlight javascript %}{
+  item: {
+    itemType: "barChart",
+    setup: {bars:5, domain:[30,50]},
+    barAction: { 
+      anim: 5,
+      data: [[45,34],[42,33],[36,32],[33,27],[37,31]]
+    }
+  }
+}
+{% endhighlight %}
