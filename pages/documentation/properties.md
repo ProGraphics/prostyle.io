@@ -378,7 +378,7 @@ The _data_ property is used to pass one or more arrays of data.  The structure o
 <hr class="t60 b60">
 
 ## Delay
-The _delay_ property inserts a pause into an action before the action begins. If the action performs an [animation](#){:data-toc="animation"} the delay is performed first and then the animation begins.  The duration of an action is the sum of it's delay and it's animation.
+The _delay_ property inserts a pause into an action before the action begins. It is not valid for <code>init</code> entries. If the action performs an [animation](#){:data-toc="animation"} the delay is performed first and then the animation begins.  The duration of an action is the sum of it's delay and it's animation.
 
 ### Formats
 {% include prop-format.html label="number" content="delay-number.md" %}
