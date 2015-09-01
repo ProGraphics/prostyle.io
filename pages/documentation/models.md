@@ -399,7 +399,7 @@ These properties may be initialized with a <code>barsInit</code> entry and [scri
 
 {% include model-props.html label="animation" content="standard-animation.md" %}
 {% include model-props.html label="class" content="standard-class.md" %}
-{% include model-props.html label="data" content="item.barChart.bar-data.md" %}
+{% include model-props.html label="data" content="standard-data.md" %}
 {% include model-props.html label="fill" content="item.barChart.bar-fill.md" %}
 {% include model-props.html label="opacity" content="standard-opacity.md" %}
 {% include model-props.html label="skew" content="standard-skew.md" %}
