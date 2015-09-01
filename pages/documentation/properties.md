@@ -349,13 +349,15 @@ _undocumented_
 <hr class="t60 b60">
 
 ## Data
-_undocumented_
+The _data_ property is used to pass one or more arrays of data.  The structure of the data and how it will be used are specific to the [model](/models/) object that consumes it. 
 
 ### Values
-_undocumented_
+{% include prop-value.html label="values" content="data-values.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="data-object.md" %}
+{% include prop-format.html label="array" content="data-array.md" %}
+{% include prop-format.html label="boolean" content="data-boolean.md" %}
 
 ### Example
 _undocumented_

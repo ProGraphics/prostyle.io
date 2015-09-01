@@ -1,4 +1,4 @@
-<p class="b30" markdown="1">
+<p class="b20" markdown="1">
 _undocumented_
 </p>
 {% highlight javascript %}
