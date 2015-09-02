@@ -82,7 +82,18 @@ The <code>animation</code> pseudo-property defines the characteristics of an [an
 {% include prop-format.html label="string" content="animation-string.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/scale/" %}
+{% highlight javascript %}{
+  item:  {
+    text:"scale",
+    init: {color:"#094766", font:70},
+    actions: [
+      {anim:2, scale:30},
+      {anim:2, scale:false}
+    ]
+  }
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">
@@ -724,7 +735,6 @@ The actual width and height of a target is referred to as it’s natural dimensi
     ]
   }
 }
-
 {% endhighlight %}
 
 
