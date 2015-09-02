@@ -373,7 +373,9 @@ Each corner radius is a _percentage_ of the height of the container the item is 
 <hr class="t60 b60">
 
 ## Crop
-The <code>crop</code> property determines whether the contained content is visible outside of the container.  Cropping causes [3D](/concepts/#3d) to be rendered flat.
+The <code>crop</code> property determines whether the content is visible outside of the container. For instance, if a layer contains a text item, and the text item is positioned partly beyond the layer's bounds, should it appear cut off or display normally?
+
+Cropping may cause [3D](/concepts/#3d) rendering to appear flat, per the [CSS Transforms Specification](https://drafts.csswg.org/css-transforms/#3d-rendering-contexts) that browser's implement.
 
 ### Values
 _undocumented_
