@@ -373,15 +373,16 @@ Each corner radius is a _percentage_ of the height of the container the item is 
 <hr class="t60 b60">
 
 ## Crop
-The <code>crop</code> property determines whether the content is visible outside of the container. For instance, if a layer contains a text item, and the text item is positioned partly beyond the layer's bounds, should it appear cut off or display normally?
+The <code>crop</code> property determines whether a container's content is visible outside of it's boundaries. For instance, if a layer contains a text item, and the text item is positioned partly beyond the layer's bounds, should it appear cut off or display normally?
 
-Cropping may cause [3D](/concepts/#3d) rendering to appear flat, per the [CSS Transforms Specification](https://drafts.csswg.org/css-transforms/#3d-rendering-contexts) that browser's implement.
+Cropping may cause [3D](/concepts/#3d) rendering to appear flat, per the [CSS Transforms Specification](https://drafts.csswg.org/css-transforms/#3d-rendering-contexts) as implemented by the browser.
 
 ### Values
 {% include prop-value.html label="crop" content="crop-crop.md" %}
 
 ### Formats
-_undocumented_
+{% include prop-format.html label="object" content="crop-object.md" %}
+{% include prop-format.html label="boolean" content="crop-boolean.md" %}
 
 ### Example
 _undocumented_
