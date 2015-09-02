@@ -1,0 +1,25 @@
+{
+  classes: { 
+    layer: {border: [3,"#234"], corners: true},
+    l: { anim:2, anchor:[-50,0], pos:-35 },
+    r: { anim:3, anchor:[50,0], pos:35 },
+    c: { anim:2, anchor:false, pos:0 }
+  },
+  items:  [
+    {
+      itemType: "layer",
+      init: {size: [20,20], pos:[0,-30]},
+      actions: [{class:"l"}, {class:"r"},{class:"c"}]
+    },
+    {
+      itemType: "layer",
+      init: {size: [30,20]},
+      actions: [{class:"l"}, {class:"r"},{class:"c"}]
+    },
+    {
+      itemType: "layer",
+      init: {size: [40,20], pos:[0,30]},
+      actions: [{class:"l"}, {class:"r"},{class:"c"}]
+    }
+  ]
+}
