@@ -86,7 +86,7 @@ The <code>animation</code> pseudo-property defines the characteristics of an [an
 {% highlight javascript %}{
   item:  {
     text:"scale",
-    init: {color:"#094766", font:70},
+    init: {color:"#234", font:70},
     actions: [
       {anim:2, scale:30},
       {anim:2, scale:false}
@@ -162,11 +162,11 @@ The <code>border</code> property draws a line around the outer edge. The [corner
 {
   item: {
     text:"border",
-    init: { padding:5, corners:10, font:50, color:"#094766"},
+    init: { padding:5, corners:10, font:50, color:"#234"},
     actions:[
       { delay:1, border:{size:1,color:"#AAA",style:"dashed"}},
       { delay:1, border:{size:2,color:"#666",style:"dotted"}},
-      { delay:1, border:{size:3,color:"#094766",style:"solid"}},
+      { delay:1, border:{size:3,color:"#234",style:"solid"}},
       { delay:1, border:false}
     ]
   }
@@ -242,7 +242,7 @@ There are many styles of bullets.
       "Incididunt ut labore",
       "Et dolore magna aliqua"
     ],
-    linesInit: { bullets:"disc", color:"#094766"},
+    linesInit: { bullets:"disc", color:"#234"},
     lineActions:[
       {
         anim:{dur:1, stagger:0.2},
@@ -328,9 +328,9 @@ Each corner radius is a _percentage_ of the height of the container the item is 
     text:"corners",
     init: {
       padding:5,
-      border:[1, "#094766"],
+      border:[1, "#234"],
       font:40,
-      color:"#094766"
+      color:"#234"
     },
     actions:[
       { anim:2, corners:15},
@@ -474,7 +474,7 @@ While it is possible to animate the size and lineHeight values, it is a relative
     text:"font",
     init: {
       pos:[-50,-50], anchor:[-50,-50],
-      origin:[-50,-50], color:"#094766",
+      origin:[-50,-50], color:"#234",
       font:30, scale:100
     },
     action: {
@@ -492,7 +492,7 @@ While it is possible to animate the size and lineHeight values, it is a relative
     text:"font",
     init: {
       pos:[-50,-50], anchor:[-50,-50],
-      origin:[-50,-50], color:"#094766",
+      origin:[-50,-50], color:"#234",
       font:30, scale:100
     },
     action: {
@@ -542,7 +542,7 @@ The opacity property determines how transparent the target is. Hardware accelera
   items:[
     {
       text:"UNDER",
-      init: {color:"#094766",style:"bold",font:45}
+      init: {color:"#234",style:"bold",font:45}
     },
     {
       text:"OVER",
@@ -583,9 +583,9 @@ The padding property defines how much extra space appears between a target’s e
   item: {
     text:"padding",
     init: {
-      border:[2,"#094766"],
+      border:[2,"#234"],
       font:30,
-      color:"#094766"
+      color:"#234"
     },
     actions:[
       { anim:2, padding:5},
@@ -628,7 +628,7 @@ Hardware acceleration is used when available, so the animation is usually quite 
   item:  {
     text:"pos",
     init: {
-      color:"#094766",
+      color:"#234",
       font:25,
       pos:[-20,-20,20]
     },
@@ -680,7 +680,7 @@ Hardware acceleration is used when available, so the animation is usually quite 
 ### Example
 {% include alert story="/examples/rotation/" %}
 {% highlight javascript %}{
-  classes: { text:{color:"#094766", font:20}},
+  classes: { text:{color:"#234", font:20}},
   frame: { aspectRatio:0.8},
   items: [
     {
@@ -728,7 +728,7 @@ The actual width and height of a target is referred to as it’s natural dimensi
 {% highlight javascript %}{
   item:  {
     text:"scale",
-    init: {color:"#094766", font:70},
+    init: {color:"#234", font:70},
     actions: [
       {anim:2, scale:30},
       {anim:2, scale:false}
@@ -769,7 +769,7 @@ The shadow gives the appearance of depth. However, it is rendered on the same tw
     text:"Shadow",
     init: {
       color:"#FFF",
-      bg:"#094766",
+      bg:"#234",
       font:35,
       padding:true,
       corners:true,
@@ -832,7 +832,7 @@ ProStyle only supports skewing in the horizontal direction, but vertical skewing
   item: {
     text:"skew x",
     init: {
-      color:"#094766",
+      color:"#234",
       font:55,
       skew:-20
     },
@@ -849,7 +849,7 @@ ProStyle only supports skewing in the horizontal direction, but vertical skewing
   item: {
       text:"skew y",
       init: {
-        color:"#094766",
+        color:"#234",
         font:55,
         skew:-20,
         rot:-15
@@ -888,7 +888,7 @@ The textAlign property positions the contents of rendered lines of text, relativ
   item: {
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     init: {
-      color:"#094766",
+      color:"#234",
       textWidth:90,
       font:7
     },
@@ -929,7 +929,7 @@ The textColor property defines the color of text.
     text: "COLOR",
     init: {color:"red", font:40, style:"bold"},
     actions:[
-      {anim:3, color:"#094766"},
+      {anim:3, color:"#234"},
       {anim:3, color:"rgba(127,127,15,0.8)"},
       {anim:3, color:"red"}
     ]
@@ -969,11 +969,11 @@ The shadow gives the appearance of depth. However, it is rendered on the same tw
     init: {
       color:"#FFF",
       font:60,
-      textShadow:[0,0,3,"#094766"]
+      textShadow:[0,0,3,"#234"]
     },
     charAction: {
       anim:[1,"less curve inout",1,0,true,0.2],
-      textShadow:[0,0,10,"#094766"],
+      textShadow:[0,0,10,"#234"],
       scale:103
     }
   }
