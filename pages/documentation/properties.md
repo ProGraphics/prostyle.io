@@ -113,7 +113,33 @@ The <code>anchor</code> property defines the [alignment](/concepts/#alignment) o
 {% include prop-format.html label="array" content="anchor-array.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/item-alignment/" %}
+{% highlight javascript %}{
+  classes: { 
+    layer: {border: [3,"#234"], corners: true},
+    l: { anim:2, anchor:[-50,0], pos:-35 },
+    r: { anim:3, anchor:[50,0], pos:35 },
+    c: { anim:2, anchor:false, pos:0 }
+  },
+  items:  [
+    {
+      itemType: "layer",
+      init: {size: [20,20], pos:[0,-30]},
+      actions: [{class:"l"}, {class:"r"},{class:"c"}]
+    },
+    {
+      itemType: "layer",
+      init: {size: [30,20]},
+      actions: [{class:"l"}, {class:"r"},{class:"c"}]
+    },
+    {
+      itemType: "layer",
+      init: {size: [40,20], pos:[0,30]},
+      actions: [{class:"l"}, {class:"r"},{class:"c"}]
+    }
+  ]
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">
