@@ -1,0 +1,12 @@
+---
+layout: post-animation
+title: "Crop Toggling"
+category: examples
+desc: "Text is rotated within a layer that toggles between being cropped or not."
+tags: 
+  - crop
+story: "examples/crop-toggling.json5"
+---
+# Crop Toggling
+
+This example rotates some text around twice, using a linear [timing function](/concepts/#eases) so the animation loops smoothly.  After exactly one rotation, the [crop](/properties/#crop). This clips the text to the boundaries of the layer. 

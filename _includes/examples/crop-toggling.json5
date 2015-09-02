@@ -1,0 +1,18 @@
+{
+  classes: { 
+  },
+	items:[
+	  {
+	    itemType: "layer",
+	    init: { bg: "#F7F7F7", size:[100,25] },
+	    actions:[
+	      { delay:3, crop:true }
+	    ],
+	    item: {
+  			text:"ProStyle",
+  			init: { color:"#234", font:25 },
+  			action: { anim:[6, "linear"], rot:720 }
+  		}
+	  }
+	]
+}
