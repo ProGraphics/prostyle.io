@@ -378,7 +378,7 @@ The <code>crop</code> property determines whether the content is visible outside
 Cropping may cause [3D](/concepts/#3d) rendering to appear flat, per the [CSS Transforms Specification](https://drafts.csswg.org/css-transforms/#3d-rendering-contexts) that browser's implement.
 
 ### Values
-_undocumented_
+{% include prop-value.html label="crop" content="crop-crop.md" %}
 
 ### Formats
 _undocumented_
