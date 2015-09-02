@@ -367,7 +367,6 @@ Each corner radius is a _percentage_ of the height of the container the item is 
     ]
   }
 }
-
 {% endhighlight %}
 
 <hr class="t60 b60">
@@ -385,7 +384,26 @@ Cropping may cause [3D](/concepts/#3d) rendering to appear flat, per the [CSS Tr
 {% include prop-format.html label="boolean" content="crop-boolean.md" %}
 
 ### Example
-_undocumented_
+{% include alert story="/examples/crop-toggling/" %}
+{% highlight javascript %}{
+  classes: { 
+  },
+	items:[
+	  {
+	    itemType: "layer",
+	    init: { bg: "#F7F7F7", size:[100,25] },
+	    actions:[
+	      { delay:3, crop:true }
+	    ],
+	    item: {
+  			text:"ProStyle",
+  			init: { color:"#234", font:25 },
+  			action: { anim:[6, "linear"], rot:720 }
+  		}
+	  }
+	]
+}
+{% endhighlight %}
 
 
 <hr class="t60 b60">
