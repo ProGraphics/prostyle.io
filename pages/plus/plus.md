@@ -103,14 +103,14 @@ plus-page: true
   </div>
 </div>
 
-<div class="row">
+<div class="row t60">
   <div class="columns">
     <h6 style="margin:0 0 1rem 0;">Extensions</h6>
     <dl class="accordion faq" data-accordion>
       <dd class="accordion-navigation">
         <a href="#ext1" class="noline"><span class="iconfont"></span>Tap Controller</a>
         <div id="ext1" class="content">
-          <p>Ext 1.</p> 
+          <p markdown="1">The [Tap Controller](/controllers/#tap) segments the canvas into areas which can be clicked or tapped to navigate the animation. Custom mouse cursors are used to provide a visual indicator. The splash animation on the [ProStyle.io](/) front page uses this controller.</p> 
         </div>
       </dd>
       <dd class="accordion-navigation">
