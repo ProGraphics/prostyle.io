@@ -64,9 +64,9 @@ plus-page: true
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel4" class="noline"><span class="iconfont"></span>Question 4?</a>
+        <a href="#panel4" class="noline"><span class="iconfont"></span>Do you accept ideas?</a>
         <div id="panel4" class="content">
-          <p>Answer 4.</p>
+          <p markdown="1">Got an idea for a really good extension? [Create an issue](https://github.com/ProGraphics/prostyle.js/issues) and tell us about it.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
