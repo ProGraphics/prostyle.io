@@ -62,3 +62,19 @@ dl.accordion.faq {
     }
   }
 }
+
+li.price-call-to-action.buy-now {
+  text-align: center;
+  padding: 1em;
+  table {
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+    tr:nth-of-type(even) {
+      background: transparent;
+    }
+  }
+}
