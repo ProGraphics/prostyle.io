@@ -128,7 +128,7 @@ plus-page: true
       <dd class="accordion-navigation">
         <a href="#ext4" class="noline"><span class="iconfont"></span>Stack Flow</a>
         <div id="ext4" class="content">
-          <p class="teaser" markdown="1">Ext 4.</p>
+          <p class="teaser" markdown="1">The [Stack Flow](/models/#&middot;-stack-flow) cycles through a stack of pages, showing each in turn.  Check out [these three examples](/gallery/page-stacks/).</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
