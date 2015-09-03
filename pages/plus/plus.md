@@ -64,15 +64,15 @@ plus-page: true
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel4" class="noline"><span class="iconfont"></span>Do you accept ideas?</a>
+        <a href="#panel4" class="noline"><span class="iconfont"></span>What are <em>future</em> extensions?</a>
         <div id="panel4" class="content">
-          <p markdown="1">Got an idea for a really good extension? [Create an issue](https://github.com/ProGraphics/prostyle.js/issues) and tell us about it.</p>
+          <p markdown="1">We will continue to create new extensions and add them to ProStyle Plus. You will be able to use these on any domains that you've licensed, at no additional charge.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel5" class="noline"><span class="iconfont"></span>Question 5?</a>
+        <a href="#panel5" class="noline"><span class="iconfont"></span>Do you accept ideas?</a>
         <div id="panel5" class="content">
-          <p>Answer 5!</p>
+           <p markdown="1">Got an idea for a really good extension? [Create an issue](https://github.com/ProGraphics/prostyle.js/issues) and tell us about it.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
