@@ -1,6 +1,6 @@
 /*!
  * VERSION: 0.21.0
- * DATE: 02-Sep-2015
+ * DATE: 03-Sep-2015
  * UPDATES AND DOCS AT: https://prostyle.io/
  * 
  * @license Copyright (c) 2013-2015, Pro Graphics, Inc. All rights reserved. 
