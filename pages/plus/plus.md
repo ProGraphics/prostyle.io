@@ -110,55 +110,31 @@ plus-page: true
       <dd class="accordion-navigation">
         <a href="#ext1" class="noline"><span class="iconfont"></span>Tap Controller</a>
         <div id="ext1" class="content">
-          <p markdown="1">The [Tap Controller](/controllers/#tap) segments the canvas into areas which can be clicked or tapped to navigate the animation. Custom mouse cursors are used to provide a visual indicator. The splash animation on the [ProStyle.io](/) front page uses this controller.</p> 
+          <p class="teaser" markdown="1">The [Tap Controller](/controllers/#tap) segments the canvas into areas which can be clicked or tapped to navigate the animation. Custom mouse cursors are used to provide a visual indicator. The splash animation on the [ProStyle.io](/) front page uses this controller.</p> 
         </div>
       </dd>
       <dd class="accordion-navigation">
         <a href="#ext2" class="noline"><span class="iconfont"></span>Mousewheel Controller</a>
         <div id="ext2" class="content">
-          <p markdown="1">The [Mousewheel Controller](/controllers/#mousewheel) provides finely grained control of story playback. Spin your mouse wheel, in either direction, to step through. Optionally press the CTRL and ALT keys for different step rates. All of the [examples](/examples/) and [gallery](/gallery/) animations demonstrate this controller. </p>
+          <p class="teaser" markdown="1">The [Mousewheel Controller](/controllers/#mousewheel) provides finely grained control of story playback. Spin your mouse wheel, in either direction, to step through. Optionally press the CTRL and ALT keys for different step rates. All of the [examples](/examples/) and [gallery](/gallery/) animations demonstrate this controller. </p>
         </div>
       </dd>
       <dd class="accordion-navigation">
         <a href="#ext3" class="noline"><span class="iconfont"></span>Mousemove Controller</a>
         <div id="ext3" class="content">
-          <p>Ext 3.</p>
+          <p class="teaser" markdown="1">The [Mousemove Controller](/controllers/#mousemove) maps movement of a mouse pointer on top of a story to the playback percentage. The header animation at the top of this page demonstrates this controller.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
         <a href="#ext4" class="noline"><span class="iconfont"></span>Stack Flow</a>
         <div id="ext4" class="content">
-          <p>Ext 4.</p>
+          <p class="teaser" markdown="1">Ext 4.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
         <a href="#ext5" class="noline"><span class="iconfont"></span>Bar Chart Item</a>
         <div id="ext5" class="content">
-          <p>Ext 5!</p>
-        </div>
-      </dd>
-      <dd class="accordion-navigation">
-        <a href="#ext6" class="noline"><span class="iconfont"></span>Extension 6</a>
-        <div id="ext6" class="content">
-          <p>Ext 6</p>
-        </div>
-      </dd>
-      <dd class="accordion-navigation">
-        <a href="#ext7" class="noline"><span class="iconfont"></span>Extension 7</a>
-        <div id="ext7" class="content">
-          <p markdown="1">Ext 7.</p>
-        </div>
-      </dd>
-      <dd class="accordion-navigation">
-        <a href="#ext8" class="noline"><span class="iconfont"></span>Extension 8</a>
-        <div id="ext" class="content">
-          <p>Ext 8.</p>
-        </div>
-      </dd>
-      <dd class="accordion-navigation">
-        <a href="#ext9" class="noline"><span class="iconfont"></span>Extension 9</a>
-        <div id="ext9" class="content">
-          <p>Ext 9.</p>
+          <p class="teaser" markdown="1">Ext 5!</p>
         </div>
       </dd>
     </dl>
