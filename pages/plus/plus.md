@@ -58,9 +58,9 @@ plus-page: true
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel3" class="noline"><span class="iconfont"></span>Question 3?</a>
+        <a href="#panel3" class="noline"><span class="iconfont"></span>Any runtime fees?</a>
         <div id="panel3" class="content">
-          <p>Answer 3.</p>
+          <p>Definitely not! You pay one time for unlimited use on your website. There are no hidden fees. It doesn't matter if you have millions of pages, millions of visitors, or both.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
