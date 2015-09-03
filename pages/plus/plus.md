@@ -54,13 +54,13 @@ plus-page: true
       <dd class="accordion-navigation">
         <a href="#panel2" class="noline"><span class="iconfont"></span>Can I use the extensions offline?</a>
         <div id="panel2" class="content">
-          <p>Yes. The ProStyle Plus extensions may be used at no charge when used offline, such as displaying an HTML page with ProStyle embedded from your local hard drive.</p>
+          <p>Yes. The ProStyle Plus extensions may be used offline at no charge, such as displaying an HTML page from your local hard drive that has ProStyle embedded.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
         <a href="#panel3" class="noline"><span class="iconfont"></span>Any runtime fees?</a>
         <div id="panel3" class="content">
-          <p>Definitely not! You pay one time for unlimited use on your website. There are no hidden fees. It doesn't matter if you have millions of pages, millions of visitors, or both.</p>
+          <p>Definitely not! You pay one time for unlimited use on your website. It doesn't matter if you have millions of pages or millions of visitors. There are no hidden fees.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
