@@ -46,9 +46,9 @@ plus-page: true
     <h6 style="margin:0 0 1rem 0;">Frequent Questions</h6>
     <dl class="accordion faq" data-accordion>
       <dd class="accordion-navigation">
-        <a href="#panel1" class="noline"><span class="iconfont"></span>Question 1?</a>
+        <a href="#panel1" class="noline"><span class="iconfont"></span>Do I need a ProStyle license, too?</a>
         <div id="panel1" class="content">
-          <p>Answer 1.</p> 
+          <p markdown="1">ProStyle Plus licenses you to use the premium extensions on a website with a specified domain name. You must separately be licensed to use ProStyle. Luckily, ProStyle is _free_ for the most common use. See the [ProStyle pricing](/pricing/) page for more details.</p> 
         </div>
       </dd>
       <dd class="accordion-navigation">
