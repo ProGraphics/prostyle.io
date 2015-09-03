@@ -48,7 +48,7 @@ plus-page: true
       <dd class="accordion-navigation">
         <a href="#panel1" class="noline"><span class="iconfont"></span>Do I need a ProStyle license, too?</a>
         <div id="panel1" class="content">
-          <p markdown="1">ProStyle Plus licenses you to use the premium extensions on a website with a specified domain name. You must separately be licensed to use ProStyle. Luckily, ProStyle is _free_ for the most common use. See the [ProStyle pricing](/pricing/) page for more details.</p> 
+          <p markdown="1">With ProStyle Plus, you are licensed to use the premium extensions on a website with a specified domain name. You must be licensed separately to use the core ProStyle software. Luckily, ProStyle is _free_ for the most common use case. See the [ProStyle pricing](/pricing/) page for more details.</p> 
         </div>
       </dd>
       <dd class="accordion-navigation">
