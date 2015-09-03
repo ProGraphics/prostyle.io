@@ -134,7 +134,7 @@ plus-page: true
       <dd class="accordion-navigation">
         <a href="#ext5" class="noline"><span class="iconfont"></span>Bar Chart Item</a>
         <div id="ext5" class="content">
-          <p class="teaser" markdown="1">Ext 5!</p>
+          <p class="teaser" markdown="1">The [Bar Chart](/models/#&middot;-bar-chart) item displays bars that represent data values. Check out [these three examples](/gallery/simple-bar-chart/).</p>
         </div>
       </dd>
     </dl>
