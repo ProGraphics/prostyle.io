@@ -70,7 +70,7 @@ $(document).ready(function() {
     d = d.split(':')[0];
     if (d !== t) $txtDomain.val(d);
     var c =  rsaEncode([19], [125476601,9678293,160], d);
-    $("#invoice").val("https://prostyle.io/plus/order/?d=" + encodeURIComponent(d) + "&c=" + encodeURIComponent(c));  
+    $(".invoiceUrl").val("https://prostyle.io/plus/order/?d=" + encodeURIComponent(d) + "&c=" + encodeURIComponent(c));  
   });
 });
 </script>
