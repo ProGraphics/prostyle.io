@@ -76,9 +76,9 @@ plus-page: true
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel6" class="noline"><span class="iconfont"></span>Question 6.</a>
+        <a href="#panel6" class="noline"><span class="iconfont"></span>Multiple domains on one website?</a>
         <div id="panel6" class="content">
-          <p>Answer 6</p>
+          <p markdown="1">If you have multiple domains pointing to your website, only one of them can be used with a ProStyle plus license. Note that having more than one domain name pointing to a single website may be very bad for _search engine optimization_. Instead, you should redirect the extra domains to the most prominent domain (the canonical one), and create a ProStyle Plus license for that one.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
