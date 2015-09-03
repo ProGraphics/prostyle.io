@@ -116,7 +116,7 @@ plus-page: true
       <dd class="accordion-navigation">
         <a href="#ext2" class="noline"><span class="iconfont"></span>Mousewheel Controller</a>
         <div id="ext2" class="content">
-          <p>Ext 2.</p>
+          <p markdown="1">The [Mousewheel Controller](/controllers/#mousewheel) provides finely grained control of story playback. Spin your mouse wheel, in either direction, to step through. Optionally press the CTRL and ALT keys for different step rates. All of the [examples](/examples/) and [gallery](/gallery/) animations demonstrate this controller. </p>
         </div>
       </dd>
       <dd class="accordion-navigation">
