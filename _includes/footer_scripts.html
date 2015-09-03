@@ -54,6 +54,28 @@ window.onload = function() {
 </script>
 
 
+{% if page.plus-page %}
+<script>
+$(document).ready(function() {
+  var $txtDomain = $("#txtDomain");
+  $txtDomain.change(function() {
+    var t = $txtDomain.val();
+    var d = t;
+    d = d.trim().toLowerCase();
+    if (d.indexOf("http://") === 0) d = d.substring(7);
+    if (d.indexOf("https://") === 0) d = d.substring(8);
+    if (d.indexOf("www.") === 0) d = d.substring(4);
+    d = d.split('/')[0];
+    d = d.split('\\')[0];
+    d = d.split(':')[0];
+    if (d !== t) $txtDomain.val(d);
+    var c =  rsaEncode([19], [125476601,9678293,160], d);
+    $("#invoice").val("https://prostyle.io/plus/order/?d=" + encodeURIComponent(d) + "&c=" + encodeURIComponent(c));  
+  });
+});
+</script>
+{% endif %}
+
 {% if page.plus-order %}
 <script>
 var queries = {};
@@ -65,9 +87,8 @@ try {
 }
 catch(e) {}
 
-
-var d = queries.d || 'NO-DOMAIN';
-var c = queries.c || 'NO-LICENSE-KEY';
+var d = decodeURIComponent(queries.d || 'NO-DOMAIN');
+var c = decodeURIComponent(queries.c || 'NO-LICENSE-KEY');
 
 $("#txtDomain").text(d);
 $("#txtKey").text(c);
