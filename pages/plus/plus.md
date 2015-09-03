@@ -82,9 +82,9 @@ plus-page: true
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel7" class="noline"><span class="iconfont"></span>Question 7?</a>
+        <a href="#panel7" class="noline"><span class="iconfont"></span>To WWW or not to WWW?</a>
         <div id="panel7" class="content">
-          <p markdown="1">Answe 7.</p>
+          <p markdown="1">Your license key will work with and without a preceding www. A license for <code>example.com</code> will also work with <code>www.example.com</code>.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
