@@ -52,9 +52,9 @@ plus-page: true
         </div>
       </dd>
       <dd class="accordion-navigation">
-        <a href="#panel2" class="noline"><span class="iconfont"></span>Question 2?</a>
+        <a href="#panel2" class="noline"><span class="iconfont"></span>Can I use the extensions offline?</a>
         <div id="panel2" class="content">
-          <p>Answer 2.</p>
+          <p>Yes. The ProStyle Plus extensions may be used at no charge when used offline, such as displaying an HTML page with ProStyle embedded from your local hard drive.</p>
         </div>
       </dd>
       <dd class="accordion-navigation">
