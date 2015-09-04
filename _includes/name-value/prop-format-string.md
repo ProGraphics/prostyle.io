@@ -1,1 +1,1 @@
-Good choice if only a single string value needs to be set, such as font _family_.  For consistency, some properties support multiple values in the string format, separated with commas, but an array would be a better choice.
+This format is a good choice when you only need to set one value. Some properties map the string to their dominant string based value, such as the font property's _family_ value, and any other values to defaults.
