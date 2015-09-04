@@ -17,6 +17,8 @@
   url: "/content/"
   side: right
   dropdown:
+  - title: Write
+    url: "/write-stories/"
   - title: Search
     url: "/search/"
   - title: Gallery
