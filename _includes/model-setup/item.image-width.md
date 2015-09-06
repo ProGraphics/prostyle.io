@@ -7,3 +7,5 @@ The horizontal size of the image as a percentage of the width of the container. 
 	width: 75
 }
 {% endhighlight %}
+
+If both <code>width</code> and <code>height</code> are not provided, the width will be <samp class="number">50</samp> percent and the height will be calculated based on the image's natural aspect ratio.
