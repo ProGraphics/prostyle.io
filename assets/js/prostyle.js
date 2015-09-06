@@ -1,6 +1,6 @@
 /*!
  * VERSION: 0.21.0
- * DATE: 05-Sep-2015
+ * DATE: 06-Sep-2015
  * UPDATES AND DOCS AT: https://prostyle.io/
  * 
  * @license Copyright (c) 2013-2015, Pro Graphics, Inc. All rights reserved. 
@@ -519,20 +519,20 @@ var ProStyle;
   (function(Flows) {
    var FlowModel = function(_super) {
     __extends(FlowModel, _super);
-    function FlowModel(story, flowType, placement, pageAspectRatio, defaultPageClass) {
-     if (defaultPageClass === void 0) {
-      defaultPageClass = undefined;
+    function FlowModel(story, flowType, placement, pageAspectRatio, pageClass) {
+     if (pageClass === void 0) {
+      pageClass = undefined;
      }
      _super.call(this, []);
      this.story = story;
      this.flowType = flowType;
      this.placement = placement;
      this.pageAspectRatio = pageAspectRatio;
-     this.defaultPageClass = defaultPageClass;
+     this.pageClass = pageClass;
      this.pages = [];
     }
     FlowModel.prototype.getDefaultPageClassName = function() {
-     return this.defaultPageClass;
+     return this.pageClass;
     };
     FlowModel.prototype.getDefaultPageClassValue = function() {
      return undefined;
@@ -1164,7 +1164,7 @@ var ProStyle;
     clearTimeout(this.timeout);
     this.timeout = setTimeout(function() {
      _this.playCurrentStep();
-    }, delay);
+    }, delay * 1e3);
    };
    Player.prototype.playNextStep = function(animate) {
     if (animate === void 0) {
@@ -1182,7 +1182,7 @@ var ProStyle;
     clearTimeout(this.timeout);
     this.timeout = setTimeout(function() {
      _this.playNextStep();
-    }, delay);
+    }, delay * 1e3);
    };
    Player.prototype.backStep = function(animate) {
     if (animate === void 0) {
@@ -2342,11 +2342,11 @@ var ProStyle;
     var Models = ProStyle.Models;
     var SimpleFlowModel = function(_super) {
      __extends(SimpleFlowModel, _super);
-     function SimpleFlowModel(story, placement, defaultPageClass, pageAspectRatio) {
-      _super.call(this, story, "simple", placement, pageAspectRatio, defaultPageClass);
+     function SimpleFlowModel(story, placement, pageClass, pageAspectRatio) {
+      _super.call(this, story, "simple", placement, pageAspectRatio, pageClass);
      }
      SimpleFlowModel.prototype.getDefaultPageClassName = function() {
-      return this.defaultPageClass || "page";
+      return this.pageClass || "page";
      };
      SimpleFlowModel.prototype.serialize = function() {
       return Simple.serialize(this);
@@ -3488,7 +3488,7 @@ var ProStyle;
      var setup = json.setup || {};
      var placement = ProStyle.Types.Placement.fromJson(setup.placement);
      var pageAspectRatio = Util.convertToNumber(setup.pageAspectRatio, story.frame.aspectRatio);
-     return new Simple.SimpleFlowModel(story, placement, setup.defaultPageClass, pageAspectRatio);
+     return new Simple.SimpleFlowModel(story, placement, setup.pageClass, pageAspectRatio);
     }
     Simple.deserialize = deserialize;
    })(Simple = Flows.Simple || (Flows.Simple = {}));
@@ -3512,8 +3512,8 @@ var ProStyle;
    (function(Unknown) {
     var UnknownFlowModel = function(_super) {
      __extends(UnknownFlowModel, _super);
-     function UnknownFlowModel(story, placement, defaultPageClass, pageAspectRatio) {
-      _super.call(this, story, placement, defaultPageClass, pageAspectRatio);
+     function UnknownFlowModel(story, placement, pageClass, pageAspectRatio) {
+      _super.call(this, story, placement, pageClass, pageAspectRatio);
       this.flowType = "unknown";
      }
      UnknownFlowModel.prototype.serialize = function() {
@@ -5651,12 +5651,12 @@ var ProStyle;
   (function(Flows) {
    var PlacementFlowModel = function(_super) {
     __extends(PlacementFlowModel, _super);
-    function PlacementFlowModel(story, flowType, placement, defaultPageClass, pageAspectRatio, defaultPageClassIfNotGiven) {
-     _super.call(this, story, flowType, placement, pageAspectRatio, defaultPageClass);
-     this.defaultPageClassIfNotGiven = defaultPageClassIfNotGiven;
+    function PlacementFlowModel(story, flowType, placement, pageClass, pageAspectRatio, pageClassIfNotGiven) {
+     _super.call(this, story, flowType, placement, pageAspectRatio, pageClass);
+     this.pageClassIfNotGiven = pageClassIfNotGiven;
     }
     PlacementFlowModel.prototype.getDefaultPageClassName = function() {
-     return this.defaultPageClass || this.defaultPageClassIfNotGiven;
+     return this.pageClass || this.pageClassIfNotGiven;
     };
     PlacementFlowModel.prototype.getDefaultPageClassValue = function() {
      return {
