@@ -217,6 +217,7 @@ var ProStyle;
    };
    CanvasModel.prototype.adjustImageUrl = function(url) {
     if (url.toLowerCase().indexOf("url(") === 0) url = url.substr(4, url.length - 5).trim();
+    if (url.indexOf("data:") === 0) return url;
     if (this.mediaUrl) {
      if (!ProStyle.Util.isAbsoluteUrl(url)) {
       if (url.indexOf("/") === 0) {
@@ -4772,6 +4773,7 @@ var ProStyle;
       var forceProps = {};
       if (model.width !== undefined) forceProps.width = model.width.toString() + "%";
       if (model.height !== undefined) forceProps.height = model.height.toString() + "%";
+      if (model.width === undefined && model.height === undefined) forceProps.width = "50%";
       this.initializeProperties(model.itemModelSet.flow.story, [ this.element ], pageSize, timeline, model.init, false, forceProps);
      };
      return ImageItemView;
@@ -6363,7 +6365,7 @@ var ProStyle;
    var img = document.createElement("img");
    img.setAttribute("class", cssClass);
    img.setAttribute("src", src);
-   if (width === undefined && height === undefined) height = 100;
+   if (width === undefined && height === undefined) width = 50;
    if (width !== undefined) img.setAttribute("width", width.toString() + "%");
    if (height !== undefined) img.setAttribute("height", height.toString() + "%");
    parentDiv.appendChild(img);

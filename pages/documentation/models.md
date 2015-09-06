@@ -288,7 +288,7 @@ The _image item_ adds a bitmap or vector image to a [page](#){:data-toc="pages"}
 
 ### Setup
 {:class="font-size-h4"}
-{% include model-setup.html label="img" content="item.image-img.md" %}
+{% include model-setup.html label="src" content="item.image-src.md" %}
 {% include model-setup.html label="width" content="item.image-width.md" %}
 {% include model-setup.html label="height" content="item.image-height.md" %}
 
