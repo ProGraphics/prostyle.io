@@ -3550,7 +3550,7 @@ var ProStyle;
      var setup = json.setup || {};
      var placement = ProStyle.Types.Placement.fromJson(setup.placement);
      var pageAspectRatio = Util.convertToNumber(setup.pageAspectRatio, story.frame.aspectRatio);
-     return new Unknown.UnknownFlowModel(story, placement, setup.defaultPageClass, pageAspectRatio);
+     return new Unknown.UnknownFlowModel(story, placement, setup.pageClass, pageAspectRatio);
     }
     Unknown.deserialize = deserialize;
    })(Unknown = Flows.Unknown || (Flows.Unknown = {}));

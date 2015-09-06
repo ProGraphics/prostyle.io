@@ -46,3 +46,12 @@ i.front-icon {
 	padding: 2% 4%;
 	&:hover { background-color: #456; }
 }
+
+
+
+.tap-back, .tap-play, .tap-next, .tap-seek {
+  transition: 700ms;
+  &:hover {
+    background-color: rgba(0,0,0,0.07);
+  }
+}
