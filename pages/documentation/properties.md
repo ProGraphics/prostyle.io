@@ -147,6 +147,8 @@ The <code>anchor</code> property defines the [alignment](/concepts/#alignment) o
 ## Background
 The <code>background</code> property configures the look of the rectangular background of the [canvas](/models/#canvas), [frame](/models/#frame), [pages](/models/#pages) or [items](/models/#items).
 
+* _alias:_ <code>bg</code>
+
 ### Values
 {% include prop-value.html label="color" content="background-color.md" %}
 {% include prop-value.html label="css" content="background-css.md" %}

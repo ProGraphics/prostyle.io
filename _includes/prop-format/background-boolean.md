@@ -1,2 +1,2 @@
-<p class="b20" markdown="1"><samp class="boolean">true</samp> sets the <code>color</code> value to <samp class="string">'#FFF'</samp> and <samp class="boolean">false</samp> sets it to <samp class="string">'transparent'</samp>.</p>
+<p class="b20" markdown="1"><samp class="boolean">true</samp> sets the <code>color</code> value to <samp class="string">'#FFF'</samp>.<br><samp class="boolean">false</samp> sets it to <samp class="string">'transparent'</samp>.</p>
 {% highlight javascript %}bg: true{% endhighlight %}
