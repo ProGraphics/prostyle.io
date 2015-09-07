@@ -145,14 +145,11 @@ The <code>anchor</code> property defines the [alignment](/concepts/#alignment) o
 <hr class="t60 b60">
 
 ## Background
-The <code>background</code> property configures the look of the rectangular background.
+The <code>background</code> property configures the look of the rectangular background of the [canvas](/models/#canvas), [frame](/models/#frame), [pages](/models/#pages) or [items](/models/#items).
 
 ### Values
 {% include prop-value.html label="color" content="background-color.md" %}
-{% include prop-value.html label="image" content="background-image.md" %}
-{% include prop-value.html label="repeat" content="background-repeat.md" %}
-{% include prop-value.html label="position" content="background-position.md" %}
-{% include prop-value.html label="size" content="background-size.md" %}
+{% include prop-value.html label="css" content="background-css.md" %}
 
 ### Formats
 {% include prop-format.html label="object" content="background-object.md" %}

@@ -1,0 +1,5 @@
+<p class="b20" markdown="1">This value will be assigned directly to the [background CSS property](https://css-tricks.com/almanac/properties/b/background/). Any valid _cascading style sheets_ string may be used. Multiple layers are supported. This value cannot be animated. To animate the background color, use the <code>color</code> value rather than embedding a color in this string. </p>
+<p class="b20"  markdown="1">The <code>css</code> value is not processed by _ProStyle_. Rather, it is assigned directly to the background. Percentage based sizes will generally work better than absolute sizes.</p>
+<p class="b20"  markdown="1">Embedded urls will be rewritten with <code>ProStyle.mediaRootUrl</code> and the canvas' <code>mediaUrl</code> prepended if they are defined. Data URIs may be used for embedded images.</p>
+
+* _default:_ <samp class="string">''</samp>
