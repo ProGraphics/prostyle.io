@@ -1,5 +1,2 @@
-<p class="b30" markdown="1">
-True sets the x and y values to -50 and 0 respectively. False sets both values to 0.
-</p>
-{% highlight javascript %}anchor: false{% endhighlight %}
-{% highlight javascript %}anchor: true{% endhighlight %}
+<p class="b20" markdown="1"><samp class="boolean">true</samp> sets the <code>color</code> value to <samp class="string">'#FFF'</samp> and <samp class="boolean">false</samp> sets it to <samp class="string">'transparent'</samp>.</p>
+{% highlight javascript %}bg: true{% endhighlight %}

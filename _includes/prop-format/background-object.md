@@ -1,8 +1,8 @@
-<p class="b30" markdown="1">
-Any combination of values. Omitted values will not be changed.
+<p class="b20" markdown="1">
+Either <code>color</code>, <code>css</code> or both.
 </p>
-{% highlight javascript %}anchor: {
-  x: -50, 
-  y: -50
+{% highlight javascript %}background: {
+  color: "orange", 
+  css: "url(texture.png) top center / 20% 20% repeat padding-box content-box"
 }
 {% endhighlight %}
