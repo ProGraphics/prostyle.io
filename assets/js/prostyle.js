@@ -3701,11 +3701,11 @@ var ProStyle;
      var v = [];
      v.push(new Properties.Variables.ColorVariableType("color", [ "color" ], "backgroundColor", color, color !== "transparent"));
      v.push(new Properties.Variables.BackgroundCssVariableType("css", [ "css" ], "background", "", false));
-     _super.call(this, "background", [ "background", "back", "bg" ], v);
+     _super.call(this, "background", [ "background", "bg" ], v);
     }
     BackgroundPropertyType.prototype.createPropertyFromBoolean = function(json) {
      var property = _super.prototype.createPropertyFromBoolean.call(this, false);
-     if (json === true) property["color"].setValue("#F7F7F7");
+     if (json === true) property["color"].setValue("#FFF");
      return property;
     };
     BackgroundPropertyType.prototype.createPropertyFromNumber = function(json) {
@@ -3721,7 +3721,7 @@ var ProStyle;
      var property;
      if (json.toLowerCase().indexOf("url(") === 0) {
       property = new Properties.Property(this);
-      property["image"].setValue(json);
+      property["css"].setValue(json);
      } else {
       property = _super.prototype.createPropertyFromBoolean.call(this, false);
       property["color"].setValue(json);
@@ -3731,10 +3731,7 @@ var ProStyle;
     BackgroundPropertyType.prototype.createPropertyFromArray = function(json) {
      var property = _super.prototype.createPropertyFromBoolean.call(this, false);
      if (json.length > 0) property["color"].setValue(json[0] === null ? undefined :json[0]);
-     if (json.length > 1) property["image"].setValue(json[1] === null ? undefined :json[1]);
-     if (json.length > 2) property["repeat"].setValue(json[2] === null ? undefined :json[2]);
-     if (json.length > 3) property["position"].setValue(json[3] === null ? undefined :json[3]);
-     if (json.length > 4) property["size"].setValue(json[4] === null ? undefined :json[4]);
+     if (json.length > 1) property["css"].setValue(json[1] === null ? undefined :json[1]);
      return property;
     };
     BackgroundPropertyType.prototype.renderLabel = function(property) {
