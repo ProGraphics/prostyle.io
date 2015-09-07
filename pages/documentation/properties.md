@@ -153,10 +153,10 @@ The <code>background</code> property configures the look of the rectangular back
 
 ### Formats
 {% include prop-format.html label="object" content="background-object.md" %}
-{% include prop-format.html label="number" content="background-number.md" %}
 {% include prop-format.html label="string" content="background-string.md" %}
-{% include prop-format.html label="boolean" content="background-boolean.md" %}
 {% include prop-format.html label="array" content="background-array.md" %}
+{% include prop-format.html label="number" content="background-number.md" %}
+{% include prop-format.html label="boolean" content="background-boolean.md" %}
 
 ### Example
 _undocumented_
