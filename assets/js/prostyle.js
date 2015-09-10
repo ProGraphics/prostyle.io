@@ -1,6 +1,6 @@
 /*!
- * VERSION: 0.21.0
- * DATE: 07-Sep-2015
+ * VERSION: 1.0.0
+ * DATE: 09-Sep-2015
  * UPDATES AND DOCS AT: https://prostyle.io/
  * 
  * @license Copyright (c) 2013-2015, Pro Graphics, Inc. All rights reserved. 
@@ -1235,9 +1235,8 @@ var ProStyle;
   var CanvasView = function(_super) {
    __extends(CanvasView, _super);
    function CanvasView(story, div) {
-    _super.call(this, story.canvas, div);
+    _super.call(this, story.canvas, CanvasView.duplicateDiv(div));
     this.story = story;
-    Util.setElementText(div, "");
     this.fullScreen = div instanceof HTMLBodyElement;
     this.generateStyles();
     this.setCanvasSize();
@@ -1245,6 +1244,19 @@ var ProStyle;
     this.player = new ProStyle.Play.Player(this.frame);
     this.hideContextMenu();
    }
+   CanvasView.duplicateDiv = function(div) {
+    var parent = div.parentElement;
+    var newDiv;
+    if (div instanceof HTMLBodyElement) {
+     newDiv = document.createElement("body");
+    } else {
+     newDiv = document.createElement("div");
+    }
+    newDiv.setAttribute("data-prostyle", div.getAttribute("data-prostyle"));
+    newDiv.setAttribute("class", div.getAttribute("class"));
+    parent.replaceChild(newDiv, div);
+    return newDiv;
+   };
    CanvasView.prototype.startControllers = function() {
     var _this = this;
     this.story.controllers.forEach(function(controller) {
@@ -1898,6 +1910,10 @@ var ProStyle;
       this.STEP_COLOR_1 = "#222";
       this.STEP_COLOR_2 = "#000";
       this.divScrubberStep = [];
+      this.scrubberMouseMoveBound = undefined;
+      this.scrubberMouseClickBound = undefined;
+      this.progressChangedBound = undefined;
+      this.stateChangedBound = undefined;
       this.progress = 0;
       this.generateStyles();
       this.setupButtons();
@@ -1906,11 +1922,21 @@ var ProStyle;
       this.setupMenuOnMouseMove();
       this.resize();
      }
+     TrackBar.prototype.stop = function() {
+      if (this.scrubberMouseMoveBound) this.divScrubber.removeEventListener("mousemove", this.scrubberMouseMoveBound, false);
+      if (this.scrubberMouseClickBound) this.divScrubber.removeEventListener("click", this.scrubberMouseClickBound, false);
+      if (this.progressChangedBound) this.canvas.player.progressChanged.off(this.progressChangedBound);
+      if (this.stateChangedBound) this.canvas.player.stateChanged.off(this.stateChangedBound);
+      this.logoDiv.onmousedown = undefined;
+      this.backDiv.onmousedown = undefined;
+      this.playDiv.onmousedown = undefined;
+      this.nextDiv.onmousedown = undefined;
+     };
      TrackBar.prototype.setupButtons = function() {
       var player = this.canvas.player;
       this.bgDiv = Util.createChildDivElement(this.canvas.div, this.bgClass);
       this.logoDiv = this.addButton("ProStyle", Svg.logo.svg, function() {
-       window.open("http://prostyle.io/", "_blank");
+       window.open("https://prostyle.io/", "_blank");
       });
       this.backDiv = this.addButton("Back", Svg.toStart.svg, function() {
        player.backStep(true);
@@ -1932,8 +1958,10 @@ var ProStyle;
       this.divScrubberProgress = Util.createChildDivElement(this.divScrubberBar, this.scrubberProgressClass);
       this.divScrubberHoverPoint = Util.createChildDivElement(this.divScrubberBar, this.scrubberHoverPointClass);
       this.divScrubberHoverText = Util.createChildDivElement(this.divScrubber, this.scrubberHoverTextClass);
-      this.divScrubber.onmousemove = this.scrubberMouseMove.bind(this);
-      this.divScrubber.onclick = this.scrubberMouseClick.bind(this);
+      this.scrubberMouseMoveBound = this.scrubberMouseMove.bind(this);
+      this.scrubberMouseClickBound = this.scrubberMouseClick.bind(this);
+      this.divScrubber.addEventListener("mousemove", this.scrubberMouseMoveBound, false);
+      this.divScrubber.addEventListener("click", this.scrubberMouseClickBound, false);
      };
      TrackBar.prototype.scrubberMouseMove = function(e) {
       var rect = this.canvas.div.getBoundingClientRect();
@@ -1959,8 +1987,10 @@ var ProStyle;
      };
      TrackBar.prototype.setupPlayerEvents = function() {
       var player = this.canvas.player;
-      player.progressChanged.on(this.progressChanged.bind(this));
-      player.stateChanged.on(this.stateChanged.bind(this));
+      this.progressChangedBound = this.progressChanged.bind(this);
+      this.stateChangedBound = this.stateChanged.bind(this);
+      player.progressChanged.on(this.progressChangedBound);
+      player.stateChanged.on(this.stateChangedBound);
      };
      TrackBar.prototype.setupMenuOnMouseMove = function() {
       var div = this.canvas.div;
@@ -2233,6 +2263,7 @@ var ProStyle;
      };
      TrackController.prototype.stop = function() {
       if (this.player !== undefined) {
+       this.trackBar.stop();
        this.trackBar = undefined;
        this.canvas = undefined;
        this.player = undefined;
@@ -6853,9 +6884,12 @@ var ProStyle;
    if (storyJson === undefined) {
     div.innerHTML = "<strong style='background-color: #FFF;color:#C00'>Missing story at ProStyle.Stories." + storyName + "</strong>";
    } else {
-    div.innerHTML = "";
+    ProStyle.Util.setElementText(div, "");
+    var canvas = div["proStyleCanvas"];
+    div["proStyleCanvas"] = undefined;
+    if (canvas) canvas.stopControllers();
     var story = ProStyle.Serialization.StoryReader.read(storyJson);
-    var canvas = new ProStyle.Views.CanvasView(story, div);
+    canvas = new ProStyle.Views.CanvasView(story, div);
     canvas.startControllers();
     div["proStyleCanvas"] = canvas;
    }
