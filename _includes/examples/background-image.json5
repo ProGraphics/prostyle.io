@@ -1,28 +1,11 @@
 {
 	canvas: { 
-		padding:10,
 		init: { bg: "url(blueprint.png) center repeat" }
 	},
-	frame:{ 
-		aspectRatio:1.333,
-		padding:10,
-		init: {
-			bg: "rgba(0,0,0,0.1)",
-			corners: true,
-			border: [0.1,"rgba(255,255,255,0.3)"]
-		}
-	},
 	page: {
-		item: {
-			text: "TEXT",
-			init: { 
-				font:["courier",50],
-				color: "rgba(191,191,223,0.3)"
-			}
-		},
 		canvasActions: [
-			{ delay:2,  bg:"url(circuit.png) center / 50% 50% repeat" },
-			{ delay:2 }
+			{ delay:1,  bg:"url(circuit.png) center / 35% 35% repeat" },
+			{ delay:1 }
 		]
 	}
 }
