@@ -1,5 +1,5 @@
-<p class="b30" markdown="1">
-The family, size and lineHeight values are assigned the array entries, in order.  Missing entries are assigned default values. Subsequent entries are ignored.
+<p class="b20" markdown="1">
+The array entries are assigned in order to the <code>size</code>, <code>family</code> and <code>lineHeight</code> values.  Missing entries are assigned default values. Subsequent entries are ignored.
 </p>
-{% highlight javascript %}font: ["Tahoma, Geneva, sans-serif", 28, 140]
+{% highlight javascript %}font: [28, "Tahoma, Geneva, sans-serif", 140]
 {% endhighlight %}

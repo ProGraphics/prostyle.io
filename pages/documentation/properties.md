@@ -501,8 +501,8 @@ Modern web browsers generally support a standard set of font faces, commonly ref
 While it is possible to animate the size and lineHeight values, it is a relatively high computational process to render text, and might result in jerky animation.  For better performance, define the font properties once and then use the scale property.
 
 ### Values
-{% include prop-value.html label="family" content="font-family.md" %}
 {% include prop-value.html label="size" content="font-size.md" %}
+{% include prop-value.html label="family" content="font-family.md" %}
 {% include prop-value.html label="lineHeight" content="font-lineHeight.md" %}
 
 ### Formats
