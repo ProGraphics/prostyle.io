@@ -4,6 +4,18 @@ splash: frontpage
 breadcrumbs: false
 ---
 
+<style>
+    #forkongithub{display:none;}
+    #forkongithub a{background:rgba(127,127,127,0.5);color:#FFF;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;white-space:nowrap;opacity:0.5;padding:0}
+    #forkongithub a:hover{background:#456;color:#FFF;opacity:1;}
+    #forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#FFF;}
+    #forkongithub a::after{bottom:1px;top:auto;}
+    @media screen and (min-width:800px){
+        #forkongithub{position:absolute;display:block;top:3.125rem;right:0;width:250px;overflow:hidden;height:200px;}
+        #forkongithub a{width:250px;position:absolute;top:50px;right:-65px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}
+    }
+</style><span id="forkongithub"><a href="https://github.com/ProGraphics/prostyle.js">Star on GitHub</a></span>
+
 <div class="row"><div class="medium-12 columns"><p class="teaser t80">
 Ever wanted to create stunning animation and add it to your web page or web application?
 Seen amazing presentations built on the web but figured you’d need to hire a developer to make something like that? 
