@@ -87,18 +87,6 @@ plus-page: true
           <p markdown="1">Your license key will work with and without a preceding www. A license for <code>example.com</code> will also work with <code>www.example.com</code>.</p>
         </div>
       </dd>
-      <dd class="accordion-navigation">
-        <a href="#panel8" class="noline"><span class="iconfont"></span>Question 8?</a>
-        <div id="panel8" class="content">
-          <p>Answer 8.</p>
-        </div>
-      </dd>
-      <dd class="accordion-navigation">
-        <a href="#panel9" class="noline"><span class="iconfont"></span>Question 9?</a>
-        <div id="panel9" class="content">
-          <p>Answer 9.</p>
-        </div>
-      </dd>
     </dl>
   </div>
 </div>
