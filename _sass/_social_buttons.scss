@@ -22,3 +22,14 @@
 		padding: 0.5em;
 	}
 }
+
+.inline-social-icons li a {
+	font-size: rem-calc(55);
+	display: block;
+	padding: rem-calc(5.5);
+	text-align: center;
+	transition: color 300ms ease-out, background 300ms ease-out;
+}
+.inline-social-icons li a:hover {
+	color: #234;
+}

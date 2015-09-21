@@ -21,8 +21,15 @@ widget-3:
     text: 'An assortment of premium extensions that you can plug into your stories to make them even better.'
     icon: 'fa-plus'
 ---
-<div class="row">
-  <div class="small-10 medium-9 small-centered large-8 columns t50">
+<div class="row t50">
+  <div class="medium-4 columns">
+    <ul class="inline-list inline-social-icons">
+    {% for social_item in site.data.socialmedia %}
+    <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="medium-8 columns">
 		{% include alert text="Looking for someone to create great animation for you? &nbsp; <a href='https://pro.graphics/custom-animation/'>Hire us!</a>" %}
 	</div>
 </div>
