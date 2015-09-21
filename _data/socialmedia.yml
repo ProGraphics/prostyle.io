@@ -1,34 +1,14 @@
-- name: GitHub
-  url: https://github.com/Pro-Graphics/
-  class: "fa fa-github"
-  title: "ProStyle GitHub"
-
-- name: GitHub2
-  url: https://github.com/GaryChamberlain/
-  class: "fa fa-github"
-  title: "Gary Chamberlain GitHub"
-
-- name: YouTube
-  url: http://www.youtube.com/GaryChamberlain/
-  class: "fa fa-youtube-play"
-  title: "YouTube Videos"
-
 - name: Twitter
-  url: http://twitter.com/chamberlaingary/
+  url: http://twitter.com/_prographics/
   class: "fa fa-twitter"
   title: "Twitter"
+  
+- name: GitHub
+  url: https://github.com/ProGraphics/prostyle.js
+  class: "fa fa-github"
+  title: "GitHub"
 
-- name: Facebook
-  url: https://www.facebook.com/gary.j.chamberlain/
-  class: "fa fa-facebook"
-  title: "Facebook"
-
-- name: Instagram
-  url: http://instagram.com/prographics/
-  class: "fa fa-instagram"
+- name: CodePen
+  url: http://codepen.io/garyc/
+  class: "fa fa-codepen"
   title: "Instagram"
-
-- name: Pinterest
-  url: http://www.pinterest.com/prographics/
-  class: "fa fa-pinterest"
-  title: "Pinterest"
