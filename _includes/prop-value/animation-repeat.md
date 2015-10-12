@@ -7,7 +7,7 @@ How an animation should be _repeated_. The direction of each iteration may be de
 The values <samp class='string'>'f'</samp> and <samp class='string'>'y'</samp> may be used for brevity.
 * __Delay:__ The number of seconds to wait between each iteration.
 
-The count may be given as a lone number, of the count, direction and delay can be given as an array. e.g. [3,'y',0]
+The count may be given as a lone number, of the count, direction and delay can be given as an array. e.g. <code>[3,'y',0]</code>
 
 
 * _default:_ <samp class="number">0</samp>
