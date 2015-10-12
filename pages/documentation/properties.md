@@ -62,7 +62,7 @@ Most properties alter the appearance or placement of something.  However, there 
 <hr class="t60 b60">
 
 ## Animation
-The <code>animation</code> pseudo-property defines the characteristics of an [animation](/concepts/#animation), such as how long it will take, or how many times it will repeat.
+The <code>animation</code> property defines the characteristics of an [animation](/concepts/#animation), such as how long it will take, or how many times it will repeat.
 
 * _alias:_ <code>anim</code>
 
@@ -70,8 +70,6 @@ The <code>animation</code> pseudo-property defines the characteristics of an [an
 {% include prop-value.html label="duration" content="animation-duration.md" %}
 {% include prop-value.html label="ease" content="animation-ease.md" %}
 {% include prop-value.html label="repeat" content="animation-repeat.md" %}
-{% include prop-value.html label="repeatDelay" content="animation-repeat-delay.md" %}
-{% include prop-value.html label="yoyo" content="animation-yoyo.md" %}
 {% include prop-value.html label="stagger" content="animation-stagger.md" %}
 
 ### Formats
