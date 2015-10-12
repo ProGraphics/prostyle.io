@@ -1,7 +1,7 @@
-How an animation should be _repeated_. The direction of each iteration may be defined with an optional delay between each.
+How an animation should be _repeated_.
 
 * __Count:__ The number of times the animation should be repeated. The first iteration is __not__ a repeat. e.g. the animation will occur twice when the _repeat count_ equals _1_.
-* __Direction:__ The pattern that the animations should occur.
+* __Direction:__ The pattern of direction that each iteration should be played.
 <samp class='string'>'forward'</samp> indicates that the animation should be repeat exactly as the first iteration, forward only.
 <samp class='string'>'yoyo'</samp> indicates that the direction should alternate back and forth.  The ease will be played in reverse when returning.
 The values <samp class='string'>'f'</samp> and <samp class='string'>'y'</samp> may be used for brevity.
