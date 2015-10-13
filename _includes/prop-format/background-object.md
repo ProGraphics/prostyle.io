@@ -1,5 +1,5 @@
 <p class="b20" markdown="1">
-Either <code>color</code>, <code>css</code> or both.
+Any combination of values. Omitted values will not be changed.
 </p>
 {% highlight javascript %}background: {
   color: "orange", 
