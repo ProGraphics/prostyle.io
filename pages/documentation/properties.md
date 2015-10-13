@@ -149,7 +149,13 @@ The <code>background</code> property configures the look of the rectangular back
 
 ### Values
 {% include prop-value.html label="color" content="background-color.md" %}
-{% include prop-value.html label="css" content="background-css.md" %}
+{% include prop-value.html label="image" content="background-image.md" %}
+{% include prop-value.html label="aspectRatio" content="background-aspectRatio.md" %}
+{% include prop-value.html label="layout" content="background-layout.md" %}
+{% include prop-value.html label="x" label2="y" content="background-position.md" %}
+{% include prop-value.html label="width" label2="height" content="background-size.md" %}
+{% include prop-value.html label="repeat" content="background-repeat.md" %}
+{% include prop-value.html label="clip" content="background-clip.md" %}
 
 ### Formats
 {% include prop-format.html label="object" content="background-object.md" %}
