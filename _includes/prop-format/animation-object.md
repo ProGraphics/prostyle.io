@@ -3,13 +3,11 @@ Any combination of values. Omitted values will use defaults.
 </p>
 {% highlight javascript %}animation: {
   duration: 0.5, 
-  ease: "linear",
-  repeat: 3,
-  repeatDelay: 1,
-  yoyo: true,
-  stagger:0.1
+  ease: "less curve inout",
+  repeat: [3, 'yoyo',0.1],
+  stagger: [0.1, 'reverse']
 }
 {% endhighlight %}
 
-{% highlight javascript %}anim: {dur:0.5, ease:"linear", rep:3, delay:1, yoyo:true, stag:0.1}
+{% highlight javascript %}anim: {dur:0.5, ease:"linear", rep:3, stag:0.1}
 {% endhighlight %}
