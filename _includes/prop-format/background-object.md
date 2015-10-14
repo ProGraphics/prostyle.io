@@ -3,6 +3,12 @@ Any combination of values. Omitted values will not be changed.
 </p>
 {% highlight javascript %}background: {
   color: "orange", 
-  css: "url(texture.png) top center / 20% 20% repeat padding-box content-box"
+  image: "url(texture.png)",
+  aspectRatio: 1.33333,
+  layout: "stretch",
+  x: 50,
+  y: 50,
+  repeat: "repeat",
+  clip: "padding-box"
 }
 {% endhighlight %}
