@@ -6,7 +6,7 @@
       font:60
     },
     charAction: {
-      anim:[0.5,"sine inout",3,0,true,0.5],
+      anim:[0.5,"sine inout",[3,'yoyo'],0.5],
       textShadow:[0,4,8],
       pos:{z:5}
     }
