@@ -9,7 +9,7 @@
       align: "center"
     },
     action: {
-      anim:{ dur:4, rep:1, yoyo:true }, 
+      anim:{ dur:4, rep:[1,'yoyo'] }, 
       width:60
     }
   }
