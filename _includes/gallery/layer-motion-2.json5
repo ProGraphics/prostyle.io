@@ -7,7 +7,7 @@
 			corners:true,
 			size:[100,100],
 			rot:{x:40},
-		bg:"rgba(255,255,255,0)"
+			bg:"rgba(255,255,255,0)"
 		},
 		scripts:[
 			{
@@ -29,7 +29,7 @@
 				itemType:"layer",
 				init: { size:[15,20], pos:{z:55}, bg:"#678",border:"#234", corners:10	},
 				action:{
-					anim:[1,"sine inout",24,0,true],
+					anim:[1,"sine inout",[24,'yoyo']],
 					pos:{z:-200}
 				}
 			}
