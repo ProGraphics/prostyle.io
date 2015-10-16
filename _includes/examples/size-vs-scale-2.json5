@@ -7,7 +7,7 @@
       font:300, scale:10
     },
     action: {
-      anim:{ dur:5, rep:1, yoyo:true },
+      anim:{ dur:5, rep:[1,'yoyo'] },
       scale:100
     }
   }
