@@ -8,7 +8,7 @@
 				color:"rgba(0,63,127,0.7)"
 			},
 			charAction:{
-				anim:{ dur:4, stagger:0.12, repeat:7, yoyo:true, ease:"curve inout" }, 
+				anim:{ dur:4, stagger:0.12, repeat:[7, 'yoyo'], ease:"curve inout" }, 
 				rotation:{x:720}
 			}
 		},
