@@ -1,7 +1,7 @@
 {
   classes: { 
     text: { font:70, style:"bold caps" },
-    animation: { anim:[3,"sine inout",1,0,true] },
+    animation: { anim:[3,"sine inout",[1,'yoyo']] },
     x1: { pos:{x:-40}, class:"animation"},
     x2: { pos:{x:40}, class:"animation"}
   },
