@@ -7,7 +7,7 @@
       skew:-20
     },
     action:{
-      anim:[3,"less curve inout",1,0,true],
+      anim:[3,"less curve inout",[1,'yoyo']],
       skew:20
     }
   }
