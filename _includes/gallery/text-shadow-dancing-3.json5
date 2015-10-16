@@ -11,7 +11,7 @@
       ]
     },
     charAction: {
-      anim:[0.5,"sine inout",3,0,true,0.5],
+      anim:[0.5,"sine inout",[3,'yoyo'],0.5],
       textShadow:[
         [0.5,0.5,0.5,"black"],
         [0,-2,10,"cyan"],
