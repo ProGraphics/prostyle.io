@@ -6,7 +6,7 @@
       font:40
     },
     action: {
-      anim:[5,"less elastic inout",1,0,true],
+      anim:[5,"less elastic inout",[1,'yoyo']],
       skew:-360,
       rot:-180
     }
