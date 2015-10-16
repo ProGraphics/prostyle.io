@@ -7,7 +7,7 @@
       textShadow:[0,0,3,"black"]
     },
     action: {
-      anim:{dur:2, rep:1, yoyo:true},
+      anim:{dur:2, rep:[1,'yoyo']},
       pos:[0,0,20],
       textShadow:[5,5,10,"rgba(0,0,0,0.7)"]
     }
