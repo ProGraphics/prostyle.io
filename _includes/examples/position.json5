@@ -2,7 +2,7 @@
   item:  {
     text:"pos",
     init: {
-      color:"#094766",
+      color:"#567",
       font:25,
       pos:[-20,-20,20]
     },
