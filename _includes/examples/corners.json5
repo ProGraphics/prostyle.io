@@ -3,9 +3,9 @@
     text:"corners",
     init: {
       padding:5,
-      border:[1, "#094766"],
+      border:[1, "#567"],
       font:40,
-      color:"#094766"
+      color:"#567"
     },
     actions:[
       { anim:2, corners:15},
