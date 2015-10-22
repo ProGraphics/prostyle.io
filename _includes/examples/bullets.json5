@@ -7,7 +7,7 @@
       "Incididunt ut labore",
       "Et dolore magna aliqua"
     ],
-    linesInit: { bullets:"disc", color:"#094766"},
+    linesInit: { bullets:"disc", color:"#234"},
     lineActions:[
       {
         anim:{dur:1, stagger:0.2},
