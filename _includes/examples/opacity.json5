@@ -2,7 +2,7 @@
   items:[
     {
       text:"UNDER",
-      init: {color:"#094766",style:"bold",font:45}
+      init: {color:"#678",style:"bold",font:45}
     },
     {
       text:"OVER",
