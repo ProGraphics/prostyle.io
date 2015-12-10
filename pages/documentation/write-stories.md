@@ -31,8 +31,8 @@ _<span style="margin-left:50px;padding:15px;background-color:#FFE;">If you like 
 <html>
 	<head>
 		<title>My Animated Story</title>
-		<script src="pro.greensock.min.js"></script>
-		<script src="prostyle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prostyle/1.2.0/prostyle.min.js"></script>
 	</head>
 	<body>
 		<div data-prostyle="myStory"></div>
@@ -55,11 +55,12 @@ _<span style="margin-left:50px;padding:15px;background-color:#FFE;">If you like 
 	
 <div class="play-story" style="font-weight:bold;color:#FFF;">myStory.js</div>
 {% highlight javascript %}
+/* global ProStyle */
 ProStyle.Stories.myStory = {
-    item: {
-		text: "My Story"
+	item: {
+		text: "My Story",
 		action: {
-			animation: { duration:5 },
+			animation: { duration:3, repeat:5 },
 			rotation: 360
 		}
 	}
