@@ -29,7 +29,7 @@ All story documents follow the same general structure. See if you can recognize 
 
 <div class="row">
   <div class="small-12 medium-10 medium-centered large-8 columns">
-		{% include alert text="If the following looks like gibberish, don't fret.  It's only JSON, which you can <a href='#json'>learn about here</a>." %}
+		{% include alert text="If the following looks like gibberish, don't fret.  it’s only JSON, which you can <a href='#json'>learn about here</a>." %}
 	</div>
 </div>
 
@@ -277,9 +277,9 @@ A _script_ is a sequence of one or more _actions_. A script's actions are execut
 </div>
 </div></p>
 
-The duration of a _script_ is the _sum_ of it's _action's_ durations. Extending the duration of an action pushes out the start of any remaining actions within that script.
+The duration of a _script_ is the _sum_ of its _action's_ durations. Extending the duration of an action pushes out the start of any remaining actions within that script.
 
-The duration of a _step_ is the duration of it's longest _script_. 
+The duration of a _step_ is the duration of its longest _script_. 
 
 The combination of serial _steps_ of parallel _scripts_ of serial _actions_ makes ProStyle very powerful.  It’s easy to craft simple animations, yet flexible enough for complex interactions.
 
@@ -374,13 +374,13 @@ When there are multiple targets, like bars in a chart or characters in text, eac
 
 
 ## Alignment
-Unlike traditional web graphics, ProStyle is designed to work with _center alignment_.  Add an [item](/models/#items) to a [page](/models/#pages) and it will be automatically centered, regardless of it’s current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Because the [frame](/models/#frame) maintains it's [aspect ratio](/models/#demonstration), the animation will look the same on _any screen_ of _any size_.
+Unlike traditional web graphics, ProStyle is designed to work with _center alignment_.  Add an [item](/models/#items) to a [page](/models/#pages) and it will be automatically centered, regardless of its current or future size. Furthermore, positioning is relative from the center, as a percentage of the container’s dimensions. This greatly simplifies layout. Because the [frame](/models/#frame) maintains its [aspect ratio](/models/#demonstration), the animation will look the same on _any screen_ of _any size_.
 
 ### Anchor
-With center alignment, the _center of the item_ is positioned on the _center of it’s container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/properties/#anchor) and a [position property](/properties/#position). Both default to <samp class="number">[0,0]</samp>, which is the center of the item. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.
+With center alignment, the _center of the item_ is positioned on the _center of its container_. The reference point on the item is called the _anchor_. Each item has an [anchor property](/properties/#anchor) and a [position property](/properties/#position). Both default to <samp class="number">[0,0]</samp>, which is the center of the item. The position property defines where the item is placed, relative to the container’s center. The anchor defines what point on the item will be directly on the position location. Anchors make it easy to align objects of different sizes.
 
 ### Transform Origin
-The [transform origin](/properties/#transform-origin), like the _anchor_, is a reference point on the item (unless expanded).  It defines the point that transforms are relative to.  For instance, to rotate an item around it's top left corner, the transform origin would be set to <code>[-50,-50]</code>. By default, items rotate around their center because the transform origin is initially set to <code>[0,0]</code>.
+The [transform origin](/properties/#transform-origin), like the _anchor_, is a reference point on the item (unless expanded).  It defines the point that transforms are relative to.  For instance, to rotate an item around its top left corner, the transform origin would be set to <code>[-50,-50]</code>. By default, items rotate around their center because the transform origin is initially set to <code>[0,0]</code>.
 
 By default, the <code>x</code> and <code>y</code> values of the transform origin are percentages of the item's dimensions. However, if the <code>expand</code> value is set to <samp class="boolean">true</samp>, the numbers will be considered a percentage of the container's dimensions, usually the page.
 
@@ -425,7 +425,7 @@ Optionally, an _alpha_ value between 0 and 1 may be used to make the color semi-
 <hr class="t60 b60">
 
 ## 3D
-ProStyle makes it simple to [place](#){:data-toc="placement"} and [animate](#){:data-toc="animation"} objects in _three_ dimensions. It’s important to note, though, that the objects themselves have no depth. Imagine a piece of paper held out in front of you. It has width and height, but no depth. Of course paper does have a small amount of depth, but imagine it didn’t. If it was turned 90 degrees on it’s side, you would no longer be able to see it. With ProStyle, two dimensional objects can be positioned anywhere in _3D space_, just as our piece of paper can be moved around the room.
+ProStyle makes it simple to [place](#){:data-toc="placement"} and [animate](#){:data-toc="animation"} objects in _three_ dimensions. It’s important to note, though, that the objects themselves have no depth. Imagine a piece of paper held out in front of you. It has width and height, but no depth. Of course paper does have a small amount of depth, but imagine it didn’t. If it was turned 90 degrees on its side, you would no longer be able to see it. With ProStyle, two dimensional objects can be positioned anywhere in _3D space_, just as our piece of paper can be moved around the room.
 
 Since the device’s screen is also two dimensional, modern browsers have built-in support to emulate a third dimension by using _perspective_, which ProStyle leverages when rendering. ProStyle configures a vanishing point in the center of the screen.  The dimensions of the frame provide the horizontal and vertical extents of the view space. The depth, or length of the Z axis, is calculated based on the X and Y axes, using [Euclidean geometry](http://en.wikipedia.org/wiki/Euclidean_geometry).
 
