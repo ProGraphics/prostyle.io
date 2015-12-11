@@ -145,7 +145,7 @@ There are seven actions that can be triggered. Each has a default set of key cod
 
 
 ## MouseMove
-The _mousemove_ controller maps mouse movement over a story to a position on it's timeline. It then instantly seeks the timeline to that position. When the mouse is moved off of the story, the player starts from the current position and plays until the end of the story, unless otherwise configured with the [auto](#){:data-toc="auto"} controller.
+The _mousemove_ controller maps mouse movement over a story to a position on its timeline. It then instantly seeks the timeline to that position. When the mouse is moved off of the story, the player starts from the current position and plays until the end of the story, unless otherwise configured with the [auto](#){:data-toc="auto"} controller.
 
 The hot spot normally ranges from the left edge of the [frame](/models/#frame) to the right edge. If the mouse is positioned 25% of the way across the frame, the timeline will be positioned to 25% complete.  The starting and ending points of the hotspot can be configured.
 
@@ -163,7 +163,7 @@ The _mousemove_ controller can be experienced by positioning your mouse over the
 
 
 ## MouseWheel
-The _mousewheel_ controller pauses and then seeks the timeline relative to it's current position. The wheel's direction defines whether the timeline is advanced or retreated. To experience it, position your mouse over almost any of the animations on this website, including the [front page's](/) splash and all the examples in the [gallery](/gallery/). Spin the wheel with or without the CTRL and ALT keys pressed.
+The _mousewheel_ controller pauses and then seeks the timeline relative to its current position. The wheel's direction defines whether the timeline is advanced or retreated. To experience it, position your mouse over almost any of the animations on this website, including the [front page's](/) splash and all the examples in the [gallery](/gallery/). Spin the wheel with or without the CTRL and ALT keys pressed.
 
 Each wheel click moves the timeline <samp class="number">0.01</samp> seconds. The CTRL and ALT keys can be pressed to alter the amount of change.
 
