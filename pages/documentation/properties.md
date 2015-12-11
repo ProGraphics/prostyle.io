@@ -335,7 +335,7 @@ Each model object has a default class name. For example, if you define a class n
 ## Corners
 The <code>corners</code> property defines whether each corner is rounded or comes to a point.
 
-Each corner radius is a _percentage_ of the height of the container the item is within. They are not a percentage of the dimensions of the item itself, by design. For example, a text item might have it’s [textWidth](#){:data-toc="text-width"} property set, which causes word wrapping.  Regardless of how many lines of text are wrapped, the corner radii will stay consistent, because the containing page dimensions do not change.
+Each corner radius is a _percentage_ of the height of the container the item is within. They are not a percentage of the dimensions of the item itself, by design. For example, a text item might have its [textWidth](#){:data-toc="text-width"} property set, which causes word wrapping.  Regardless of how many lines of text are wrapped, the corner radii will stay consistent, because the containing page dimensions do not change.
 
 ### Values
 {% include prop-value.html label="topLeft" content="corners-topLeft.md" %}
@@ -375,7 +375,7 @@ Each corner radius is a _percentage_ of the height of the container the item is 
 <hr class="t60 b60">
 
 ## Crop
-The <code>crop</code> property determines whether a container's content is visible outside of it's boundaries. For instance, if a layer contains a text item, and the text item is positioned partly beyond the layer's bounds, should it appear cut off or display normally?
+The <code>crop</code> property determines whether a container's content is visible outside of its boundaries. For instance, if a layer contains a text item, and the text item is positioned partly beyond the layer's bounds, should it appear cut off or display normally?
 
 Cropping may cause [3D](/concepts/#3d) rendering to appear flat, per the [CSS Transforms Specification](https://drafts.csswg.org/css-transforms/#3d-rendering-contexts) as implemented by the browser.
 
@@ -441,7 +441,7 @@ The _data_ property is used to pass one or more arrays of data.  The structure o
 <hr class="t60 b60">
 
 ## Delay
-The _delay_ property inserts a pause into an action before the action begins. It is not valid for <code>init</code> entries. If the action performs an [animation](#){:data-toc="animation"} the delay is performed first and then the animation begins.  The duration of an action is the sum of it's delay and it's animation.
+The _delay_ property inserts a pause into an action before the action begins. It is not valid for <code>init</code> entries. If the action performs an [animation](#){:data-toc="animation"} the delay is performed first and then the animation begins.  The duration of an action is the sum of its delay and its animation.
 
 ### Formats
 {% include prop-format.html label="number" content="delay-number.md" %}
@@ -759,7 +759,7 @@ Hardware acceleration is used when available, so the animation is usually quite 
 ## Scale
 The scale property stretches the target in x and y directions.   Hardware acceleration is used when available, so the animation is usually quite smooth.  However, the target will look increasingly pixelated with larger scale values.
 
-The actual width and height of a target is referred to as it’s natural dimensions. The way the size is determined is specific to the type of the target. For instance, the text item uses a font property, which has values that determine the height of each text line. The textWidth property might induce line wrapping.  Those properties and others, such as border and padding, contribute to the natural dimensions of the item.
+The actual width and height of a target is referred to as its natural dimensions. The way the size is determined is specific to the type of the target. For instance, the text item uses a font property, which has values that determine the height of each text line. The textWidth property might induce line wrapping.  Those properties and others, such as border and padding, contribute to the natural dimensions of the item.
 
 
 ### Values
@@ -1117,7 +1117,7 @@ The <code>textWidth</code> property defines the maximum width of a text item. Th
 <hr class="t60 b60">
 
 ## Transform Origin
-The <code>transformOrigin</code> property defines the reference point when transforming a target object. By default, the origin is centered on the item, with the values <samp class="number">[0,0,0]</samp>. Like this, an item will rotate around it's center. Values of <samp class="number">[-50,-50]</samp> represent the item's top-left corner.  Optionally, the <code>expand</code> value may be set to use an origin relative to the _item's container_.
+The <code>transformOrigin</code> property defines the reference point when transforming a target object. By default, the origin is centered on the item, with the values <samp class="number">[0,0,0]</samp>. Like this, an item will rotate around its center. Values of <samp class="number">[-50,-50]</samp> represent the item's top-left corner.  Optionally, the <code>expand</code> value may be set to use an origin relative to the _item's container_.
 
 Like the [anchor](#){:data-toc="anchor"} property, the values are a percentage of the target’s dimensions. However, transformOrigin and anchor serve two very distinct purposes. See [Alignment](/concepts/#alignment).
 
