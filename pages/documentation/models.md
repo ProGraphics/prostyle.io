@@ -46,7 +46,7 @@ Because [step scripts](/concepts/#steps) are only available for _pages_ and _ite
 <hr class="t60 b60">
 
 ## Canvas
-The _canvas_ is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. ProStyle will stretch it’s content to fit, regardless of the aspect ratio of the canvas.
+The _canvas_ is the outermost container. It is mapped onto a single <code>div</code> or <code>body</code> tag of an HTML page.  Think of the canvas as the drawing surface.  The div or body tag might be any size, and may even be resized later. ProStyle will stretch its content to fit, regardless of the aspect ratio of the canvas.
 
 The canvas contains a single [frame](#){:data-toc='frame'}.
 
@@ -95,10 +95,10 @@ Frame properties may be [scripted](/concepts/#animation) with a <code>frameScrip
 {% include model-props.html label="shadow" content="standard-shadow.md" %}
 
 ### Virtual Camera
-The frame brings each of it’s child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
+The frame brings each of its child flows to the forefront, one after the other.  Since all of the flows are laid out in [3D](/concepts/#3d) space, they all appear to move as the view changes.  It’s natural to think of it like a camera flying around from one flow to the next.
 
 ### Demonstration
-As the canvas is resized, the frame resizes to fit. However, the frame always maintains it's aspect ratio.  All of the content within the frame will be resized to fit as well, relative to the frame's aspect ratio.
+As the canvas is resized, the frame resizes to fit. However, the frame always maintains its aspect ratio.  All of the content within the frame will be resized to fit as well, relative to the frame's aspect ratio.
 
 <div class="row">
 	<div class="medium-9 large-7 medium-centered large-centered columns">
@@ -145,7 +145,7 @@ Simple flow is the default flow. It will be used if the <code>flowType</code> en
 ##&middot; Stack Flow
 {:class="font-size-h3"}
 
-The _Stack_ flow is a premium extension that comes with [ProStyle Plus](/plus/).  It transitions it's pages from one stack to another. Each page begins on the _future_ stack, becomes the _current_ page, and then moves to the _past_ stack.
+The _Stack_ flow is a premium extension that comes with [ProStyle Plus](/plus/).  It transitions its pages from one stack to another. Each page begins on the _future_ stack, becomes the _current_ page, and then moves to the _past_ stack.
 
 The [placement](/concepts/#placement) of the stacks, and the offset of each page in each stack may be configured. It is quite flexible.
 
@@ -342,7 +342,7 @@ The _image item_ adds a bitmap or vector image to a [page](#){:data-toc="pages"}
 
 ##&middot; Layer Item
 {:class="font-size-h3"}
-The _layer_ is a container for zero or more child items. The child items are [placed](/concepts/#placement) relative to the center of the layer, regardless of where the layer is place within it's parent. Layers make it simple to manipulate many items as a group.
+The _layer_ is a container for zero or more child items. The child items are [placed](/concepts/#placement) relative to the center of the layer, regardless of where the layer is placed within its parent. Layers make it simple to manipulate many items as a group.
 
 Layers may be nested in layers to any reasonable depth.
 
