@@ -1,23 +1,23 @@
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/javascript.min.js"></script>
 
-{% if page.tocify-js %}
+{% if layout.tocify-js %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/tocify-setup.js"></script>
 {% endif %}
 
-{% if page.ace-js or page.ace-readonly-js %}
+{% if layout.ace-js or layout.ace-readonly-js %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/mode-javascript.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/theme-clouds.js"></script>
 {% endif %}
 
-{% if page.ace-js %}
+{% if layout.ace-js %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/json5/0.3.0/json5.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/ace-setup.js"></script>
 {% endif %}
 
-{% if page.ace-readonly-js %}
+{% if layout.ace-readonly-js %}
 <script src="{{ site.url }}{{ site.baseurl }}/assets/js/ace-readonly-setup.js"></script>
 {% endif %}
 
@@ -54,7 +54,7 @@ window.onload = function() {
 </script>
 
 
-{% if page.plus-page %}
+{% if layout.plus-page %}
 <script>
 $(document).ready(function() {
   var $txtDomain = $("#txtDomain");
@@ -76,7 +76,7 @@ $(document).ready(function() {
 </script>
 {% endif %}
 
-{% if page.plus-order %}
+{% if layout.plus-order %}
 <script>
 var queries = {};
 try {
