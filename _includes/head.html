@@ -27,12 +27,12 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prostyle/1.2.0/prostyle.min.js"></script>
 	
-	{% if layout.cont_tap %}<script src="{{ site.data.extensions.cont_tap }}" type="text/javascript"></script>{% endif %}
-	{% if layout.cont_mousemove %}<script src="{{ site.data.extensions.cont_mousemove }}" type="text/javascript"></script>{% endif %}
-	{% if layout.cont_mousewheel %}<script src="{{ site.data.extensions.cont_mousewheel }}" type="text/javascript"></script>{% endif %}
-	{% if layout.item_barchart %}<script src="{{ site.data.extensions.item_barchart }}" type="text/javascript"></script>{% endif %}
-	{% if layout.flow_stack %}<script src="{{ site.data.extensions.flow_stack }}" type="text/javascript"></script>{% endif %}
-	{% if layout.plus-page %}<script src="/assets/js/rsa.js" type="text/javascript"></script>{% endif %}
+	{% if page.cont_tap %}<script src="{{ site.data.extensions.cont_tap }}" type="text/javascript"></script>{% endif %}
+	{% if page.cont_mousemove %}<script src="{{ site.data.extensions.cont_mousemove }}" type="text/javascript"></script>{% endif %}
+	{% if page.cont_mousewheel %}<script src="{{ site.data.extensions.cont_mousewheel }}" type="text/javascript"></script>{% endif %}
+	{% if page.item_barchart %}<script src="{{ site.data.extensions.item_barchart }}" type="text/javascript"></script>{% endif %}
+	{% if page.flow_stack %}<script src="{{ site.data.extensions.flow_stack }}" type="text/javascript"></script>{% endif %}
+	{% if page.plus-page %}<script src="/assets/js/rsa.js" type="text/javascript"></script>{% endif %}
     <script>
     WebFontConfig = {
       google: { families: [ 'Open+Sans:300,400,600,400italic,600italic:latin' ] }
