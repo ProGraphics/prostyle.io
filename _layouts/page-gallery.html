@@ -12,7 +12,6 @@ cont_mousemove: true
 	<a class="page-gallery-items" href="{{ site.url }}{{ post.url }}"><img width="100%" alt="{{ post.title }}" title="{{ post.title }}" src="/images/gallery/{{post.thumbnail}}"></a>
 {% endfor %}
 <div style="margin:2em 0;">
-{% include ads/page-gallery.html %}
 </div>
 {% if page.gallery-entries %}
 {% assign entries = page.gallery-entries %}
