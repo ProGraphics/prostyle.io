@@ -52,6 +52,10 @@ div.ace_active-line {
 	padding:10px;
 	margin-right:5px;
 	float:left;
+	background: #0A0;
+	box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
+	border: solid 1px #070;
+	border-radius: 4px;
 	&[disabled], &[disabled]:hover {
 		background-color: #EEE;
 		color: #666;
